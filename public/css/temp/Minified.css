@@ -1,0 +1,1436 @@
+.breadcum-places a{
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 11px;
+    line-height: 15px;
+    color: #767676;
+}
+
+.dest-details .content-card ul li .pl-0 {
+    margin: 0;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    max-height: 6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.sidebar-list > h3.list-title {margin-bottom: 10px !important;}
+#places-in-provinces .blockItems {margin: 0px 0px;}
+#loading{display:none;margin:0 auto;position:absolute;width:100%;}
+#loading img{position:relative;left:37%;top:130px;}
+.send-comment{
+    position: relative;
+}
+.upload-comment-mb
+{
+    width: 93%;
+    position: relative;
+}
+#send-comment-mobile {
+    height: 39px;
+    width: 9%;
+    top: 10px;
+    position: absolute;
+    right: 0;
+    background: #fa6b6b !important;
+    background: -moz-linear-gradient(left, #fa6b6b 0, #ee0f40 100%) !important;
+    background: -webkit-linear-gradient(left, #fa6b6b 0, #ee0f40 100%) !important;
+    background: -o-linear-gradient(left, #fa6b6b 0, #ee0f40 100%) !important;
+    background: -ms-linear-gradient(left, #fa6b6b 0, #ee0f40 100%) !important;
+    background: linear-gradient(left right, #fa6b6b 0, #ee0f40 100%) !important;
+    border: none;
+    color: white !important;
+    padding: 0px 10px !important;
+}
+.ajax-file-upload {
+    height: 38px !important;
+    float: right;
+    background: #fa6b6b !important;
+    background: -moz-linear-gradient(left, #fa6b6b 0, #ee0f40 100%) !important;
+    background: -webkit-linear-gradient(left, #fa6b6b 0, #ee0f40 100%) !important;
+    background: -o-linear-gradient(left, #fa6b6b 0, #ee0f40 100%) !important;
+    background: -ms-linear-gradient(left, #fa6b6b 0, #ee0f40 100%) !important;
+    background: linear-gradient(left right, #fa6b6b 0, #ee0f40 100%) !important;
+    border: none;
+    color: white !important;
+    transition-duration: .2s;
+    box-shadow: none !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 38px !important;
+    padding: 0px 15px !important;
+}
+.absolute-center{font-size:30px;font-weight:bold;color:white;}
+.komment .img-gallery{padding: 0px !important}
+.images-gallery{width: 24% !important}
+
+
+/*images*/
+.gallery .image-comment {width:25%;padding:10px;margin:10px;}
+#success-upload strong{
+    color: #e02f2f !important;
+    text-align: center;
+    width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.ajax-upload-dragdrop b{
+    color: #999;
+    font-size: 11px;
+}
+.ajax-upload-dragdrop {
+    border: none !important;
+    height: 55px;
+    width: 100% !important;
+}
+.ajax-file-upload-container {
+    width: 100%;
+}
+.ajax-file-upload-statusbar {
+    padding-left: 0px !important;
+    width: 70px !important;
+    height: 150px !important;
+    border: none !important;
+    float: left;
+}
+.ajax-file-upload-statusbar img{
+    width: 70px !important;
+    height: 70px !important;
+    border: 1px solid #e02f2f;
+    padding: 5px;
+}
+.ajax-file-upload-filename {
+    display: none;
+}
+div.ajax-file-upload-progress {
+    width: 70px !important;
+}
+div.ajax-file-upload-progress .ajax-file-upload-bar{
+    height: 5px !important;
+}
+.ajax-file-upload-abort {
+    display: none !important;
+}
+.ajax-file-upload-container{
+    top: 0px;
+    position: relative;
+}
+.dest-details .dest-comment .reply {
+    /*padding-left: 30px !important;
+    padding-top: 15px !important;*/
+    padding-bottom: 0px !important;
+    background: white !important;
+}
+/*popup comment*/
+#evaluate-popup .upload-comment-mb {
+    width: 100%;
+    position: relative;
+}
+#evaluate-popup .ajax-file-upload{
+    /* height: 30px !important;
+    float: right; */
+    float: left;
+    background: #fa6b6b;
+    background: -moz-linear-gradient(left, #fa6b6b 0, #ee0f40 100%);
+    background: -webkit-linear-gradient(left, #fa6b6b 0, #ee0f40 100%);
+    background: -o-linear-gradient(left, #fa6b6b 0, #ee0f40 100%);
+    background: -ms-linear-gradient(left, #fa6b6b 0, #ee0f40 100%);
+    background: linear-gradient(left right, #fa6b6b 0, #ee0f40 100%);
+    border: none;
+    color: white !important;
+    transition-duration: .2s;
+    box-shadow: none;
+    font-size: 14px;
+    font-weight: normal;
+}
+#evaluate-popup .ajax-file-upload-container{
+    margin: 0px !important;
+}
+#evaluate-popup .title_comment {
+    /*margin-top: 0px !important;
+    height: 28px;
+    padding: 0px 0px 0px 10px !important;*/
+    margin-top: 0px !important;
+    height: 28px;
+    padding: 0px 0px 0px 5px !important;
+    border-bottom: 1px solid #acacac !important;
+    border-top: 0px solid !important;
+    border-left: 0px solid !important;
+    border-right: 0px solid !important;
+    border-radius: 0px !important;
+}
+
+#evaluate-popup .content_comment {
+    margin-top: 0px !important;
+    height: 50px;
+}
+#evaluate-popup .ajax-upload-dragdrop{
+    padding-top: 0px !important;
+    padding-left: 0px !important;
+}
+.reply .name {
+    font-size: 14px !important;
+    margin-top: 0px !important;
+}
+.reply .time {
+    font-size: 10px;
+    font-weight: bold;
+}
+.reply .content {
+    text-align: justify;
+}
+.dest-comment-posts .reply{
+    background: none !important;
+}
+.cursor-not-allowed {
+    cursor: not-allowed !important;
+}
+.cursor-pointer {
+    cursor: pointer !important;
+}
+.komment content p {
+    word-wrap: break-word;
+}
+.content p {
+    word-break: break-word !important;
+    white-space: pre-wrap !important;
+}
+#scroll {
+    position:fixed;
+    right:0px !important;
+    bottom:0px !important;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#3498db;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff
+}
+#scroll:hover {
+    background-color:#e74c3c;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+.btn-reply {
+    height: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+div.write-reply .childrent-comment  {
+    width: calc(100% - 150px) !important;
+    padding: 10px 5px !important;
+    /*border-left: 0px solid !important;
+    border-bottom: 1px solid #e2e2ff !important;
+    border-right: 0px solid !important;
+    border-top: 0px solid !important;*/
+    border-radius: 0px !important;
+}
+div.write-reply .childrent-comment:focus {
+    border-bottom: 1px solid rgba(81, 203, 238, 1) !important;
+}
+.btn-border-radius-2 {
+    height: 40px !important;
+    border-radius: 2px !important;
+}
+
+/*icon*/
+.quick-access-item i.icon-ticket {background: url('https://media.gody.vn/templates/icondesktop@2x.png');background-repeat: no-repeat;background-position: -66px -38px;}
+.quick-access-item i.icon-plane-ticket {
+    background: url('https://media.gody.vn/templates/icondesktop@2x.png');
+    background-repeat: no-repeat;
+    background-position: 0 -38px;
+}
+.quick-access-item i.icon-suitcase {background: url('https://media.gody.vn/templates/icondesktop@2x.png');background-repeat: no-repeat;background-position: -125px -38px;}
+.quick-access-item i.icon-restaurant {background: url('https://media.gody.vn/templates/icondesktop@2x.png');background-repeat: no-repeat;background-position: -185px -38px;}
+.icon-marker {background: url('https://media.gody.vn/templates/icondesktop@2x.png');background-repeat: no-repeat;background-position: 0px -223px;}
+footer a.logo {background: url('https://media.gody.vn/templates/icondesktop@2x.png');background-repeat: no-repeat;background-position: 0 -101px;width: 112px;height: 101px;}
+.navbar-header a.logo {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 85px;
+    width: 160px;
+}
+h3 > a {
+    color: inherit;
+    font-size: 18px;
+}
+
+div.toolbox {
+    position: fixed;
+    bottom: 40%;
+    width: 100%;
+}
+div.toolbox ul {
+    float: right;
+}
+div.toolbox ul li {
+    list-style: none;
+}
+div.toolbox ul li.scroll {
+    list-style: none;
+    position: fixed;
+    bottom: 58%;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    background: url(https://media.gody.vn/templates/icondesktop@8x.png);
+    background-position: -159px 0px;
+    text-indent: -9999px;
+    display: none;
+    -moz-border-radius: 60px;
+    margin-left: -60px;
+}
+div.toolbox ul li.scroll:hover {
+    background: url(https://media.gody.vn/templates/icondesktop@8x.png);
+    background-position: -409px 0px;
+}
+
+div.toolbox ul li.go-to-home {
+    list-style: none;
+    position: fixed;
+    bottom: 50%;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    background: url(https://media.gody.vn/templates/icondesktop@8x.png);
+    background-position: -8px 0px;
+    text-indent: -9999px;
+    display: none;
+    -moz-border-radius: 60px;
+    margin-left: -61px;
+}
+div.toolbox ul li.go-to-home:hover {
+    background: url(https://media.gody.vn/templates/icondesktop@8x.png);
+    background-position: -259px 0px;
+}
+div.toolbox ul li.share-user {
+    list-style: none;
+    position: fixed;
+    bottom: 42%;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    background: url(https://media.gody.vn/templates/icondesktop@8x.png);
+    background-position: -209px 0px;
+    text-indent: -9999px;
+    display: none !important;
+    -moz-border-radius: 60px;
+    margin-left: -61px;
+}
+div.toolbox ul li.share-user:hover {
+    background: url(https://media.gody.vn/templates/icondesktop@8x.png);
+    background-position: -458px 0px;
+}
+div.toolbox ul li.scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff
+}
+div.toolbox ul li.scroll:hover {
+
+}
+div.toolbox ul li.show {
+
+}
+div.toolbox ul li a{
+
+}
+
+/*comment*/
+.panel-google-plus {
+    position: relative;
+}
+.panel-google-plus > .dropdown {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+.panel-google-plus > .dropdown > span > span {
+    font-size: 10px;
+}
+.panel-google-plus > .dropdown > .dropdown-menu {
+    left: initial;
+    right: 0px;
+    border-radius: 2px;
+}
+.panel-google-plus > .panel-google-plus-tags {
+    position: absolute;
+    top: 35px;
+    right: -3px;
+}
+.panel-google-plus > .panel-google-plus-tags > ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.panel-google-plus > .panel-google-plus-tags > ul:hover {
+    box-shadow: 0px 0px 3px rgb(0, 0, 0);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+}
+.panel-google-plus > .panel-google-plus-tags > ul > li {
+    display: block;
+    right: 0px;
+    width: 0px;
+    padding: 5px 0px 5px 0px;
+    background-color: rgb(245, 245, 245);
+    font-size: 12px;
+    overflow: hidden;
+}
+.panel-google-plus > .panel-google-plus-tags > ul > li::after {
+    content:"";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    border-right: 3px solid rgb(66, 127, 237);
+}
+.panel-google-plus > .panel-google-plus-tags > ul:hover > li,
+.panel-google-plus > .panel-google-plus-tags > ul > li:first-child {
+    padding: 5px 15px 5px 10px;
+    width: auto;
+    cursor: pointer;
+    margin-left: auto;
+}
+.panel-google-plus > .panel-google-plus-tags > ul:hover > li {
+    background-color: rgb(255, 255, 255);
+}
+.panel-google-plus > .panel-google-plus-tags > ul > li:hover {
+    background-color: rgb(66, 127, 237);
+    color: rgb(255, 255, 255);
+}
+.panel-google-plus > .panel-heading,
+.panel-google-plus > .panel-footer {
+    background-color: rgb(255, 255, 255);
+    border-width: 0px;
+}
+.panel-google-plus > .panel-heading {
+    margin-top: 20px;
+    padding-bottom: 5px;
+}
+.panel-google-plus > .panel-heading > img {
+    margin-right: 15px;
+}
+.panel-google-plus > .panel-heading > h3 {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.panel-google-plus > .panel-heading > h5 {
+    color: rgb(153, 153, 153);
+    font-size: 12px;
+    font-weight: 400;
+}
+.panel-google-plus > .panel-body {
+    padding-top: 5px;
+    font-size: 13px;
+}
+.panel-google-plus > .panel-body > .panel-google-plus-image {
+    display: block;
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(217, 217, 217);
+}
+.panel-google-plus > .panel-body > .panel-google-plus-image > img {
+    max-width: 100%;
+}
+
+.panel-google-plus > .panel-footer {
+    font-size: 14px;
+    font-weight: 700;
+    min-height: 54px;
+}
+.panel-google-plus > .panel-footer > .btn {
+    float: left;
+    margin-right: 8px;
+}
+.panel-google-plus > .panel-footer > .input-placeholder {
+    display: block;
+    margin-left: 98px;
+    color: rgb(153, 153, 153);
+    font-size: 12px;
+    font-weight: 400;
+    padding: 8px 6px 7px;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 0px 0px;
+}
+.panel-google-plus.panel-google-plus-show-comment > .panel-footer > .input-placeholder {
+    display: none;
+}
+.panel-google-plus > .panel-google-plus-comment {
+    display: none;
+    padding: 10px 20px 15px;
+    border-top: 1px solid rgb(229, 229, 229);
+    background-color: rgb(245, 245, 245);
+}
+.panel-google-plus.panel-google-plus-show-comment > .panel-google-plus-comment {
+    display: block;
+}
+/*.panel-google-plus > .panel-google-plus-comment > img {
+  float: left;
+}*/
+.panel-google-plus > .panel-google-plus-comment > .panel-google-plus-textarea {
+    float: right;
+    width: calc(100% - 56px);
+}
+.panel-google-plus > .panel-google-plus-comment > .panel-google-plus-textarea > textarea {
+    display: block;
+    /*margin-left: 60px;
+    width: calc(100% - 56px);*/
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(217, 217, 217);
+    box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 0px 0px;
+    resize: vertical;
+}
+.panel-google-plus > .panel-google-plus-comment > .panel-google-plus-textarea > .btn {
+    margin-top: 10px;
+    margin-right: 8px;
+    width: 100%;
+}
+
+
+.panel-google-plus .btn {
+    border-radius: 3px;
+}
+.panel-google-plus .btn-default {
+    border: 1px solid rgb(217, 217, 217);
+    box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 0px 0px;
+}
+.panel-google-plus .btn-default:hover,
+.panel-google-plus .btn-default:focus,
+.panel-google-plus .btn-default:active {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+}
+.text-places-comment {
+    max-height: 41px;
+    overflow: hidden;
+}
+.text-places-comment p, .panel-body p {
+    font-size: 100% !important;
+    color: inherit !important;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+#comment-new{
+    background-color: #f5f5f5;
+}
+#comment-new .thumbnail {
+    padding: 10px !important;
+}
+li.scroll a span {
+    background: url(https://media.gody.vn/templates/icondesktop@6x.png);
+    background-repeat: no-repeat;
+    background-position: -66px -38px;
+}
+li.go-to-home a {
+    background: url(https://media.gody.vn/templates/icondesktop@6x.png);
+    background-repeat: no-repeat;
+    background-position: -66px -38px;
+}
+li.share-user a {
+    background: url(https://media.gody.vn/templates/icondesktop@6x.png);
+    background-repeat: no-repeat;
+    background-position: -66px -38px;
+}
+footer .social a {
+    background-color: white !important;
+}
+i.icon-fa-facebook {
+    background: url(https://media.gody.vn/templates/icondesktop@6x.png);
+    background-repeat: no-repeat;
+    background-position: -3px -327px;
+    height: 22px;
+    width: 24px;
+}
+i.icon-fa-youtube {
+    background: url(https://media.gody.vn/templates/icondesktop@6x.png);
+    background-repeat: no-repeat;
+    background-position: -27px -326px;
+    height: 22px;
+    width: 24px;
+}
+
+i.icon-fa-google-plus {
+    background: url(https://media.gody.vn/templates/icondesktop@6x.png);
+    background-repeat: no-repeat;
+    background-position: -51px -327px;
+    height: 22px;
+    width: 24px;
+}
+.social-1 li {
+    list-style:none;
+    display:inline-block;
+    width: 30px;
+    float: left;
+}
+.social-1 li a {
+
+}
+.icon-fa-sort-down {
+    background: url(https://media.gody.vn/templates/icondesktop@6x.png);
+    background-repeat: no-repeat;
+    background-position: -6px -394px;
+    height: 14px;
+    width: 14px;
+}
+.icon-fa-close {
+    background: url(https://media.gody.vn/templates/icondesktop@6x.png);
+    background-repeat: no-repeat;
+    background-position: 1px -407px;
+    height: 22px;
+    width: 28px;
+}
+.social-login-facebook{
+    background: url(https://media.gody.vn/templates/icondesktop@8x.png) !important;
+    background-position: -507px 0px !important;
+    width: 50px !important;
+    height: 50px !important;
+}
+.social-login-twitter{
+    background: url(https://media.gody.vn/templates/icondesktop@8x.png) !important;
+    background-position: -561px 0px !important;
+    width: 50px !important;
+    height: 50px !important;
+}
+.social-login-google {
+    background: url(https://media.gody.vn/templates/icondesktop@8x.png) !important;
+    background-position: -615px 0px !important;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+/* grid view top */
+.post-module {
+    position: relative;
+    z-index: 1;
+    display: block;
+    background: #FFFFFF;
+    min-width: 270px;
+    height: 520px;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+}
+.post-module:hover,
+.hover {
+    -webkit-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+}
+.post-module:hover .thumbnail img,
+.hover .thumbnail img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: .6;
+}
+.post-module .thumbnail {
+    background: #000000;
+    height: 350px;
+    overflow: hidden;padding: 0;
+}
+.post-module .thumbnail .date {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    background: #f2b202;
+    width: 55px;
+    height: 55px;
+    padding: 12.5px 0;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-align: center;
+    -webkti-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.post-module .thumbnail .date .day {
+    font-size: 18px;
+    line-height: 31px;
+    color: #fff;
+}
+.post-module .thumbnail .date .month {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.post-module .thumbnail img {
+    display: block;
+    width: 120%;
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+}
+.post-module .post-content {
+    position: absolute;
+    bottom: 0;
+    background: #FFFFFF;
+    width: 100%;
+    padding: 0 30px;
+    -webkti-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    -moz-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    -ms-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    -o-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+}
+.post-module .post-content .category {
+    position: absolute;
+    top: -34px;
+    left: 0;
+    /*background: #fa6b6b;*/
+    padding: 10px 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.post-module .post-content .title {
+    margin: 0;
+    padding: 0 0 10px;
+    color: #222 !important;
+    font-size: 24px !important;
+    font-weight: 700;    margin: 40px 0 0 !important;
+}
+.post-module .post-content .sub_title {
+    margin: 0;
+    padding: 0 0 20px;
+    color: inherit;
+    font-size: 20px;
+    font-weight: 400;
+}
+.post-module .post-content .description {
+    display: block;
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.8em;
+    height: 170px;
+    overflow: hidden;
+}
+.post-module .post-content .post-meta {
+    margin: 0px 0px 10px;
+    color: #999999;
+}
+.post-module .post-content .post-meta .timestamp {
+    margin: 0 16px 0 0;
+}
+.post-module .post-content .post-meta a {
+    color: #999999;
+    text-decoration: none;
+}
+.hover .post-content .description {
+    display: block !important;
+    height: auto !important;
+    opacity: 1 !important;
+}
+
+.container .column {
+    width: 100%;
+    /* padding: 0 25px; */
+    -webkti-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+}
+.container .column .demo-title {
+    margin: 0 0 15px;
+    color: #666666;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.container .info {
+    width: 300px;
+    margin: 0px auto;
+    /*text-align: center;*/
+}
+.container .info h1 {
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+.container .info span {
+    color: #666666;
+    font-size: 12px;
+}
+.container .info span a {
+    color: #000000;
+    text-decoration: none;
+}
+.container .info span .fa {
+    color: #f2b202;
+}
+
+/* grid view top */
+.dest-details .dest-post .more-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 400px;
+    max-height: 100%;
+    text-align: center;
+    background: transparent;
+    background: -moz-linear-gradient(top, transparent 0, white 100%);
+    background: -webkit-linear-gradient(top, transparent 0, white 100%);
+    background: -o-linear-gradient(top, transparent 0, white 100%);
+    background: -ms-linear-gradient(top, transparent 0, white 100%);
+    background: linear-gradient(top bottom, transparent 0, white 100%);
+}
+.dest-details .dest-post .more-2 a {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    color: #ef0e0e;
+}
+/*======12/02/2017============*/
+.active-like-comment-parent {
+    color: #acacac !important;
+}
+.like-comment-parent {
+    color: #EF0E0E;
+}
+/*========= 15-06-2017 ===============*/
+.col-right-travel-box {
+    position: relative;
+    margin-bottom: 5px;
+    background: white;
+    padding: 10px;
+    /* box-shadow: 1px 0px -1px -1px #ccc;*/
+    /*border: 1px solid #eae0e0;*/
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 0 2px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 0 2px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 0 2px rgba(0,0,0,.3);
+    border-radius: 5px;
+}
+.col-right-travel-box .title-box-travel{
+    position: absolute;
+    background: white;
+    top: -12px;
+    font-size: 18px;
+    color: red;
+    font-weight: 500;
+    padding: 0px 10px;
+    margin-left: 10px;
+}
+.col-right-travel-box .col-right-container-box {
+    /* border: 1px solid #eae0e0; */
+    /* box-shadow: 2px 2px 2px 2px #ccc; */
+    padding-top: 5px;
+}
+.col-right-travel-box .col-right-container-box  .quick-access-item {
+    text-align: left;
+    position: relative;
+}
+.col-right-travel-box .col-right-container-box  .quick-access-item i{
+    width: 50px;
+    height:50px;
+}
+.col-right-travel-box .col-right-container-box  .quick-access-item i.icon{
+
+}
+.col-right-travel-box .col-right-container-box  .quick-access-item a{
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #c9cacc;
+    text-decoration: none;
+    cursor: pointer;
+}
+.col-right-travel-box .col-right-container-box  .quick-access-item a span {
+    position: absolute;
+    top: 12px;
+    left: 67px;
+    font-size: 16px;
+    color:#333;
+}
+.col-right-travel-box .col-right-container-box  .quick-access-item i.icon-ticket{
+    background: url(https://gody.vn/public/v3/images/icon/icondesktop@4x.png);
+    display: inline-block;
+    background-position: -8px -116px;
+}
+.col-right-travel-box .col-right-container-box  .quick-access-item i.icon-plane-ticket{
+    background: url(https://gody.vn/public/v3/images/icon/icondesktop@4x.png);
+    display: inline-block;
+    background-position: -60px -115px;
+}
+.col-right-travel-box .col-right-container-box  .quick-access-item i.icon-suitcase{
+    background: url(https://gody.vn/public/v3/images/icon/icondesktop@4x.png);
+    display: inline-block;
+    background-position: -108px -115px;
+}
+.col-right-travel-box .col-right-container-box  .quick-access-item i.icon-restaurant{
+    background: url(https://gody.vn/public/v3/images/icon/icondesktop@4x.png);
+    display: inline-block;
+    background-position: -156px -115px;
+}
+.col-right-travel-box .col-right-container-box  .quick-access-item i.icon-hotels {
+    background: url(https://gody.vn/public/v3/images/icon/icondesktop@6x.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+.col-right-travel-box .col-right-container-box  .quick-access-item i.icon-travel {
+    background: url(https://gody.vn/public/v3/images/icon/icondesktop@6x.png);
+    background-repeat: no-repeat;
+    background-position: -49px 0px;
+}
+
+.fixed-box-travel {
+    position: fixed;
+    z-index: 100;
+    top: 80px;
+    width: 26.6666%;
+}
+.statis-box-travel {
+    position: static;
+    z-index: 0;
+    top: 0;
+    width: auto;
+}
+
+#tab-travel-box .nav-tabs {
+    background: #ddd;
+}
+#tab-travel-box {
+
+}
+#tab-travel-box ul.nav-tabs{
+    background: #ddd;
+}
+#tab-travel-box ul.nav-tabs > li{
+    width: 50%;
+    /*border-bottom: 1px solid #ddd;*/
+    text-align: center;
+}
+#tab-travel-box ul.nav-tabs > li.active a{
+    border-bottom: 2px solid #ef0e0e;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    color: #ef0e0e;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+    overflow: hidden;
+}
+
+#tab-travel-box ul.nav-tabs li a{
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 0px 0px 0px 0px;
+    color: black;
+}
+#tab-travel-box .content-card {
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px !important;
+    margin: 0px !important;
+}
+
+/* fix travel box home */
+.container-box .quick-access-item a i.icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0px auto;
+}
+.container-box .quick-access-item a {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #c9cacc;
+    text-decoration: none;
+    word-spacing: normal;
+}
+.container-box .quick-access-item a  span {
+    padding: 0px 10px;
+    margin: 10px auto;
+    word-break: break-word;
+}
+.container-box i.icon-ticket {
+    background: url(https://gody.vn/public/v3/images/icon/icondesktop@4x.png);
+    background-repeat: no-repeat;
+    background-position: -2px -3px;
+    -webkit-transition: width 3s; /* Safari */
+    -webkit-transition-delay: 2s; /* Safari */
+    transition: width 3s;
+    transition-delay: 2s;
+}
+.container-box i.icon-plane-ticket {
+    background: url(https://gody.vn/public/v3/images/icon/icondesktop@4x.png);
+    background-repeat: no-repeat;
+    background-position: -58px -118px;
+    -webkit-transition: width 3s;
+    -webkit-transition-delay: 2s;
+    transition: width 3s;
+    transition-delay: 2s;
+}
+.container-box i.icon-suitcase {
+    background: url(https://gody.vn/public/v3/images/icon/icondesktop@4x.png);
+    background-repeat: no-repeat;
+    background-position: -107px -118px;
+    -webkit-transition: width 3s; /* Safari */
+    -webkit-transition-delay: 2s; /* Safari */
+    transition: width 3s;
+    transition-delay: 2s;
+}
+.container-box i.icon-restaurant{
+    background: url(https://gody.vn/public/v3/images/icon/icondesktop@4x.png);
+    background-repeat: no-repeat;
+    background-position: -156px -118px;
+    -webkit-transition: width 3s; /* Safari */
+    -webkit-transition-delay: 2s; /* Safari */
+    transition: width 3s;
+    transition-delay: 2s;
+}
+
+.container-box i.icon-hotels{
+    background: url(https://gody.vn/public/v3/images/icon/icondesktop@6x.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    -webkit-transition: width 3s; /* Safari */
+    -webkit-transition-delay: 2s; /* Safari */
+    transition: width 3s;
+    transition-delay: 2s;
+}
+.container-box i.icon-travel{
+    background: url(https://gody.vn/public/v3/images/icon/icondesktop@6x.png);
+    background-repeat: no-repeat;
+    background-position: -48px 0px;
+    -webkit-transition: width 3s; /* Safari */
+    -webkit-transition-delay: 2s; /* Safari */
+    transition: width 3s;
+    transition-delay: 2s;
+}
+
+.quick-access-item {
+    text-align: center;
+}
+.quick-access-item h5 {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #c9cacc;
+}
+.container-box {
+    padding: 20px;
+    border: 1px solid #f7f5f5;
+    /*box-shadow: 1px 1px 1px 1px #f1f1f1;*/
+    width: 100%;
+    clear: both;
+    padding-bottom: 100px;
+}
+.container-box > .col-fix-5 {
+    padding: 0px;
+    margin: 0px;
+    width: 20%;
+    float: left;
+}
+.container-box-travel {
+    position: relative;
+    height: 130px;
+}
+.container-box-travel span.title-box{
+    position: absolute;
+    background: white;
+    top: -15px;
+    left: 48px;
+    padding: 0px 20px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    color: red;
+}
+.col-right-user {
+    margin-left: 0px;
+    padding: 10px 20px 0px 10px;
+    border: 1px solid #f7f5f5;
+    /*box-shadow: 1px 1px 1px 1px #f1f1f1;*/
+    height: 121px;
+}
+
+.col-right-user h3{
+    font-size: 16px;
+    font-weight: 500;
+    color: red;
+    padding: 0px;
+    margin: 5px 0px 5px 0px;
+}
+.col-right-user p{
+    font-size: 14px;
+    color: #b5b5b5;
+}
+.col-right-user p a{
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+/*.container-box-user .col-4 {
+    padding: 0px;
+    margin: 0px;
+}*/
+.quick-access-item-user {
+    text-align: center;
+    border: 1px solid red;
+    padding-top: 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    opacity: 0.5;
+}
+.quick-access-item-user h5 {
+    font-size: 14px;
+    font-weight: 100;
+    padding: 5px 5px;
+    margin: 0px 0px;
+}
+.quick-access-item-user i.icon {
+    width: 50px;
+    height:50px;
+    display: inline-block;
+}
+.quick-access-item-user i.icon-review {
+    width: 48px;
+    height: 48px;
+    background: url(https://gody.vn/public/v3/images/icon/icondesktop@4x.png);
+    background-position: -6px -69px;
+    display: inline-block;
+}
+.quick-access-item-user i.icon-blog {
+    width: 48px;
+    height: 48px;
+    background: url(https://gody.vn/public/v3/images/icon/icondesktop@4x.png);
+    background-position: -56px -69px;
+    display: inline-block;
+}
+.quick-access-item-user i.icon-guide {
+    width: 48px;
+    height: 48px;
+    background: url(https://gody.vn/public/v3/images/icon/icondesktop@4x.png);
+    display: inline-block;
+    background-position: -105px -68px;
+}
+.col-right-user .col-6 {
+    width: 50%;
+    float: left;
+}
+.col-right-user .col-6  .col-4 {
+    padding: 0px;
+    margin: 0px;
+    width: 33%;
+    float: left;
+}
+.container-home-box-travel {
+    margin-top: 30px;
+    padding-top: 10px;
+}
+#container-box-col-right-travel {
+    padding-left: 0px;
+}
+#container-box-col-right-travel p {
+    word-break: break-word;
+    padding-right: 15px;
+    text-align: inherit;
+}
+#container-box-col-right-travel p a {
+
+}
+.dest-details .sidebar-list ul li {
+    margin-top: 0px !important;
+}
+.description-posts-col-right  p {
+    font-size: 12px;
+    margin-top: 7px;
+    margin-bottom: 0;
+    overflow: hidden;
+    height: 60px;
+    color: #acacac;
+    font-weight: 500;
+}
+.dest-details .sidebar-list .item-title {
+    font-size: 13px;
+    font-weight: 700;
+    margin: 5px 0 0 0;
+    color: #000;
+}
+.description-posts-col-right  {
+    font-size: 12px;
+    margin-top: 7px;
+    margin-bottom: 0;
+    overflow: hidden;
+    height: 65px;
+    color: #acacac;
+    font-weight: 500;
+}
+
+
+/* fix travel box home */
+.container-box .quick-access-item a i.icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0px auto;
+}
+.container-box .quick-access-item a {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #c9cacc;
+    text-decoration: none;
+    word-spacing: normal;
+}
+.container-box .quick-access-item a  span {
+    padding: 0px 10px;
+    margin: 10px auto;
+    word-break: break-word;
+}
+.container-box i.icon-ticket {
+    background: url(https://gody.vn/public/v3/images/icon/icondesktop@4x.png);
+    background-repeat: no-repeat;
+    background-position: -2px -3px;
+    -webkit-transition: width 3s; /* Safari */
+    -webkit-transition-delay: 2s; /* Safari */
+    transition: width 3s;
+    transition-delay: 2s;
+}
+.container-box i.icon-plane-ticket {
+    background: url(https://gody.vn/public/v3/images/icon/icondesktop@4x.png);
+    background-repeat: no-repeat;
+    background-position: -58px -118px;
+    -webkit-transition: width 3s;
+    -webkit-transition-delay: 2s;
+    transition: width 3s;
+    transition-delay: 2s;
+}
+.container-box i.icon-suitcase {
+    background: url(https://gody.vn/public/v3/images/icon/icondesktop@4x.png);
+    background-repeat: no-repeat;
+    background-position: -107px -118px;
+    -webkit-transition: width 3s; /* Safari */
+    -webkit-transition-delay: 2s; /* Safari */
+    transition: width 3s;
+    transition-delay: 2s;
+}
+.container-box i.icon-restaurant{
+    background: url(https://gody.vn/public/v3/images/icon/icondesktop@4x.png);
+    background-repeat: no-repeat;
+    background-position: -156px -118px;
+    -webkit-transition: width 3s; /* Safari */
+    -webkit-transition-delay: 2s; /* Safari */
+    transition: width 3s;
+    transition-delay: 2s;
+}
+
+.container-box i.icon-hotels{
+    background: url(https://gody.vn/public/v3/images/icon/icondesktop@6x.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    -webkit-transition: width 3s; /* Safari */
+    -webkit-transition-delay: 2s; /* Safari */
+    transition: width 3s;
+    transition-delay: 2s;
+}
+.container-box i.icon-travel{
+    background: url(https://gody.vn/public/v3/images/icon/icondesktop@6x.png);
+    background-repeat: no-repeat;
+    background-position: -48px 0px;
+    -webkit-transition: width 3s; /* Safari */
+    -webkit-transition-delay: 2s; /* Safari */
+    transition: width 3s;
+    transition-delay: 2s;
+}
+
+.quick-access-item {
+    text-align: center;
+}
+.quick-access-item h5 {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #c9cacc;
+}
+.container-box {
+    padding: 20px;
+    border: 1px solid #f7f5f5;
+    /*box-shadow: 1px 1px 1px 1px #f1f1f1;*/
+    width: 100%;
+    clear: both;
+    padding-bottom: 100px;
+}
+.container-box > .col-fix-5 {
+    padding: 0px;
+    margin: 0px;
+    width: 20%;
+    float: left;
+}
+.container-box-travel {
+    position: relative;
+    height: 130px;
+}
+.container-box-travel span.title-box{
+    position: absolute;
+    background: white;
+    top: -15px;
+    left: 48px;
+    padding: 0px 20px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    color: red;
+}
+.col-right-user {
+    margin-left: 0px;
+    padding: 10px 20px 0px 10px;
+    border: 1px solid #f7f5f5;
+    /*box-shadow: 1px 1px 1px 1px #f1f1f1;*/
+    height: 121px;
+}
+
+.col-right-user h3{
+    font-size: 16px;
+    font-weight: 500;
+    color: red;
+    padding: 0px;
+    margin: 5px 0px 5px 0px;
+}
+.col-right-user p{
+    font-size: 14px;
+    color: #b5b5b5;
+}
+.col-right-user p a{
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+/*.container-box-user .col-4 {
+    padding: 0px;
+    margin: 0px;
+}*/
+.quick-access-item-user {
+    text-align: center;
+    border: 1px solid red;
+    padding-top: 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    opacity: 0.5;
+}
+.quick-access-item-user h5 {
+    font-size: 14px;
+    font-weight: 100;
+    padding: 5px 5px;
+    margin: 0px 0px;
+}
+.quick-access-item-user i.icon {
+    width: 50px;
+    height:50px;
+    display: inline-block;
+}
+.quick-access-item-user i.icon-review {
+    width: 48px;
+    height: 48px;
+    background: url(https://gody.vn/public/v3/images/icon/icondesktop@4x.png);
+    background-position: -6px -69px;
+    display: inline-block;
+}
+.quick-access-item-user i.icon-blog {
+    width: 48px;
+    height: 48px;
+    background: url(https://gody.vn/public/v3/images/icon/icondesktop@4x.png);
+    background-position: -56px -69px;
+    display: inline-block;
+}
+.quick-access-item-user i.icon-guide {
+    width: 48px;
+    height: 48px;
+    background: url(https://gody.vn/public/v3/images/icon/icondesktop@4x.png);
+    display: inline-block;
+    background-position: -105px -68px;
+}
+.col-right-user .col-6 {
+    width: 50%;
+    float: left;
+}
+.col-right-user .col-6  .col-4 {
+    padding: 0px;
+    margin: 0px;
+    width: 33%;
+    float: left;
+}
+.container-home-box-travel {
+    margin-top: 30px;
+    padding-top: 10px;
+}
+#container-box-col-right-travel {
+    padding-left: 0px;
+}
+#container-box-col-right-travel p {
+    word-break: break-word;
+    padding-right: 15px;
+    text-align: inherit;
+}
+#container-box-col-right-travel p a {
+
+}
+
+.dest-details .sidebar-list ul li {
+    margin-top: 0px !important;
+    margin-bottom: 5px !important;
+}
+.container-box .col-fix-5 {
+    padding: 0px;
+    margin: 0px;
+    width: 20%;
+    float: left;
+}
+/*home travel box*/
+
+.videoRightSide .videorelation{padding-top: 10px !important; list-style: disc !important; padding-left: 15px !important; font-size: 13px;}
+.videoRightSide ul.videorelation>li{margin-bottom: 11px !important;}
+.videoRightSide ul.videorelation>li a:hover{color: #337ab7;}
