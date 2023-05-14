@@ -117,7 +117,7 @@ Route::group(['middleware' => 'auth', 'prefix' => 'cms'], function () {
         Route::post('store', ['uses' => 'Admin\QuestionController@store']);
         Route::get('show/{id?}', ['uses' => 'Admin\QuestionController@show']);
         Route::get('show/{question_id?}/answer/{action?}/{answer_id?}', ['uses' => 'Admin\QuestionController@show']);
-        Route::get('edit/{id?}', ['uses' => 'QuestionController@edit']);
+        Route::get('edit/{id?}', ['uses' => 'Admin\QuestionController@edit']);
         Route::get('edit/{question_id?}/answer/{action?}/{answer_id?}', ['uses' => 'Admin\QuestionController@edit']);
         Route::post('update/{id?}', ['uses' => 'Admin\QuestionController@update']);
         Route::get('delete/{id?}', ['uses' => 'Admin\QuestionController@destroy']);

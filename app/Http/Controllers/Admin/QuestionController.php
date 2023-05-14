@@ -21,7 +21,6 @@ use App\Core\Repositories\Redis\AnswerRedis;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use App\Core\Utilities\GenerateUtility;
-use Ixudra\Curl\Facades\Curl;
 use App\Http\Controllers\PostsController;
 
 class QuestionController extends Controller
@@ -44,7 +43,7 @@ class QuestionController extends Controller
     public function index()
     {
         $page__title = 'Danh sách câu hỏi';
-        $page__route = 'frequently-questions';
+        $page__route = 'cms/frequently-questions';
         $questions = Question::orderBy('id', 'DESC')->paginate($this->limit);
         $categories = Category::where('has_questions', 1)->get();
 
@@ -70,7 +69,7 @@ class QuestionController extends Controller
     {
         $page__title = 'Thêm mới câu hỏi';
         $page__list__title = 'Quay về danh sách câu hỏi';
-        $page__route = 'frequently-questions';
+        $page__route = 'cms/frequently-questions';
         $categories = Category::where([['has_questions', 1], ['is_actived', 1]])->get();
         return view('admin.questions.create', compact('page__title', 'page__list__title', 'page__route', 'categories'));
     }
@@ -148,45 +147,13 @@ class QuestionController extends Controller
         $action__Q = 'show';
         $page__title = 'Xem câu hỏi';
         $page__list__title = 'Quay về danh sách câu hỏi';
-        $page__route = 'frequently-questions';
+        $page__route = 'cms/frequently-questions';
         $question = Question::find($question_id);
         $answer = Answer::find($answer_id);
         $answers = Answer::where('question_id', $question_id)->orderBy('updated_at', 'DESC')->get();
         $categoryParent = Question::find($question->category_id);
         $categories = Category::where('has_questions', 1)->get();
-
-        $diseases = DB::table('diseases')
-            ->join('category_has_diseases', 'diseases.id', '=', 'category_has_diseases.disease_id')
-            ->join('categories', 'categories.id', '=', 'category_has_diseases.category_id')
-            ->select('diseases.*')
-            ->where('categories.id', '=', $question->category_id)
-            ->get();
-
-        $cate_diseases = DB::table('diseases')
-            ->join('question_has_diseases', 'diseases.id', '=', 'question_has_diseases.disease_id')
-            ->where('question_has_diseases.question_id', '=', $question_id)
-            ->pluck('question_has_diseases.disease_id')
-            ->all();
-
-        $tagQuestion = DB::table('tags')
-            ->join('question_has_tags', 'tags.id', '=', 'question_has_tags.tag_id')
-            ->where('question_has_tags.question_id', '=', $question_id)
-            ->pluck('tags.name')
-            ->all();
-
-        $urlProduct = config()->get('constants.API_FC_PRODUCT') . config()->get('constants.PRODUCT_GET_META_DATA');
-        $response = Curl::to($urlProduct)->get();
-        $response = json_decode($response,  true);
-        $products = $response['data']['Product'];
-        $questionProducts = array();
-        $questionHasProducts = GenerateUtility::objectToArray(DB::table('questions_has_products')
-            ->select('product_id')
-            ->where('question_id', $question_id)
-            ->get());
-        foreach ($questionHasProducts as $qp) {
-            array_push($questionProducts, $qp['product_id']);
-        }
-        return view('admin.questions.form', compact('action__Q', 'action__A', 'page__title', 'page__list__title', 'page__route', 'question', 'answer', 'answers', 'categoryParent', 'categories', 'diseases', 'cate_diseases', 'tagQuestion', 'products', 'questionProducts'));
+        return view('admin.questions.form', compact('action__Q', 'action__A', 'page__title', 'page__list__title', 'page__route', 'question', 'answer', 'answers', 'categoryParent', 'categories'));
     }
 
     /**
@@ -200,7 +167,7 @@ class QuestionController extends Controller
         $action__Q = 'edit';
         $page__title = 'Sửa câu hỏi';
         $page__list__title = 'Quay về danh sách câu hỏi';
-        $page__route = 'frequently-questions';
+        $page__route = 'cms/frequently-questions';
 
         $question = Question::find($question_id);
 
@@ -416,7 +383,7 @@ class QuestionController extends Controller
      */
     public function search_page(Request $request){
         $page__title = 'Danh sách câu hỏi';
-        $page__route = 'frequently-questions';
+        $page__route = 'cms/frequently-questions';
 
         $que = trim($request->get('que'));
         $cat = trim($request->get('cat'));

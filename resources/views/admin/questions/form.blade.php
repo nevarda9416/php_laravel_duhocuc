@@ -23,10 +23,10 @@ if (empty($answer['answer'])) {
     $answer->status = '';
     $answer->published_at = '';
 }
-if ($page__route == 'frequently-questions')
-    $answer__url = 'frequently-answers';
+if ($page__route == 'cms/frequently-questions')
+    $answer__url = 'cms/frequently-answers';
 ?>
-@extends('layouts.default')
+@extends('layouts.admin.default')
 @section('content')
     <div id="faqs_form">
         <div class="page-title">
@@ -52,7 +52,7 @@ if ($page__route == 'frequently-questions')
                     <div class="x_content">
                         <br/>
                         <form class="form-horizontal form-label-left input_mask" action='{{ url("$page__route/update/$question->id") }}' method="post" enctype="multipart/form-data">
-                            @csrf
+                            {{ csrf_field() }}
                             <div class="form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Nội dung câu hỏi <span
                                             class="required">*</span></label>
@@ -149,7 +149,7 @@ if ($page__route == 'frequently-questions')
                     <div class="x_content">
                         <br/>
                         <form class="form-horizontal form-label-left input_mask" action="{{ $action__A == 'add' ? url($answer__url.'/store') : url($answer__url.'/update/' . $answer->id) }}" method="post" enctype="multipart/form-data">
-                            @csrf
+                            {{ csrf_field() }}
                             <input type="hidden" name="question_id" value="{{ $question->id }}">
                             <div class="form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Nội dung câu trả lời <span
@@ -163,7 +163,7 @@ if ($page__route == 'frequently-questions')
                                             class="required">*</span></label>
                                 <div class="col-md-3 col-sm-3 col-xs-12">
                                     <input type="text" class="form-control" name="author_name" required="required" {{ $attribute__A }} value="{{ $answer->author_name }}">
-                                    <input type="hidden" name="user_id" value="{{ isset($answer->user_id) ? $answer->user_id : get_user_code() }}">
+                                    <input type="hidden" name="user_id" value="{{ isset($answer->user_id) ? $answer->user_id : auth()->user()->id }}">
                                 </div>
                             </div>
                             <div class="form-group">

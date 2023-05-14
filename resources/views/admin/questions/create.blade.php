@@ -1,9 +1,9 @@
-@extends('layouts.default')
+@extends('layouts.admin.default')
 @section('content')
     <div id="faqs_create">
         <div class="page-title">
             <div class="title_left">
-                <h3><a href='{{ url("/$page__route") }}' title="{{ $page__list__title }}">&larr; {{ $page__list__title }}</a></h3>
+                <h3><a href='{{ url("$page__route") }}' title="{{ $page__list__title }}">&larr; {{ $page__list__title }}</a></h3>
             </div>
         </div>
         <div class="clearfix"></div>
@@ -23,8 +23,8 @@
                     </div>
                     <div class="x_content">
                         <br/>
-                        <form class="form-horizontal form-label-left input_mask" action="{{ url('frequently-questions/store') }}" method="post" enctype="multipart/form-data">
-                            @csrf
+                        <form class="form-horizontal form-label-left input_mask" action="{{ url('cms/frequently-questions/store') }}" method="post" enctype="multipart/form-data">
+                            {{ csrf_field() }}
                             <div class="form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Nội dung câu hỏi <span
                                             class="required">*</span></label>
@@ -49,7 +49,7 @@
                                             class="required">*</span></label>
                                 <div class="col-md-3 col-sm-3 col-xs-12">
                                     <input type="text" class="form-control" name="author_name" required="required">
-                                    <input type="hidden" name="user_id" value="{{ get_user_code() }}">
+                                    <input type="hidden" name="user_id" value="{{ auth()->user()->id }}">
                                 </div>
                             </div>
                             <div class="form-group">

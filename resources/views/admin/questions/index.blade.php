@@ -4,7 +4,7 @@ $queryString = app('request')->getQueryString();
 if ($queryString != '')
     $queryString = '?' . $queryString;
 ?>
-@extends('layouts.default')
+@extends('layouts.admin.default')
 @section('content')
     <div id="faqs_search_and_list">
         <div class="page-title">
@@ -29,7 +29,7 @@ if ($queryString != '')
                             <div class="clearfix"></div>
                         </div>
                         <div class="x_content" style="display: none;">
-                            <form class="form-horizontal form-label-left input_mask" action="{{ url('frequently-questions/store') }}" method="post" enctype="multipart/form-data">
+                            <form class="form-horizontal form-label-left input_mask" action="{{ url('cms/frequently-questions/store') }}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 <div class="form-group">
                                     <label class="control-label col-md-3 col-sm-3 col-xs-12">Nội dung câu hỏi</label>
@@ -86,7 +86,7 @@ if ($queryString != '')
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="x_panel">
                         <div class="x_title">
-                            <a href="{{ url('frequently-questions/create') }}" title="Tạo mới câu hỏi" class="btn btn-primary"><i class="fa fa-pencil-square-o"></i> Tạo mới câu hỏi</a>
+                            <a href="{{ url('cms/frequently-questions/create') }}" title="Tạo mới câu hỏi" class="btn btn-primary"><i class="fa fa-pencil-square-o"></i> Tạo mới câu hỏi</a>
                             <ul class="nav navbar-right panel_toolbox">
                                 <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                 </li>
@@ -126,7 +126,7 @@ if ($queryString != '')
                                         </td>
                                         <td>
                                             <a href='{{  url("$page__route/edit/$question->id$queryString") }}' id="a_question_name{{$i}}" class="btn btn-xs">
-                                                {{ shorten_string($question->question, 20) }}
+                                                {{ $question->question }}
                                             </a>
                                         </td>
                                         <td>
