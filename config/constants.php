@@ -7,7 +7,7 @@ use App\Core\Enums\ValidateEnum;
 
 return [
     'SITE_NAME' => 'Cộng đồng chia sẻ kinh nghiệm và hỏi đáp du lịch',
-    'FRONTEND_URL' => env('FRONTEND_URL', 'http://bookingbamien.com'),
+    'FRONTEND_URL' => env('FRONTEND_URL', 'https://duhocskypacific.top'),
     'FRONTEND_API' => 'https://103.216.112.45:8085',
     'STATIC_IMAGES' => env('STATIC_IMAGES', env('FOLDER_PUBLIC', '') . 'uploads'),
     'PATH_UPLOAD' => '/var/www/html/uploads',
