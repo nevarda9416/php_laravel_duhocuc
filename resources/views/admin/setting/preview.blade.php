@@ -47,7 +47,7 @@
             <p>Email: <a href="mailto:{{ $contact['email_contact']??'' }}">{{ $contact['email_contact']??'' }}</a></p>
         </div>
         <div class="dx_footer_logo_mobile">
-            <a href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=32695"><img style="width:200px;" src="{{ asset('assets/images/thong-bao-bo-cong-thuong.png') }}"></a>
+            <?php echo html_entity_decode($contact['slogan_register'] ?? '') ?>
         </div>
     </div> <!--Footer Mobile End -->
 </div>

@@ -2,12 +2,16 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Core\Business\UploadFileBusiness;
 use App\Core\Controllers\Controller;
 use App\Core\Models\Media;
+use File;
 use Illuminate\Http\Request;
 
 class MediaController extends Controller
 {
+    public $limit;
+
     /**
      * MediaController constructor.
      */
@@ -23,7 +27,8 @@ class MediaController extends Controller
      */
     public function index(Request $request)
     {
-        return view('admin.media.index')->with('i', ($request->get('page', 1) - 1) * $this->limit);
+        $medias = Media::paginate($this->limit);
+        return view('admin.media.index', compact('medias'))->with('i', ($request->get('page', 1) - 1) * $this->limit);
     }
 
     /**
@@ -38,7 +43,7 @@ class MediaController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -62,8 +67,20 @@ class MediaController extends Controller
             $media = new Media([
                 'title' => $request->get('title'),
                 'file' => ($file) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $fileName : null,
-
-                'user_id' => $request->get('user_id') // Chưa có field này trong table
+                'url' => $request->get('url'),
+                'quality' => $request->get('quality'),
+                'width' => $request->get('width'),
+                'height' => $request->get('height'),
+                'type' => $request->get('type'),
+                'alt' => $request->get('alt'),
+                'caption' => $request->get('caption'),
+                'description' => $request->get('description'),
+                'copyright' => $request->get('copyright'),
+                'uploaded_by' => $request->get('uploaded_by'),
+                'meta_title' => $request->get('meta_title'),
+                'meta_keyword' => $request->get('meta_keyword'),
+                'meta_description' => $request->get('meta_description'),
+                'user_id' => $request->get('user_id')
             ]);
             // check exists of name
             if (Media::where('file', '=', '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $fileName)->exists()) {
@@ -84,7 +101,7 @@ class MediaController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Media  $media
+     * @param  \App\Media $media
      * @return \Illuminate\Http\Response
      */
     public function show(Media $media)
@@ -95,7 +112,7 @@ class MediaController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Media  $media
+     * @param  \App\Media $media
      * @return \Illuminate\Http\Response
      */
     public function edit(Media $media)
@@ -106,8 +123,8 @@ class MediaController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Media  $media
+     * @param  \Illuminate\Http\Request $request
+     * @param  \App\Media $media
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Media $media)
@@ -116,13 +133,22 @@ class MediaController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Media  $media
-     * @return \Illuminate\Http\Response
+     * @param $id
+     * @return \Illuminate\Http\RedirectResponse
      */
-    public function destroy(Media $media)
+    public function destroy($id)
     {
-        //
+        try {
+            $media = Media::find($id);
+            $fileMedia = base_path("cms/public/uploads$media->file");
+            if (File::exists($fileMedia)) {
+                $media = Media::find($id);
+                $media->delete();
+                File::delete($fileMedia);
+            }
+            return redirect('cms/media')->with('message', 'Xóa file ' . $media->title . ' thành công');
+        } catch (\Exception $exception) {
+            return redirect('cms/media')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
+        }
     }
 }

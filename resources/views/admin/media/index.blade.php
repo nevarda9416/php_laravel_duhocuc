@@ -24,6 +24,7 @@
                     <br/>
                     <form class="form-horizontal form-label-left input_mask" action="{{ url('cms/media/store') }}" method="post" enctype="multipart/form-data">
                         {{ csrf_field() }}
+                        <input type="hidden" name="user_id" value="{{ auth()->user()->id }}">
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Tiêu đề ảnh / video <span
                                     class="required">*</span></label>
@@ -139,5 +140,6 @@
                 </div>
             </div>
         </div>
+        @include('admin.media.list')
     </div>
 @endsection

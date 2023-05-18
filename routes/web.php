@@ -195,6 +195,36 @@ Route::group(['middleware' => 'auth', 'prefix' => 'cms'], function () {
     Route::group(['prefix' => 'customers'], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'Admin\CustomerController@index']);
     });
+    // Quản trị menu
+    Route::group(['prefix' => 'menu', 'as' => 'menu'], function () {
+        Route::get('/', ['as' => 'index', 'uses' => 'Admin\MenuController@index']);
+        Route::post('/store', ['uses' => 'Admin\MenuController@store']);
+        Route::get('/edit/{id?}', ['uses' => 'Admin\MenuController@edit']);
+        Route::post('/update/{id?}', ['uses' => 'Admin\MenuController@update']);
+        Route::get('/delete/{id?}', ['uses' => 'Admin\MenuController@destroy']);
+        Route::post('/order', ['uses' => 'Admin\MenuController@order']);
+    });
+    // QUẢN TRỊ BANNER
+    Route::group(['prefix' => 'banner',], function () {
+        Route::get('/', ['as' => 'index', 'uses' => 'Admin\BannerController@index']);
+        Route::post('/store', ['uses' => 'Admin\BannerController@store']);
+        Route::get('/show/{id?}', ['uses' => 'Admin\BannerController@show']);
+        Route::get('/edit/{id?}', ['uses' => 'Admin\BannerController@edit']);
+        Route::post('/edit/{id?}', ['uses' => 'Admin\BannerController@update']);
+        Route::get('/delete/{id?}', ['uses' => 'Admin\BannerController@destroy']);
+        Route::get('/search', ['uses' => 'Admin\BannerController@search_form']);
+        Route::post('/search', ['uses' => 'Admin\BannerController@search_submit']);
+    });
+    // Thư viện ảnh
+    Route::group(['prefix' => 'media', 'as' => 'media'], function () {
+        Route::get('/', ['as' => 'index', 'uses' => 'Admin\MediaController@index']);
+        Route::get('/create', ['as' => 'create', 'uses' => 'Admin\MediaController@create']);
+        Route::post('/store', ['as' => 'store', 'uses' => 'Admin\MediaController@store']);
+        Route::get('/show/{id}', ['as' => 'show', 'uses' => 'Admin\MediaController@show']);
+        Route::get('/edit/{id}', ['as' => 'edit', 'uses' => 'Admin\MediaController@edit']);
+        Route::post('/update/{id}', ['as' => 'update', 'uses' => 'Admin\MediaController@update']);
+        Route::get('/delete/{id}', ['as' => 'delete', 'uses' => 'Admin\MediaController@destroy']);
+    });
 });
 
 // Frontend
