@@ -1,1077 +1,600 @@
-<script type="text/javascript" src="https://gody.vn/public/v3/plugins/bootstrap/bootstrap.min.js"></script>
-<script src="https://gody.vn/public/v3/js/jquery.bxslider.min.js"></script>
-<script type="text/javascript" src="https://gody.vn/public/v3/plugins/slick/slick.min.js"></script>
-<script type="text/javascript" src="https://gody.vn/public/v6/js/fancybox-3.1/jquery.fancybox.min.js"></script>
-<script type="text/javascript" src="https://media2.gody.vn/public/v3/js/custom.js?v=1235" defer></script>
-<script src="https://gody.vn/public/v3/perfect-scrollbar/js/perfect-scrollbar.js"></script>
-<!-- scroll menu service -->
-<script type="text/javascript">
-    $(document).ready(function () {
-        //GODY.General.isntallFancyGallery();
-        $('#slick-quick-access').slick({
-            slidesToShow: 4,
-            prevArrow: '#slick-prev',
-            nextArrow: '#slick-next',
-        });
-    });
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var hasJetBlogPlaylist = 0;
+    /* ]]> */
 </script>
-<script src="https://gody.vn/public/v3/js/sweetalert.min.js"></script>
-<script src="https://gody.vn/public/home/js/lodash.min.js"></script>
-<script src="https://gody.vn/public/v3/js/sweetalert.min.js"></script>
-<script src="https://gody.vn/public/v3/cropper/cropper.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="https://gody.vn/public/v3/js/jquery.mousewheel.js"></script>
-<script src="https://gody.vn/public/v3/js/simple-sticky-sidebar.js"></script>
 
-<script async="" defer="" src="//platform.instagram.com/en_US/embeds.js"></script>
-<script src="https://gody.vn/public/v5/js/iframe_resizer/iframeResizer1.min.js"></script>
+<script type="rocketlazyloadscript">
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = true;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
 
-<script src="https://gody.vn/public/home/js/jquery.validate.min.js"></script>
-<script>
-    function getCookie(name) {
-        const value = `; ${document.cookie}`;
-        console.log(value);
-        const parts = value.split(`; ${name}=`);
-        console.log(parts);
-        if (parts.length === 2) {
-            console.log(parts.pop());
-            console.log(parts.pop().split(';'));
-            console.log(parts.pop().split(';').shift());
-            return parts.pop().split(';').shift();
-        }
-    }
-    $(function () {
-        getCookie('travel_user_info');
-        $(document.body).on('click', '.facebook_login, .google_login', function (e) {
-            $('.modalBlogCreateLoading').removeClass('hide');
-        });
-        // Validate Đặt lại mật khẩu
-        $('#reset-form').validate({
-            rules: {
-                old_password: {
-                    required: true,
-                    minlength: 6
-                },
-                new_password: {
-                    required: true,
-                    minlength: 6
-                },
-                renew_password: {
-                    required: true,
-                    minlength: 6,
-                    equalTo: '#new_password'
-                },
-            },
-            messages: {
-                old_password: {
-                    required: 'Vui lòng nhập mật khẩu!',
-                    minlength: 'Mật khẩu tối thiểu là 6 ký tự!',
-                },
-                new_password: {
-                    required: 'Vui lòng nhập mật khẩu!',
-                    minlength: 'Mật khẩu tối thiểu là 6 ký tự!',
-                },
-                renew_password: {
-                    required: 'Vui lòng nhập lại mật khẩu!',
-                    minlength: 'Mật khẩu tối thiểu là 6 ký tự!',
-                    equalTo: 'Mật khẩu mới không trùng khớp!'
-                }
-            },
-            submitHandler: function (form) {
-                form.submit();
-            }
-        });
-        // Validate Chia sẻ, giới thiệu địa điểm mới
-        $('#travelCollaboratorForm').validate({
-            rules: {
-                title: 'required',
-                excerpt: 'required',
-                continent: 'required',
-                country: 'required',
-                province: 'required',
-            },
-            messages: {
-                title: 'Vui lòng nhập tên địa điểm!',
-                excerpt: 'Vui lòng nhập miêu tả ngắn!',
-                continent: 'Vui lòng chọn châu lục!',
-                country: 'Vui lòng chọn quốc gia!',
-                province: 'Vui lòng chọn tỉnh thành!',
-            },
-            submitHandler: function (form) {
-                form.submit();
-            }
-        });
-        // Validate Chia sẻ hình ảnh
-        $('#travelPhotoForm').validate({
-            rules: {
-                title: 'required',
-                excerpt: 'required',
-                album: 'required',
-            },
-            messages: {
-                title: 'Vui lòng nhập tiêu đề album!',
-                excerpt: 'Vui lòng nhập nội dung chi tiết giới thiệu về album!',
-                album: 'Vui lòng thêm album ảnh!',
-            },
-            submitHandler: function (form) {
-                form.submit();
-            }
-        });
-        // Validate Chia sẻ trải nghiệm & review
-        $('#pc-dang-blog-thanh-cong-nut-viet-ngay').click(function () {
-          if (typeof getCookie('travel_user_info') === 'undefined') {
-              alert('Vui lòng đăng nhập (hoặc đăng ký nếu chưa có tài khoản) để chia sẻ bài viết');
-              return false;
-          }
-        });
-        $('#travelPostForm').validate({
-            rules: {
-                title: 'required',
-                excerpt: 'required',
-                start_date: 'required',
-                duration: 'required',
-                cost: 'required',
-            },
-            messages: {
-                title: 'Vui lòng nhập tiêu đề bài viết!',
-                excerpt: 'Vui lòng nhập giới thiệu ngắn!',
-                start_date: 'Vui lòng nhập ngày bắt đầu!',
-                duration: 'Vui lòng nhập tổng số ngày!',
-                cost: 'Vui lòng nhập chi phí chuyến đi!',
-            },
-            submitHandler: function (form) {
-                form.submit();
-            }
-        });
-        // Validate register form
-        $('#sign-up-submit').attr('type', 'submit');
-        $('#signup-form').validate({
-            rules: {
-                fullname: "required",
-                email: {
-                    required: true,
-                    email: true
-                },
-                password: {
-                    required: true,
-                    minlength: 6
-                },
-                re_password: {
-                    required: true,
-                    minlength: 6,
-                    equalTo: '#password'
-                }
-            },
-            messages: {
-                fullname: 'Vui lòng nhập đầy đủ họ tên!',
-                email: {
-                    required: 'Vui lòng nhập email!',
-                    email: 'Vui lòng nhập đúng định dạng email!',
-                },
-                password: {
-                    required: 'Vui lòng nhập mật khẩu!',
-                    minlength: 'Mật khẩu tối thiểu là 6 ký tự!',
-                },
-                re_password: {
-                    required: 'Vui lòng nhập lại mật khẩu!',
-                    minlength: 'Mật khẩu tối thiểu là 6 ký tự!',
-                    equalTo: 'Mật khẩu nhập lại không trùng khớp!'
-                }
-            },
-            submitHandler: function (form) {
-                form.submit();
-            }
-        });
-        $('#login-submit').attr('type', 'submit');
-        /* Validate login form */
-        $("#loginForm").validate({
-            rules: {
-                login_email: {
-                    required: true,
-                    email: true,
-                },
-                login_password: {
-                    required: true,
-                    minlength: 6
-                }
-            },
-            messages: {
-                login_email: {
-                    required: 'Vui lòng nhập email!',
-                    email: 'Địa chỉ email không hợp lệ!'
-                },
-                login_password: {
-                    required: 'Vui lòng nhập mật khẩu!',
-                    minlength: 'Mật khẩu tối thiểu là 6 ký tự!'
-                }
-            },
-            submitHandler: function (form) {
-                form.submit();
-            }
-        });
+    </script>
+<div id="arcontactus"></div>
 
-        $('#login-form').on('shown.bs.modal', function () {
-            $('#login_email').focus();
-        });
+<script src="https://newocean.edu.vn/wp-content/plugins/ar-contactus/res/js/maskedinput.min.js?version=2.2.7" defer></script>
+<script type="text/javascript" id="arcu-main-js">
+    var $arcuWidget;
+    var zaloWidgetInterval;
+    var tawkToInterval;
+    var tawkToHideInterval;
+    var skypeWidgetInterval;
+    var lcpWidgetInterval;
+    var closePopupTimeout;
+    var lzWidgetInterval;
+    var paldeskInterval;
+    var arcuOptions;
+    var hideCustomerChatInterval;
+    var _arCuTimeOut = null;
+    var arCuPromptClosed = false;
+    var _arCuWelcomeTimeOut = null;
+    var arCuMenuOpenedOnce = false;
+    var arcuAppleItem = null;
 
-        $('.go-to-home').click(function () {
-            window.open('https://gody.vn', '_self');
-        });
+    var arcItems = [];
+    window.addEventListener('load', function () {
+        $arcuWidget = document.createElement('div');
+        var body = document.getElementsByTagName('body')[0];
+        $arcuWidget.id = 'arcontactus';
 
-        $('.main-icon-search').click(function () {
-            $('#input-search').focus();
-        });
-
-    });
-
-    // Read more
-    $(".more").click(function () {
-        $(".post").addClass("moreContent");
-        $(".post").append("");
-        $(this).hide();
-    });
-
-    $(document.body).on('click', '.facebook_login, .google_login', function (e) {
-        setTimeout(function () {
-
-            window.open("https://gody.vn/ban-do-du-lich/viet-nam", '_self');
-
-            //location.reload();
-
-        }, 5000);
-    });
-</script>
-<script>
-    $(function () {
-        $(document.body).on('click', '#modal-banner-ads', function (e) {
-            $.ajax({
-                url: "https://gody.vn/feeds/banner-hoidap-popup/close",
-                type: 'get',
-                data: {},
-                success: function (response) {
-                }
-            });
-        });
-
-        // Pop up
-        $(document.body).on('click', '#modal-banner-ads a', function (e) {
-            $('#modal-banner-ads').modal('hide');
-            $.ajax({
-                url: "https://gody.vn/pop-up/change-status",
-                type: 'get',
-                data: {},
-                success: function (response) {
-                    //window.open("https://gody.vn/blog/form/dang-ky", "_blank");
-                }
-            });
-        });
-
-        var modalLogin = window.location.href;
-
-        if (modalLogin.indexOf('#modal-login') > -1) {
-            $('#modal-login').modal('show');
-        } else if (modalLogin.indexOf('#modal-notification-invite-ig') > -1) {
-            $('#modal-notification-invite-ig').modal('show');
-        } else {
-            //popupCheck();
+        if (document.getElementById('arcontactus')) {
+            document.getElementById('arcontactus').parentElement.removeChild(document.getElementById('arcontactus'));
         }
 
-        function popupCheck() {
-            /* popup check
-            setTimeout(function() {
-                $.ajax({
-                    url: "https://gody.vn/pop-up/check",
-                    type: "GET",
-                    data: {},
-                    success: function(response) {
-                        var location_href = window.location.href;
+        body.appendChild($arcuWidget);
 
-                        if(location_href.indexOf('gody.vn/map/get_all_country') == -1 && location_href.indexOf('gody.vn/ban-do-du-lich/viet-nam') == -1 && location_href.indexOf('gody.vn/du-lich-nuoc-ngoai') == -1 && response.status == false) {
-                            // $('#modal-banner-ads .pop-up').addClass('hide');
-                            // if(response.number != undefined) {
-                            //     $('#modal-banner-ads .pop-up-'+response.number).removeClass('hide');
-                            // } else {
-                            //     $('#modal-banner-ads .pop-up-1').removeClass('hide');
-                            // }
-                            //$('#modal-banner-ads').modal('show');
-                        }
-                    },
-                    error: function(response) {
-                        // $('#modal-banner-ads').modal('show');
-                    }
-                });
-            }, 5000);
-            */
-        }
+        arCuClosedCookie = arCuGetCookie('arcu-closed');
+        $arcuWidget.addEventListener('arcontactus.init', function () {
+            $arcuWidget.classList.add('arcuAnimated');
+            $arcuWidget.classList.add('flipInY');
 
-        $(document.body).on('click', '#modal-banner-ads', function (e) {
-            $.ajax({
-                url: "https://gody.vn/pop-up/change-status",
-                type: 'get',
-                data: {},
-                success: function (response) {
+            setTimeout(function () {
+                $arcuWidget.classList.remove('flipInY');
+            }, 1000);
 
-                }, error: function (response) {
 
+            if (document.querySelector('#arcu-form-callback form')) {
+                document.querySelector('#arcu-form-callback form').append(contactUs.utils.DOMElementFromHTML(arCUVars._wpnonce));
+            }
+
+
+            if (document.querySelector('#arcu-form-email form')) {
+                document.querySelector('#arcu-form-email form').append(contactUs.utils.DOMElementFromHTML(arCUVars._wpnonce));
+            }
+
+
+            $arcuWidget.addEventListener('arcontactus.successSendFormData', function (event) {
+            });
+            $arcuWidget.addEventListener('arcontactus.successSendFormData', function (event) {
+            });
+            $arcuWidget.addEventListener('arcontactus.errorSendFormData', function (event) {
+                if (event.detail.data && event.detail.data.message) {
+                    alert(event.detail.data.message);
                 }
             });
+            $arcuWidget.addEventListener('arcontactus.hideFrom', function () {
+                clearTimeout(closePopupTimeout);
+            });
         });
+        $arcuWidget.addEventListener('arcontactus.closeMenu', function () {
+            arCuCreateCookie('arcumenu-closed', 1, 1);
+        });
+        var arcItem = {};
+        arcItem.id = 'msg-item-6';
+        arcItem.class = 'msg-item-envelope';
+        arcItem.title = "Liên hệ qua Email";
+        arcItem.subTitle = "info@newocean.edu.vn";
+        arcItem.icon = '<svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 64H48C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM48 96h416c8.8 0 16 7.2 16 16v41.4c-21.9 18.5-53.2 44-150.6 121.3-16.9 13.4-50.2 45.7-73.4 45.3-23.2.4-56.6-31.9-73.4-45.3C85.2 197.4 53.9 171.9 32 153.4V112c0-8.8 7.2-16 16-16zm416 320H48c-8.8 0-16-7.2-16-16V195c22.8 18.7 58.8 47.6 130.7 104.7 20.5 16.4 56.7 52.5 93.3 52.3 36.4.3 72.3-35.5 93.3-52.3 71.9-57.1 107.9-86 130.7-104.7v205c0 8.8-7.2 16-16 16z"></path></svg>';
+        arcItem.includeIconToSlider = true;
 
-        // End Pop up
+        arcItem.href = 'mailto:info@newocean.edu.vn';
 
+        arcItem.color = '#FF643A';
+        arcItems.push(arcItem);
+        var arcItem = {};
+        arcItem.id = 'msg-item-1';
+        arcItem.class = 'msg-item-facebook-messenger';
+        arcItem.title = "Nhắn tin Messenger";
+        arcItem.subTitle = "Fanpage Ước mơ du học";
+        arcItem.icon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 32C15.9 32-77.5 278 84.6 400.6V480l75.7-42c142.2 39.8 285.4-59.9 285.4-198.7C445.8 124.8 346.5 32 224 32zm23.4 278.1L190 250.5 79.6 311.6l121.1-128.5 57.4 59.6 110.4-61.1-121.1 128.5z"></path></svg>';
+        arcItem.includeIconToSlider = true;
 
-        $(document.body).on('change', '#modal-user-request .modal-body #modal_user_request_option', function (e) {
+        arcItem.href = 'https://m.me/uocmoduhoc';
+
+        arcItem.color = '#0084FF';
+        arcItems.push(arcItem);
+        var arcItem = {};
+        arcItem.id = 'msg-item-7';
+        arcItem.class = 'msg-item-phone';
+        arcItem.title = "Gọi điện trực tiếp 24/7";
+        arcItem.subTitle = "096.456.2233";
+        arcItem.icon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path></svg>';
+        arcItem.includeIconToSlider = true;
+
+        arcItem.href = 'tel:0964562233';
+
+        arcItem.target = '_self';
+        arcItem.color = '#168900';
+        arcItems.push(arcItem);
+        var arcItem = {};
+        arcItem.id = 'msg-item-12';
+        arcItem.class = 'msg-item-phone';
+        arcItem.title = "Gọi máy bàn (8h00 - 17h00)";
+        arcItem.subTitle = "(024) 3537.8311";
+        arcItem.icon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path></svg>';
+        arcItem.includeIconToSlider = true;
+
+        arcItem.href = 'tel:02435378311';
+
+        arcItem.color = '#106500';
+        arcItems.push(arcItem);
+        var arcItem = {};
+        arcItem.id = 'msg-item-10';
+        arcItem.class = 'msg-item-zalo';
+        arcItem.title = "Liên hệ Zalo";
+        arcItem.subTitle = "096.456.0011 ";
+        arcItem.icon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460.1 436.6"><path fill="currentColor" class="st0" d="M82.6 380.9c-1.8-.8-3.1-1.7-1-3.5 1.3-1 2.7-1.9 4.1-2.8 13.1-8.5 25.4-17.8 33.5-31.5 6.8-11.4 5.7-18.1-2.8-26.5C69 269.2 48.2 212.5 58.6 145.5 64.5 107.7 81.8 75 107 46.6c15.2-17.2 33.3-31.1 53.1-42.7 1.2-.7 2.9-.9 3.1-2.7-.4-1-1.1-.7-1.7-.7-33.7 0-67.4-.7-101 .2C28.3 1.7.5 26.6.6 62.3c.2 104.3 0 208.6 0 313 0 32.4 24.7 59.5 57 60.7 27.3 1.1 54.6.2 82 .1 2 .1 4 .2 6 .2H290c36 0 72 .2 108 0 33.4 0 60.5-27 60.5-60.3v-.6-58.5c0-1.4.5-2.9-.4-4.4-1.8.1-2.5 1.6-3.5 2.6-19.4 19.5-42.3 35.2-67.4 46.3-61.5 27.1-124.1 29-187.6 7.2-5.5-2-11.5-2.2-17.2-.8-8.4 2.1-16.7 4.6-25 7.1-24.4 7.6-49.3 11-74.8 6zm72.5-168.5c1.7-2.2 2.6-3.5 3.6-4.8 13.1-16.6 26.2-33.2 39.3-49.9 3.8-4.8 7.6-9.7 10-15.5 2.8-6.6-.2-12.8-7-15.2-3-.9-6.2-1.3-9.4-1.1-17.8-.1-35.7-.1-53.5 0-2.5 0-5 .3-7.4.9-5.6 1.4-9 7.1-7.6 12.8 1 3.8 4 6.8 7.8 7.7 2.4.6 4.9.9 7.4.8 10.8.1 21.7 0 32.5.1 1.2 0 2.7-.8 3.6 1-.9 1.2-1.8 2.4-2.7 3.5-15.5 19.6-30.9 39.3-46.4 58.9-3.8 4.9-5.8 10.3-3 16.3s8.5 7.1 14.3 7.5c4.6.3 9.3.1 14 .1 16.2 0 32.3.1 48.5-.1 8.6-.1 13.2-5.3 12.3-13.3-.7-6.3-5-9.6-13-9.7-14.1-.1-28.2 0-43.3 0zm116-52.6c-12.5-10.9-26.3-11.6-39.8-3.6-16.4 9.6-22.4 25.3-20.4 43.5 1.9 17 9.3 30.9 27.1 36.6 11.1 3.6 21.4 2.3 30.5-5.1 2.4-1.9 3.1-1.5 4.8.6 3.3 4.2 9 5.8 14 3.9 5-1.5 8.3-6.1 8.3-11.3.1-20 .2-40 0-60-.1-8-7.6-13.1-15.4-11.5-4.3.9-6.7 3.8-9.1 6.9zm69.3 37.1c-.4 25 20.3 43.9 46.3 41.3 23.9-2.4 39.4-20.3 38.6-45.6-.8-25-19.4-42.1-44.9-41.3-23.9.7-40.8 19.9-40 45.6zm-8.8-19.9c0-15.7.1-31.3 0-47 0-8-5.1-13-12.7-12.9-7.4.1-12.3 5.1-12.4 12.8-.1 4.7 0 9.3 0 14v79.5c0 6.2 3.8 11.6 8.8 12.9 6.9 1.9 14-2.2 15.8-9.1.3-1.2.5-2.4.4-3.7.2-15.5.1-31 .1-46.5z"/></svg>';
+        arcItem.includeIconToSlider = true;
+
+        arcItem.href = 'https://zalo.me/0964560011';
+
+        arcItem.color = '#0180C7';
+        arcItems.push(arcItem);
+        var arcItem = {};
+        arcItem.id = 'msg-item-9';
+        arcItem.onClick = function (e) {
             e.preventDefault();
-            var _option = $(this).val();
-            changeUserRequestOption(_option);
-        });
-
-        // Validate Modal User Corner Required
-        // $('#modal-user-request-form').validate({
-        //     rules: {
-        //         modal_user_request_name: {
-        //             required: true,
-        //             minlength:6
-        //         },
-        //         modal_user_request_email: {
-        //             required: true,
-        //             email: true
-        //         }
-        //     },
-        //     messages: {
-        //         modal_user_request_name: {
-        //             required: 'Vui lòng nhập tên địa điểm!',
-        //             minlength: 'Tối thiểu 6 ký tự!'
-        //         },
-        //         modal_user_request_email: {
-        //             required: 'Vui lòng nhập địa chỉ email!',
-        //             email: 'Email: example@domain.com'
-        //         }
-        //     },
-        //     submitHandler: function(form) {
-        //         var title = $('#modal-user-request-form input#modal_user_request_name').val();
-        //         var email = $('#modal-user-request-form input#modal_user_request_email').val();
-        //         var type = $('#modal-user-request .modal-body #modal_user_request_option').val();
-        //         var _token = $('#modal-user-request-form input[name="_token"]').val();
-        //         $('#modal-user-request .modal_user_request_name_msg').css('display', 'none');
-        //         $('#modal-user-request .modal_user_request_email_msg').css('display', 'none');
-        //         $('#modal-user-request .modal_user_request_loading').removeClass('hide');
-        //         $.ajax({
-        //             url: "https://gody.vn/a/goc-yeu-cau/store",
-        //             type: 'POST',
-        //             data: {_token: _token, title: title, email: email, type: type},
-        //             success: function(response) {
-        //                 changeUserRequestOption(0);
-        //                 $(form)[0].reset();
-        //                 $('#modal-user-request-form input#modal_user_request_email').val(email);
-        //                 $('#modal-user-request .modal_user_request_loading').addClass('hide');
-
-        //                 user_request_success('.modal-content.modal-request-body-success', '.modal-content.modal-request-body');
-        //             }, error: function(response) {
-        //                 $('#modal-user-request .modal_user_request_loading').addClass('hide');
-        //                 response = response.responseJSON;
-        //                 if(response.hasOwnProperty('title')) {
-        //                     $('.modal_user_request_name_msg').text(response.title[0]);
-        //                     $('.modal_user_request_name_msg').css('display', 'block');
-        //                 }
-
-        //                 if(response.hasOwnProperty('email')) {
-        //                     $('.modal_user_request_email_msg').text(response.email[0]);
-        //                     $('.modal_user_request_email_msg').css('display', 'block');
-        //                 }
-        //                 if(response.hasOwnProperty('type')) {
-        //                     $('.modal_user_request_type_msg').text(response.type[0]);
-        //                     $('.modal_user_request_type_msg').css('display', 'block');
-        //                 }
-        //             }
-        //         });
-        //         return false;
-        //     }
-        // });
-    });
-
-
-    $(document).ready(function () {
-        // const usrMoneyEl = document.querySelectorAll('.js-user-money');
-        // console.log(usrMoneyEl);
-
-        $('.navbar-primary .search-primary-wrapper input').focus(function () {
-            $('.fixed-box-travel').hide();
-            $('.search-primary-bg').show();
-            var input_val = $(this).val();
-            if (input_val.length > 0) {
-                $('.search-primary-wrapper .search-form .filter-panel').hide();
-            }
-        });
-        $(document.body).on('click', '.search-primary-bg', function () {
-            $('.search-primary-bg').hide();
-            $('.navbar-primary .navbar-collapse ul').first().show();
-            $('.navbar-primary .search-primary-wrapper').removeClass('search-focus');
-            $('.navbar-primary .search-primary-wrapper input').val('');
-            $('.fixed-box-travel').show();
-        });
-        $('.search-primary-wrapper .search-form a[data-toggle="filter"]').click(function () {
-            $('.search-primary-bg').trigger('click');
-        });
-
-        $('.home .navbar-primary .search-primary-wrapper').empty();
-
-        $(document.body).on('focus, click', '.search-panel #input-search', function () {
-            $("html, body").animate({scrollTop: ($(this).offset().top - 57)}, "slow");
-        });
-
-        $(document.body).on('click', '.notification-box .dropdown-menu .notification-menu button', function (e) {
-            $('.notification-box .notification-menu button').removeClass('active');
-            $(this).addClass('active');
-
-            var data_id = $(this).attr('data-id');
-            $('.notification-box .notification-content>div').addClass('hide');
-            $('.notification-box .notification-content>div[data-id="' + data_id + '"]').removeClass('hide');
-
-            e.stopPropagation();
-        });
-
-        $(document.body).on('click', '.notification-box .notification-bell', function (e) {
-            $('.notification-box .notification-bell .notification-bell-count').addClass('hide');
-            console.log('xxx');
-        });
-
-    }); /* End Document ready */
-
-    function user_request_success(_removeClass = '.modal-content.modal-request-body', _addClass = '.modal-content.modal-request-body-success') {
-        $('#modal-user-request ' + _removeClass).removeClass('hide');
-        $('#modal-user-request ' + _addClass).addClass('hide');
-    }
-
-    function changeUserRequestOption(_option = 0) {
-        $('#modal-user-request .modal-body .message').addClass('hide');
-        $('#modal-user-request .modal-body .message[data-option="' + _option + '"]').removeClass('hide');
-    }
-
-    /* ----- Custom Function ----- */
-    function openDestination(e, event, id) {
-        event.preventDefault();
-        var id = '#' + id;
-        $('#modal-destination .filter-category button').removeClass('active');
-        $(e).addClass('active');
-        $('#modal-destination .tabcontent').css('display', 'none');
-        $(id).css('display', 'block');
-    }
-
-    if (typeof handleIEError !== 'function') {
-        function handleIEError(img) {
-            img.src = "https://gody.vn/public/v7/images/v7-avatar-default.jpg";
+            contactUs.closeMenu();
+            contactUs.showForm('callback');
+            return false;
         }
-    }
+        arcItem.class = 'msg-item-phone';
+        arcItem.title = "Yêu cầu gọi lại";
+        arcItem.subTitle = "Vui lòng để lại số điện thoại";
+        arcItem.icon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path></svg>';
+        arcItem.includeIconToSlider = true;
 
-    if (!!document.querySelector('.js-global-nav__primary_link')) {
-        document.querySelector('.js-global-nav__primary_link').addEventListener('click', function (e) {
-            document.querySelector('body').classList.toggle('global-nav-launcher-is-open');
-            e.stopPropagation();
-            e.preventDefault();
-        });
-    }
+        arcItem.href = null;
+        arcItem.color = '#4EB625';
+        arcItems.push(arcItem);
+        arcuOptions = {
+            rootElementId: 'arcontactus',
+            credits: false,
+            visible: true,
+            wordpressPluginVersion: '2.2.7',
+            online: true,
+            buttonIcon: '<svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Canvas" transform="translate(-825 -308)"><g id="Vector"><use xlink:href="#path0_fill0123" transform="translate(825 308)" fill="currentColor"></use></g></g><defs><path fill="currentColor" id="path0_fill0123" d="M 19 4L 17 4L 17 13L 4 13L 4 15C 4 15.55 4.45 16 5 16L 16 16L 20 20L 20 5C 20 4.45 19.55 4 19 4ZM 15 10L 15 1C 15 0.45 14.55 0 14 0L 1 0C 0.45 0 0 0.45 0 1L 0 15L 4 11L 14 11C 14.55 11 15 10.55 15 10Z"></path></defs></svg>',
+            layout: 'default',
+            drag: false,
+            mode: 'regular',
+            buttonIconUrl: 'https://newocean.edu.vn/wp-content/plugins/ar-contactus/res/img/msg.svg',
+            showMenuHeader: true,
+            menuHeaderText: "New Ocean có thể hỗ trợ gì cho bạn?",
+            menuSubheaderText: "",
 
-    if (!!document.querySelectorAll('.js-global-nav__close')?.length) {
-        document.querySelectorAll('.js-global-nav__close').forEach(function (e) {
-            e.addEventListener('click', function () {
-                document.querySelector('body').classList.remove('global-nav-launcher-is-open');
-            });
-        });
-    }
+            menuHeaderLayout: 'icon-left',
+            menuHeaderIcon: 'https://newocean.edu.vn/wp-content/uploads/2023/01/no-chat-1.jpg',
+            menuHeaderTextAlign: 'left',
 
-</script>
-<!-- Donate Script -->
-<script>
-    if (typeof autoRefreshToken !== 'function') {
-        function autoRefreshToken() {
-            var csrfToken = $('[name="csrf_token"]').attr('content');
-
-            setInterval(refreshToken, 1800000); // 30 minutes
-
-            function refreshToken() {
-                $.get('refresh-csrf').done(function (data) {
-                    csrfToken = data; // the new token
-                });
-            }
-
-            setInterval(refreshToken, 1800000); // 30 minutes
-        }
-    }
-
-    // autoRefreshToken();
-
-    if (typeof getCoinPoint !== 'function') {
-        function getCoinPoint() {
-            if ($('.donate-coin-box.status').length) {
-                $('.donate-coin-box.status').each(function (index) {
-                    var $this = $(this);
-                    var type = $(this).attr('data-type');
-                    var id = parseInt($(this).attr('data-unique-id'));
-                    var author = $(this).attr('data-author');
-                    var url = "https://gody.vn/point/a/get-point/post/" + id + "/" + type;
-                    if (author?.length) {
-                        url += '?author=' + author;
-                    }
-
-                    $.ajax({
-                        url: url,
-                        type: "GET",
-                        dataType: "json",
-                        data: {},
-                        success: function (response) {
-                            var total = (response.hasOwnProperty('total')) ? parseInt(response.total) : 0;
-                            var authorCoin = (response.hasOwnProperty('author') && response.author.hasOwnProperty('coin') && response.author.coin > 0) ? response.author.coin : 0;
-                            $this.addClass('in').removeClass('hide');
-                            $this.find('.coin-number').html(total);
-                            $('.coin-number-summary').html(total);
-
-                            if ($('.author-coin').length) {
-                                $('.author-coin').html(authorCoin);
-                            }
-
-                            if (total > 0) {
-                                $this.find('.label').html('<a href="#modal-coin-sender" data-toggle="modal" class="fc-fourth" title="Danh sách tặng Go-coin">Bài viết này đã nhận được ' + total + ' Go-coin.</a> <a href="{{url('/')}}/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
-                                $('.coin-number-summary').parent().attr('href', '#modal-coin-sender');
-                            } else {
-                                $this.find('.label').html('Hãy là người đầu tiên tặng Go-coin cho bài viết này. <a href="{{url('/')}}/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
-                                $('.coin-number-summary').parent().attr('href', 'javascript:void(0)');
-                            }
-                        }, error: function (response) {
-
-                        }
-                    });
-                });
-            }
-        }
-    }
-</script>    <!-- /End Donate Script -->
-
-<!-- include('v5.layouts.includes.script_notification') -->
-
-<script id="script-login">
-    if (typeof loadScript != 'function') {
-        function loadScript(url) {
-            var anchor = document.getElementById('script-login');
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.src = url;
-            anchor.parentNode.insertBefore(script, anchor);
-        }
-    }
-
-    if (typeof initVue != 'function') {
-        function initVue() {
-            if (typeof Vue == 'undefined') {
-                setTimeout(function () {
-                    initVue();
-                }, 500);
-                return;
-            }
-
-            if (typeof httpVueLoader == 'undefined') {
-                loadScript('/public/js/vue-modules/http-vue-loader/httpVueLoader.js');
-                setTimeout(function () {
-                    initVue();
-                }, 500);
-                return;
-            }
-
-            var currentUser = {};
-
-            var appLogin = new Vue({
-                el: '#modal-login',
-                delimiters: ['{(', ')}'],
-                data: {
-                    currentTab: 'loginform',
-                    // currentTab: 'loginform',
-                    lived: {},
-                    vietnams: [],
-                    worlds: [],
-                    previousUrl: '',
-                    bindObject: {
-                        type: '',
-                        dataLived: {},
-                        dataVietnams: [],
-                        dataWorlds: [],
-                        previousUrl: '',
-                        newUserStatus: 0,
-                        currentUser: currentUser
+            showHeaderCloseBtn: true,
+            headerCloseBtnBgColor: '#008749',
+            headerCloseBtnColor: '#FFFFFF',
+            itemsIconType: 'rounded',
+            align: 'left',
+            reCaptcha: false,
+            reCaptchaKey: '',
+            countdown: 0,
+            theme: '#008749',
+            buttonText: "Liên hệ",
+            buttonSize: 'large',
+            buttonIconSize: 24,
+            menuSize: 'normal',
+            phonePlaceholder: '',
+            callbackSubmitText: '',
+            errorMessage: '',
+            callProcessText: '',
+            callSuccessText: '',
+            callbackFormText: '',
+            iconsAnimationSpeed: 600,
+            iconsAnimationPause: 2000,
+            items: arcItems,
+            ajaxUrl: 'https://newocean.edu.vn/wp-admin/admin-ajax.php',
+            promptPosition: 'top',
+            popupAnimation: 'fadeindown',
+            style: '',
+            itemsAnimation: 'downtoup',
+            menuStyle: 'regular',
+            backdrop: true,
+            forms: {
+                callback: {
+                    id: 'callback',
+                    header: {
+                        content: "Vui lòng để lại số điện thoại . Chúng tôi sẽ gọi lại sớm!",
+                        layout: "text",
                     },
-                    currentUser: currentUser,
-                    newUserStatus: 0
-                },
-                components: {
-                    loginform: httpVueLoader('https://gody.vn/public/js/components/login/loginForm.vue'),
-                    livedorvisited: httpVueLoader('https://gody.vn/public/js/components/login/livedOrVisited.vue'),
-                    livedorvisitedform: httpVueLoader('https://gody.vn/public/js/components/login/livedOrVisitedForm.vue'),
-                    success: httpVueLoader('https://gody.vn/public/js/components/login/success.vue'),
-                },
-                computed: {
-                    currentTabComponent: function () {
-                        return this.currentTab.toLowerCase();
-                    },
-                    modalContentClass: function () {
-                        var vm = this;
-                        var data = [];
-                        switch (vm.currentTab) {
-                            case 'livedorvisitedform':
-                                data = ['sm:h-fit', 'sm:bar-0'];
-                                break;
-                            case 'livedorvisited':
-                                data = ['xs:overflow-y-auto'];
-                                break;
-                            case 'loginform':
-                                data = ['xs:overflow-y-auto'];
-                                break;
-                            case 'success':
-                                data = ['xs:overflow-y-auto'];
-                                break;
-                        }
-                        return data;
+                    icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path></svg>',
+                    success: "Đã gửi yêu cầu gọi lại! Chúng tôi sẽ liên hệ lại với bạn sớm.",
+                    error: "Lỗi khi gửi yêu cầu gọi lại! Vui lòng thử lại!",
+                    action: 'https://newocean.edu.vn/wp-admin/admin-ajax.php',
+                    buttons: [
+                        {
+                            name: "submit",
+                            label: "Yêu cầu gọi lại",
+                            type: "submit",
+                        },
+                    ],
+                    fields: {
+                        formId: {
+                            name: 'formId',
+                            value: 'callback',
+                            type: 'hidden'
+                        },
+                        action: {
+                            name: 'action',
+                            value: 'arcontactus_request_callback',
+                            type: 'hidden'
+                        },
+                        name: {
+                            name: "name",
+                            enabled: true,
+                            required: false,
+                            type: "text",
+                            label: "Họ tên",
+                            placeholder: "Nhập Họ tên",
+                            values: [],
+                            value: "",
+                        },
+                        phone: {
+                            name: "phone",
+                            enabled: true,
+                            required: true,
+                            type: "tel",
+                            label: "Số điện thoại",
+                            placeholder: "Nhập số điện thoại",
+                            values: [],
+                            value: "",
+                        },
                     }
                 },
-                mounted() {
-                    var vm = this;
-                    vm.signupTrack();
-                },
-                methods: {
-                    changeComponent(e) {
-                        this.currentTab = e.tab;
-                        this.bindObject = e.data;
-                        this.bindObject.dataLived = this.lived;
-                        this.bindObject.dataVietnams = this.vietnams;
-                        this.bindObject.dataWorlds = this.worlds;
-                        this.bindObject.currentUser = this.currentUser;
-                        this.bindObject.vnTotalProvinces = 63;
-                        this.bindObject.previousUrl = this.previousUrl;
-                        this.bindObject.newUserStatus = this.newUserStatus;
+                email: {
+                    id: 'email',
+                    header: {
+                        content: "Đăng ký tư vấn",
+                        layout: "text",
                     },
-                    changeLived(e) {
-                        this.lived = e.data;
-                    },
-                    changeVisited(e) {
-                        this.vietnams = (e.data.vietnams != undefined) ? e.data.vietnams : [];
-                        this.worlds = (e.data.worlds != undefined) ? e.data.worlds : [];
-                    },
-                    updateVietnams(e) {
-                        this.vietnams = e.data;
-                    },
-                    updateWorlds(e) {
-                        this.worlds = e.data;
-                    },
-                    signupTrack() {
-                        var vm = this;
-                        var currentUrl = window.location.href;
-
-                        if (vm.currentUser != undefined && vm.currentUser.username != undefined && (currentUrl.indexOf('success=2') > -1 || currentUrl.indexOf('success%3D2') > -1)) {
-                            axios.get(`/api/signup-tracking/signup-share-facebook?success=2`, {
-                                cancelToken: new CancelToken(function executor(c) {
-                                    cancel = c;
-                                })
-                            })
-                                .then(function (response) {
-                                    var data = response.data;
-                                })
-                                .catch(function (error) {
-                                    console.log(error)
-                                });
-                        }
+                    icon: '<svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 64H48C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM48 96h416c8.8 0 16 7.2 16 16v41.4c-21.9 18.5-53.2 44-150.6 121.3-16.9 13.4-50.2 45.7-73.4 45.3-23.2.4-56.6-31.9-73.4-45.3C85.2 197.4 53.9 171.9 32 153.4V112c0-8.8 7.2-16 16-16zm416 320H48c-8.8 0-16-7.2-16-16V195c22.8 18.7 58.8 47.6 130.7 104.7 20.5 16.4 56.7 52.5 93.3 52.3 36.4.3 72.3-35.5 93.3-52.3 71.9-57.1 107.9-86 130.7-104.7v205c0 8.8-7.2 16-16 16z"></path></svg>',
+                    success: "Đã gửi! Chúng tôi sẽ liên hệ lại với bạn sớm.",
+                    error: "Lỗi đăng ký! Vui lòng thử lại!",
+                    action: 'https://newocean.edu.vn/wp-admin/admin-ajax.php',
+                    buttons: [
+                        {
+                            name: "submit",
+                            label: "ĐĂNG KÝ",
+                            type: "submit",
+                        },
+                    ],
+                    fields: {
+                        formId: {
+                            name: 'formId',
+                            value: 'email',
+                            type: 'hidden'
+                        },
+                        action: {
+                            name: 'action',
+                            value: 'arcontactus_request_email',
+                            type: 'hidden'
+                        },
+                        name: {
+                            name: "name",
+                            enabled: true,
+                            required: false,
+                            type: "text",
+                            label: "Họ tên",
+                            placeholder: "Nhập Họ tên",
+                            values: [],
+                            value: "",
+                        },
+                        email: {
+                            name: "email",
+                            enabled: true,
+                            required: true,
+                            type: "email",
+                            label: "Địa chỉ email",
+                            placeholder: "Nhập địa chỉ email",
+                            values: [],
+                            value: "",
+                        },
+                        phone: {
+                            name: "phone",
+                            enabled: true,
+                            required: true,
+                            type: "tel",
+                            label: "Số điện thoại",
+                            placeholder: "Nhập số điện thoại",
+                            values: [],
+                            value: "",
+                        },
+                        message: {
+                            name: "message",
+                            enabled: true,
+                            required: true,
+                            type: "textarea",
+                            label: "Lời nhắn",
+                            placeholder: "Nội dung email",
+                            values: [],
+                            value: "",
+                        },
                     }
-                }
-            });
-        }
-    }
+                },
 
-    if (typeof Vue != 'undefined') {
-        initVue();
-    } else {
-        loadScript('https://gody.vn/public/js/vue-modules/vue/vue.js');
-        loadScript('https://gody.vn/public/js/vue-modules/axios/axios.min.js');
-        loadScript('https://gody.vn/public/js/vue-modules/lodash/lodash.min.js');
-        loadScript('https://gody.vn/public/js/vue-modules/http-vue-loader/httpVueLoader.js');
-
-        initVue();
-    }
-
-</script>
-<script>
-    const dsData = {
-        searchInput: '',
-        isActive: false,
-        data: {},
-        loading: false,
-        loaded: false,
-        continent: {
-            '1': {
-                title: 'Châu Mỹ',
-                slug: 'chau-my'
-            },
-            '2': {
-                title: 'Châu Phi',
-                slug: 'chau-phi'
-            },
-            '3': {
-                title: 'Châu Âu',
-                slug: 'chau-au'
-            },
-            '4': {
-                title: 'Châu Á',
-                slug: 'chau-a'
-            },
-            '5': {
-                title: 'Châu Đại Dương',
-                slug: 'chau-dai-duong'
             }
-        },
-        topDes: [],
-        topSearch: []
-    };
-
-    // if( typeof initDestinationSearchVue != 'function' ) {
-    //     function initDestinationSearchVue() {
-    //         if (typeof Vue == 'undefined' || typeof httpVueLoader == 'undefined' || typeof _ == 'undefined') {
-    //             setTimeout(() => {
-    //                 initDestinationSearchVue();
-    //             }, 500);
-    //             return;
-    //         }
-    //
-    //         const destinationSearch = new Vue({
-    //             el: '#modal-search-v2',
-    //             delimiters: ['{(', ')}'],
-    //             data: function () {
-    //                 return dsData;
-    //             },
-    //             components: {
-    //                 loadStream: httpVueLoader('/public/v6/js/components/master/loadStream.vue'),
-    //                 defaultDestination: httpVueLoader(
-    //                     '/public/v6/js/components/master/defaultDestinantion.vue?v=5',
-    //                 ),
-    //             },
-    //             computed: {
-    //                 dataEmpty: function () {
-    //                     return _.isEmpty(this.data);
-    //                 },
-    //                 detailUrl: function () {
-    //                     const country = this.data?._source?.country
-    //                         ? this.data?._source?.country
-    //                         : this.data?._source;
-    //                     const province = this.data?._source?.province;
-    //
-    //                     const continentId =
-    //                         this.data?._index === 'places'
-    //                             ? country.continents.slice(0, 1)
-    //                             : country?.continent_id;
-    //                     const continentSlug = this.continent[continentId]?.slug;
-    //
-    //                     if (this.data?._index === 'places') {
-    //                         return `/${continentSlug}/${country?.countries_slug}/${country?.province_slug}/${country?.slug}`;
-    //                     }
-    //
-    //                     if (
-    //                         this.data?._index === 'province' ||
-    //                         this.data?._index === 'province_v2'
-    //                     ) {
-    //                         return `/${continentSlug}/${country?.slug}/${this.data?._source.slug}`;
-    //                     }
-    //
-    //                     let url = `/${this.continent[continentId]?.slug}/${country?.slug}`;
-    //
-    //                     if (province) {
-    //                         url += `/${province?.slug}`;
-    //                     }
-    //
-    //                     return url;
-    //                 },
-    //                 blogUrl: function () {
-    //                     return `${this.detailUrl}/kinh-nghiem`;
-    //                 },
-    //                 photoUrl: function () {
-    //                     return `${this.detailUrl}/hinh-anh`;
-    //                 },
-    //                 communityUrl: function () {
-    //                     return `${this.detailUrl}/hoi-dap`;
-    //                 },
-    //                 planUrl: function () {
-    //                     return `${this.detailUrl}/lich-trinh`;
-    //                 },
-    //                 searchAllUrl: function () {
-    //                     return `/elastic/search/created_keyword/${encodeURI(this.searchInput)}`;
-    //                 },
-    //             },
-    //             watch: {
-    //                 data(newVal, oldVal) {
-    //                     if (!!newVal?._id) {
-    //                         if (typeof(Storage) !== "undefined") {
-    //                             let data = localStorage.getItem('USER_SEARCH');
-    //                             data = (!!!data) ? {} : JSON.parse(data);
-    //                             const orderNo = Object.keys(data).length;
-    //                             newVal.orderNo = orderNo;
-    //                             data[newVal?._id] = newVal;
-    //                             localStorage.setItem('USER_SEARCH', JSON.stringify(data));
-    //                         }
-    //                     }
-    //                 }
-    //             },
-    //             mounted() {
-    //                 this.observer = new MutationObserver(mutations => {
-    //                     for (const m of mutations) {
-    //                         const newValue = m.target.getAttribute(m.attributeName);
-    //                         this.$nextTick(() => {
-    //                             this.onClassChange(newValue, m.oldValue);
-    //                         });
-    //                     }
-    //                 });
-    //
-    //                 this.observer.observe(this.$refs.modalSearchV2, {
-    //                     attributes: true,
-    //                     attributeOldValue : true,
-    //                     attributeFilter: ['class'],
-    //                 });
-    //
-    //                 this.getPopularData();
-    //             },
-    //             beforeDestroy() {
-    //                 this.observer.disconnect();
-    //             },
-    //             methods: {
-    //                 onClassChange(classAttrValue) {
-    //                     const classList = classAttrValue.split(' ');
-    //                     if (classList.includes('in')) {
-    //                         this.isActive = true;
-    //                     } else {
-    //                         this.isActive = false;
-    //                     }
-    //                     this.$forceUpdate();
-    //                 },
-    //                 clearInput() {
-    //                     this.searchInput = '';
-    //                     this.loading = false;
-    //                     this.$refs.globalSearchInput.focus();
-    //                 },
-    //                 actGlobalSearch: _.debounce(function (e) {
-    //                     this.$refs.globalSearchInput.blur();
-    //                     this.$refs.globalSearchInput.focus();
-    //                     const vm = this;
-    //                     if (e.keyCode === 13 && !!vm.searchInput) {
-    //                         window.location.href = this.searchAllUrl;
-    //                         return;
-    //                     }
-    //                     vm.searchInput && vm.fetchDataSearch();
-    //                 }, 500),
-    //                 async fetchDataSearch() {
-    //                     const vm = this;
-    //                     const url = `https://elasticsearch.gody.vn/public/v2/search-destination/get-list?type=all&query=${vm.searchInput}&response=json`;
-    //                     vm.loading = true;
-    //                     vm.loaded = false;
-    //                     vm.data = {};
-    //
-    //                     await axios
-    //                         .get(url, {
-    //                             // cancelToken: new CancelToken(function executor(c) {
-    //                             //   cancel = c;
-    //                             // }),
-    //                         })
-    //                         .then(async function (resp) {
-    //                             const { hits: data } = resp?.data?.hits;
-    //                             vm.loading = false;
-    //                             vm.loaded = true;
-    //                             vm.data = data?.[0];
-    //                             vm.data.stay22 = await vm.stay22Url();
-    //                             vm.$forceUpdate();
-    //                         })
-    //                         .catch(function (error) {
-    //                             vm.loading = false;
-    //                             vm.loaded = true;
-    //                         });
-    //                 },
-    //                 async stay22Url() {
-    //                     if (this.dataEmpty) {
-    //                         return '';
-    //                     }
-    //
-    //                     const source = this.data?._source;
-    //                     if (source?.latitude && source?.longitude) {
-    //                         return `https://www.stay22.com/embed/gm?lat=${source.latitude}&lng=${source.longitude}&aid=godyvn&venue=Chọn%20điểm%20đến&hidebrandlogo=true&hidefooter=true&maincolor=ffffff&buttoncolor=ffffff&fontcolor=ff8c00&hidemodeswitcher=true`;
-    //                     }
-    //
-    //                     const country = this.data?._source?.country
-    //                         ? this.data?._source?.country
-    //                         : this.data?._source;
-    //                     const province = this.data?._source?.province;
-    //                     let q = '';
-    //                     if (this.data?._index === 'places') {
-    //                         q = `${country.title}, ${country.province_name}, ${country.countries_name}`;
-    //                     }
-    //
-    //                     if (this.data?._index === 'city' || this.data?._index === 'province_v2') {
-    //                         q = `${source?.title}, ${source?.province?.title}, ${source?.country?.title}`;
-    //                     }
-    //
-    //                     try {
-    //                         const config = {
-    //                             method: 'get',
-    //                             url: `https://www.stay22.com/autocomplete/location?q=${encodeURI(q)}`,
-    //                             headers: {},
-    //                         };
-    //
-    //                         const resp = await axios(config);
-    //                         const data = resp.data;
-    //
-    //                         if (!!!data.length) {
-    //                             return '';
-    //                         }
-    //
-    //                         const address = data?.[0]?.description || q;
-    //
-    //                         return `https://www.stay22.com/embed/gm?address=${encodeURI(
-    //                             address,
-    //                         )}&aid=godyvn&venue=Chọn%20điểm%20đến&hidebrandlogo=true&hidefooter=true&maincolor=ffffff&buttoncolor=ffffff&fontcolor=ff8c00&hidemodeswitcher=true`;
-    //                     } catch (error) {
-    //                         return '';
-    //                     }
-    //                 },
-    //                 recentDetailUrl(data) {
-    //                     const country = data?._source?.country
-    //                         ? data?._source?.country
-    //                         : data?._source;
-    //                     const province = data?._source?.province;
-    //
-    //                     const continentId =
-    //                         data?._index === 'places'
-    //                             ? country.continents.slice(0, 1)
-    //                             : country?.continent_id;
-    //                     const continentSlug = this.continent[continentId]?.slug;
-    //
-    //                     if (data?._index === 'places') {
-    //                         return `/${continentSlug}/${country?.countries_slug}/${country?.province_slug}/${country?.slug}`;
-    //                     }
-    //
-    //                     if (
-    //                         data?._index === 'province' ||
-    //                         data?._index === 'province_v2'
-    //                     ) {
-    //                         return `/${continentSlug}/${country?.slug}/${data?._source.slug}`;
-    //                     }
-    //
-    //                     let url = `/${this.continent[continentId]?.slug}/${country?.slug}`;
-    //
-    //                     if (province) {
-    //                         url += `/${province?.slug}`;
-    //                     }
-    //
-    //                     return url;
-    //                 },
-    //                 recentlyViewed() {
-    //                     if (typeof(Storage) !== "undefined") {
-    //                         let data = localStorage.getItem('USER_SEARCH');
-    //                         if (!!!data) return null;
-    //
-    //                         data = JSON.parse(data);
-    //                         let newData = [];
-    //
-    //                         for (const property in data) {
-    //                             newData.push(data[property]);
-    //                         }
-    //
-    //                         newData.sort((a,b) => {
-    //                             if ( a?.orderNo < b?.orderNo ) {
-    //                                 return 1;
-    //                             }
-    //                             if ( a?.orderNo > b?.orderNo ) {
-    //                                 return -1;
-    //                             }
-    //                             return 0;
-    //                         });
-    //
-    //                         return newData.splice(0,5);
-    //                     }
-    //                     return null;
-    //                 },
-    //                 clearRecentlyViewed(item) {
-    //                     if (item?._id) {
-    //                         if (typeof(Storage) !== "undefined") {
-    //                             let data = localStorage.getItem('USER_SEARCH');
-    //                             data = (!!!data) ? {} : JSON.parse(data);
-    //
-    //                             delete data[item?._id];
-    //                             if (!!Object.keys(data).length) {
-    //                                 localStorage.setItem('USER_SEARCH', JSON.stringify(data));
-    //                             } else {
-    //                                 localStorage.removeItem('USER_SEARCH');
-    //                             }
-    //
-    //                             this.$forceUpdate();
-    //                         }
-    //                     }
-    //                 },
-    //                 async getPopularData() {
-    //                     try {
-    //                         const config = {
-    //                             url: 'https://gody.vn/api/v6/top-trends',
-    //                             method: 'GET',
-    //                             headers: {}
-    //                         };
-    //
-    //                         const resp = await axios(config);
-    //                         const data = resp.data;
-    //
-    //                         const { topDes, topSearch } = data;
-    //                         this.topDes = topDes;
-    //                         this.topSearch = topSearch;
-    //                         this.$forceUpdate();
-    //                     } catch (error) {
-    //
-    //                     }
-    //                 }
-    //             }
-    //         });
-    //
-    //         $(document.body).on('click', '#search-form__explore input, #main-menu-icon-search, #search-header, .pull-right.ps-relative.mt-12.h-32.top-search.w100vw-220.wmx-250, .modal-search-v2__anchor', function (e) {
-    //             e.preventDefault();
-    //
-    //             $('div#modal-search-v2').modal('show');
-    //             $('.search-primary-wrapper .search-primary-bg').css('display', 'none');
-    //             setTimeout(function() {
-    //                 $('.loading-getlocation').addClass('hide');
-    //                 $('#search-header-2').focus();
-    //             }, 500);
-    //         });
-    //
-    //         return destinationSearch;
-    //     }
-    // }
-    //
-    // initDestinationSearchVue();
+        };
+        contactUs.init(arcuOptions);
+    });
 </script>
-@include('layouts.components.ckeditor_default')
-<script src="https://gody.vn/public/js/vue-modules/vue2-datepicker/index.min.js"></script>
-<script src="https://gody.vn/public/js/vue-modules/vue2-datepicker/locale/vi.js"></script>
-<script defer src="https://gody.vn/public/v6/js/search.js?v=1235"></script>
+<script type="text/x-template" id="mobile-menu-item-template">
+    <li
+            :id="'jet-mobile-menu-item-'+itemDataObject.itemId"
+            :class="itemClasses"
+    >
+        <div
+                class="jet-mobile-menu__item-inner"
+                tabindex="1"
+                :aria-label="itemDataObject.name"
+                v-on:click="itemSubHandler"
+                v-on:keyup.enter="itemSubHandler"
+        >
+            <a
+                    :class="itemLinkClasses"
+                    :href="itemDataObject.url"
+                    :rel="itemDataObject.xfn"
+                    :title="itemDataObject.attrTitle"
+                    :target="itemDataObject.target"
+            >
+                <div class="jet-menu-item-wrapper">
+                    <div
+                            class="jet-menu-icon"
+                            v-if="isIconVisible"
+                            v-html="itemIconHtml"
+                    ></div>
+                    <div class="jet-menu-name">
+					<span
+                            class="jet-menu-label"
+                            v-html="itemDataObject.name"
+                    ></span>
+                        <small
+                                class="jet-menu-desc"
+                                v-if="isDescVisible"
+                                v-html="itemDataObject.description"
+                        ></small>
+                    </div>
+                    <div
+                            class="jet-menu-badge"
+                            v-if="isBadgeVisible"
+                    >
+                        <div class="jet-menu-badge__inner" v-html="itemDataObject.badgeContent"></div>
+                    </div>
+                </div>
+            </a>
+            <span
+                    class="jet-dropdown-arrow"
+                    v-if="isSub && !templateLoadStatus"
+                    v-html="dropdownIconHtml"
+                    v-on:click="markerSubHandler"
+            >
+		</span>
+            <div
+                    class="jet-mobile-menu__template-loader"
+                    v-if="templateLoadStatus"
+            >
+                <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" width="24px" height="25px" viewBox="0 0 128 128" xml:space="preserve">
+				<g>
+                    <linearGradient id="linear-gradient">
+                        <stop offset="0%" :stop-color="loaderColor" stop-opacity="0"/>
+                        <stop offset="100%" :stop-color="loaderColor" stop-opacity="1"/>
+                    </linearGradient>
+                    <path d="M63.85 0A63.85 63.85 0 1 1 0 63.85 63.85 63.85 0 0 1 63.85 0zm.65 19.5a44 44 0 1 1-44 44 44 44 0 0 1 44-44z" fill="url(#linear-gradient)" fill-rule="evenodd"/>
+                    <animateTransform attributeName="transform" type="rotate" from="0 64 64" to="360 64 64" dur="1080ms" repeatCount="indefinite"></animateTransform>
+                </g>
+			</svg>
+            </div>
+        </div>
 
-<!-- ✅ Load the moment library ✅ -->
-<script
-        src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
-        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-></script>
-<script src="{{asset('public/js/jquery.datetimepicker.js')}}"></script>
-<script>
-    $.datetimepicker.setDateFormatter({
-        parseDate: function (date, format) {
-            var d = moment(date, format);
-            return d.isValid() ? d.toDate() : false;
-        },
-        formatDate: function (date, format) {
-            return moment(date).format(format);
-        },
-    });
-    $('#start_date').datetimepicker({
-        changeYear: true,
-        changeMonth: true,
-        minDate: 0,
-        format: 'YYYY-MM-DD hh:mm A',
-    });
+        <transition name="menu-container-expand-animation">
+            <mobile-menu-list
+                    v-if="isDropdownLayout && subDropdownVisible"
+                    :depth="depth+1"
+                    :children-object="itemDataObject.children"
+            ></mobile-menu-list>
+        </transition>
+
+    </li>
+</script>
+<script type="text/x-template" id="mobile-menu-list-template">
+    <div
+            class="jet-mobile-menu__list"
+            role="navigation"
+    >
+        <ul class="jet-mobile-menu__items">
+            <mobile-menu-item
+                    v-for="(item, index) in childrenObject"
+                    :key="item.id"
+                    :item-data-object="item"
+                    :depth="depth"
+            ></mobile-menu-item>
+        </ul>
+    </div>
+</script>
+<script type="text/x-template" id="mobile-menu-template">
+    <div
+            :class="instanceClass"
+            v-on:keyup.esc="escapeKeyHandler"
+    >
+        <div
+                class="jet-mobile-menu__toggle"
+                ref="toggle"
+                tabindex="1"
+                aria-label="Open/Close Menu"
+                v-on:click="menuToggle"
+                v-on:keyup.enter="menuToggle"
+        >
+            <div
+                    class="jet-mobile-menu__template-loader"
+                    v-if="toggleLoaderVisible"
+            >
+                <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" width="24px" height="25px" viewBox="0 0 128 128" xml:space="preserve">
+				<g>
+                    <linearGradient id="linear-gradient">
+                        <stop offset="0%" :stop-color="loaderColor" stop-opacity="0"/>
+                        <stop offset="100%" :stop-color="loaderColor" stop-opacity="1"/>
+                    </linearGradient>
+                    <path d="M63.85 0A63.85 63.85 0 1 1 0 63.85 63.85 63.85 0 0 1 63.85 0zm.65 19.5a44 44 0 1 1-44 44 44 44 0 0 1 44-44z" fill="url(#linear-gradient)" fill-rule="evenodd"/>
+                    <animateTransform attributeName="transform" type="rotate" from="0 64 64" to="360 64 64" dur="1080ms" repeatCount="indefinite"></animateTransform>
+                </g>
+			</svg>
+            </div>
+
+            <div
+                    class="jet-mobile-menu__toggle-icon"
+                    v-if="!menuOpen && !toggleLoaderVisible"
+                    v-html="toggleClosedIcon"
+            ></div>
+            <div
+                    class="jet-mobile-menu__toggle-icon"
+                    v-if="menuOpen && !toggleLoaderVisible"
+                    v-html="toggleOpenedIcon"
+            ></div>
+            <span
+                    class="jet-mobile-menu__toggle-text"
+                    v-if="toggleText"
+                    v-html="toggleText"
+            ></span>
+
+        </div>
+
+        <transition name="cover-animation">
+            <div
+                    class="jet-mobile-menu-cover"
+                    v-if="menuContainerVisible && coverVisible"
+                    v-on:click="closeMenu"
+            ></div>
+        </transition>
+
+        <transition :name="showAnimation">
+            <div
+                    class="jet-mobile-menu__container"
+                    v-if="menuContainerVisible"
+            >
+                <div
+                        class="jet-mobile-menu__container-inner"
+                >
+                    <div
+                            class="jet-mobile-menu__header-template"
+                            v-if="headerTemplateVisible"
+                    >
+                        <div
+                                class="jet-mobile-menu__header-template-content"
+                                ref="header-template-content"
+                                v-html="headerContent"
+                        ></div>
+                    </div>
+
+                    <div
+                            class="jet-mobile-menu__controls"
+                    >
+                        <div
+                                class="jet-mobile-menu__breadcrumbs"
+                                v-if="isBreadcrumbs"
+                        >
+                            <div
+                                    class="jet-mobile-menu__breadcrumb"
+                                    v-for="(item, index) in breadcrumbsPathData"
+                                    :key="index"
+                            >
+                                <div
+                                        class="breadcrumb-label"
+                                        v-on:click="breadcrumbHandle(index+1)"
+                                        v-html="item"
+                                ></div>
+                                <div
+                                        class="breadcrumb-divider"
+                                        v-html="breadcrumbIcon"
+                                        v-if="(breadcrumbIcon && index !== breadcrumbsPathData.length-1)"
+                                ></div>
+                            </div>
+                        </div>
+                        <div
+                                class="jet-mobile-menu__back"
+                                ref="back"
+                                tabindex="1"
+                                aria-label="Close Menu"
+                                v-if="!isBack && isClose"
+                                v-html="closeIcon"
+                                v-on:click="menuToggle"
+                                v-on:keyup.enter="menuToggle"
+                        ></div>
+                        <div
+                                class="jet-mobile-menu__back"
+                                ref="back"
+                                tabindex="1"
+                                aria-label="Back to Prev Items"
+                                v-if="isBack"
+                                v-html="backIcon"
+                                v-on:click="goBack"
+                                v-on:keyup.enter="goBack"
+                        ></div>
+                    </div>
+
+                    <div
+                            class="jet-mobile-menu__before-template"
+                            v-if="beforeTemplateVisible"
+                    >
+                        <div
+                                class="jet-mobile-menu__before-template-content"
+                                ref="before-template-content"
+                                v-html="beforeContent"
+                        ></div>
+                    </div>
+
+                    <div
+                            class="jet-mobile-menu__body"
+                    >
+                        <transition :name="animation">
+                            <mobile-menu-list
+                                    v-if="!templateVisible"
+                                    :key="depth"
+                                    :depth="depth"
+                                    :children-object="itemsList"
+                            ></mobile-menu-list>
+                            <div
+                                    class="jet-mobile-menu__template"
+                                    ref="template-content"
+                                    v-if="templateVisible"
+                            >
+                                <div
+                                        class="jet-mobile-menu__template-content"
+                                        v-html="itemTemplateContent"
+                                ></div>
+                            </div>
+                        </transition>
+                    </div>
+
+                    <div
+                            class="jet-mobile-menu__after-template"
+                            v-if="afterTemplateVisible"
+                    >
+                        <div
+                                class="jet-mobile-menu__after-template-content"
+                                ref="after-template-content"
+                                v-html="afterContent"
+                        ></div>
+                    </div>
+
+                </div>
+            </div>
+        </transition>
+    </div>
 </script>

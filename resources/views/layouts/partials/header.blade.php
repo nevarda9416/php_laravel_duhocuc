@@ -1573,7 +1573,7 @@
             font-weight: 400;
             font-display: swap;
             src: url(https://newocean.edu.vn/wp-content/plugins/jet-menu/assets/public/lib/font-awesome/webfonts/fa-regular-400.eot);
-            src: url(https://newocean.edu.vn/wp-content/plugins/jet-menu/assets/public/lib/font-awesome/webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(https://newocean.edu.vn/wp-content/plugins/jet-menu/assets/public/lib/font-awesome/webfonts/fa-regular-400.woff2) format("woff2"), url(https://newocean.edu.vn/wp-content/plugins/jet-menu/assets/public/lib/font-awesome/webfonts/fa-regular-400.woff) format("woff"), url(https://newocean.edu.vn/wp-content/plugins/jet-menu/assets/public/lib/font-awesome/webfonts/fa-regular-400.ttf) format("truetype"), url(https://newocean.edu.vn/wp-content/plugins/jet-menu/assets/public/lib/font-awesome/webfonts/fa-regular-400.svg#fontawesome) format("svg")
+            src: url(https://newocean.edu.vn/wp-content/plugins/jet-menu/assets/public/lib/font-awesome/webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url({{asset('public/assets/fonts/awesome/fa-regular-400.woff2')}}) format("woff2"), url(https://newocean.edu.vn/wp-content/plugins/jet-menu/assets/public/lib/font-awesome/webfonts/fa-regular-400.woff) format("woff"), url(https://newocean.edu.vn/wp-content/plugins/jet-menu/assets/public/lib/font-awesome/webfonts/fa-regular-400.ttf) format("truetype"), url(https://newocean.edu.vn/wp-content/plugins/jet-menu/assets/public/lib/font-awesome/webfonts/fa-regular-400.svg#fontawesome) format("svg")
         }
 
         @font-face {
