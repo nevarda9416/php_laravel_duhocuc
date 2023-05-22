@@ -20,18 +20,12 @@
                                                 <div class="jet-smart-listing__post-content">
                                                     <div class="jet-title-fields">
                                                         <div class="jet-title-fields__item">
-                                                            <div class="jet-title-fields__item-value">Thứ 4
-                                                                <div class="sukien_thu"></div>
-                                                            </div>
+                                                            <div class="jet-title-fields__item-value"><span class="sukien_ngay">12</span></div>
                                                         </div>
                                                         <div class="jet-title-fields__item">
-                                                            <div class="jet-title-fields__item-value"><span class="sukien_ngay">31</span></div>
-                                                        </div>
-                                                        <div class="jet-title-fields__item">
-                                                            <div class="jet-title-fields__item-value"><span class="sukien_thang">Tháng 5</span></div>
+                                                            <div class="jet-title-fields__item-value"><span class="sukien_thang">Tháng 9</span></div>
                                                         </div>
                                                     </div>
-                                                    <div class="jet-smart-listing__post-title post-title-simple"><a href="https://newocean.edu.vn/gap-go-dai-dien-truong-hoc-vien-dai-hoc-crown-uc-cihe-thang-5-nam-2023.html">Gặp gỡ đại diện Trường Học viện Đại học Crown, Úc (CIHE) tháng 5 năm 2023</a></div>
                                                     <div class="jet-content-fields">
                                                         <div class="jet-content-fields__item">
                                                             <div class="jet-content-fields__item-label"><i class="fas fa-clock"></i> Thời gian:</div>
@@ -42,6 +36,7 @@
                                                             <div class="jet-content-fields__item-value">Tầng 3, Số 43 Nguyễn Hy Quang, Đống Đa, Hà Nội</div>
                                                         </div>
                                                     </div>
+                                                    <div class="jet-smart-listing__post-title post-title-simple"><a href="{{ url('gap-go-dai-dien-truong-hoc-vien-dai-hoc-crown-uc-cihe-thang-5-nam-2023.html') }}">Gặp gỡ đại diện Trường Học viện Đại học Crown, Úc (CIHE) tháng 5 năm 2023</a></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -50,18 +45,12 @@
                                                 <div class="jet-smart-listing__post-content">
                                                     <div class="jet-title-fields">
                                                         <div class="jet-title-fields__item">
-                                                            <div class="jet-title-fields__item-value">Thứ 5
-                                                                <div class="sukien_thu"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="jet-title-fields__item">
                                                             <div class="jet-title-fields__item-value"><span class="sukien_ngay">11</span></div>
                                                         </div>
                                                         <div class="jet-title-fields__item">
                                                             <div class="jet-title-fields__item-value"><span class="sukien_thang">Tháng 5</span></div>
                                                         </div>
                                                     </div>
-                                                    <div class="jet-smart-listing__post-title post-title-simple"><a href="https://newocean.edu.vn/gap-go-truong-niagara-college-truong-dao-tao-quan-tri-kinh-doanh-nau-an-du-lich-khach-san-noi-tieng-nhat-canada.html">Gặp gỡ Trường Niagara, College &#8211; Trường đào tạo quản trị kinh doanh, nấu ăn, du lịch khách sạn nổi tiếng nhất Canada</a></div>
                                                     <div class="jet-content-fields">
                                                         <div class="jet-content-fields__item">
                                                             <div class="jet-content-fields__item-label"><i class="fas fa-clock"></i> Thời gian:</div>
@@ -72,6 +61,7 @@
                                                             <div class="jet-content-fields__item-value">Tầng 3, Số 43 Nguyễn Hy Quang, Đống Đa, Hà Nội</div>
                                                         </div>
                                                     </div>
+                                                    <div class="jet-smart-listing__post-title post-title-simple"><a href="{{ url('gap-go-truong-niagara-college-truong-dao-tao-quan-tri-kinh-doanh-nau-an-du-lich-khach-san-noi-tieng-nhat-canada.html') }}">Gặp gỡ Trường Niagara, College &#8211; Trường đào tạo quản trị kinh doanh, nấu ăn, du lịch khách sạn nổi tiếng nhất Canada</a></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -80,18 +70,12 @@
                                                 <div class="jet-smart-listing__post-content">
                                                     <div class="jet-title-fields">
                                                         <div class="jet-title-fields__item">
-                                                            <div class="jet-title-fields__item-value">Thứ 2
-                                                                <div class="sukien_thu"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="jet-title-fields__item">
                                                             <div class="jet-title-fields__item-value"><span class="sukien_ngay">17</span></div>
                                                         </div>
                                                         <div class="jet-title-fields__item">
                                                             <div class="jet-title-fields__item-value"><span class="sukien_thang">Tháng 4</span></div>
                                                         </div>
                                                     </div>
-                                                    <div class="jet-smart-listing__post-title post-title-simple"><a href="https://newocean.edu.vn/gap-go-truong-dai-hoc-southern-cross-uc-nam-trong-danh-sach-100-truong-dai-hoc-tre-xuat-sac-nhat-the-gioi.html">Gặp gỡ Trường Đại học Southern Cross, Úc nằm trong danh sách 100 trường đại học trẻ xuất sắc nhất thế giới</a></div>
                                                     <div class="jet-content-fields">
                                                         <div class="jet-content-fields__item">
                                                             <div class="jet-content-fields__item-label"><i class="fas fa-clock"></i> Thời gian:</div>
@@ -102,6 +86,7 @@
                                                             <div class="jet-content-fields__item-value">Tầng 3, Số 43 Nguyễn Hy Quang, Đống Đa, Hà Nội</div>
                                                         </div>
                                                     </div>
+                                                    <div class="jet-smart-listing__post-title post-title-simple"><a href="{{ url('gap-go-truong-dai-hoc-southern-cross-uc-nam-trong-danh-sach-100-truong-dai-hoc-tre-xuat-sac-nhat-the-gioi.html') }}">Gặp gỡ Trường Đại học Southern Cross, Úc nằm trong danh sách 100 trường đại học trẻ xuất sắc nhất thế giới</a></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -110,18 +95,12 @@
                                                 <div class="jet-smart-listing__post-content">
                                                     <div class="jet-title-fields">
                                                         <div class="jet-title-fields__item">
-                                                            <div class="jet-title-fields__item-value">Thứ 7
-                                                                <div class="sukien_thu"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="jet-title-fields__item">
                                                             <div class="jet-title-fields__item-value"><span class="sukien_ngay">15</span></div>
                                                         </div>
                                                         <div class="jet-title-fields__item">
                                                             <div class="jet-title-fields__item-value"><span class="sukien_thang">Tháng 4</span></div>
                                                         </div>
                                                     </div>
-                                                    <div class="jet-smart-listing__post-title post-title-simple"><a href="https://newocean.edu.vn/hoi-thao-truc-tiep-du-hoc-anh-truong-dai-hoc-northampton-top-20-truong-kinh-doanh-hang-dau-vuong-quoc-anh.html">Hội thảo trực tiếp Du học Anh trường Đại học Northampton – Top 20 trường Kinh doanh hàng đầu Vương quốc Anh</a></div>
                                                     <div class="jet-content-fields">
                                                         <div class="jet-content-fields__item">
                                                             <div class="jet-content-fields__item-label"><i class="fas fa-clock"></i> Thời gian:</div>
@@ -132,6 +111,7 @@
                                                             <div class="jet-content-fields__item-value">Tầng 3, Số 43 Nguyễn Hy Quang, Đống Đa, Hà Nội</div>
                                                         </div>
                                                     </div>
+                                                    <div class="jet-smart-listing__post-title post-title-simple"><a href="{{ url('hoi-thao-truc-tiep-du-hoc-anh-truong-dai-hoc-northampton-top-20-truong-kinh-doanh-hang-dau-vuong-quoc-anh.html') }}">Hội thảo trực tiếp Du học Anh trường Đại học Northampton – Top 20 trường Kinh doanh hàng đầu Vương quốc Anh</a></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -139,6 +119,15 @@
                                 </div>
                             </div>
                             <div class="jet-smart-listing-loading"></div>
+                        </div>
+                        <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
+                            <button type="submit" class="elementor-button elementor-size-sm" style="background-color:#00aeef">
+						<span>
+                                <span class=" elementor-button-icon">
+                                                                            </span>
+                                                            <span class="elementor-button-text">XEM TẤT CẢ &raquo;</span>
+                        </span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -148,7 +137,7 @@
             <div class="elementor-widget-wrap elementor-element-populated">
                 <div class="elementor-element elementor-element-6ba72f9 elementor-widget elementor-widget-heading" data-id="6ba72f9" data-element_type="widget" data-widget_type="heading.default">
                     <div class="elementor-widget-container">
-                        <h2 class="elementor-heading-title elementor-size-default">VIDEO DU HỌC</h2></div>
+                        <h2 class="elementor-heading-title elementor-size-default">VIDEO NỔI BẬT</h2></div>
                 </div>
                 <div class="elementor-element elementor-element-55e45c0 elementor-widget elementor-widget-video" data-id="55e45c0" data-element_type="widget"
                      data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/www.youtube.com\/watch?v=H-EwvU00nP4&quot;,&quot;lazy_load&quot;:&quot;yes&quot;,&quot;show_image_overlay&quot;:&quot;yes&quot;,&quot;image_overlay&quot;:{&quot;url&quot;:&quot;https:\/\/newocean.edu.vn\/wp-content\/uploads\/2023\/04\/EwvU00nP4-1.jpg&quot;,&quot;id&quot;:24963,&quot;size&quot;:&quot;&quot;,&quot;alt&quot;:&quot;H\u1ecdc sinh nh\u1ead visa du h\u1ecdc \u00daC, H\u1ecdc b\u1ed5ng 30% ng\u00e0nh Marketing du h\u1ecdc t\u1ea1i \u00dac&quot;,&quot;source&quot;:&quot;library&quot;},&quot;lightbox&quot;:&quot;yes&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;}"
@@ -178,7 +167,7 @@
                             <div class="elementor-main-swiper swiper-container">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <a href="https://newocean.edu.vn/wp-content/uploads/2023/03/visa-du-hoc-uc-39-2023.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="2bf13a2" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjQ4NDUsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzAzXC92aXNhLWR1LWhvYy11Yy0zOS0yMDIzLmpwZyIsInNsaWRlc2hvdyI6IjJiZjEzYTIifQ%3D%3D"
+                                        <a href="{{ url('/') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="2bf13a2" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjQ4NDUsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzAzXC92aXNhLWR1LWhvYy11Yy0zOS0yMDIzLmpwZyIsInNsaWRlc2hvdyI6IjJiZjEzYTIifQ%3D%3D"
                                            data-elementor-lightbox-video="https://www.youtube.com/embed/fGFrLQaK_NE?feature=oembed&amp;autoplay=1&amp;rel=0&amp;controls=0">
                                             <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Visa du học Úc 2023 có nhanh nhất trong 1 ngày" data-background="https://newocean.edu.vn/wp-content/uploads/2023/03/visa-du-hoc-uc-39-2023-533x300.jpg">
 
@@ -190,7 +179,7 @@
                                             </div>
                                         </a></div>
                                     <div class="swiper-slide">
-                                        <a href="https://newocean.edu.vn/wp-content/uploads/2023/02/Hoi-thao-du-hoc-Singapore-2023-truong-JCU.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="2bf13a2"
+                                        <a href="{{ url('/') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="2bf13a2"
                                            data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjQ2MzUsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzAyXC9Ib2ktdGhhby1kdS1ob2MtU2luZ2Fwb3JlLTIwMjMtdHJ1b25nLUpDVS5qcGciLCJzbGlkZXNob3ciOiIyYmYxM2EyIn0%3D" data-elementor-lightbox-video="https://www.youtube.com/embed/sW1keA6G_s4?feature=oembed&amp;autoplay=1&amp;rel=0&amp;controls=0">
                                             <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Hội thảo du học Singapore 2023 trường JCU" data-background="https://newocean.edu.vn/wp-content/uploads/2023/02/Hoi-thao-du-hoc-Singapore-2023-truong-JCU-533x300.jpg">
 
@@ -202,7 +191,7 @@
                                             </div>
                                         </a></div>
                                     <div class="swiper-slide">
-                                        <a href="https://newocean.edu.vn/wp-content/uploads/2023/02/visa-du-hoc-vu-tu-anh.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="2bf13a2" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjQ0ODIsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzAyXC92aXNhLWR1LWhvYy12dS10dS1hbmguanBnIiwic2xpZGVzaG93IjoiMmJmMTNhMiJ9"
+                                        <a href="{{ url('/') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="2bf13a2" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjQ0ODIsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzAyXC92aXNhLWR1LWhvYy12dS10dS1hbmguanBnIiwic2xpZGVzaG93IjoiMmJmMTNhMiJ9"
                                            data-elementor-lightbox-video="https://www.youtube.com/embed/cV_gOXcTIsM?feature=oembed&amp;autoplay=1&amp;rel=0&amp;controls=0">
                                             <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Visa du học Vũ Tú Anh" data-background="https://newocean.edu.vn/wp-content/uploads/2023/02/visa-du-hoc-vu-tu-anh-533x300.jpg">
 
@@ -214,7 +203,7 @@
                                             </div>
                                         </a></div>
                                     <div class="swiper-slide">
-                                        <a href="https://newocean.edu.vn/wp-content/uploads/2023/02/visa-du-hoc-balan.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="2bf13a2" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjQ0MzMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzAyXC92aXNhLWR1LWhvYy1iYWxhbi5qcGciLCJzbGlkZXNob3ciOiIyYmYxM2EyIn0%3D"
+                                        <a href="{{ url('/') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="2bf13a2" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjQ0MzMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzAyXC92aXNhLWR1LWhvYy1iYWxhbi5qcGciLCJzbGlkZXNob3ciOiIyYmYxM2EyIn0%3D"
                                            data-elementor-lightbox-video="https://www.youtube.com/embed/BbnMrx3Ik8Y?feature=oembed&amp;autoplay=1&amp;rel=0&amp;controls=0">
                                             <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học sinh nhận visa du học Ba Lan" data-background="https://newocean.edu.vn/wp-content/uploads/2023/02/visa-du-hoc-balan-533x300.jpg">
 
@@ -229,6 +218,15 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
+                    <button type="submit" class="elementor-button elementor-size-sm" style="background-color:#00aeef">
+						<span>
+                                <span class=" elementor-button-icon">
+                                                                            </span>
+                                                            <span class="elementor-button-text">XEM TẤT CẢ &raquo;</span>
+                        </span>
+                    </button>
                 </div>
             </div>
         </div>

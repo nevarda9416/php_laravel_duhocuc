@@ -4,7 +4,7 @@
             <div class="elementor-widget-wrap elementor-element-populated">
                 <div class="elementor-element elementor-element-49524d6 elementor-invisible elementor-widget elementor-widget-heading" data-id="49524d6" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
                     <div class="elementor-widget-container">
-                        <h1 class="elementor-heading-title elementor-size-large">TƯ VẤN DU HỌC</h1></div>
+                        <h1 class="elementor-heading-title elementor-size-large">BẠN CÓ NGUYỆN VỌNG ĐI DU HỌC Ở QUỐC GIA NÀO ?</h1></div>
                 </div>
                 <div class="elementor-element elementor-element-203cf98 elementor-skin-carousel elementor-arrows-yes elementor-pagination-type-bullets elementor-pagination-position-outside elementor-widget elementor-widget-media-carousel" data-id="203cf98" data-element_type="widget"
                      data-settings="{&quot;slides_per_view&quot;:&quot;4&quot;,&quot;space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:25,&quot;sizes&quot;:[]},&quot;slides_to_scroll&quot;:&quot;4&quot;,&quot;slides_per_view_tablet&quot;:&quot;4&quot;,&quot;slides_per_view_mobile&quot;:&quot;2&quot;,&quot;slides_to_scroll_tablet&quot;:&quot;4&quot;,&quot;slides_to_scroll_mobile&quot;:&quot;2&quot;,&quot;lazyload&quot;:&quot;yes&quot;,&quot;skin&quot;:&quot;carousel&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;show_arrows&quot;:&quot;yes&quot;,&quot;pagination&quot;:&quot;bullets&quot;,&quot;speed&quot;:500,&quot;autoplay&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;loop&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]}}"
@@ -13,6 +13,22 @@
                         <div class="elementor-swiper">
                             <div class="elementor-main-swiper swiper-container">
                                 <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="/du-hoc-anh">
+                                            <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học Anh" data-background="https://newocean.edu.vn/wp-content/uploads/2020/03/anh-1.jpg">
+
+                                                <div class="swiper-lazy-preloader"></div>
+
+                                            </div>
+                                        </a></div>
+                                    <div class="swiper-slide">
+                                        <a href="/du-hoc-my">
+                                            <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học Mỹ" data-background="https://newocean.edu.vn/wp-content/uploads/2020/03/usa.jpg">
+
+                                                <div class="swiper-lazy-preloader"></div>
+
+                                            </div>
+                                        </a></div>
                                     <div class="swiper-slide">
                                         <a href="/du-hoc-uc">
                                             <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học Úc" data-background="https://newocean.edu.vn/wp-content/uploads/2020/03/uc.jpg">
@@ -32,14 +48,6 @@
                                     <div class="swiper-slide">
                                         <a href="/du-hoc-singapore">
                                             <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học Singapore" data-background="https://newocean.edu.vn/wp-content/uploads/2020/03/singapore.jpg">
-
-                                                <div class="swiper-lazy-preloader"></div>
-
-                                            </div>
-                                        </a></div>
-                                    <div class="swiper-slide">
-                                        <a href="/du-hoc-anh">
-                                            <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học Anh" data-background="https://newocean.edu.vn/wp-content/uploads/2020/03/anh-1.jpg">
 
                                                 <div class="swiper-lazy-preloader"></div>
 
@@ -94,15 +102,7 @@
                                             </div>
                                         </a></div>
                                     <div class="swiper-slide">
-                                        <a href="/du-hoc-my">
-                                            <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học Mỹ" data-background="https://newocean.edu.vn/wp-content/uploads/2020/03/usa.jpg">
-
-                                                <div class="swiper-lazy-preloader"></div>
-
-                                            </div>
-                                        </a></div>
-                                    <div class="swiper-slide">
-                                        <a href="https://newocean.edu.vn/du-hoc-ha-lan">
+                                        <a href="{{ url('du-hoc-ha-lan') }}">
                                             <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học Hà Lan" data-background="https://newocean.edu.vn/wp-content/uploads/2020/03/halan.jpg">
 
                                                 <div class="swiper-lazy-preloader"></div>

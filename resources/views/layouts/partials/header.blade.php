@@ -3157,7 +3157,7 @@
         }
 
         .elementor-20880 .elementor-element.elementor-element-60fc103 {
-            color: var(--e-global-color-primary);
+            color: #fff !important;
             font-family: "Roboto", Sans-serif;
             font-size: 14px;
             font-weight: 500
