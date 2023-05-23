@@ -17,19 +17,16 @@
                             <p>
                             <div class="elementor-social-icons-wrapper elementor-flex">
 <span class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-3961653" href="https://www.youtube.com/channel/UCOkhgPaV1JJPtOUaRwuW3mA/videos" target="_blank">
-						<span class="elementor-screen-only">Youtube</span>
-						<i class="fab fa-youtube"></i>					</a>
+					<a href="https://www.youtube.com/channel/UCOkhgPaV1JJPtOUaRwuW3mA/videos" target="_blank">
+						<img src="{{ asset('public/images/icon_youtube.png') }}" alt=""/>					</a>
 </span>
                                 <span class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-e94783e" href="https://www.facebook.com/uocmoduhoc/" target="_blank">
-						<span class="elementor-screen-only">Facebook</span>
-						<i class="fab fa-facebook"></i>					</a>
+					<a href="https://www.facebook.com/uocmoduhoc/" target="_blank">
+						<img src="{{ asset('public/images/icon_twitter.png') }}" alt=""/>				</a>
                                 </span>
                                 <span class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-google elementor-repeater-item-b15c4eb" href="https://g.page/r/Cad6TYAwAXQREBM" target="_blank">
-						<span class="elementor-screen-only">Google</span>
-						<i class="fab fa-google"></i>					</a>
+					<a href="https://g.page/r/Cad6TYAwAXQREBM" target="_blank">
+						<img src="{{ asset('public/images/icon_google.png') }}" alt=""/>					</a>
                                 </span>
                             </div>
                             </p>
@@ -77,7 +74,7 @@
                                             Email </label>
                                         <input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Nhập email của bạn" required="required" aria-required="true">
                                     </div>
-                                    <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-33 e-form__buttons elementor-sm-40">
+                                    <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-33 e-form__buttons elementor-sm-40" style="align-items:flex-start !important">
                                         <button type="submit" class="elementor-button elementor-size-sm" style="background-color:#00aeef">
 						<span>
 															<span class=" elementor-button-icon">
