@@ -8,11 +8,11 @@
                             <h4 class="elementor-heading-title elementor-size-default">THÔNG TIN LIÊN HỆ</h4></div>
                     </div>
                     <div class="elementor-element elementor-element-b5b89f7 elementor-widget elementor-widget-text-editor" data-id="b5b89f7" data-element_type="widget" data-widget_type="text-editor.default">
-                        <div class="elementor-widget-container">
+                        <div class="elementor-widget-container elementor-kit-10750">
                             <p><strong>SKY PACIFIC EDU</strong></p>
-                            <p>http://www.skypacificedu.edu.vn</p>
+                            <p>http://www.<a>skypacificedu</a>.edu.vn</p>
                             <p>info@skypacificedu.edu.vn</p>
-                            <p>08 6285 6396</p>
+                            <p><a>08 6285 6396</a></p>
                             <p>247 Điện Biên Phủ, Phường 15, Quận Bình Thạnh, Hồ Chí Minh</p>
                             <p>
                             <div class="elementor-social-icons-wrapper elementor-flex">
@@ -95,17 +95,9 @@
         <div class="elementor-container elementor-column-gap-default">
             <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-32e671e" data-id="32e671e" data-element_type="column">
                 <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-element elementor-element-d2fb487 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="d2fb487" data-element_type="widget" data-widget_type="divider.default">
-                        <div class="elementor-widget-container">
-                            <div class="elementor-divider">
-			<span class="elementor-divider-separator">
-						</span>
-                            </div>
-                        </div>
-                    </div>
                     <div class="elementor-element elementor-element-677ccbe elementor-widget elementor-widget-text-editor" data-id="677ccbe" data-element_type="widget" data-widget_type="text-editor.default">
                         <div class="elementor-widget-container">
-                            <span>Copyright © {{ date('Y') }} skypacificedu. All rights reserved.</span></div>
+                            <span><i>Copyright © {{ date('Y') }}</i> skypacificedu, <i>All rights reserved</i></span></div>
                     </div>
                 </div>
             </div>

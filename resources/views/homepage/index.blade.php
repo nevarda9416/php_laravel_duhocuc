@@ -7,9 +7,6 @@
         @include('homepage.activity')
         @include('widgets.form')
         @include('homepage.event_video')
-        @include('homepage.partner')
+        @include('widgets.partner')
     </div>
-    @include('layouts.partials.footer_noscript')
-    @include('layouts.components.script')
-    @include('layouts.components.modal')
 @endsection

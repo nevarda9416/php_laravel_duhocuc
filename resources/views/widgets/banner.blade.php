@@ -11,7 +11,6 @@
                                     <rs-slides>
                                         <rs-slide style="position: absolute;" data-key="rs-103" data-title="Slide" data-thumb="{{ asset('public/images/banner.jpg') }}" data-link="//newocean.edu.vn/du-hoc-canada/du-hoc-canada-khong-chung-minh-tai-chinh/?click=banner-home" data-tag="l" data-target="_self" data-seoz="front" data-anim="f:slidebased;" data-in="o:1;y:(100%);m:true;col:5;" data-out="a:false;">
                                             <img decoding="async" src="//newocean.edu.vn/wp-content/plugins/revslider/public/assets/assets/dummy.png" alt="" title="poster canada" width="2297" height="822" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="{{ asset('public/images/banner.jpg') }}" data-no-retina>
-
                                         </rs-slide>
                                     </rs-slides>
                                 </rs-module>

@@ -236,31 +236,9 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('quen-mat-khau',  ['uses' => 'Auth\ForgotPasswordController@index']);
     Route::post('quen-mat-khau',  ['uses' => 'Auth\ForgotPasswordController@sendResetLinkEmail']);
     Route::get('thoat',  ['uses' => 'Auth\LoginController@logout']);
-    Route::get('diem-den', ['uses' => 'LocationController@index']);
-    Route::get('diem-den/{continent}/{country}/{city?}', ['uses' => 'LocationController@detail']);
-    Route::get('diem-den/{continent}/{country}/{city?}/hinh-anh', ['uses' => 'LocationController@detail']);
-    Route::get('diem-den/{continent}/{country}/{city?}/diem-du-lich', ['uses' => 'LocationController@destination']);
-    Route::get('diem-den/{continent}/{country}/{city?}/diem-du-lich/{slug?}', ['uses' => 'LocationController@destination']);
-    Route::get('gioi-thieu/{slug?}', ['uses' => 'PageController@detail']);
-    Route::get('bao-mat-thong-tin', ['uses' => 'HomepageController@security']);
-    Route::get('quy-dinh-su-dung', ['uses' => 'HomepageController@rule']);
-    Route::get('blog/viet-bai/note', ['uses' => 'BlogController@note']);
-    Route::post('blog/viet-bai/note', ['uses' => 'BlogController@postNote']);
-    Route::get('photo-blog/dang-bai/note', ['uses' => 'BlogController@photo']);
-    Route::post('photo-blog/dang-bai/note', ['uses' => 'BlogController@postPhoto']);
-    Route::get('cong-tac-vien/viet-bai/note', ['uses' => 'BlogController@collaborator']);
-    Route::get('hoi-dap', function () {
-        return view('question.index');
-    });
-    Route::get('lich-trinh-du-lich', function () {
-        return view('schedule.index');
-    });
-    Route::get('ban-do-du-lich/viet-nam', function () {
-        return view('map.index');
-    });
-    Route::get('du-lich/{slug}', ['uses' => 'BlogController@detail']);
-    Route::get('bai-viet/{slug}', ['uses' => 'BlogController@detail']);
-    Route::get('photo/{slug}', ['uses' => 'BlogController@detail']);
+    Route::get('du-hoc', ['uses' => 'StudyAbroadController@index']);
+    Route::get('du-hoc/{slug}', ['uses' => 'StudyAbroadController@detail']);
+    Route::get('gioi-thieu', ['uses' => 'PageController@about']);
     Route::get('{slug}', ['uses' => 'PageController@detail']);
     // Đường dẫn allow upload ảnh từ trong ckeditor
     Route::post('ckeditor/image_upload', 'CKEditorController@upload')->name('upload');

@@ -1,4 +1,7 @@
 @include('layouts.partials.header')
 @include('layouts.partials.nav')
 @yield('content')
+@include('layouts.partials.footer_noscript')
+@include('layouts.components.script')
+@include('layouts.components.modal')
 @include('layouts.partials.footer')
