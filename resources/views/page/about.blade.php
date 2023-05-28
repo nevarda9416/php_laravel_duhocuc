@@ -8,7 +8,7 @@
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-9b186df elementor-widget elementor-widget-heading elementor-align-center" data-id="9b186df" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
-                                <h3 class="elementor-heading-title elementor-size-large"><span style="font-weight: normal;">VỀ CHÚNG TÔI</span></h3></div>
+                                <h3 class="elementor-heading-title elementor-size-large"><span>VỀ CHÚNG TÔI</span></h3></div>
                         </div>
                     </div>
                 </div>
@@ -123,64 +123,64 @@
         <section class="elementor-section elementor-top-section elementor-element elementor-element-49c257e elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="49c257e" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;">
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-9b30e98" data-id="9b30e98" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                    <div class="elementor-widget-wrap elementor-element-populated">
+                    <div class="elementor-widget-wrap elementor-element-populated" style="background-color:#00aeef">
                         <div class="elementor-element elementor-element-deaeec1 elementor-widget elementor-widget-counter" data-id="deaeec1" data-element_type="widget" data-widget_type="counter.default">
                             <div class="elementor-widget-container">
                                 <div class="elementor-counter">
                                     <div class="elementor-counter-number-wrapper">
                                         <span class="elementor-counter-number-prefix"></span>
-                                        <span class="elementor-counter-number" data-duration="2000" data-to-value="15" data-from-value="0" data-delimiter=",">15</span>
-                                        <span class="elementor-counter-number-suffix">+</span>
+                                        <span class="elementor-counter-number" style="font-size:30px">9 Năm</span>
+                                        <span class="elementor-counter-number-suffix"></span>
                                     </div>
-                                    <div class="elementor-counter-title">Năm kinh nghiệm</div>
+                                    <div class="elementor-counter-title">Kinh nghiệm</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-5345b22" data-id="5345b22" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                    <div class="elementor-widget-wrap elementor-element-populated">
+                    <div class="elementor-widget-wrap elementor-element-populated" style="background-color:#502c84">
                         <div class="elementor-element elementor-element-788e75e elementor-widget elementor-widget-counter" data-id="788e75e" data-element_type="widget" data-widget_type="counter.default">
                             <div class="elementor-widget-container">
                                 <div class="elementor-counter">
                                     <div class="elementor-counter-number-wrapper">
                                         <span class="elementor-counter-number-prefix"></span>
-                                        <span class="elementor-counter-number" data-duration="2000" data-to-value="12" data-from-value="0" data-delimiter=",">12</span>
-                                        <span class="elementor-counter-number-suffix">+</span>
+                                        <span class="elementor-counter-number" style="font-size:30px">8 Quốc gia</span>
+                                        <span class="elementor-counter-number-suffix"></span>
                                     </div>
-                                    <div class="elementor-counter-title">Quốc gia du học</div>
+                                    <div class="elementor-counter-title">Du học</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-c16eabd" data-id="c16eabd" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                    <div class="elementor-widget-wrap elementor-element-populated">
+                    <div class="elementor-widget-wrap elementor-element-populated" style="background-color:#00aeef">
                         <div class="elementor-element elementor-element-e3947cb elementor-widget elementor-widget-counter" data-id="e3947cb" data-element_type="widget" data-widget_type="counter.default">
                             <div class="elementor-widget-container">
                                 <div class="elementor-counter">
                                     <div class="elementor-counter-number-wrapper">
                                         <span class="elementor-counter-number-prefix"></span>
-                                        <span class="elementor-counter-number" data-duration="1000" data-to-value="900" data-from-value="0" data-delimiter=",">900</span>
-                                        <span class="elementor-counter-number-suffix">+</span>
+                                        <span class="elementor-counter-number" style="font-size:30px">900+ Trường</span>
+                                        <span class="elementor-counter-number-suffix"></span>
                                     </div>
-                                    <div class="elementor-counter-title">Liên kết trường</div>
+                                    <div class="elementor-counter-title">Liên kết trực tiếp</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-ae41c71" data-id="ae41c71" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                    <div class="elementor-widget-wrap elementor-element-populated">
+                    <div class="elementor-widget-wrap elementor-element-populated" style="background-color:#502c84">
                         <div class="elementor-element elementor-element-a91541c elementor-widget elementor-widget-counter" data-id="a91541c" data-element_type="widget" data-widget_type="counter.default">
                             <div class="elementor-widget-container">
                                 <div class="elementor-counter">
                                     <div class="elementor-counter-number-wrapper">
                                         <span class="elementor-counter-number-prefix"></span>
-                                        <span class="elementor-counter-number" data-duration="100" data-to-value="12000" data-from-value="0">12000</span>
-                                        <span class="elementor-counter-number-suffix">+</span>
+                                        <span class="elementor-counter-number" style="font-size:30px">2000+ Học sinh</span>
+                                        <span class="elementor-counter-number-suffix"></span>
                                     </div>
-                                    <div class="elementor-counter-title">Hồ sơ thành công</div>
+                                    <div class="elementor-counter-title">Đỗ Visa du học</div>
                                 </div>
                             </div>
                         </div>
@@ -192,7 +192,7 @@
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9e80f93" data-id="9e80f93" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-9c00e38 elementor-widget elementor-widget-heading" data-id="9c00e38" data-element_type="widget" data-widget_type="heading.default">
+                        <div class="elementor-element elementor-element-9c00e38 elementor-widget elementor-widget-heading elementor-align-left" data-id="9c00e38" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
                                 <h3 class="elementor-heading-title elementor-size-large">BAN LÃNH ĐẠO</h3></div>
                         </div>
@@ -202,114 +202,51 @@
         </section>
         <section class="elementor-section elementor-top-section elementor-element elementor-element-a534846 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a534846" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;">
             <div class="elementor-container elementor-column-gap-default">
-                <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-094cfd2" data-id="094cfd2" data-element_type="column">
+                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-094cfd2" data-id="094cfd2" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-8fed26c elementor-widget elementor-widget-image" data-id="8fed26c" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img decoding="async" width="400" height="400" src="https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan.jpg" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt=""
-                                     data-lazy-srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan-200x200.jpg 200w" data-lazy-sizes="(max-width: 400px) 100vw, 400px"
-                                     data-lazy-src="https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan.jpg" data-ll-status="loaded" sizes="(max-width: 400px) 100vw, 400px"
-                                     srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan-200x200.jpg 200w">
-                                <noscript><img decoding="async" width="400" height="400" src="https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan.jpg" class="attachment-large size-large wp-image-10693" alt=""
-                                               srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan-200x200.jpg 200w" sizes="(max-width: 400px) 100vw, 400px"/></noscript>
+                                <img decoding="async" width="400" height="400" src="{{ asset('public/images/lanhdao_1.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="">
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-32a38fc elementor-widget elementor-widget-text-editor" data-id="32a38fc" data-element_type="widget" data-widget_type="text-editor.default">
                             <div class="elementor-widget-container">
-                                <p style="text-align: center;"><strong>Ms. Hoàng Lan</strong></p>
-                                <p style="text-align: center;"><strong>CEO</strong></p></div>
+                                <p style="text-align: center;"><strong>LÊ THU HUYỀN</strong></p>
+                                <p style="text-align: center;">Phó giám đốc</p>
+                                <p style="text-align: center;">"Chúng tôi sẽ luôn nỗ lực để hỗ trợ thật tốt cho các em học sinh trên hành trình chinh phục tương lai"</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-6caaeb8" data-id="6caaeb8" data-element_type="column">
+                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6caaeb8" data-id="6caaeb8" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-8cbe6e1 elementor-widget elementor-widget-image" data-id="8cbe6e1" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img decoding="async" width="400" height="400" src="https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong.jpg" class="attachment-large size-large wp-image-10692 entered lazyloaded" alt=""
-                                     data-lazy-srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong-200x200.jpg 200w" data-lazy-sizes="(max-width: 400px) 100vw, 400px"
-                                     data-lazy-src="https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong.jpg" data-ll-status="loaded" sizes="(max-width: 400px) 100vw, 400px"
-                                     srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong-200x200.jpg 200w">
-                                <noscript><img decoding="async" width="400" height="400" src="https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong.jpg" class="attachment-large size-large wp-image-10692" alt=""
-                                               srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong-200x200.jpg 200w" sizes="(max-width: 400px) 100vw, 400px"/></noscript>
+                                <img decoding="async" width="400" height="400" src="{{ asset('public/images/lanhdao_2.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="">
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-a725374 elementor-widget elementor-widget-text-editor" data-id="a725374" data-element_type="widget" data-widget_type="text-editor.default">
                             <div class="elementor-widget-container">
-                                <p style="text-align: center;"><strong>Ms. Vĩnh Hường</strong></p>
-                                <p style="text-align: center;"><strong>PGĐ Điều Hành&nbsp;</strong></p></div>
+                                <p style="text-align: center;"><strong>LÊ THU HUYỀN</strong></p>
+                                <p style="text-align: center;">Phó giám đốc</p>
+                                <p style="text-align: center;">"Chúng tôi sẽ luôn nỗ lực để hỗ trợ thật tốt cho các em học sinh trên hành trình chinh phục tương lai"</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-3f0fc51" data-id="3f0fc51" data-element_type="column">
+                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-3f0fc51" data-id="3f0fc51" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-8cdfdf9 elementor-widget elementor-widget-image" data-id="8cdfdf9" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img decoding="async" width="400" height="400" src="https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que.jpg" class="attachment-large size-large wp-image-10705 entered lazyloaded" alt=""
-                                     data-lazy-srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que-200x200.jpg 200w" data-lazy-sizes="(max-width: 400px) 100vw, 400px"
-                                     data-lazy-src="https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que.jpg" data-ll-status="loaded" sizes="(max-width: 400px) 100vw, 400px"
-                                     srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que-200x200.jpg 200w">
-                                <noscript><img decoding="async" width="400" height="400" src="https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que.jpg" class="attachment-large size-large wp-image-10705" alt=""
-                                               srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que-200x200.jpg 200w" sizes="(max-width: 400px) 100vw, 400px"/></noscript>
+                                <img decoding="async" width="400" height="400" src="{{ asset('public/images/lanhdao_3.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="">
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-406a492 elementor-widget elementor-widget-text-editor" data-id="406a492" data-element_type="widget" data-widget_type="text-editor.default">
                             <div class="elementor-widget-container">
-                                <p style="text-align: center;"><strong>Mr. Duy Quế</strong></p>
-                                <p style="text-align: center;"><strong>PGĐ Marketing</strong></p></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-7415412" data-id="7415412" data-element_type="column">
-                    <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-09a85f5 elementor-widget elementor-widget-image" data-id="09a85f5" data-element_type="widget" data-widget_type="image.default">
-                            <div class="elementor-widget-container">
-                                <img decoding="async" width="400" height="400" src="https://newocean.edu.vn/wp-content/uploads/2023/01/hong-ngan.jpg" class="attachment-medium_large size-medium_large wp-image-21555 entered lazyloaded" alt="" data-lazy-srcset="https://newocean.edu.vn/wp-content/uploads/2023/01/hong-ngan.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2023/01/hong-ngan-300x300.jpg 300w" data-lazy-sizes="(max-width: 400px) 100vw, 400px"
-                                     data-lazy-src="https://newocean.edu.vn/wp-content/uploads/2023/01/hong-ngan.jpg" data-ll-status="loaded" sizes="(max-width: 400px) 100vw, 400px" srcset="https://newocean.edu.vn/wp-content/uploads/2023/01/hong-ngan.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2023/01/hong-ngan-300x300.jpg 300w">
-                                <noscript><img decoding="async" width="400" height="400" src="https://newocean.edu.vn/wp-content/uploads/2023/01/hong-ngan.jpg" class="attachment-medium_large size-medium_large wp-image-21555" alt="" srcset="https://newocean.edu.vn/wp-content/uploads/2023/01/hong-ngan.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2023/01/hong-ngan-300x300.jpg 300w" sizes="(max-width: 400px) 100vw, 400px"/></noscript>
+                                <p style="text-align: center;"><strong>LÊ THU HUYỀN</strong></p>
+                                <p style="text-align: center;">Phó giám đốc</p>
+                                <p style="text-align: center;">"Chúng tôi sẽ luôn nỗ lực để hỗ trợ thật tốt cho các em học sinh trên hành trình chinh phục tương lai"</p>
                             </div>
-                        </div>
-                        <div class="elementor-element elementor-element-dc0dd34 elementor-widget elementor-widget-text-editor" data-id="dc0dd34" data-element_type="widget" data-widget_type="text-editor.default">
-                            <div class="elementor-widget-container">
-                                <p style="text-align: center;"><strong>Ms. Hồng Ngân</strong></p>
-                                <p style="text-align: center;"><strong>TP.Tư vấn&nbsp;HCM</strong></p></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-8257bd9" data-id="8257bd9" data-element_type="column">
-                    <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-1fd36aa elementor-widget elementor-widget-image" data-id="1fd36aa" data-element_type="widget" data-widget_type="image.default">
-                            <div class="elementor-widget-container">
-                                <img decoding="async" width="400" height="400" src="https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong.jpg" class="attachment-large size-large wp-image-10696 entered lazyloaded" alt=""
-                                     data-lazy-srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong-200x200.jpg 200w" data-lazy-sizes="(max-width: 400px) 100vw, 400px"
-                                     data-lazy-src="https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong.jpg" data-ll-status="loaded" sizes="(max-width: 400px) 100vw, 400px"
-                                     srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong-200x200.jpg 200w">
-                                <noscript><img decoding="async" width="400" height="400" src="https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong.jpg" class="attachment-large size-large wp-image-10696" alt=""
-                                               srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong-200x200.jpg 200w" sizes="(max-width: 400px) 100vw, 400px"/></noscript>
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-f15fa85 elementor-widget elementor-widget-text-editor" data-id="f15fa85" data-element_type="widget" data-widget_type="text-editor.default">
-                            <div class="elementor-widget-container">
-                                <p style="text-align: center;"><strong>Ms. Phương</strong></p>
-                                <p style="text-align: center;"><strong>PGĐ Hồ Sơ</strong></p></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-907072c" data-id="907072c" data-element_type="column">
-                    <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-89c07d6 elementor-widget elementor-widget-image" data-id="89c07d6" data-element_type="widget" data-widget_type="image.default">
-                            <div class="elementor-widget-container">
-                                <img decoding="async" width="400" height="400" src="https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai.jpg" class="attachment-large size-large wp-image-10690 entered lazyloaded" alt=""
-                                     data-lazy-srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai-200x200.jpg 200w" data-lazy-sizes="(max-width: 400px) 100vw, 400px"
-                                     data-lazy-src="https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai.jpg" data-ll-status="loaded" sizes="(max-width: 400px) 100vw, 400px"
-                                     srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai-200x200.jpg 200w">
-                                <noscript><img decoding="async" width="400" height="400" src="https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai.jpg" class="attachment-large size-large wp-image-10690" alt=""
-                                               srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai-200x200.jpg 200w" sizes="(max-width: 400px) 100vw, 400px"/></noscript>
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-4867197 elementor-widget elementor-widget-text-editor" data-id="4867197" data-element_type="widget" data-widget_type="text-editor.default">
-                            <div class="elementor-widget-container">
-                                <p style="text-align: center;"><strong>Mr. David Mai</strong></p>
-                                <p style="text-align: center;"><strong>PGĐ Đối ngoại</strong></p></div>
                         </div>
                     </div>
                 </div>
@@ -320,7 +257,7 @@
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9e80f93" data-id="9e80f93" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-9c00e38 elementor-widget elementor-widget-heading" data-id="9c00e38" data-element_type="widget" data-widget_type="heading.default">
+                        <div class="elementor-element elementor-element-9c00e38 elementor-widget elementor-widget-heading elementor-align-left" data-id="9c00e38" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
                                 <h3 class="elementor-heading-title elementor-size-large">ĐỘI NGŨ GIÁO VIÊN VÀ NHÂN VIÊN</h3></div>
                         </div>
@@ -330,114 +267,63 @@
         </section>
         <section class="elementor-section elementor-top-section elementor-element elementor-element-a534846 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a534846" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;">
             <div class="elementor-container elementor-column-gap-default">
-                <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-094cfd2" data-id="094cfd2" data-element_type="column">
+                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-094cfd2" data-id="094cfd2" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-8fed26c elementor-widget elementor-widget-image" data-id="8fed26c" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img decoding="async" width="400" height="400" src="https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan.jpg" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt=""
-                                     data-lazy-srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan-200x200.jpg 200w" data-lazy-sizes="(max-width: 400px) 100vw, 400px"
-                                     data-lazy-src="https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan.jpg" data-ll-status="loaded" sizes="(max-width: 400px) 100vw, 400px"
-                                     srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan-200x200.jpg 200w">
-                                <noscript><img decoding="async" width="400" height="400" src="https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan.jpg" class="attachment-large size-large wp-image-10693" alt=""
-                                               srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/hoang-lan-200x200.jpg 200w" sizes="(max-width: 400px) 100vw, 400px"/></noscript>
+                                <img decoding="async" width="400" height="400" src="{{ asset('public/images/nhansu_1.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="">
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-32a38fc elementor-widget elementor-widget-text-editor" data-id="32a38fc" data-element_type="widget" data-widget_type="text-editor.default">
                             <div class="elementor-widget-container">
-                                <p style="text-align: center;"><strong>Ms. Hoàng Lan</strong></p>
-                                <p style="text-align: center;"><strong>CEO</strong></p></div>
+                                <p style="text-align: center;"><strong>LÊ THU HUYỀN</strong></p>
+                                <p style="text-align: center;">Giáo viên tiếng Trung</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-6caaeb8" data-id="6caaeb8" data-element_type="column">
+                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-6caaeb8" data-id="6caaeb8" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-8cbe6e1 elementor-widget elementor-widget-image" data-id="8cbe6e1" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img decoding="async" width="400" height="400" src="https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong.jpg" class="attachment-large size-large wp-image-10692 entered lazyloaded" alt=""
-                                     data-lazy-srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong-200x200.jpg 200w" data-lazy-sizes="(max-width: 400px) 100vw, 400px"
-                                     data-lazy-src="https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong.jpg" data-ll-status="loaded" sizes="(max-width: 400px) 100vw, 400px"
-                                     srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong-200x200.jpg 200w">
-                                <noscript><img decoding="async" width="400" height="400" src="https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong.jpg" class="attachment-large size-large wp-image-10692" alt=""
-                                               srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/vinh-huong-200x200.jpg 200w" sizes="(max-width: 400px) 100vw, 400px"/></noscript>
+                                <img decoding="async" width="400" height="400" src="{{ asset('public/images/nhansu_2.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="">
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-a725374 elementor-widget elementor-widget-text-editor" data-id="a725374" data-element_type="widget" data-widget_type="text-editor.default">
                             <div class="elementor-widget-container">
-                                <p style="text-align: center;"><strong>Ms. Vĩnh Hường</strong></p>
-                                <p style="text-align: center;"><strong>PGĐ Điều Hành&nbsp;</strong></p></div>
+                                <p style="text-align: center;"><strong>LÊ THU HUYỀN</strong></p>
+                                <p style="text-align: center;">Giáo viên tiếng Trung</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-3f0fc51" data-id="3f0fc51" data-element_type="column">
+                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-3f0fc51" data-id="3f0fc51" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-8cdfdf9 elementor-widget elementor-widget-image" data-id="8cdfdf9" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img decoding="async" width="400" height="400" src="https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que.jpg" class="attachment-large size-large wp-image-10705 entered lazyloaded" alt=""
-                                     data-lazy-srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que-200x200.jpg 200w" data-lazy-sizes="(max-width: 400px) 100vw, 400px"
-                                     data-lazy-src="https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que.jpg" data-ll-status="loaded" sizes="(max-width: 400px) 100vw, 400px"
-                                     srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que-200x200.jpg 200w">
-                                <noscript><img decoding="async" width="400" height="400" src="https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que.jpg" class="attachment-large size-large wp-image-10705" alt=""
-                                               srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/duy-que-200x200.jpg 200w" sizes="(max-width: 400px) 100vw, 400px"/></noscript>
+                                <img decoding="async" width="400" height="400" src="{{ asset('public/images/nhansu_3.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="">
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-406a492 elementor-widget elementor-widget-text-editor" data-id="406a492" data-element_type="widget" data-widget_type="text-editor.default">
                             <div class="elementor-widget-container">
-                                <p style="text-align: center;"><strong>Mr. Duy Quế</strong></p>
-                                <p style="text-align: center;"><strong>PGĐ Marketing</strong></p></div>
+                                <p style="text-align: center;"><strong>LÊ THU HUYỀN</strong></p>
+                                <p style="text-align: center;">Giáo viên tiếng Trung</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-7415412" data-id="7415412" data-element_type="column">
+                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-7415412" data-id="7415412" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-09a85f5 elementor-widget elementor-widget-image" data-id="09a85f5" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img decoding="async" width="400" height="400" src="https://newocean.edu.vn/wp-content/uploads/2023/01/hong-ngan.jpg" class="attachment-medium_large size-medium_large wp-image-21555 entered lazyloaded" alt="" data-lazy-srcset="https://newocean.edu.vn/wp-content/uploads/2023/01/hong-ngan.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2023/01/hong-ngan-300x300.jpg 300w" data-lazy-sizes="(max-width: 400px) 100vw, 400px"
-                                     data-lazy-src="https://newocean.edu.vn/wp-content/uploads/2023/01/hong-ngan.jpg" data-ll-status="loaded" sizes="(max-width: 400px) 100vw, 400px" srcset="https://newocean.edu.vn/wp-content/uploads/2023/01/hong-ngan.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2023/01/hong-ngan-300x300.jpg 300w">
-                                <noscript><img decoding="async" width="400" height="400" src="https://newocean.edu.vn/wp-content/uploads/2023/01/hong-ngan.jpg" class="attachment-medium_large size-medium_large wp-image-21555" alt="" srcset="https://newocean.edu.vn/wp-content/uploads/2023/01/hong-ngan.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2023/01/hong-ngan-300x300.jpg 300w" sizes="(max-width: 400px) 100vw, 400px"/></noscript>
+                                <img decoding="async" width="400" height="400" src="{{ asset('public/images/nhansu_4.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="">
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-dc0dd34 elementor-widget elementor-widget-text-editor" data-id="dc0dd34" data-element_type="widget" data-widget_type="text-editor.default">
                             <div class="elementor-widget-container">
-                                <p style="text-align: center;"><strong>Ms. Hồng Ngân</strong></p>
-                                <p style="text-align: center;"><strong>TP.Tư vấn&nbsp;HCM</strong></p></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-8257bd9" data-id="8257bd9" data-element_type="column">
-                    <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-1fd36aa elementor-widget elementor-widget-image" data-id="1fd36aa" data-element_type="widget" data-widget_type="image.default">
-                            <div class="elementor-widget-container">
-                                <img decoding="async" width="400" height="400" src="https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong.jpg" class="attachment-large size-large wp-image-10696 entered lazyloaded" alt=""
-                                     data-lazy-srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong-200x200.jpg 200w" data-lazy-sizes="(max-width: 400px) 100vw, 400px"
-                                     data-lazy-src="https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong.jpg" data-ll-status="loaded" sizes="(max-width: 400px) 100vw, 400px"
-                                     srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong-200x200.jpg 200w">
-                                <noscript><img decoding="async" width="400" height="400" src="https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong.jpg" class="attachment-large size-large wp-image-10696" alt=""
-                                               srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/mrs-phuong-200x200.jpg 200w" sizes="(max-width: 400px) 100vw, 400px"/></noscript>
+                                <p style="text-align: center;"><strong>LÊ THU HUYỀN</strong></p>
+                                <p style="text-align: center;">Giáo viên tiếng Trung</p>
                             </div>
-                        </div>
-                        <div class="elementor-element elementor-element-f15fa85 elementor-widget elementor-widget-text-editor" data-id="f15fa85" data-element_type="widget" data-widget_type="text-editor.default">
-                            <div class="elementor-widget-container">
-                                <p style="text-align: center;"><strong>Ms. Phương</strong></p>
-                                <p style="text-align: center;"><strong>PGĐ Hồ Sơ</strong></p></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-907072c" data-id="907072c" data-element_type="column">
-                    <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-89c07d6 elementor-widget elementor-widget-image" data-id="89c07d6" data-element_type="widget" data-widget_type="image.default">
-                            <div class="elementor-widget-container">
-                                <img decoding="async" width="400" height="400" src="https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai.jpg" class="attachment-large size-large wp-image-10690 entered lazyloaded" alt=""
-                                     data-lazy-srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai-200x200.jpg 200w" data-lazy-sizes="(max-width: 400px) 100vw, 400px"
-                                     data-lazy-src="https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai.jpg" data-ll-status="loaded" sizes="(max-width: 400px) 100vw, 400px"
-                                     srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai-200x200.jpg 200w">
-                                <noscript><img decoding="async" width="400" height="400" src="https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai.jpg" class="attachment-large size-large wp-image-10690" alt=""
-                                               srcset="https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai.jpg 400w, https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai-300x300.jpg 300w, https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai-150x150.jpg 150w, https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai-66x66.jpg 66w, https://newocean.edu.vn/wp-content/uploads/2020/03/david-mai-200x200.jpg 200w" sizes="(max-width: 400px) 100vw, 400px"/></noscript>
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-4867197 elementor-widget elementor-widget-text-editor" data-id="4867197" data-element_type="widget" data-widget_type="text-editor.default">
-                            <div class="elementor-widget-container">
-                                <p style="text-align: center;"><strong>Mr. David Mai</strong></p>
-                                <p style="text-align: center;"><strong>PGĐ Đối ngoại</strong></p></div>
                         </div>
                     </div>
                 </div>
@@ -451,7 +337,7 @@
                         <div class="elementor-widget-wrap elementor-element-populated">
                             <div class="elementor-element elementor-element-0ed1dfc elementor-widget elementor-widget-heading" data-id="0ed1dfc" data-element_type="widget" data-widget_type="heading.default">
                                 <div class="elementor-widget-container">
-                                    <h3 class="elementor-heading-title elementor-size-large">TIN TỨC DU HỌC</h3></div>
+                                    <h3 class="elementor-heading-title elementor-size-large">HÌNH ẢNH VỀ SKY PACIFIC EDU</h3></div>
                             </div>
                             <div class="elementor-element elementor-element-2804b5b elementor-widget elementor-widget-jet-blog-smart-listing" data-id="2804b5b" data-element_type="widget" data-widget_type="jet-blog-smart-listing.default">
                                 <div class="elementor-widget-container">

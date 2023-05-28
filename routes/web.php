@@ -238,7 +238,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('thoat',  ['uses' => 'Auth\LoginController@logout']);
     Route::get('du-hoc', ['uses' => 'StudyAbroadController@index']);
     Route::get('du-hoc/{slug}', ['uses' => 'StudyAbroadController@detail']);
-    Route::get('gioi-thieu', ['uses' => 'PageController@about']);
+    Route::get('gioi-thieu-chung', ['uses' => 'PageController@about']);
     Route::get('{slug}', ['uses' => 'PageController@detail']);
     // Đường dẫn allow upload ảnh từ trong ckeditor
     Route::post('ckeditor/image_upload', 'CKEditorController@upload')->name('upload');
