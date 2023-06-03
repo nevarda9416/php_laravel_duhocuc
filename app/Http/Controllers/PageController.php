@@ -54,4 +54,22 @@ class PageController extends Controller
         $metaData['meta_image'] = $page->thumbnail_url;
         return view('page.about', compact('page', 'metaData'));
     }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function recruitment()
+    {
+        /*
+        $page = Page::where('slug', '=', 'tuyen-dung')->where('status', Page::STATUS_PUBLISH)->first();
+        if (empty($page)) {
+            return redirect('/');
+        }
+        $metaData['meta_title'] = $page->meta_title;
+        $metaData['meta_keyword'] = $page->meta_keyword;
+        $metaData['meta_description'] = $page->meta_description;
+        $metaData['meta_image'] = $page->thumbnail_url;
+        */
+        return view('page.career');
+    }
 }
