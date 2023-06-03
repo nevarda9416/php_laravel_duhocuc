@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Core\Controllers\Controller;
-use App\Core\Models\Page;
 
 class SchoolController extends Controller
 {
@@ -28,21 +27,10 @@ class SchoolController extends Controller
     }
 
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function detail($slug)
+    public function detail()
     {
-        $study_abroad = Page::where('slug', $slug)->first();
-        if (empty($study_abroad)) {
-            //return redirect('/');
-        }
-        $lastUri = last(request()->segments());
-        $metaData['meta_title'] = $study_abroad->meta_title ?? '';
-        $metaData['meta_keyword'] = $study_abroad->meta_keyword ?? '';
-        $metaData['meta_description'] = $study_abroad->meta_description ?? '';
-        $metaData['meta_image'] = $study_abroad->thumbnail_url ?? '';
-        return view('study_abroad.detail', compact('study_abroad', 'lastUri', 'metaData'));
+        return view('school.detail');
     }
 }
