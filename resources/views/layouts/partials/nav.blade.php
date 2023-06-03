@@ -244,7 +244,7 @@
                                                         <div class="jet-menu-title">Khóa học ngôn ngữ</div>
                                                     </div>
                                                 </a></li>
-                                            <li id="jet-menu-item-20913" class="jet-menu-item jet-menu-item-type-post_type jet-menu-item-object-page jet-menu-item-has-children jet-has-roll-up jet-simple-menu-item jet-regular-item jet-menu-item-20913"><a href="{{ url('dich-vu-tu-van-du-hoc') }}" class="top-level-link">
+                                            <li id="jet-menu-item-20913" class="jet-menu-item jet-menu-item-type-post_type jet-menu-item-object-page jet-menu-item-has-children jet-has-roll-up jet-simple-menu-item jet-regular-item jet-menu-item-20913"><a href="{{ url('truong-hoc') }}" class="top-level-link">
                                                     <div class="jet-menu-item-wrapper">
                                                         <div class="jet-menu-title">Trường học</div>
                                                     </div>
