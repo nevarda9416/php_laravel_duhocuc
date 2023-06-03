@@ -72,4 +72,12 @@ class PageController extends Controller
         */
         return view('page.career');
     }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function partner()
+    {
+        return view('page.partner');
+    }
 }
