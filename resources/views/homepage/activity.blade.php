@@ -11,11 +11,9 @@
                      data-widget_type="gallery.default">
                     <div class="elementor-widget-container">
                         <div class="elementor-gallery__container">
-                            <a class="e-gallery-item elementor-gallery-item elementor-animated-content" data-e-gallery-tags="2" href="https://newocean.edu.vn/wp-content/uploads/2021/01/122070134_3980340578661350_1710989647291885484_o-scaled.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-c7ca10e"
+                            <a class="e-gallery-item elementor-gallery-item elementor-animated-content" data-e-gallery-tags="2" href="{{ asset('public/images/duhocsinh.png') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-c7ca10e"
                                data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D">
-                                <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/duhocsinh.png') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img">
-
-                                </div>
+                                <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/duhocsinh.png') }}" data-width="600" data-height="400" aria-label="" role="img"></div>
                             </a>
                             <a class="e-gallery-item elementor-gallery-item elementor-animated-content" data-e-gallery-tags="0" href="https://newocean.edu.vn/wp-content/uploads/2023/04/Visa-Nguyen-cuong-Thinh-900-×-600-px.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-c7ca10e"
                                data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjUwMzEsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzA0XC9WaXNhLU5ndXllbi1jdW9uZy1UaGluaC05MDAtXHUwMGQ3LTYwMC1weC5qcGciLCJzbGlkZXNob3ciOiJhbGwtYzdjYTEwZSJ9">

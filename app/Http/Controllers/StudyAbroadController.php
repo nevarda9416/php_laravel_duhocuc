@@ -45,4 +45,12 @@ class StudyAbroadController extends Controller
         $metaData['meta_image'] = $study_abroad->thumbnail_url ?? '';
         return view('study_abroad.detail', compact('study_abroad', 'lastUri', 'metaData'));
     }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function major()
+    {
+        return view('study_abroad.major');
+    }
 }

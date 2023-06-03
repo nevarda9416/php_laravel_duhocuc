@@ -7,6 +7,6 @@
         @include('homepage.activity')
         @include('widgets.form')
         @include('homepage.event_video')
-        @include('widgets.partner')
+        @include('homepage.partner')
     </div>
 @endsection

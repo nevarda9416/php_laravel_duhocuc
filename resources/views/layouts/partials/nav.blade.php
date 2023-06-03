@@ -250,7 +250,7 @@
                                                     </div>
                                                 </a>
                                             </li>
-                                            <li id="jet-menu-item-20912" class="jet-menu-item jet-menu-item-type-custom jet-menu-item-object-custom jet-has-roll-up jet-simple-menu-item jet-regular-item jet-menu-item-20912"><a target="_blank" rel="nofollow" href="https://newoceanimmi.com/" class="top-level-link">
+                                            <li id="jet-menu-item-20912" class="jet-menu-item jet-menu-item-type-custom jet-menu-item-object-custom jet-has-roll-up jet-simple-menu-item jet-regular-item jet-menu-item-20912"><a href="{{ url('nganh-hoc') }}" class="top-level-link">
                                                     <div class="jet-menu-item-wrapper">
                                                         <div class="jet-menu-title">Ngành học</div>
                                                     </div>
@@ -270,7 +270,7 @@
                                                         <div class="jet-menu-title">Góc tư vấn</div>
                                                     </div>
                                                 </a></li>
-                                            <li id="jet-menu-item-20890" class="jet-menu-item jet-menu-item-type-post_type jet-menu-item-object-page jet-has-roll-up jet-simple-menu-item jet-regular-item jet-menu-item-20890"><a href="{{ url('lien-he-new-ocean') }}" class="top-level-link">
+                                            <li id="jet-menu-item-20890" class="jet-menu-item jet-menu-item-type-post_type jet-menu-item-object-page jet-has-roll-up jet-simple-menu-item jet-regular-item jet-menu-item-20890"><a href="{{ url('doi-tac') }}" class="top-level-link">
                                                     <div class="jet-menu-item-wrapper">
                                                         <div class="jet-menu-title">Đối tác</div>
                                                     </div>
