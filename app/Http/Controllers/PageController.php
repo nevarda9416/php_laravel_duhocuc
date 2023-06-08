@@ -70,7 +70,7 @@ class PageController extends Controller
         $metaData['meta_description'] = $page->meta_description;
         $metaData['meta_image'] = $page->thumbnail_url;
         */
-        return view('page.career');
+        return view('page.recruitment');
     }
 
     /**
@@ -79,5 +79,13 @@ class PageController extends Controller
     public function partner()
     {
         return view('page.partner');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function seminar()
+    {
+        return view('page.seminar');
     }
 }

@@ -6,7 +6,7 @@
         @include('homepage.consulting')
         @include('homepage.activity')
         @include('widgets.form')
-        @include('homepage.event_video')
+        @include('homepage.video')
         @include('homepage.partner')
     </div>
 @endsection

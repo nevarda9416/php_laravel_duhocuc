@@ -236,14 +236,17 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('quen-mat-khau',  ['uses' => 'Auth\ForgotPasswordController@index']);
     Route::post('quen-mat-khau',  ['uses' => 'Auth\ForgotPasswordController@sendResetLinkEmail']);
     Route::get('thoat',  ['uses' => 'Auth\LoginController@logout']);
+    Route::get('gioi-thieu-chung', ['uses' => 'PageController@about']);
     Route::get('du-hoc', ['uses' => 'StudyAbroadController@index']);
     Route::get('du-hoc/{slug}', ['uses' => 'StudyAbroadController@detail']);
-    Route::get('gioi-thieu-chung', ['uses' => 'PageController@about']);
-    Route::get('tuyen-dung', ['uses' => 'PageController@recruitment']);
-    Route::get('doi-tac', ['uses' => 'PageController@partner']);
-    Route::get('nganh-hoc', ['uses' => 'StudyAbroadController@major']);
+    Route::get('khoa-hoc-ngon-ngu', ['uses' => 'SchoolController@course']);
     Route::get('truong-hoc', ['uses' => 'SchoolController@index']);
     Route::get('truong-hoc/{slug}', ['uses' => 'SchoolController@detail']);
+    Route::get('nganh-hoc', ['uses' => 'SchoolController@major']);
+    Route::get('hoc-bong', ['uses' => 'SchoolController@scholarship']);
+    Route::get('hoi-thao', ['uses' => 'PageController@seminar']);
+    Route::get('doi-tac', ['uses' => 'PageController@partner']);
+    Route::get('tuyen-dung', ['uses' => 'PageController@recruitment']);
     Route::get('{slug}', ['uses' => 'PageController@detail']);
     // Đường dẫn allow upload ảnh từ trong ckeditor
     Route::post('ckeditor/image_upload', 'CKEditorController@upload')->name('upload');

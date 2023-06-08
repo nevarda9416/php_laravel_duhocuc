@@ -21,6 +21,14 @@ class SchoolController extends Controller
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
+    public function course()
+    {
+        return view('school.course');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function index()
     {
         return view('school.index');
@@ -32,5 +40,21 @@ class SchoolController extends Controller
     public function detail()
     {
         return view('school.detail');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function major()
+    {
+        return view('school.major');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function scholarship()
+    {
+        return view('school.scholarship');
     }
 }

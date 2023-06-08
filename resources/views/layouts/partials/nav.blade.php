@@ -239,7 +239,7 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li id="jet-menu-item-20917" class="jet-menu-item jet-menu-item-type-post_type jet-menu-item-object-page jet-has-roll-up jet-simple-menu-item jet-regular-item jet-menu-item-20917"><a href="{{ url('hoc-bong-du-hoc') }}" class="top-level-link">
+                                            <li id="jet-menu-item-20917" class="jet-menu-item jet-menu-item-type-post_type jet-menu-item-object-page jet-has-roll-up jet-simple-menu-item jet-regular-item jet-menu-item-20917"><a href="{{ url('khoa-hoc-ngon-ngu') }}" class="top-level-link">
                                                     <div class="jet-menu-item-wrapper">
                                                         <div class="jet-menu-title">Khóa học ngôn ngữ</div>
                                                     </div>
@@ -255,12 +255,12 @@
                                                         <div class="jet-menu-title">Ngành học</div>
                                                     </div>
                                                 </a></li>
-                                            <li id="jet-menu-item-20890" class="jet-menu-item jet-menu-item-type-post_type jet-menu-item-object-page jet-has-roll-up jet-simple-menu-item jet-regular-item jet-menu-item-20890"><a href="{{ url('lien-he-new-ocean') }}" class="top-level-link">
+                                            <li id="jet-menu-item-20890" class="jet-menu-item jet-menu-item-type-post_type jet-menu-item-object-page jet-has-roll-up jet-simple-menu-item jet-regular-item jet-menu-item-20890"><a href="{{ url('hoc-bong') }}" class="top-level-link">
                                                     <div class="jet-menu-item-wrapper">
                                                         <div class="jet-menu-title">Học bổng</div>
                                                     </div>
                                                 </a></li>
-                                            <li id="jet-menu-item-20890" class="jet-menu-item jet-menu-item-type-post_type jet-menu-item-object-page jet-has-roll-up jet-simple-menu-item jet-regular-item jet-menu-item-20890"><a href="{{ url('lien-he-new-ocean') }}" class="top-level-link">
+                                            <li id="jet-menu-item-20890" class="jet-menu-item jet-menu-item-type-post_type jet-menu-item-object-page jet-has-roll-up jet-simple-menu-item jet-regular-item jet-menu-item-20890"><a href="{{ url('hoi-thao') }}" class="top-level-link">
                                                     <div class="jet-menu-item-wrapper">
                                                         <div class="jet-menu-title">Hội thảo</div>
                                                     </div>
