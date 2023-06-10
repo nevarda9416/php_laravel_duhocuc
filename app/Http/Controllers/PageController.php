@@ -58,6 +58,30 @@ class PageController extends Controller
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
+    public function seminar()
+    {
+        return view('page.seminar');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function consultation()
+    {
+        return view('page.consultation');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function partner()
+    {
+        return view('page.partner');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function recruitment()
     {
         /*
@@ -76,16 +100,8 @@ class PageController extends Controller
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function partner()
+    public function contact()
     {
-        return view('page.partner');
-    }
-
-    /**
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     */
-    public function seminar()
-    {
-        return view('page.seminar');
+        return view('page.contact');
     }
 }

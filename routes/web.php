@@ -245,8 +245,10 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('nganh-hoc', ['uses' => 'SchoolController@major']);
     Route::get('hoc-bong', ['uses' => 'SchoolController@scholarship']);
     Route::get('hoi-thao', ['uses' => 'PageController@seminar']);
+    Route::get('goc-tu-van', ['uses' => 'PageController@consultation']);
     Route::get('doi-tac', ['uses' => 'PageController@partner']);
     Route::get('tuyen-dung', ['uses' => 'PageController@recruitment']);
+    Route::get('lien-he', ['uses' => 'PageController@contact']);
     Route::get('{slug}', ['uses' => 'PageController@detail']);
     // Đường dẫn allow upload ảnh từ trong ckeditor
     Route::post('ckeditor/image_upload', 'CKEditorController@upload')->name('upload');
