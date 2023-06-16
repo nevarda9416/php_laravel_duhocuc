@@ -61,18 +61,13 @@
                     <div class="elementor-element elementor-element-72cbe67 elementor-button-align-stretch elementor-widget elementor-widget-form" data-id="72cbe67" data-element_type="widget" data-settings="{&quot;button_width&quot;:&quot;33&quot;,&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width_mobile&quot;:&quot;40&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}"
                          data-widget_type="form.default">
                         <div class="elementor-widget-container">
-                            <form class="elementor-form" method="post" name="New Form">
-                                <input type="hidden" name="post_id" value="20951"/>
-                                <input type="hidden" name="form_id" value="72cbe67"/>
-                                <input type="hidden" name="referer_title" value="Công Ty Tư vấn Du học New Ocean | Trung Tâm Tư Vấn Du Học"/>
-
-                                <input type="hidden" name="queried_id" value="174"/>
-
+                            <form class="elementor-form" method="post" name="New Form" action="{{ url('register/newsletter_subcriber') }}">
+                                {{ csrf_field() }}
                                 <div class="elementor-form-fields-wrapper elementor-labels-">
                                     <div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-66 elementor-sm-60 elementor-field-required">
                                         <label for="form-field-email" class="elementor-field-label elementor-screen-only">
                                             Email </label>
-                                        <input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Nhập email của bạn" required="required" aria-required="true">
+                                        <input size="1" type="email" name="email" id="form-field-email" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Nhập email của bạn" required="required" aria-required="true">
                                     </div>
                                     <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-33 e-form__buttons elementor-sm-40" style="align-items:flex-start !important">
                                         <button type="submit" class="elementor-button elementor-size-sm" style="background-color:#00aeef">

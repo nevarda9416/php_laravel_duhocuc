@@ -1701,8 +1701,8 @@
             background-color: #fff;
             top: 100%;
             left: 0;
-            -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
             z-index: 999
         }
 

@@ -250,6 +250,5 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('tuyen-dung', ['uses' => 'PageController@recruitment']);
     Route::get('lien-he', ['uses' => 'PageController@contact']);
     Route::get('{slug}', ['uses' => 'PageController@detail']);
-    // Đường dẫn allow upload ảnh từ trong ckeditor
-    Route::post('ckeditor/image_upload', 'CKEditorController@upload')->name('upload');
+    Route::post('register/newsletter_subcriber ', 'FormController@subcribe');
 });

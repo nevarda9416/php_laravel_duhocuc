@@ -4,6 +4,16 @@
         font-weight: 400;
         font-display: swap;
         src: local('Roboto'), local('Roboto'), url({{asset('public/assets/fonts/roboto/roboto-400.woff2')}}) format('woff2');
+    }
+    .elementor-message.elementor-message-danger {color:green}
+    .elementor-message.elementor-message-danger:before {
+        content: "\e90e";
+        display: inline-block;
+        font-family: eicons;
+        font-weight: 400;
+        font-style: normal;
+        vertical-align: middle;
+        margin-right: 5px;
     }</style>
 <script>
     if (typeof revslider_showDoubleJqueryError === "undefined") {
@@ -421,7 +431,7 @@
 </script>
 <script id='elementor-pro-frontend-js-before'>
     var ElementorProFrontendConfig = {
-        "ajaxurl": "https:\/\/newocean.edu.vn\/wp-admin\/admin-ajax.php",
+        "ajaxurl": "{{ url('register/newsletter_subcriber') }}",
         "nonce": "7b6a7f7c73",
         "urls": {"assets": "https:\/\/newocean.edu.vn\/wp-content\/plugins\/elementor-pro\/assets\/", "rest": "https:\/\/newocean.edu.vn\/wp-json\/"},
         "shareButtonsNetworks": {
