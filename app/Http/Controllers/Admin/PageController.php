@@ -8,7 +8,6 @@ use Illuminate\Http\Request;
 use App\Core\Models\Page;
 use App\Core\Models\Category;
 use Config;
-use Illuminate\Support\Facades\DB;
 
 class PageController extends Controller
 {
@@ -57,11 +56,9 @@ class PageController extends Controller
             if ($file) {
                 $original_name = $file->getClientOriginalName();
             }
-
             $yearDir = date('Y');
             $monthDir = date('m');
             $dayDir = date('d');
-
             $page = new Page([
                 'title' => $title,
                 'excerpt' => $request->get('excerpt'),
@@ -166,7 +163,6 @@ class PageController extends Controller
             $page->slug = $slug;
             $page->status = $request->get('status');
             $page->category_id = $request->get('category_id');
-            $page->thumbnail_url = ($file) ? $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $original_name : ''; // Chức năng edit lại ảnh đại diện cần xem lại cơ chế thay đổi
             $page->latitude = $request->get('latitude');
             $page->longitude = $request->get('longitude');
             $page->type = 'page';
@@ -175,6 +171,7 @@ class PageController extends Controller
             $page->meta_description = $request->get('meta_description');
             // Ok thì upload file và save mới
             if ($file) {
+                $page->thumbnail_url = ($file) ? $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $original_name : ''; // Chức năng edit lại ảnh đại diện cần xem lại cơ chế thay đổi
                 UploadFileBusiness::uploadFileToFolder($file);
             }
             $page->save();

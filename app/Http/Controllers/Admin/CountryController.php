@@ -58,6 +58,9 @@ class CountryController extends Controller
                 return redirect('cms/countries')->with('error', 'Quốc gia ' . $name . ' đã tồn tại');
             } else {
                 // Ok thì save mới
+                if ($file) {
+                    UploadFileBusiness::uploadFileToFolder($file);
+                }
                 $country->save();
                 return redirect('cms/countries')->with('message', 'Tạo mới quốc gia ' . $name . ' thành công');
             }

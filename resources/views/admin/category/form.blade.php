@@ -69,6 +69,25 @@ switch ($action) {
                             </div>
                         </div>
                         <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Loại danh mục</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <select class="form-control" name="category_type" {{ $attribute }}>
+                                    <option></option>
+                                    <option value="suc-khoe"{{ $category->category_type == 'course' ? ' selected' : '' }}>Khóa học ngôn ngữ</option>
+                                    <option value="hoi-dap"{{ $category->category_type == 'school' ? ' selected' : '' }}>Trường học các nước</option>
+                                    <option value="tin-tuc"{{ $category->category_type == 'major' ? ' selected' : '' }}>Ngành học các nước</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Quốc gia</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <select class="form-control" name="country_id" {{ $attribute }}>
+                                    <option></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Hiển thị trong CMS</label>
                             <div class="col-md-9 col-sm-9 col-xs-12">
                                 <div class="checkbox">
@@ -76,6 +95,22 @@ switch ($action) {
                                 </div>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Ảnh đại diện</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <input type="file" class="form-control" name="thumbnail_url">
+                                <div id="thumbnail_preview" class="mt-4"></div>
+                            </div>
+                        </div>
+                        @if ($category->thumbnail_url)
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12"></label>
+                                <div class="col-md-9 col-sm-9 col-xs-12">
+                                    <p>Ảnh đại diện hiện tại (bên dưới)</p>
+                                    <p><img src="{{ Config::get('constants.STATIC_IMAGES') . $category->thumbnail_url }}" style="width:auto;max-width:100%"/></p>
+                                </div>
+                            </div>
+                        @endif
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Tiêu đề (SEO) <span
                                     class="required">*</span></label>
