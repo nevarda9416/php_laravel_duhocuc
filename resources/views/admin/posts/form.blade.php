@@ -100,7 +100,7 @@ switch ($action) {
                             </div>
                         </div>
                     @endif
-                    <div class="control-group">
+                    <div class="form-group">
                         <label class="control-label col-md-2 col-sm-2 col-xs-12">Tags (keywords bài viết)</label>
                         <div class="col-md-9 col-sm-9 col-xs-12">
                             <?php $list_tags = ''; ?>
@@ -111,30 +111,34 @@ switch ($action) {
                             <div id="suggestions-container" style="position: relative; float: left; width: 250px; margin: 10px;"></div>
                         </div>
                     </div>
+                    <hr/>
                     <div class="form-group">
-                        <label class="control-label col-md-2 col-sm-2 col-xs-12">Editor's Picks</label>
-                        <div class="col-md-5 col-sm-5 col-xs-12">
-                            <div class="radio">
-                                <input type="checkbox" value="1" name="is_editor_pick" class="flat"{{ $post->is_editor_pick == 1 ?  ' checked' : '' }}>
+                        <i>Sự kiện du học</i>
+                    </div>
+                    <div class="row calendar-exibit">
+                        <label class="control-label col-md-2 col-sm-2 col-xs-12">Ngày diễn ra</label>
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                            <div class='input-group date myDatepicker'>
+                                <input type='text' class="form-control" name="date" data-date-format="{{ config()->get('constants.DATA_DATE_FORMAT') }}" value="{{ date(config()->get('constants.DATE_MYSQL_FORMAT'), $post->date) }}" {{ $attribute }}/>
+                                <span class="input-group-addon">
+                                   <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-md-2 col-sm-2 col-xs-12">Bài viết xem nhiều</label>
-                        <div class="col-md-5 col-sm-5 col-xs-12">
-                            <div class="radio">
-                                <input type="checkbox" value="1" name="is_most_viewed" class="flat"{{ $post->is_most_viewed == 1 ?  ' checked' : '' }}>
-                            </div>
+                        <label class="control-label col-md-2 col-sm-2 col-xs-12">Thời gian</label>
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                            <input type="text" class="form-control" name="time" value="{{ $post->time }}" {{ $attribute }}>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-md-2 col-sm-2 col-xs-12">Tin tài trợ</label>
-                        <div class="col-md-5 col-sm-5 col-xs-12">
-                            <div class="radio">
-                                <input type="checkbox" value="1" name="is_sponsored" class="flat"{{ $post->is_sponsored == 1 ?  ' checked' : '' }}>
-                            </div>
+                        <label class="control-label col-md-2 col-sm-2 col-xs-12">Địa điểm</label>
+                        <div class="col-md-10 col-sm-10 col-xs-12">
+                            <input type="text" class="form-control" name="place" value="{{ $post->place }}" {{ $attribute }}>
                         </div>
                     </div>
+                    <hr/>
                     <div class="form-group">
                         <label class="control-label col-md-2 col-sm-2 col-xs-12">Tiêu đề (SEO) <span
                                     class="required">*</span></label>

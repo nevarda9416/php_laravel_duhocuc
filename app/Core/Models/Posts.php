@@ -31,6 +31,9 @@ class Posts extends Model
         'top_background_url',
         'is_highlight',
         'time_expired_deal',
+        'date',
+        'time',
+        'place',
         'meta_title',
         'meta_keyword',
         'meta_description'

@@ -16,7 +16,6 @@ use App\Core\Models\Category;
 use App\Core\Models\Tags;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Storage;
 use App\Core\Enums\ElasticsearchEnum;
 use App\Helpers\Activity;
 
@@ -115,9 +114,9 @@ class PostsController extends Controller
                     'subdistrict' => $request->get('subdistrict'),
                     'category_id' => $request->get('category_id'),
                     'thumbnail_url' => ($thumbnail_url) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $thumbnail_name : null,
-                    'is_editor_pick' => $request->get('is_editor_pick') !== null ? $request->get('is_editor_pick') : 0,
-                    'is_most_viewed' => $request->get('is_most_viewed') !== null ? $request->get('is_most_viewed') : 0,
-                    'is_sponsored' => $request->get('is_sponsored') !== null ? $request->get('is_sponsored') : 0,
+                    'date' => $request->get('date') == null ? strtotime(date('Y-m-d H:i:s')) : strtotime($request->get('date')),
+                    'time' => $request->get('time'),
+                    'place' => $request->get('place'),
                     'meta_title' => $request->get('meta_title'),
                     'meta_keyword' => $request->get('meta_keyword'),
                     'meta_description' => $request->get('meta_description')
@@ -275,9 +274,9 @@ class PostsController extends Controller
                 $post->district = $request->get('district');
                 $post->subdistrict = $request->get('subdistrict');
                 $post->category_id = $request->get('category_id');
-                $post->is_editor_pick = $request->get('is_editor_pick') !== null ? $request->get('is_editor_pick') : 0;
-                $post->is_most_viewed = $request->get('is_most_viewed') !== null ? $request->get('is_most_viewed') : 0;
-                $post->is_sponsored = $request->get('is_sponsored') !== null ? $request->get('is_sponsored') : 0;
+                $post->date = $request->get('date') == null ? strtotime(date('Y-m-d H:i:s')) : strtotime($request->get('date'));
+                $post->time = $request->get('time');
+                $post->place = $request->get('place');
                 $post->meta_title = $request->get('meta_title');
                 $post->meta_keyword = $request->get('meta_keyword');
                 $post->meta_description = $request->get('meta_description');

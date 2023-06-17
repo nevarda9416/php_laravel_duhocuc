@@ -5,7 +5,7 @@
     <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="x_panel">
             <div class="x_title">
-                <h2>Thêm mới bài viết danh mục</h2>
+                <h2>Thêm mới loại bài viết</h2>
                 <ul class="nav navbar-right panel_toolbox">
                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                     </li>
@@ -19,13 +19,13 @@
                     <div class="col-md-4 col-sm-4 col-xs-4 form-group">
                         <a href="{{ url('cms/posts/create/text') }}" class="btn btn-app">
                             <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
-                            <span class="glyphicon-class">Bài viết</span> (text + ảnh + video)
+                            <span class="glyphicon-class"></span> (text + ảnh + video)
                         </a>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12 form-group">
                         <a href="{{ url('cms/posts/create/video') }}" class="btn btn-app">
                             <span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span>
-                            <span class="glyphicon-class">Bài video</span> (video)
+                            <span class="glyphicon-class"></span> (video)
                         </a>
                     </div>
                 </div>
