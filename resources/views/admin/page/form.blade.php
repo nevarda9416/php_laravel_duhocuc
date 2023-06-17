@@ -12,7 +12,7 @@ switch ($action) {
 @section('content')
     <div class="page-title">
         <div class="title_left">
-            <h3><a href="{{ url('cms/pages') }}" title="Quay về danh sách các trang tĩnh">&larr; Quay về danh sách các trang tĩnh</a></h3>
+            <h3><a href="{{ url('cms/pages') }}" title="Quay về danh sách các trang giới thiệu">&larr; Quay về danh sách các trang giới thiệu</a></h3>
         </div>
     </div>
     <div class="clearfix"></div>
@@ -21,7 +21,7 @@ switch ($action) {
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>{{ ucfirst($action) }} bài viết {{ $page->title }}</h2>
+                    <h2>{{ ucfirst($action) }} trang giới thiệu {{ $page->title }}</h2>
                     <ul class="nav navbar-right panel_toolbox">
                         <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                         </li>

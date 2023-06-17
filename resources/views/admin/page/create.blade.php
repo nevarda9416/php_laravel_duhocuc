@@ -2,7 +2,7 @@
 @section('content')
     <div class="page-title">
         <div class="title_left">
-            <h3>Tạo mới bài viết</h3>
+            <h3>Tạo mới trang giới thiệu</h3>
         </div>
     </div>
     <div class="clearfix"></div>

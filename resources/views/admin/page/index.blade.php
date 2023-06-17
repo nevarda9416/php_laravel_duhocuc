@@ -2,7 +2,7 @@
 @section('content')
     <div class="page-title">
         <div class="title_left">
-            <h3>Các trang tĩnh</h3>
+            <h3>Các trang giới thiệu</h3>
         </div>
     </div>
     <div class="clearfix"></div>
@@ -11,7 +11,7 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <a href="{{ url('cms/pages/create') }}" title="Tạo mới bài viết" class="btn btn-primary"><i class="fa fa-pencil-square-o"></i> Tạo mới trang tĩnh</a>
+                    <a href="{{ url('cms/pages/create') }}" title="Tạo mới trang giới thiệu" class="btn btn-primary"><i class="fa fa-pencil-square-o"></i> Tạo mới trang giới thiệu</a>
                     <ul class="nav navbar-right panel_toolbox">
                         <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                         </li>

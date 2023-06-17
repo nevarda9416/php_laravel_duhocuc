@@ -2,7 +2,7 @@
 @section('content')
     <div class="page-title">
         <div class="title_left">
-            <h3>Các trang tĩnh</h3>
+            <h3>Các trang giới thiệu</h3>
         </div>
     </div>
     <div class="clearfix"></div>
