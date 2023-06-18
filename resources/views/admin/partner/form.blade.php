@@ -3,7 +3,7 @@
     <div id="posts_partner_form">
         <div class="page-title">
             <div class="title_left">
-                <a href="{{ url('cms/partner') }}" title="Tạo mới đối tác" class="btn btn-primary"><i class="fa fa-pencil-square-o"></i> Tạo mới đối tác</a>
+                <a href="{{ url('cms/partners') }}" title="Tạo mới đối tác" class="btn btn-primary"><i class="fa fa-pencil-square-o"></i> Tạo mới đối tác</a>
             </div>
         </div>
         <div class="clearfix"></div>

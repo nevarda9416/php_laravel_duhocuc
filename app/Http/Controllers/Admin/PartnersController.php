@@ -53,7 +53,8 @@ class PartnersController extends Controller
                 'name' => $name,
                 'logo' => $partner_url_save,
                 'url' => $request->get('url'),
-                'type' => $request->get('type')
+                'type' => $request->get('type'),
+                'country_id' => $request->get('country_id')
             ]);
 
             // check exists of name
@@ -107,6 +108,7 @@ class PartnersController extends Controller
             $partner->logo = ($partner_url_save == ''?$partner->logo:$partner_url_save);
             $partner->url = $request->get('url');
             $partner->type = $request->get('type');
+            $partner->country_id = $request->get('country_id');
             // update the data
             $partner->save();
             // reload to view
@@ -114,47 +116,23 @@ class PartnersController extends Controller
             $partners = $this->search($request);
             return view('admin.partner.form', compact('action', 'partner', 'partners'));
         } catch (\Exception $exception) {
-            return redirect('cms/partner/edit/' . $id)->with('error', 'Lỗi cập nhật dữ liệu: ' . $exception->getMessage());
+            return redirect('cms/partners/edit/' . $id)->with('error', 'Lỗi cập nhật dữ liệu: ' . $exception->getMessage());
         }
     }
 
     /**
-     * @param Request $request
-     * @param $str_id
+     * @param $id
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function destroy(Request $request, $str_id)
+    public function destroy($id)
     {
         try {
-            $str_deleted = "";
-            if($str_id != ''){
-                $arr_id = explode("-" , $str_id);
-                if(count($arr_id) > 0){
-                    $seq = 0;
-                    foreach ($arr_id as $id) {
-                        if(trim($id) != '') {
-                            $partner = Partner::find($id);
-                            if(isset($partner->name)) {
-                                $partner->delete();
-                                if ($seq == 0) {
-                                    $str_deleted .= $partner->name;
-                                } else {
-                                    $str_deleted .= ", " . $partner->name;
-                                }
-                                $seq++;
-                            }
-                        }
-                    }
-                }
-            }
-            $partners = $this->search($request);
-            if(isset($partners['p']) && $partners['p'] != '') {
-                return view('admin.partner.search', compact('partners', 'str_deleted'));
-            }else{
-                return redirect('cms/partners')->with('message', 'Đối tác đã được xóa: '.$str_deleted);
-            }
+            $partner = Partner::find($id);
+            $name = $partner->name;
+            $partner->delete();
+            return redirect('cms/partners')->with('message', 'Xóa đối tác ' . $name . ' thành công');
         } catch (\Exception $exception) {
-            return redirect('cms/partners')->with('error', 'Có lỗi xóa dữ liệu: ' . $exception->getMessage());
+            return redirect('cms/partners')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
     }
 

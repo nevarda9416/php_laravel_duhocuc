@@ -4,12 +4,6 @@ $i = 0;
 <table class="table">
     <thead>
     <tr>
-        <th style="padding-bottom: 2px;">
-            <input type='checkbox' name='cbkpartnerall' id='cbkpartnerall' value=''>
-            <a class="btn btn-xs" id="a_cbkpartnerall">
-                <i class="fa fa-trash-o"></i> Xóa
-            </a>
-        </th>
         <th>Tên đối tác</th>
         <th>Logo</th>
         <th>Thao tác</th>
@@ -23,23 +17,22 @@ $i = 0;
             ?>
             <tr>
                 <td>
-                    <input type='checkbox' name='cbkpartner{{$i}}' id='cbkpartner{{$i}}' value='{{$val->id}}'>
-                </td>
-                <td>
                     <a href='{{ url("cms/partner/edit/" . $val->id . $partners['url_ext'] ) }}' id="a_partner_name{{$i}}" class="btn btn-xs">
                         {{ $val->name }}<span style="color: #0ab21b; margin-left: 10px">{{((isset($val->is_default) && $val->is_default == 1)?'(mặc định)':'')}}</span>
                     </a>
                 </td>
                 <td>
                     @if(isset($val->logo) && $val->logo != '')
-                        <img style="width: 200px;" class="img_post_image"  src="{{ $partners['path_imgs_url'].$val->logo }}"/>
+                        <img style="width: 200px;" class="img_post_image"  src="{{ Config::get('constants.STATIC_IMAGES') .$val->logo }}"/>
                     @endif
                 </td>
                 <td>
-                    <a href='{{ url("cms/partner/edit/" . $val->id . $partners['url_ext']) }}' class="btn btn-xs">
+                    <a href='{{ url("cms/partners/edit/" . $val->id . $partners['url_ext']) }}' class="btn btn-xs">
                         <i class="fa fa-edit"></i> Edit
                     </a>
-
+                    <a href='{{ url("cms/partners/delete/" . $val->id . $partners['url_ext']) }}' class="btn btn-xs" onclick="return confirm('Bạn có chắc muốn xóa đối tác {{ $val->name }} này chứ?')">
+                        <i class="fa fa-trash-o"></i> Delete
+                    </a>
                 </td>
             </tr>
         @endforeach

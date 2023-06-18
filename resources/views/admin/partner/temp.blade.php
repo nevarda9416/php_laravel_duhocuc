@@ -21,11 +21,10 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-md-3 col-sm-3 col-xs-12">Loại đối tác</label>
+        <label class="control-label col-md-3 col-sm-3 col-xs-12">Quốc gia</label>
         <div class="col-md-9 col-sm-9 col-xs-12">
-            <select class="form-control" name="type" required>
-                <option value="1"{{ isset($partner) && $partner->type == '1' ? ' selected' : '' }}>ĐỐI TÁC CHIẾN LƯỢC</option>
-                <option value="2"{{ isset($partner) && $partner->type == '2' ? ' selected' : '' }}>CÁC ĐƠN VỊ TIÊU BIỂU ĐÃ ÁP DỤNG MÔ HÌNH</option>
+            <select class="form-control" name="country_id">
+                <option></option>
             </select>
         </div>
     </div>
@@ -34,7 +33,6 @@
         <div class="form-group">
             <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
                 <button type="submit" class="btn btn-success">Lưu</button>
-                <button class="btn btn-primary" type="reset">Nhập lại</button>
             </div>
         </div>
     @endif
