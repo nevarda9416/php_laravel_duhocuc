@@ -155,6 +155,15 @@ Route::group(['middleware' => 'auth', 'prefix' => 'cms'], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'Admin\SettingController@contact']);
         Route::post('store', ['uses' => 'Admin\SettingController@storeContact']);
     });
+    // Quản trị menu
+    Route::group(['prefix' => 'menu', 'as' => 'menu'], function () {
+        Route::get('/', ['as' => 'index', 'uses' => 'Admin\MenuController@index']);
+        Route::post('/store', ['uses' => 'Admin\MenuController@store']);
+        Route::get('/edit/{id?}', ['uses' => 'Admin\MenuController@edit']);
+        Route::post('/update/{id?}', ['uses' => 'Admin\MenuController@update']);
+        Route::get('/delete/{id?}', ['uses' => 'Admin\MenuController@destroy']);
+        Route::post('/order', ['uses' => 'Admin\MenuController@order']);
+    });
     // Trang quản trị widget
     Route::group(['prefix' => 'widgets'], function () {
         Route::get('{page}/{position}', ['uses' => 'Admin\WidgetController@getPosition']);

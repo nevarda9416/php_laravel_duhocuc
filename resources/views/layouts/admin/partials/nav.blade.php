@@ -8,12 +8,13 @@
             <li><a href="{{ url('cms/countries') }}"><i class="fa fa-flag"></i>Thống kê các nước du học</a></li>
             <li><a href="{{ url('cms/posts') }}"><i class="fa fa-file-text"></i>Danh sách bài viết</a></li>
             <li><a href="{{ url('cms/pages') }}" title="Các trang giới thiệu"><i class="fa fa-legal"></i>Các trang giới thiệu</a></li>
-            <li><a href="{{ url('cms/customers') }}"><i class="fa fa-users"></i>Quản lý người dùng đăng ký</a></li>
+            <li><a href="{{ url('cms/customers') }}"><i class="fa fa-envelope-o"></i>Email đăng ký nhận tin</a></li>
             <li><a href="{{ url('cms/frequently-questions') }}"><i class="fa fa-question"></i>Câu hỏi thường gặp</a></li>
             <li><a href="{{ url('cms/partners') }}"><i class="fa fa-hand-peace-o"></i>Quản lý đối tác</a></li>
             <li><a href="{{ url('cms/banners') }}"><i class="fa fa fa-picture-o"></i>Quản lý banner</a></li>
             <li><a href="{{ url('cms/medias') }}"><i class="fa fa-file-o"></i>Quản lý file</a></li>
             <li><a href="{{ url('cms/contact') }}"><i class="fa fa-globe"></i>Quản lý thông tin website</a></li>
+            <li><a href="{{ url('cms/menu') }}"><i class="fa fa-list-alt"></i>Danh sách menu</a></li>
             <li><a><i class="fa fa-laptop"></i>Nội dung trang chủ<span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="{{ url('cms/widgets/homepage/criteria') }}">Đồng hành cùng bạn</a></li>

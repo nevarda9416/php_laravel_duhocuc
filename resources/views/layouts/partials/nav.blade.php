@@ -1,3 +1,7 @@
+<style>
+    .elementor-20880 .elementor-element.elementor-element-4a35e75 .jet-menu ul.jet-sub-menu{background:#00aeef}
+    .elementor-20880 .elementor-element.elementor-element-4a35e75 .jet-menu ul.jet-sub-menu .jet-menu-title{color:#fff !important}
+</style>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
     <defs>
         <filter id="wp-duotone-dark-grayscale">
@@ -156,7 +160,7 @@
                         <div class="elementor-widget-container">
                             <form class="elementor-search-form" action="https://newocean.edu.vn" method="get" role="search">
                                 <div class="elementor-search-form__toggle" tabindex="0" role="button">
-                                    <i aria-hidden="true" class="fas fa-search"></i> <span class="elementor-screen-only">Tìm kiếm</span>
+                                    <i aria-hidden="true" class="fas fa-search" style="color:#fff"></i> <span class="elementor-screen-only">Tìm kiếm</span>
                                 </div>
                                 <div class="elementor-search-form__container">
                                     <label class="elementor-screen-only" for="elementor-search-form-b59c2bb">Search</label>
@@ -213,7 +217,7 @@
                                                         <section class="elementor-section elementor-top-section elementor-element elementor-element-9c9ec1d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9c9ec1d" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                                                             <div class="elementor-container elementor-column-gap-default">
                                                                 <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-8f0d5cb" data-id="8f0d5cb" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-widget-wrap elementor-element-populated" style="background:#00aeef">
                                                                         <div class="elementor-element elementor-element-909a84c elementor-widget elementor-widget-heading" data-id="909a84c" data-element_type="widget" data-widget_type="heading.default">
                                                                             <div class="elementor-widget-container">
                                                                                 <h2 class="elementor-heading-title elementor-size-small"><a>DU HỌC CHÂU ÚC</a></h2></div>

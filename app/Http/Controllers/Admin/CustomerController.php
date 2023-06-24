@@ -22,7 +22,7 @@ class CustomerController extends Controller
      */
     public function index()
     {
-        $customers = DB::table('customers')->paginate($this->limit);
+        $customers = DB::table('newsletter_subcribers')->paginate($this->limit);
         return view('admin.customer.index', compact('customers'));
     }
 }

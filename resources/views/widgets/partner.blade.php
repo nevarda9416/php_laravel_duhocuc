@@ -4,7 +4,7 @@
             <div class="elementor-widget-wrap elementor-element-populated">
                 <div class="elementor-element elementor-element-fee8db8 elementor-widget elementor-widget-heading elementor-align-left" data-id="fee8db8" data-element_type="widget" data-widget_type="heading.default">
                     <div class="elementor-widget-container">
-                        <h3 class="elementor-heading-title elementor-size-large" style="text-transform:none">Đối tác tại Hàn Quốc</h3></div>
+                        <h3 class="elementor-heading-title elementor-size-large" style="text-transform:none;font-weight:normal !important">Đối tác tại Hàn Quốc</h3></div>
                 </div>
                 <div class="elementor-element elementor-element-80b927a elementor-skin-carousel elementor-arrows-yes elementor-widget elementor-widget-media-carousel" data-id="80b927a" data-element_type="widget"
                      data-settings="{&quot;slides_per_view&quot;:&quot;5&quot;,&quot;slides_per_view_tablet&quot;:&quot;4&quot;,&quot;slides_per_view_mobile&quot;:&quot;2&quot;,&quot;slides_to_scroll&quot;:&quot;1&quot;,&quot;skin&quot;:&quot;carousel&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;show_arrows&quot;:&quot;yes&quot;,&quot;speed&quot;:500,&quot;autoplay&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;loop&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]}}"
@@ -62,7 +62,7 @@
             <div class="elementor-widget-wrap elementor-element-populated">
                 <div class="elementor-element elementor-element-fee8db8 elementor-widget elementor-widget-heading elementor-align-left" data-id="fee8db8" data-element_type="widget" data-widget_type="heading.default">
                     <div class="elementor-widget-container">
-                        <h3 class="elementor-heading-title elementor-size-large" style="text-transform:none">Đối tác tại Úc</h3></div>
+                        <h3 class="elementor-heading-title elementor-size-large" style="text-transform:none;font-weight:normal !important">Đối tác tại Úc</h3></div>
                 </div>
                 <div class="elementor-element elementor-element-80b927a elementor-skin-carousel elementor-arrows-yes elementor-widget elementor-widget-media-carousel" data-id="80b927a" data-element_type="widget"
                      data-settings="{&quot;slides_per_view&quot;:&quot;5&quot;,&quot;slides_per_view_tablet&quot;:&quot;4&quot;,&quot;slides_per_view_mobile&quot;:&quot;2&quot;,&quot;slides_to_scroll&quot;:&quot;1&quot;,&quot;skin&quot;:&quot;carousel&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;show_arrows&quot;:&quot;yes&quot;,&quot;speed&quot;:500,&quot;autoplay&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;loop&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]}}"

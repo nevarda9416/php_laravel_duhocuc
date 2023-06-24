@@ -1,4 +1,5 @@
-<section class="elementor-section elementor-top-section elementor-element elementor-element-8d2a4c7 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8d2a4c7" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-8d2a4c7 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8d2a4c7" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}"
+style="padding-bottom:0">
     <div class="elementor-container elementor-column-gap-no">
         <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a5fb2c5" data-id="a5fb2c5" data-element_type="column">
             <div class="elementor-widget-wrap elementor-element-populated">

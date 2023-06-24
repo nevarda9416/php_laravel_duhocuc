@@ -1,10 +1,11 @@
-<section class="elementor-section elementor-top-section elementor-element elementor-element-df9f39d elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="df9f39d" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-df9f39d elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="df9f39d" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}"
+style="background:#FFF;padding-bottom:0">
     <div class="elementor-container elementor-column-gap-default">
         <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-092491b" data-id="092491b" data-element_type="column">
             <div class="elementor-widget-wrap elementor-element-populated">
                 <div class="elementor-element elementor-element-80ef570 elementor-widget elementor-widget-heading" data-id="80ef570" data-element_type="widget" data-widget_type="heading.default">
                     <div class="elementor-widget-container">
-                        <h3 class="elementor-heading-title elementor-size-large">CHIA SẺ TỪ DU HỌC SINH CỦA CHÚNG TÔI</h3></div>
+                        <h3 class="elementor-heading-title elementor-size-large" style="text-align: left;color: #181818 !important;">CHIA SẺ TỪ DU HỌC SINH CỦA CHÚNG TÔI</h3></div>
                 </div>
                 <div class="elementor-element elementor-element-c7ca10e elementor-widget elementor-widget-gallery" data-id="c7ca10e" data-element_type="widget"
                      data-settings="{&quot;columns_tablet&quot;:3,&quot;columns_mobile&quot;:2,&quot;gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;lazyload&quot;:&quot;yes&quot;,&quot;gallery_layout&quot;:&quot;grid&quot;,&quot;columns&quot;:5,&quot;gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;link_to&quot;:&quot;file&quot;,&quot;aspect_ratio&quot;:&quot;3:2&quot;,&quot;content_hover_animation&quot;:&quot;fade-in&quot;}"
@@ -71,13 +72,6 @@
                                data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTM3NzMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjBcLzA2XC9ldmVudC0wNi5qcGciLCJzbGlkZXNob3ciOiJhbGwtYzdjYTEwZSJ9">
                                 <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="https://newocean.edu.vn/wp-content/uploads/2020/06/event-06-600x450.jpg" data-width="600" data-height="450" aria-label="Hội thảo du học New Ocean" role="img"></div>
                             </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="elementor-element elementor-element-d5145fa elementor-widget elementor-widget-spacer" data-id="d5145fa" data-element_type="widget" data-widget_type="spacer.default">
-                    <div class="elementor-widget-container">
-                        <div class="elementor-spacer">
-                            <div class="elementor-spacer-inner"></div>
                         </div>
                     </div>
                 </div>

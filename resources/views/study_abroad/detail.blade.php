@@ -32,26 +32,26 @@
             </div>
         </section>
         <!-- -->
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-f24d1f4 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f24d1f4" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-f24d1f4 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f24d1f4" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;background: #f1f1f1">
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ad56eef" data-id="ad56eef" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-d078ff1 elementor-widget elementor-widget-heading elementor-align-center" data-id="d078ff1" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
-                                <h2 class="elementor-heading-title elementor-size-large">TẠI SAO NÊN CHỌN DU HỌC ÚC</h2></div>
+                                <h2 class="elementor-heading-title elementor-size-large" style="margin-top:30px">TẠI SAO NÊN CHỌN DU HỌC ÚC</h2></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-7e8dea6 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7e8dea6" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}" style="width: 1519px; left: 0px;">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-7e8dea6 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7e8dea6" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}" style="width: 1519px; left: 0px;background: #f1f1f1">
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-44a3cd5" data-id="44a3cd5" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-8713cd4 elementor-widget elementor-widget-heading" data-id="8713cd4" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
-                                <h3 class="elementor-heading-title elementor-size-default">
-                                    <img src="{{ asset('public/images/icon_5.png') }}" alt=""/> VỊ TRÍ ĐỊA LÝ THUẬN LỢI</h3></div>
+                                <h3 class="elementor-heading-title elementor-size-default" style="display:flex;color:#555 !important">
+                                    <img src="{{ asset('public/images/icon_5.png') }}" alt=""/><span style="margin-top:10px;margin-left:10px;font-size:15px;line-height:30px;">VỊ TRÍ ĐỊA LÝ THUẬN LỢI</span></h3></div>
                         </div>
                         <div class="elementor-element elementor-element-77a03b0 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="77a03b0" data-element_type="widget" data-widget_type="icon-list.default">
                             <div class="elementor-widget-container">
@@ -71,8 +71,8 @@
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-8713cd4 elementor-widget elementor-widget-heading" data-id="8713cd4" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
-                                <h3 class="elementor-heading-title elementor-size-default">
-                                    <img src="{{ asset('public/images/icon_6.png') }}" alt=""/> CHẤT LƯỢNG GIÁO DỤC HÀNG ĐẦU</h3></div>
+                                <h3 class="elementor-heading-title elementor-size-default" style="display:flex;color:#555 !important">
+                                    <img src="{{ asset('public/images/icon_6.png') }}" alt=""/><span style="margin-top:10px;margin-left:10px;font-size:15px;line-height:30px;">CHẤT LƯỢNG GIÁO DỤC HÀNG ĐẦU</span></h3></div>
                         </div>
                         <div class="elementor-element elementor-element-77a03b0 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="77a03b0" data-element_type="widget" data-widget_type="icon-list.default">
                             <div class="elementor-widget-container">
@@ -92,8 +92,8 @@
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-8713cd4 elementor-widget elementor-widget-heading" data-id="8713cd4" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
-                                <h3 class="elementor-heading-title elementor-size-default">
-                                    <img src="{{ asset('public/images/icon_7.png') }}" alt=""/> ĐA DẠNG CHƯƠNG TRÌNH ĐÀO TẠO</h3></div>
+                                <h3 class="elementor-heading-title elementor-size-default" style="display:flex;color:#555 !important">
+                                    <img src="{{ asset('public/images/icon_7.png') }}" alt=""/><span style="margin-top:10px;margin-left:10px;font-size:15px;line-height:30px;">ĐA DẠNG CHƯƠNG TRÌNH ĐÀO TẠO</span></h3></div>
                         </div>
                         <div class="elementor-element elementor-element-77a03b0 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="77a03b0" data-element_type="widget" data-widget_type="icon-list.default">
                             <div class="elementor-widget-container">
@@ -113,8 +113,8 @@
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-8713cd4 elementor-widget elementor-widget-heading" data-id="8713cd4" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
-                                <h3 class="elementor-heading-title elementor-size-default">
-                                    <img src="{{ asset('public/images/icon_8.png') }}" alt=""/> NGUỒN HỌC BỔNG DỒI DÀO</h3></div>
+                                <h3 class="elementor-heading-title elementor-size-default" style="display:flex;color:#555 !important">
+                                    <img src="{{ asset('public/images/icon_8.png') }}" alt=""/><span style="margin-top:10px;margin-left:10px;font-size:15px;line-height:30px;">NGUỒN HỌC BỔNG DỒI DÀO</span></h3></div>
                         </div>
                         <div class="elementor-element elementor-element-77a03b0 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="77a03b0" data-element_type="widget" data-widget_type="icon-list.default">
                             <div class="elementor-widget-container">
@@ -132,14 +132,14 @@
                 </div>
             </div>
         </section>
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-7e8dea6 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7e8dea6" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}" style="width: 1519px; left: 0px;">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-7e8dea6 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7e8dea6" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}" style="width: 1519px; left: 0px;background: #f1f1f1;padding-top: 30px">
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-44a3cd5" data-id="44a3cd5" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-8713cd4 elementor-widget elementor-widget-heading" data-id="8713cd4" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
-                                <h3 class="elementor-heading-title elementor-size-default">
-                                    <img src="{{ asset('public/images/icon_9.png') }}" alt=""/> BẰNG TỐT NGHIỆP ĐƯỢC CHỨNG NHẬN QUỐC TẾ</h3></div>
+                                <h3 class="elementor-heading-title elementor-size-default" style="display:flex;color:#555 !important">
+                                    <img src="{{ asset('public/images/icon_9.png') }}" alt=""/><span style="margin-top:10px;margin-left:10px;font-size:15px;line-height:30px;">BẰNG TỐT NGHIỆP ĐƯỢC CHỨNG NHẬN QUỐC TẾ</span></h3></div>
                         </div>
                         <div class="elementor-element elementor-element-77a03b0 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="77a03b0" data-element_type="widget" data-widget_type="icon-list.default">
                             <div class="elementor-widget-container">
@@ -159,8 +159,8 @@
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-8713cd4 elementor-widget elementor-widget-heading" data-id="8713cd4" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
-                                <h3 class="elementor-heading-title elementor-size-default">
-                                    <img src="{{ asset('public/images/icon_10.png') }}" alt=""/> CƠ HỘI VIỆC LÀM & THU NHẬP</h3></div>
+                                <h3 class="elementor-heading-title elementor-size-default" style="display:flex;color:#555 !important">
+                                    <img src="{{ asset('public/images/icon_10.png') }}" alt=""/><span style="margin-top:10px;margin-left:10px;font-size:15px;line-height:30px;">CƠ HỘI VIỆC LÀM & THU NHẬP</span></h3></div>
                         </div>
                         <div class="elementor-element elementor-element-77a03b0 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="77a03b0" data-element_type="widget" data-widget_type="icon-list.default">
                             <div class="elementor-widget-container">
@@ -180,8 +180,8 @@
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-8713cd4 elementor-widget elementor-widget-heading" data-id="8713cd4" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
-                                <h3 class="elementor-heading-title elementor-size-default">
-                                    <img src="{{ asset('public/images/icon_11.png') }}" alt=""/> CƠ HỘI ĐỊNH CƯ RỘNG MỞ</h3></div>
+                                <h3 class="elementor-heading-title elementor-size-default" style="display:flex;color:#555 !important">
+                                    <img src="{{ asset('public/images/icon_11.png') }}" alt=""/><span style="margin-top:10px;margin-left:10px;font-size:15px;line-height:30px;">CƠ HỘI ĐỊNH CƯ RỘNG MỞ</span></h3></div>
                         </div>
                         <div class="elementor-element elementor-element-77a03b0 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="77a03b0" data-element_type="widget" data-widget_type="icon-list.default">
                             <div class="elementor-widget-container">
@@ -200,7 +200,7 @@
             </div>
         </section>
         <!-- -->
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-01aa9bc elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="01aa9bc" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-01aa9bc elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="01aa9bc" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width:1519px;left:0px;padding-top:30px;background:#f1f1f1">
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d4058d7" data-id="d4058d7" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
@@ -214,9 +214,37 @@
                 </div>
             </div>
         </section>
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-562c79e elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="562c79e" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}" style="width: 1519px; left: 0px;">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-562c79e elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="562c79e" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}" style="width: 1519px; left: 0px;background:#f1f1f1;padding-bottom:30px">
             <div class="elementor-container elementor-column-gap-default">
-                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-7469d88" data-id="7469d88" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-81dc62e" data-id="81dc62e" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-931e34d elementor-widget elementor-widget-heading" data-id="931e34d" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <a class="elementor-button-link elementor-button elementor-size-sm" role="button" style="background-color:#00aeef;color:#fff !important">
+						            <span class="elementor-button-content-wrapper">
+						                <span class="elementor-button-text">BẬC TRUNG HỌC</span>
+                            		</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-5f40369 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="5f40369" data-element_type="widget" data-widget_type="icon-list.default">
+                            <div class="elementor-widget-container">
+                                <ul style="padding-left:15px">
+                                    <li>
+                                        <span class="elementor-icon-list-text">Hoàn thành tối thiểu chương trình lớp 6 hoặc 7</span>
+                                    </li>
+                                    <li>
+                                        <span class="elementor-icon-list-text">GPA tối thiểu 6.5 trở lên</span>
+                                    </li>
+                                    <li>
+                                        <span class="elementor-icon-list-text">Không yêu cầu chứng chỉ IELTS</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-7469d88" data-id="7469d88" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-931e34d elementor-widget elementor-widget-heading" data-id="931e34d" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
@@ -229,7 +257,7 @@
                         </div>
                         <div class="elementor-element elementor-element-5f40369 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="5f40369" data-element_type="widget" data-widget_type="icon-list.default">
                             <div class="elementor-widget-container">
-                                <ul>
+                                <ul style="padding-left:15px">
                                     <li>
                                         <span class="elementor-icon-list-text">Hoàn thành chương trình học lớp 11 tại Việt Nam</span>
                                     </li>
@@ -244,7 +272,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-81dc62e" data-id="81dc62e" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-81dc62e" data-id="81dc62e" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-931e34d elementor-widget elementor-widget-heading" data-id="931e34d" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
@@ -257,7 +285,7 @@
                         </div>
                         <div class="elementor-element elementor-element-5f40369 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="5f40369" data-element_type="widget" data-widget_type="icon-list.default">
                             <div class="elementor-widget-container">
-                                <ul>
+                                <ul style="padding-left:15px">
                                     <li>
                                         <span class="elementor-icon-list-text">Học sinh Việt Nam phải hoàn thành hết năm nhất hoặc vừa hết lớp 12 của trường</span>
                                     </li>
@@ -272,7 +300,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-91665df" data-id="91665df" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-91665df" data-id="91665df" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-931e34d elementor-widget elementor-widget-heading" data-id="931e34d" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
@@ -285,7 +313,7 @@
                         </div>
                         <div class="elementor-element elementor-element-5f40369 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="5f40369" data-element_type="widget" data-widget_type="icon-list.default">
                             <div class="elementor-widget-container">
-                                <ul>
+                                <ul style="padding-left:15px">
                                     <li>
                                         <span class="elementor-icon-list-text">Học sinh Việt Nam phải hoàn thành hết năm nhất hoặc vừa hết lớp 12 của trường</span>
                                     </li>
@@ -303,13 +331,13 @@
             </div>
         </section>
         <!-- -->
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-e6c3ee0 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e6c3ee0" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-e6c3ee0 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e6c3ee0" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px">
             <div class="elementor-container elementor-column-gap-default" style="max-width:100%">
                 <img src="{{ asset('public/images/banner_1.jpg') }}" alt=""/>
             </div>
         </section>
         <!-- -->
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-f24d1f4 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f24d1f4" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-f24d1f4 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f24d1f4" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;padding:30px 0 30px 0">
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ad56eef" data-id="ad56eef" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
@@ -321,9 +349,9 @@
                 </div>
             </div>
         </section>
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-7e8dea6 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7e8dea6" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}" style="width: 1519px; left: 0px;">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-7e8dea6 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7e8dea6" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}" style="width: 1519px; left: 0px">
             <div class="elementor-container elementor-column-gap-default">
-                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-44a3cd5" data-id="44a3cd5" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                <div class="elementor-column elementor-col-30 elementor-top-column elementor-element elementor-element-44a3cd5" data-id="44a3cd5" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" style="margin-right:5%;background:#effbff;border:1px solid #c6e8f3">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-8713cd4 elementor-widget elementor-widget-heading elementor-align-center" data-id="8713cd4" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
@@ -358,7 +386,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-a2b0cdf" data-id="a2b0cdf" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                <div class="elementor-column elementor-col-30 elementor-top-column elementor-element elementor-element-a2b0cdf" data-id="a2b0cdf" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" style="margin-right:5%;background:#effbff;border:1px solid #c6e8f3">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-8713cd4 elementor-widget elementor-widget-heading elementor-align-center" data-id="8713cd4" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
@@ -387,7 +415,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-9ce782e" data-id="9ce782e" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                <div class="elementor-column elementor-col-30 elementor-top-column elementor-element elementor-element-9ce782e" data-id="9ce782e" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" style="background:#effbff;border:1px solid #c6e8f3">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-8713cd4 elementor-widget elementor-widget-heading elementor-align-center" data-id="8713cd4" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
@@ -413,7 +441,7 @@
             </div>
         </section>
         <!-- -->
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-1a09e34 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1a09e34" data-element_type="section" id="dangky" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-1a09e34 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1a09e34" data-element_type="section" id="dangky" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;padding-top:30px">
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f43cf97" data-id="f43cf97" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated elementor-align-center">
@@ -422,15 +450,15 @@
                                 <h1 class="elementor-heading-title elementor-size-large">TẠI SAO NÊN CHỌN DU HỌC ÚC CÙNG SKY PACIFIC</h1>
                             </div>
                         </div>
-                        <h4 style="width:100%">Sky pacific hỗ trợ học viên thực hiện tất cả thủ tục và quy trình để có thể sang Úc du học thành công</h4>
+                        <h4 style="width:100%;font-weight:bold">Sky pacific hỗ trợ học viên thực hiện tất cả thủ tục và quy trình để có thể sang Úc du học thành công</h4>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-e6c3ee0 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e6c3ee0" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-e6c3ee0 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e6c3ee0" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;padding-bottom:30px">
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-11c0075" data-id="11c0075" data-element_type="column">
-                    <div class="elementor-widget-wrap elementor-element-populated">
+                    <div class="elementor-widget-wrap elementor-element-populated" style="border:1px solid #aed1dc;padding:2px">
                         <div class="elementor-element elementor-element-3ad067e elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="3ad067e" data-element_type="widget" data-widget_type="icon-list.default">
                             <img src="{{ asset('public/images/banner_2.jpg') }}" alt=""/>
                         </div>
@@ -440,7 +468,7 @@
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-5b40421 elementor-widget elementor-widget-text-editor" data-id="5b40421" data-element_type="widget" data-widget_type="text-editor.default">
                             <div class="elementor-widget-container">
-                                <ul style="list-style:none">
+                                <ul style="list-style:none;font-weight:bold;line-height:40px;padding-left:10px">
                                     <li>- Hoàn thiện hồ sơ</li>
                                     <li>- Khám sức khỏe</li>
                                     <li>- Hỗ trợ chứng minh tài chính</li>
@@ -454,7 +482,7 @@
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-5b40421 elementor-widget elementor-widget-text-editor" data-id="5b40421" data-element_type="widget" data-widget_type="text-editor.default">
                             <div class="elementor-widget-container">
-                                <ul style="list-style:none">
+                                <ul style="list-style:none;font-weight:bold;line-height:40px">
                                     <li>- Xin visa</li>
                                     <li>- Đào tạo IELTS - PTE</li>
                                     <li>- Ôn phỏng vấn trường</li>
@@ -467,7 +495,7 @@
         </section>
     @include('widgets.form')
     <!-- -->
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-1a09e34 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1a09e34" data-element_type="section" id="dangky" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-1a09e34 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1a09e34" data-element_type="section" id="dangky" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;padding:30px 0 30px 0">
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f43cf97" data-id="f43cf97" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
@@ -535,7 +563,7 @@
             </div>
         </section>
         <!-- -->
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-1a09e34 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1a09e34" data-element_type="section" id="dangky" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-1a09e34 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1a09e34" data-element_type="section" id="dangky" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;padding:40px 0 30px 0">
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f43cf97" data-id="f43cf97" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
@@ -548,24 +576,25 @@
                 </div>
             </div>
         </section>
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-dfc4a60 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dfc4a60" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-dfc4a60 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dfc4a60" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;padding-bottom:40px">
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-04a6641" data-id="04a6641" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-a3e863c elementor-view-stacked elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="a3e863c" data-element_type="widget" data-widget_type="icon-box.default">
                             <div class="elementor-widget-container">
-                                <div class="elementor-icon-box-wrapper">
-                                    <div class="elementor-icon-box-icon">
+                                <div class="elementor-icon-box-wrapper" style="background: #f2f2f2;">
+                                    <div class="elementor-icon-box-icon" style="margin-bottom:0;position:relative">
                                         <img src="{{ asset('public/images/duhoc_5.jpg') }}" alt=""/>
+                                        <span style="position:absolute;left:0;top:30%;color:#FFF;font-weight:bold">Tham gia các câu lạc bộ và cộng đồng sinh viên khi du học Úc</span>
                                     </div>
-                                    <div class="elementor-icon-box-content elementor-align-left">
+                                    <div class="elementor-icon-box-content elementor-align-left" style="padding:10px">
                                         <p class="elementor-icon-box-title">
                                             <span>3 lý do bạn nên tham gia các câu lạc bộ và cộng đồng sinh viên khi du học Úc</span>
                                         </p>
-                                        <p class="elementor-icon-box-description">
+                                        <p class="elementor-icon-box-description" style="font-size:1rem">
                                             Các bạn du học sinh Việt Nam khi đến với đất nước Úc đều được chào đón nồng nhiệt trong tuần lễ O-Week (tuần lễ chào đón sinh viên). Trong những ngày này, các bạn sẽ có rất nhiều...
                                         </p>
-                                        <p class="elementor-align-right"><i>26 tháng 4 năm 2023</i></p>
+                                        <p class="elementor-align-right" style="margin:0.5rem 0"><i>26 tháng 4 năm 2023</i></p>
                                     </div>
                                 </div>
                             </div>
@@ -576,18 +605,19 @@
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-a3e863c elementor-view-stacked elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="a3e863c" data-element_type="widget" data-widget_type="icon-box.default">
                             <div class="elementor-widget-container">
-                                <div class="elementor-icon-box-wrapper">
-                                    <div class="elementor-icon-box-icon">
+                                <div class="elementor-icon-box-wrapper" style="background: #f2f2f2;">
+                                    <div class="elementor-icon-box-icon" style="margin-bottom:0;position:relative">
                                         <img src="{{ asset('public/images/duhoc_6.jpg') }}" alt=""/>
+                                        <span style="position:absolute;left:0;top:30%;color:#FFF;font-weight:bold">Tham gia các câu lạc bộ và cộng đồng sinh viên khi du học Úc</span>
                                     </div>
-                                    <div class="elementor-icon-box-content elementor-align-left">
+                                    <div class="elementor-icon-box-content elementor-align-left" style="padding:10px">
                                         <p class="elementor-icon-box-title">
                                             <span>3 lý do bạn nên tham gia các câu lạc bộ và cộng đồng sinh viên khi du học Úc</span>
                                         </p>
-                                        <p class="elementor-icon-box-description">
+                                        <p class="elementor-icon-box-description" style="font-size:1rem">
                                             Các bạn du học sinh Việt Nam khi đến với đất nước Úc đều được chào đón nồng nhiệt trong tuần lễ O-Week (tuần lễ chào đón sinh viên). Trong những ngày này, các bạn sẽ có rất nhiều...
                                         </p>
-                                        <p class="elementor-align-right"><i>26 tháng 4 năm 2023</i></p>
+                                        <p class="elementor-align-right" style="margin:0.5rem 0"><i>26 tháng 4 năm 2023</i></p>
                                     </div>
                                 </div>
                             </div>
@@ -598,18 +628,19 @@
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-a3e863c elementor-view-stacked elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="a3e863c" data-element_type="widget" data-widget_type="icon-box.default">
                             <div class="elementor-widget-container">
-                                <div class="elementor-icon-box-wrapper">
-                                    <div class="elementor-icon-box-icon">
+                                <div class="elementor-icon-box-wrapper" style="background: #f2f2f2;">
+                                    <div class="elementor-icon-box-icon" style="margin-bottom:0;position:relative">
                                         <img src="{{ asset('public/images/duhoc_7.jpg') }}" alt=""/>
+                                        <span style="position:absolute;left:0;top:30%;color:#FFF;font-weight:bold">Tham gia các câu lạc bộ và cộng đồng sinh viên khi du học Úc</span>
                                     </div>
-                                    <div class="elementor-icon-box-content elementor-align-left">
+                                    <div class="elementor-icon-box-content elementor-align-left" style="padding:10px">
                                         <p class="elementor-icon-box-title">
                                             <span>3 lý do bạn nên tham gia các câu lạc bộ và cộng đồng sinh viên khi du học Úc</span>
                                         </p>
-                                        <p class="elementor-icon-box-description">
+                                        <p class="elementor-icon-box-description" style="font-size:1rem">
                                             Các bạn du học sinh Việt Nam khi đến với đất nước Úc đều được chào đón nồng nhiệt trong tuần lễ O-Week (tuần lễ chào đón sinh viên). Trong những ngày này, các bạn sẽ có rất nhiều...
                                         </p>
-                                        <p class="elementor-align-right"><i>26 tháng 4 năm 2023</i></p>
+                                        <p class="elementor-align-right" style="margin:0.5rem 0"><i>26 tháng 4 năm 2023</i></p>
                                     </div>
                                 </div>
                             </div>
@@ -620,18 +651,19 @@
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-a3e863c elementor-view-stacked elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="a3e863c" data-element_type="widget" data-widget_type="icon-box.default">
                             <div class="elementor-widget-container">
-                                <div class="elementor-icon-box-wrapper">
-                                    <div class="elementor-icon-box-icon">
+                                <div class="elementor-icon-box-wrapper" style="background: #f2f2f2;">
+                                    <div class="elementor-icon-box-icon" style="margin-bottom:0;position:relative">
                                         <img src="{{ asset('public/images/duhoc_8.jpg') }}" alt=""/>
+                                        <span style="position:absolute;left:0;top:30%;color:#FFF;font-weight:bold">Tham gia các câu lạc bộ và cộng đồng sinh viên khi du học Úc</span>
                                     </div>
-                                    <div class="elementor-icon-box-content elementor-align-left">
+                                    <div class="elementor-icon-box-content elementor-align-left" style="padding:10px">
                                         <p class="elementor-icon-box-title">
                                             <span>3 lý do bạn nên tham gia các câu lạc bộ và cộng đồng sinh viên khi du học Úc</span>
                                         </p>
-                                        <p class="elementor-icon-box-description">
+                                        <p class="elementor-icon-box-description" style="font-size:1rem">
                                             Các bạn du học sinh Việt Nam khi đến với đất nước Úc đều được chào đón nồng nhiệt trong tuần lễ O-Week (tuần lễ chào đón sinh viên). Trong những ngày này, các bạn sẽ có rất nhiều...
                                         </p>
-                                        <p class="elementor-align-right"><i>26 tháng 4 năm 2023</i></p>
+                                        <p class="elementor-align-right" style="margin:0.5rem 0"><i>26 tháng 4 năm 2023</i></p>
                                     </div>
                                 </div>
                             </div>

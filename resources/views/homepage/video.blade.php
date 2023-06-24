@@ -1,10 +1,22 @@
+<style>
+    .jet-smart-listing__post-title.post-title-simple a {
+        color: #502c84 !important;
+    }
+    .elementor-174 .elementor-element.elementor-element-9e97130 .jet-title-fields {
+        background: #FFF;
+        border: 2px solid #00aeef;
+    }
+    .sukien_ngay, .sukien_thang {
+        color: #00aeef;
+    }
+</style>
 <section class="elementor-section elementor-top-section elementor-element elementor-element-49fc4ca elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="49fc4ca" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
     <div class="elementor-container elementor-column-gap-default">
         <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2009f73" data-id="2009f73" data-element_type="column">
             <div class="elementor-widget-wrap elementor-element-populated">
                 <div class="elementor-element elementor-element-3f639ea elementor-widget elementor-widget-heading" data-id="3f639ea" data-element_type="widget" data-widget_type="heading.default">
                     <div class="elementor-widget-container">
-                        <h2 class="elementor-heading-title elementor-size-default">SỰ KIỆN DU HỌC</h2></div>
+                        <h2 class="elementor-heading-title elementor-size-default" style="color: #181818 !important;font-weight:bold">SỰ KIỆN DU HỌC</h2></div>
                 </div>
                 <div class="elementor-element elementor-element-9e97130 sukien_csss elementor-widget elementor-widget-jet-blog-smart-listing" data-id="9e97130" data-element_type="widget" data-widget_type="jet-blog-smart-listing.default">
                     <div class="elementor-widget-container">
@@ -20,7 +32,7 @@
                                                 <div class="jet-smart-listing__post-content">
                                                     <div class="jet-title-fields">
                                                         <div class="jet-title-fields__item">
-                                                            <div class="jet-title-fields__item-value"><span class="sukien_ngay">12</span></div>
+                                                            <div class="jet-title-fields__item-value" style="border-bottom: 2px solid #00aeef;"><span class="sukien_ngay">12</span></div>
                                                         </div>
                                                         <div class="jet-title-fields__item">
                                                             <div class="jet-title-fields__item-value"><span class="sukien_thang">Tháng 9</span></div>
@@ -28,12 +40,8 @@
                                                     </div>
                                                     <div class="jet-content-fields">
                                                         <div class="jet-content-fields__item">
-                                                            <div class="jet-content-fields__item-label"><i class="fas fa-clock"></i> Thời gian:</div>
-                                                            <div class="jet-content-fields__item-value">14h - 16h</div>
-                                                        </div>
-                                                        <div class="jet-content-fields__item">
-                                                            <div class="jet-content-fields__item-label"><i class="fas fa-map-marker-alt"></i>&ensp;Địa điểm:</div>
-                                                            <div class="jet-content-fields__item-value">Tầng 3, Số 43 Nguyễn Hy Quang, Đống Đa, Hà Nội</div>
+                                                            <div class="jet-content-fields__item-label"><i class="fas fa-clock"></i> 14h - 16h</div>
+                                                            <div class="jet-content-fields__item-label"><i class="fas fa-map-marker-alt"></i>&ensp;Tầng 3, Số 43 Nguyễn Hy Quang, Đống Đa, Hà Nội</div>
                                                         </div>
                                                     </div>
                                                     <div class="jet-smart-listing__post-title post-title-simple"><a href="{{ url('gap-go-dai-dien-truong-hoc-vien-dai-hoc-crown-uc-cihe-thang-5-nam-2023.html') }}">Gặp gỡ đại diện Trường Học viện Đại học Crown, Úc (CIHE) tháng 5 năm 2023</a></div>
@@ -45,7 +53,7 @@
                                                 <div class="jet-smart-listing__post-content">
                                                     <div class="jet-title-fields">
                                                         <div class="jet-title-fields__item">
-                                                            <div class="jet-title-fields__item-value"><span class="sukien_ngay">11</span></div>
+                                                            <div class="jet-title-fields__item-value" style="border-bottom: 2px solid #00aeef;"><span class="sukien_ngay">11</span></div>
                                                         </div>
                                                         <div class="jet-title-fields__item">
                                                             <div class="jet-title-fields__item-value"><span class="sukien_thang">Tháng 5</span></div>
@@ -53,12 +61,8 @@
                                                     </div>
                                                     <div class="jet-content-fields">
                                                         <div class="jet-content-fields__item">
-                                                            <div class="jet-content-fields__item-label"><i class="fas fa-clock"></i> Thời gian:</div>
-                                                            <div class="jet-content-fields__item-value">9h00 - 10h30</div>
-                                                        </div>
-                                                        <div class="jet-content-fields__item">
-                                                            <div class="jet-content-fields__item-label"><i class="fas fa-map-marker-alt"></i>&ensp;Địa điểm:</div>
-                                                            <div class="jet-content-fields__item-value">Tầng 3, Số 43 Nguyễn Hy Quang, Đống Đa, Hà Nội</div>
+                                                            <div class="jet-content-fields__item-label"><i class="fas fa-clock"></i> 9h00 - 10h30</div>
+                                                            <div class="jet-content-fields__item-label"><i class="fas fa-map-marker-alt"></i>&ensp;Tầng 3, Số 43 Nguyễn Hy Quang, Đống Đa, Hà Nội</div>
                                                         </div>
                                                     </div>
                                                     <div class="jet-smart-listing__post-title post-title-simple"><a href="{{ url('gap-go-truong-niagara-college-truong-dao-tao-quan-tri-kinh-doanh-nau-an-du-lich-khach-san-noi-tieng-nhat-canada.html') }}">Gặp gỡ Trường Niagara, College &#8211; Trường đào tạo quản trị kinh doanh, nấu ăn, du lịch khách sạn nổi tiếng nhất Canada</a></div>
@@ -70,7 +74,7 @@
                                                 <div class="jet-smart-listing__post-content">
                                                     <div class="jet-title-fields">
                                                         <div class="jet-title-fields__item">
-                                                            <div class="jet-title-fields__item-value"><span class="sukien_ngay">17</span></div>
+                                                            <div class="jet-title-fields__item-value" style="border-bottom: 2px solid #00aeef;"><span class="sukien_ngay">15</span></div>
                                                         </div>
                                                         <div class="jet-title-fields__item">
                                                             <div class="jet-title-fields__item-value"><span class="sukien_thang">Tháng 4</span></div>
@@ -78,12 +82,8 @@
                                                     </div>
                                                     <div class="jet-content-fields">
                                                         <div class="jet-content-fields__item">
-                                                            <div class="jet-content-fields__item-label"><i class="fas fa-clock"></i> Thời gian:</div>
-                                                            <div class="jet-content-fields__item-value">10h00 - 11h30</div>
-                                                        </div>
-                                                        <div class="jet-content-fields__item">
-                                                            <div class="jet-content-fields__item-label"><i class="fas fa-map-marker-alt"></i>&ensp;Địa điểm:</div>
-                                                            <div class="jet-content-fields__item-value">Tầng 3, Số 43 Nguyễn Hy Quang, Đống Đa, Hà Nội</div>
+                                                            <div class="jet-content-fields__item-label"><i class="fas fa-clock"></i> 10h00 - 11h30</div>
+                                                            <div class="jet-content-fields__item-label"><i class="fas fa-map-marker-alt"></i>&ensp;Tầng 3, Số 43 Nguyễn Hy Quang, Đống Đa, Hà Nội</div>
                                                         </div>
                                                     </div>
                                                     <div class="jet-smart-listing__post-title post-title-simple"><a href="{{ url('gap-go-truong-dai-hoc-southern-cross-uc-nam-trong-danh-sach-100-truong-dai-hoc-tre-xuat-sac-nhat-the-gioi.html') }}">Gặp gỡ Trường Đại học Southern Cross, Úc nằm trong danh sách 100 trường đại học trẻ xuất sắc nhất thế giới</a></div>
@@ -95,20 +95,37 @@
                                                 <div class="jet-smart-listing__post-content">
                                                     <div class="jet-title-fields">
                                                         <div class="jet-title-fields__item">
-                                                            <div class="jet-title-fields__item-value"><span class="sukien_ngay">15</span></div>
+                                                            <div class="jet-title-fields__item-value" style="border-bottom: 2px solid #00aeef;"><span class="sukien_ngay">17</span></div>
                                                         </div>
                                                         <div class="jet-title-fields__item">
-                                                            <div class="jet-title-fields__item-value"><span class="sukien_thang">Tháng 4</span></div>
+                                                            <div class="jet-title-fields__item-value"><span class="sukien_thang">Tháng 3</span></div>
                                                         </div>
                                                     </div>
                                                     <div class="jet-content-fields">
                                                         <div class="jet-content-fields__item">
-                                                            <div class="jet-content-fields__item-label"><i class="fas fa-clock"></i> Thời gian:</div>
-                                                            <div class="jet-content-fields__item-value">14h30 - 16h30</div>
+                                                            <div class="jet-content-fields__item-label"><i class="fas fa-clock"></i> 14h30 - 16h30</div>
+                                                            <div class="jet-content-fields__item-label"><i class="fas fa-map-marker-alt"></i>&ensp;Tầng 3, Số 43 Nguyễn Hy Quang, Đống Đa, Hà Nội</div>
                                                         </div>
+                                                    </div>
+                                                    <div class="jet-smart-listing__post-title post-title-simple"><a href="{{ url('hoi-thao-truc-tiep-du-hoc-anh-truong-dai-hoc-northampton-top-20-truong-kinh-doanh-hang-dau-vuong-quoc-anh.html') }}">Hội thảo trực tiếp Du học Anh trường Đại học Northampton – Top 20 trường Kinh doanh hàng đầu Vương quốc Anh</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jet-smart-listing__post-wrapper">
+                                            <div class="jet-smart-listing__post has-thumb-postion-">
+                                                <div class="jet-smart-listing__post-content">
+                                                    <div class="jet-title-fields">
+                                                        <div class="jet-title-fields__item">
+                                                            <div class="jet-title-fields__item-value" style="border-bottom: 2px solid #00aeef;"><span class="sukien_ngay">22</span></div>
+                                                        </div>
+                                                        <div class="jet-title-fields__item">
+                                                            <div class="jet-title-fields__item-value"><span class="sukien_thang">Tháng 2</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="jet-content-fields">
                                                         <div class="jet-content-fields__item">
-                                                            <div class="jet-content-fields__item-label"><i class="fas fa-map-marker-alt"></i>&ensp;Địa điểm:</div>
-                                                            <div class="jet-content-fields__item-value">Tầng 3, Số 43 Nguyễn Hy Quang, Đống Đa, Hà Nội</div>
+                                                            <div class="jet-content-fields__item-label"><i class="fas fa-clock"></i> 14h30 - 16h30</div>
+                                                            <div class="jet-content-fields__item-label"><i class="fas fa-map-marker-alt"></i>&ensp;Tầng 3, Số 43 Nguyễn Hy Quang, Đống Đa, Hà Nội</div>
                                                         </div>
                                                     </div>
                                                     <div class="jet-smart-listing__post-title post-title-simple"><a href="{{ url('hoi-thao-truc-tiep-du-hoc-anh-truong-dai-hoc-northampton-top-20-truong-kinh-doanh-hang-dau-vuong-quoc-anh.html') }}">Hội thảo trực tiếp Du học Anh trường Đại học Northampton – Top 20 trường Kinh doanh hàng đầu Vương quốc Anh</a></div>
@@ -121,7 +138,7 @@
                             <div class="jet-smart-listing-loading"></div>
                         </div>
                         <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
-                            <button type="submit" class="elementor-button elementor-size-sm" style="background-color:#00aeef">
+                            <button type="submit" class="elementor-button elementor-size-sm" style="background-color:#00aeef;border:#00aeef">
 						<span>
                                 <span class=" elementor-button-icon">
                                                                             </span>
@@ -137,7 +154,7 @@
             <div class="elementor-widget-wrap elementor-element-populated">
                 <div class="elementor-element elementor-element-6ba72f9 elementor-widget elementor-widget-heading" data-id="6ba72f9" data-element_type="widget" data-widget_type="heading.default">
                     <div class="elementor-widget-container">
-                        <h2 class="elementor-heading-title elementor-size-default">VIDEO NỔI BẬT</h2></div>
+                        <h2 class="elementor-heading-title elementor-size-default" style="color: #181818 !important;font-weight:bold">VIDEO NỔI BẬT</h2></div>
                 </div>
                 <div class="elementor-element elementor-element-55e45c0 elementor-widget elementor-widget-video" data-id="55e45c0" data-element_type="widget"
                      data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/www.youtube.com\/watch?v=H-EwvU00nP4&quot;,&quot;lazy_load&quot;:&quot;yes&quot;,&quot;show_image_overlay&quot;:&quot;yes&quot;,&quot;image_overlay&quot;:{&quot;url&quot;:&quot;https:\/\/newocean.edu.vn\/wp-content\/uploads\/2023\/04\/EwvU00nP4-1.jpg&quot;,&quot;id&quot;:24963,&quot;size&quot;:&quot;&quot;,&quot;alt&quot;:&quot;H\u1ecdc sinh nh\u1ead visa du h\u1ecdc \u00daC, H\u1ecdc b\u1ed5ng 30% ng\u00e0nh Marketing du h\u1ecdc t\u1ea1i \u00dac&quot;,&quot;source&quot;:&quot;library&quot;},&quot;lightbox&quot;:&quot;yes&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;}"
@@ -220,7 +237,7 @@
                     </div>
                 </div>
                 <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
-                    <button type="submit" class="elementor-button elementor-size-sm" style="background-color:#00aeef">
+                    <button type="submit" class="elementor-button elementor-size-sm" style="background-color:#00aeef;border:#00aeef">
 						<span>
                                 <span class=" elementor-button-icon">
                                                                             </span>

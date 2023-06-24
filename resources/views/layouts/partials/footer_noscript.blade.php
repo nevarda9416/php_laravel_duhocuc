@@ -5,7 +5,7 @@
                 <div class="elementor-widget-wrap elementor-element-populated">
                     <div class="elementor-element elementor-element-822d460 elementor-widget elementor-widget-heading" data-id="822d460" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                            <h4 class="elementor-heading-title elementor-size-default">THÔNG TIN LIÊN HỆ</h4></div>
+                            <h4 class="elementor-heading-title elementor-size-default" style="color:#FFF !important">THÔNG TIN LIÊN HỆ</h4></div>
                     </div>
                     <div class="elementor-element elementor-element-b5b89f7 elementor-widget elementor-widget-text-editor" data-id="b5b89f7" data-element_type="widget" data-widget_type="text-editor.default">
                         <div class="elementor-widget-container elementor-kit-10750">
@@ -16,11 +16,11 @@
                             <p>247 Điện Biên Phủ, Phường 15, Quận Bình Thạnh, Hồ Chí Minh</p>
                             <p>
                             <div class="elementor-social-icons-wrapper elementor-flex">
-<span class="elementor-grid-item">
+<span class="elementor-grid-item" style="margin-right:5px">
 					<a href="https://www.youtube.com/channel/UCOkhgPaV1JJPtOUaRwuW3mA/videos" target="_blank">
 						<img src="{{ asset('public/images/icon_youtube.png') }}" alt=""/>					</a>
 </span>
-                                <span class="elementor-grid-item">
+                                <span class="elementor-grid-item" style="margin-right:7px">
 					<a href="https://www.facebook.com/uocmoduhoc/" target="_blank">
 						<img src="{{ asset('public/images/icon_twitter.png') }}" alt=""/>				</a>
                                 </span>
@@ -38,7 +38,7 @@
                 <div class="elementor-widget-wrap elementor-element-populated">
                     <div class="elementor-element elementor-element-c060e94 elementor-widget elementor-widget-heading" data-id="c060e94" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                            <h4 class="elementor-heading-title elementor-size-default">HỖ TRỢ KHÁCH HÀNG</h4></div>
+                            <h4 class="elementor-heading-title elementor-size-default" style="color:#FFF !important">HỖ TRỢ KHÁCH HÀNG</h4></div>
                     </div>
                     <div class="elementor-element elementor-element-016c223 elementor-widget elementor-widget-text-editor" data-id="016c223" data-element_type="widget" data-widget_type="text-editor.default">
                         <div class="elementor-widget-container">
@@ -52,7 +52,7 @@
                 <div class="elementor-widget-wrap elementor-element-populated">
                     <div class="elementor-element elementor-element-343962e elementor-widget elementor-widget-heading" data-id="343962e" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                            <h4 class="elementor-heading-title elementor-size-default">ĐĂNG KÝ NHẬN TIN</h4></div>
+                            <h4 class="elementor-heading-title elementor-size-default" style="color:#FFF !important">ĐĂNG KÝ NHẬN TIN</h4></div>
                     </div>
                     <div class="elementor-element elementor-element-45629c2 elementor-widget elementor-widget-text-editor" data-id="45629c2" data-element_type="widget" data-widget_type="text-editor.default">
                         <div class="elementor-widget-container">

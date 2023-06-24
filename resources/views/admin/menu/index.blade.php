@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.admin.default')
 @section('content')
     <div class="page-title">
         <div class="title_left">
@@ -23,7 +23,7 @@
                 <div class="x_content">
                     <br/>
                     <form class="form-horizontal form-label-left input_mask" action="{{ url('menu/store') }}" method="post">
-                        @csrf
+                        {{ csrf_field() }}
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Menu cha</label>
                             <div class="col-md-5 col-sm-5 col-xs-12">
@@ -80,6 +80,6 @@
                 </div>
             </div>
         </div>
-        @include('menu.list')
+        @include('admin.menu.list')
     </div>
 @endsection

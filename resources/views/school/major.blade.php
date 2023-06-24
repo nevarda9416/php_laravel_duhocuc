@@ -2,7 +2,8 @@
 @section('content')
     <div data-elementor-type="wp-post" data-elementor-id="174" class="elementor elementor-174">
         @include('widgets.banner')
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-df9f39d elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="df9f39d" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-df9f39d elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="df9f39d" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}"
+        style="background:#fff">
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-092491b" data-id="092491b" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
@@ -20,64 +21,144 @@
                                 </p>
                                 <div class="elementor-gallery__container">
                                     <a class="e-gallery-item elementor-gallery-item elementor-animated-content" data-e-gallery-tags="2" href="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-c7ca10e"
-                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D">
-                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"></div>
+                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D"
+                                    style="position:relative;background:#00aeef;height:141px">
+                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"
+                                        style="position:absolute;top:50%;transform:translateY(-50%);text-align:center;color:rgb(255, 255, 255);padding:0 10px;">Học tiếng Anh
+                                        </div>
                                     </a>
                                     <a class="e-gallery-item elementor-gallery-item elementor-animated-content" data-e-gallery-tags="2" href="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-c7ca10e"
-                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D">
-                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"></div>
+                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D"
+                                       style="position:relative;background:#00aeef;height:141px">
+                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"
+                                             style="position:absolute;top:50%;transform:translateY(-50%);text-align:center;color:rgb(255, 255, 255);padding:0 10px;">Chăm sóc ý tế - Sức khỏe
+                                        </div>
                                     </a>
                                     <a class="e-gallery-item elementor-gallery-item elementor-animated-content" data-e-gallery-tags="2" href="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-c7ca10e"
-                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D">
-                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"></div>
+                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D"
+                                       style="position:relative;background:#00aeef;height:141px">
+                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"
+                                             style="position:absolute;top:50%;transform:translateY(-50%);text-align:center;color:rgb(255, 255, 255);padding:0 10px;">Công nghệ sinh học - Môi trường
+                                        </div>
                                     </a>
                                     <a class="e-gallery-item elementor-gallery-item elementor-animated-content" data-e-gallery-tags="2" href="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-c7ca10e"
-                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D">
-                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"></div>
+                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D"
+                                       style="position:relative;background:#00aeef;height:141px">
+                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"
+                                             style="position:absolute;top:50%;transform:translateY(-50%);text-align:center;color:rgb(255, 255, 255);padding:0 10px;">Hospitality
+                                        </div>
                                     </a>
                                     <a class="e-gallery-item elementor-gallery-item elementor-animated-content" data-e-gallery-tags="2" href="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-c7ca10e"
-                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D">
-                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"></div>
+                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D"
+                                       style="position:relative;background:#00aeef;height:141px">
+                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"
+                                             style="position:absolute;top:50%;transform:translateY(-50%);text-align:center;color:rgb(255, 255, 255);padding:0 10px;">Giáo dục và đào tạo
+                                        </div>
                                     </a>
                                     <a class="e-gallery-item elementor-gallery-item elementor-animated-content" data-e-gallery-tags="2" href="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-c7ca10e"
-                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D">
-                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"></div>
+                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D"
+                                       style="position:relative;background:#00aeef;height:141px">
+                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"
+                                             style="position:absolute;top:50%;transform:translateY(-50%);text-align:center;color:rgb(255, 255, 255);padding:0 10px;">Kế toán - Kiểm toán
+                                        </div>
                                     </a>
                                     <a class="e-gallery-item elementor-gallery-item elementor-animated-content" data-e-gallery-tags="2" href="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-c7ca10e"
-                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D">
-                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"></div>
+                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D"
+                                       style="position:relative;background:#00aeef;height:141px">
+                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"
+                                             style="position:absolute;top:50%;transform:translateY(-50%);text-align:center;color:rgb(255, 255, 255);padding:0 10px;">Khoa học - Nghiên cứu
+                                        </div>
                                     </a>
                                     <a class="e-gallery-item elementor-gallery-item elementor-animated-content" data-e-gallery-tags="2" href="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-c7ca10e"
-                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D">
-                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"></div>
+                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D"
+                                       style="position:relative;background:#00aeef;height:141px">
+                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"
+                                             style="position:absolute;top:50%;transform:translateY(-50%);text-align:center;color:rgb(255, 255, 255);padding:0 10px;">Khoa học máy tính - Công nghệ thông tin
+                                        </div>
                                     </a>
                                     <a class="e-gallery-item elementor-gallery-item elementor-animated-content" data-e-gallery-tags="2" href="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-c7ca10e"
-                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D">
-                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"></div>
+                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D"
+                                       style="position:relative;background:#00aeef;height:141px">
+                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"
+                                             style="position:absolute;top:50%;transform:translateY(-50%);text-align:center;color:rgb(255, 255, 255);padding:0 10px;">Khoa học xã hội & Nhân văn
+                                        </div>
                                     </a>
                                     <a class="e-gallery-item elementor-gallery-item elementor-animated-content" data-e-gallery-tags="2" href="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-c7ca10e"
-                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D">
-                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"></div>
+                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D"
+                                       style="position:relative;background:#00aeef;height:141px">
+                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"
+                                             style="position:absolute;top:50%;transform:translateY(-50%);text-align:center;color:rgb(255, 255, 255);padding:0 10px;">Khoáng sản - Địa chất
+                                        </div>
                                     </a>
                                     <a class="e-gallery-item elementor-gallery-item elementor-animated-content" data-e-gallery-tags="2" href="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-c7ca10e"
-                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D">
-                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"></div>
+                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D"
+                                       style="position:relative;background:#00aeef;height:141px">
+                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"
+                                             style="position:absolute;top:50%;transform:translateY(-50%);text-align:center;color:rgb(255, 255, 255);padding:0 10px;">Kiến trúc - Xây dựng
+                                        </div>
                                     </a>
                                     <a class="e-gallery-item elementor-gallery-item elementor-animated-content" data-e-gallery-tags="2" href="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-c7ca10e"
-                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D">
-                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"></div>
+                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D"
+                                       style="position:relative;background:#00aeef;height:141px">
+                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"
+                                             style="position:absolute;top:50%;transform:translateY(-50%);text-align:center;color:rgb(255, 255, 255);padding:0 10px;">Kinh doanh và quản trị
+                                        </div>
                                     </a>
                                     <a class="e-gallery-item elementor-gallery-item elementor-animated-content" data-e-gallery-tags="2" href="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-c7ca10e"
-                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D">
-                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"></div>
+                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D"
+                                       style="position:relative;background:#00aeef;height:141px">
+                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"
+                                             style="position:absolute;top:50%;transform:translateY(-50%);text-align:center;color:rgb(255, 255, 255);padding:0 10px;">Kỹ thuật - Ứng dụng
+                                        </div>
                                     </a>
                                     <a class="e-gallery-item elementor-gallery-item elementor-animated-content" data-e-gallery-tags="2" href="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-c7ca10e"
-                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D">
-                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"></div>
+                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D"
+                                       style="position:relative;background:#00aeef;height:141px">
+                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"
+                                             style="position:absolute;top:50%;transform:translateY(-50%);text-align:center;color:rgb(255, 255, 255);padding:0 10px;">Hàng không
+                                        </div>
                                     </a>
                                     <a class="e-gallery-item elementor-gallery-item elementor-animated-content" data-e-gallery-tags="2" href="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-c7ca10e"
-                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D">
-                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"></div>
+                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D"
+                                       style="position:relative;background:#00aeef;height:141px">
+                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"
+                                             style="position:absolute;top:50%;transform:translateY(-50%);text-align:center;color:rgb(255, 255, 255);padding:0 10px;">Luật
+                                        </div>
+                                    </a>
+                                    <a class="e-gallery-item elementor-gallery-item elementor-animated-content" data-e-gallery-tags="2" href="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-c7ca10e"
+                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D"
+                                       style="position:relative;background:#00aeef;height:141px">
+                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"
+                                             style="position:absolute;top:50%;transform:translateY(-50%);text-align:center;color:rgb(255, 255, 255);padding:0 10px;">Nghệ thuật sáng tạo - Thiết kế
+                                        </div>
+                                    </a>
+                                    <a class="e-gallery-item elementor-gallery-item elementor-animated-content" data-e-gallery-tags="2" href="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-c7ca10e"
+                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D"
+                                       style="position:relative;background:#00aeef;height:141px">
+                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"
+                                             style="position:absolute;top:50%;transform:translateY(-50%);text-align:center;color:rgb(255, 255, 255);padding:0 10px;">Nông - Lâm - Ngư nghiệp
+                                        </div>
+                                    </a>
+                                    <a class="e-gallery-item elementor-gallery-item elementor-animated-content" data-e-gallery-tags="2" href="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-c7ca10e"
+                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D"
+                                       style="position:relative;background:#00aeef;height:141px">
+                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"
+                                             style="position:absolute;top:50%;transform:translateY(-50%);text-align:center;color:rgb(255, 255, 255);padding:0 10px;">Quản lý chuỗi cung ứng - Logistics
+                                        </div>
+                                    </a>
+                                    <a class="e-gallery-item elementor-gallery-item elementor-animated-content" data-e-gallery-tags="2" href="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-c7ca10e"
+                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D"
+                                       style="position:relative;background:#00aeef;height:141px">
+                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"
+                                             style="position:absolute;top:50%;transform:translateY(-50%);text-align:center;color:rgb(255, 255, 255);padding:0 10px;">Tài chính - Ngân hàng
+                                        </div>
+                                    </a>
+                                    <a class="e-gallery-item elementor-gallery-item elementor-animated-content" data-e-gallery-tags="2" href="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-c7ca10e"
+                                       data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D"
+                                       style="position:relative;background:#00aeef;height:141px">
+                                        <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="{{ asset('public/images/bg_nganhhoc.jpg') }}" data-width="600" data-height="400" aria-label="Sự kiện quyên góp từ thiện tại trung tâm du học New Ocean" role="img"
+                                             style="position:absolute;top:50%;transform:translateY(-50%);text-align:center;color:rgb(255, 255, 255);padding:0 10px;">Tâm lý học
+                                        </div>
                                     </a>
                                 </div>
                             </div>

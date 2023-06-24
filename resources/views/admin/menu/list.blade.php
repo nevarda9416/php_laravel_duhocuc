@@ -15,7 +15,7 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <form class="form-horizontal form-label-left" id="menu_header_form">
-                        @csrf
+                        {{ csrf_field() }}
                         <table class="table">
                             <tbody id="list1" class="lists">
                             <tr>
@@ -72,7 +72,7 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <form class="form-horizontal form-label-left" id="menu_footer_form">
-                        @csrf
+                        {{ csrf_field() }}
                         <table class="table">
                             <tbody id="list2" class="lists">
                             <tr>

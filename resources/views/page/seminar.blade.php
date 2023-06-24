@@ -2,13 +2,14 @@
 @section('content')
     <div data-elementor-type="wp-post" data-elementor-id="174" class="elementor elementor-174">
         @include('widgets.banner')
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-49fc4ca elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="49fc4ca" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-49fc4ca elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="49fc4ca" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}"
+        style="background:#fff">
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-70 elementor-top-column elementor-element elementor-element-2009f73" data-id="2009f73" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-3f639ea elementor-widget elementor-widget-heading elementor-align-center" data-id="3f639ea" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
-                                <h2 class="elementor-heading-title elementor-size-default">CHƯƠNG TRÌNH HỘI THẢO SẮP DIỄN RA</h2>
+                                <h2 class="elementor-heading-title elementor-size-default" style="font-size:14pt !important;font-weight:bold;color:#181818 !important">CHƯƠNG TRÌNH HỘI THẢO SẮP DIỄN RA</h2>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-9e97130 sukien_csss elementor-widget elementor-widget-jet-blog-smart-listing" data-id="9e97130" data-element_type="widget" data-widget_type="jet-blog-smart-listing.default">
@@ -47,47 +48,49 @@
                                         <div class="jet-smart-listing rows-4 no-featured">
                                             <div class="jet-smart-listing__posts">
                                                 <div class="jet-smart-listing__post-wrapper">
-                                                    <div class="jet-smart-listing__post has-thumb-postion-">
+                                                    <div class="jet-smart-listing__post has-thumb-postion-" style="border:none">
                                                         <div class="jet-smart-listing__post-content">
-                                                            <div class="jet-title-fields">
+                                                            <div class="jet-title-fields" style="background:#00aeef">
                                                                 <div class="jet-title-fields__item">
-                                                                    <div class="jet-title-fields__item-value"><span class="sukien_ngay">12</span></div>
+                                                                    <div class="jet-title-fields__item-value" style="border-bottom: 2px solid #fff;"><span class="sukien_ngay" style="color:#fff">12</span></div>
                                                                 </div>
                                                                 <div class="jet-title-fields__item">
-                                                                    <div class="jet-title-fields__item-value"><span class="sukien_thang">Tháng 9</span></div>
+                                                                    <div class="jet-title-fields__item-value"><span class="sukien_thang" style="color:#fff">Tháng 9</span></div>
                                                                 </div>
                                                             </div>
-                                                            <div class="jet-smart-listing__post-title post-title-simple"><a href="{{ url('gap-go-dai-dien-truong-hoc-vien-dai-hoc-crown-uc-cihe-thang-5-nam-2023.html') }}">Gặp gỡ đại diện Trường Học viện Đại học Crown, Úc (CIHE) tháng 5 năm 2023</a></div>
+                                                            <div class="jet-smart-listing__post-title post-title-simple" style="padding-top:0"><a href="{{ url('gap-go-dai-dien-truong-hoc-vien-dai-hoc-crown-uc-cihe-thang-5-nam-2023.html') }}" style="color:#181818 !important">Gặp gỡ đại diện Trường Học viện Đại học Crown, Úc (CIHE) tháng 5 năm 2023</a></div>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <hr style="margin:10px 0 15px;background:#d4d4d4;width:100%"/>
                                                 <div class="jet-smart-listing__post-wrapper">
-                                                    <div class="jet-smart-listing__post has-thumb-postion-">
+                                                    <div class="jet-smart-listing__post has-thumb-postion-" style="border:none">
                                                         <div class="jet-smart-listing__post-content">
-                                                            <div class="jet-title-fields">
+                                                            <div class="jet-title-fields" style="background:#00aeef">
                                                                 <div class="jet-title-fields__item">
-                                                                    <div class="jet-title-fields__item-value"><span class="sukien_ngay">11</span></div>
+                                                                    <div class="jet-title-fields__item-value" style="border-bottom: 2px solid #fff;"><span class="sukien_ngay" style="color:#fff">11</span></div>
                                                                 </div>
                                                                 <div class="jet-title-fields__item">
-                                                                    <div class="jet-title-fields__item-value"><span class="sukien_thang">Tháng 5</span></div>
+                                                                    <div class="jet-title-fields__item-value"><span class="sukien_thang" style="color:#fff">Tháng 5</span></div>
                                                                 </div>
                                                             </div>
-                                                            <div class="jet-smart-listing__post-title post-title-simple"><a href="{{ url('gap-go-truong-niagara-college-truong-dao-tao-quan-tri-kinh-doanh-nau-an-du-lich-khach-san-noi-tieng-nhat-canada.html') }}">Gặp gỡ Trường Niagara, College &#8211; Trường đào tạo quản trị kinh doanh, nấu ăn, du lịch khách sạn nổi tiếng nhất Canada</a></div>
+                                                            <div class="jet-smart-listing__post-title post-title-simple" style="padding-top:0"><a href="{{ url('gap-go-truong-niagara-college-truong-dao-tao-quan-tri-kinh-doanh-nau-an-du-lich-khach-san-noi-tieng-nhat-canada.html') }}" style="color:#181818 !important">Gặp gỡ Trường Niagara, College &#8211; Trường đào tạo quản trị kinh doanh nổi tiếng nhất Canada</a></div>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <hr style="margin:10px 0 15px;background:#d4d4d4;width:100%"/>
                                                 <div class="jet-smart-listing__post-wrapper">
-                                                    <div class="jet-smart-listing__post has-thumb-postion-">
+                                                    <div class="jet-smart-listing__post has-thumb-postion-" style="border:none">
                                                         <div class="jet-smart-listing__post-content">
-                                                            <div class="jet-title-fields">
+                                                            <div class="jet-title-fields" style="background:#00aeef">
                                                                 <div class="jet-title-fields__item">
-                                                                    <div class="jet-title-fields__item-value"><span class="sukien_ngay">17</span></div>
+                                                                    <div class="jet-title-fields__item-value" style="border-bottom: 2px solid #fff;"><span class="sukien_ngay" style="color:#fff">17</span></div>
                                                                 </div>
                                                                 <div class="jet-title-fields__item">
-                                                                    <div class="jet-title-fields__item-value"><span class="sukien_thang">Tháng 4</span></div>
+                                                                    <div class="jet-title-fields__item-value"><span class="sukien_thang" style="color:#fff">Tháng 4</span></div>
                                                                 </div>
                                                             </div>
-                                                            <div class="jet-smart-listing__post-title post-title-simple"><a href="{{ url('gap-go-truong-dai-hoc-southern-cross-uc-nam-trong-danh-sach-100-truong-dai-hoc-tre-xuat-sac-nhat-the-gioi.html') }}">Gặp gỡ Trường Đại học Southern Cross, Úc nằm trong danh sách 100 trường đại học trẻ xuất sắc nhất thế giới</a></div>
+                                                            <div class="jet-smart-listing__post-title post-title-simple" style="padding-top:0"><a href="{{ url('gap-go-truong-dai-hoc-southern-cross-uc-nam-trong-danh-sach-100-truong-dai-hoc-tre-xuat-sac-nhat-the-gioi.html') }}" style="color:#181818 !important">Gặp gỡ Trường Đại học Southern Cross, Úc nằm trong danh sách 100 trường đại học</a></div>
                                                         </div>
                                                     </div>
                                                 </div>

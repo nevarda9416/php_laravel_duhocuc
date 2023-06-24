@@ -12,7 +12,7 @@
                                     <div class="elementor-widget-wrap elementor-element-populated">
                                         <div class="elementor-element elementor-element-69cd730 elementor-widget elementor-widget-theme-page-title elementor-page-title elementor-widget-heading" data-id="69cd730" data-element_type="widget" data-widget_type="theme-page-title.default">
                                             <div class="elementor-widget-container">
-                                                <h1 class="elementor-heading-title elementor-size-large" style="margin-left:10px">FORM ĐĂNG KÝ TƯ VẤN</h1></div>
+                                                <h1 class="elementor-heading-title elementor-size-large" style="margin-left:10px;font-size:15pt !important;color:#181818 !important">FORM ĐĂNG KÝ TƯ VẤN</h1></div>
                                         </div>
                                         <div class="elementor-element elementor-element-18754d6 elementor-widget elementor-widget-heading" data-id="18754d6" data-element_type="widget" data-widget_type="heading.default">
                                             <img src="{{ asset('public/images/form_tuvan_1.jpg') }}" alt=""/>
