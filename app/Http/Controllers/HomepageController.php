@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Core\Controllers\Controller;
+use App\Core\Models\Country;
 use App\Core\Models\Location;
 use App\Core\Models\Partner;
 use App\Core\Models\Posts;
@@ -20,7 +21,7 @@ class HomepageController extends Controller
     {
         $first_post = Posts::query()->where('status', Posts::STATUS_PUBLISH)->take(1)->orderBy('id', 'DESC')->first();
         $list_posts = Posts::query()->where('status', Posts::STATUS_PUBLISH)->take(13)->skip(1)->orderBy('id', 'DESC')->get();
-        $hot_locations = Location::query()->where('hot_location', 1)->take(6)->orderBy('id', 'DESC')->get();
+        $countries = Country::query()->orderBy('id', 'DESC')->get();
         $partners = Partner::query()->orderBy('id', 'DESC')->get();
         $setting = Setting::where('key', '=', 'footer_info')->first();
         $widget_trend = Widget::select('content')->where('key', 'widget.homepage.trend')->first();
@@ -30,7 +31,7 @@ class HomepageController extends Controller
         $metaData['meta_keyword'] = $setting->meta_keyword;
         $metaData['meta_description'] = $setting->meta_description;
         $metaData['meta_image'] = $setting->meta_image;
-        return view('homepage.index', compact('first_post', 'list_posts', 'hot_locations', 'partners', 'widget_trend', 'widget_top_banner', 'widget_middle_banner', 'metaData'));
+        return view('homepage.index', compact('first_post', 'list_posts', 'countries', 'partners', 'widget_trend', 'widget_top_banner', 'widget_middle_banner', 'metaData'));
     }
 
     /**

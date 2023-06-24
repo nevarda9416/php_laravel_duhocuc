@@ -15,7 +15,7 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-md-3 col-sm-3 col-xs-12">URL</label>
+        <label class="control-label col-md-3 col-sm-3 col-xs-12">URL <span class="required">*</span></label>
         <div class="col-md-9 col-sm-9 col-xs-12">
             <input type="text" class="form-control" name="url" required="required" value="{{ isset($partner->url)?$partner->url:'' }}" {{ (isset($action) && $action == 'show'?'disabled':'') }}>
         </div>
@@ -24,7 +24,7 @@
         <label class="control-label col-md-3 col-sm-3 col-xs-12">Quốc gia</label>
         <div class="col-md-9 col-sm-9 col-xs-12">
             <select class="form-control" name="country_id">
-                <option></option>
+                <option value="0"></option>
             </select>
         </div>
     </div>

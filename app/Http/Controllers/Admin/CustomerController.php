@@ -22,7 +22,18 @@ class CustomerController extends Controller
      */
     public function index()
     {
-        $customers = DB::table('newsletter_subcribers')->paginate($this->limit);
+        $customers = DB::table('customers')->orderBy('id', 'DESC')->paginate($this->limit);
         return view('admin.customer.index', compact('customers'));
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function subcriber()
+    {
+        $customers = DB::table('newsletter_subcribers')->orderBy('id', 'DESC')->paginate($this->limit);
+        return view('admin.customer.subcriber', compact('customers'));
     }
 }

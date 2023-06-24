@@ -91,6 +91,9 @@ Route::group(['middleware' => 'auth', 'prefix' => 'cms'], function () {
     Route::group(['prefix' => 'customers'], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'Admin\CustomerController@index']);
     });
+    Route::group(['prefix' => 'subcribers'], function () {
+        Route::get('/', ['as' => 'index', 'uses' => 'Admin\CustomerController@subcriber']);
+    });
     // Trang quản trị những câu hỏi thường gặp
     Route::group(['prefix' => 'frequently-questions', 'as' => 'q&a'], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'Admin\QuestionController@index']);
@@ -248,5 +251,6 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('tuyen-dung', ['uses' => 'PageController@recruitment']);
     Route::get('lien-he', ['uses' => 'PageController@contact']);
     Route::get('{slug}', ['uses' => 'PageController@detail']);
+    Route::post('register/customer', 'FormController@register');
     Route::post('register/newsletter_subcriber ', 'FormController@subcribe');
 });
