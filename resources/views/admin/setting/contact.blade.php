@@ -115,6 +115,18 @@
                             </div>
                         </div>
                         <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Link twitter</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <input type="text" class="form-control" name="twitter" value="{{ $contact['twitter'] ?? '' }}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Link google</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <input type="text" class="form-control" name="google" value="{{ $contact['google'] ?? '' }}">
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Slogan đăng ký</label>
                             <div class="col-md-9 col-sm-9 col-xs-12">
                                 <textarea class="form-control editor_basic" name="slogan_register" id="slogan_register">{{ $contact['slogan_register'] ?? '' }}</textarea>

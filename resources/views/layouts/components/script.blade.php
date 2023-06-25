@@ -172,7 +172,7 @@
             mode: 'regular',
             buttonIconUrl: 'https://newocean.edu.vn/wp-content/plugins/ar-contactus/res/img/msg.svg',
             showMenuHeader: true,
-            menuHeaderText: "New Ocean có thể hỗ trợ gì cho bạn?",
+            menuHeaderText: "SKY PACIFIC EDU có thể hỗ trợ gì cho bạn?",
             menuSubheaderText: "",
 
             menuHeaderLayout: 'icon-left',

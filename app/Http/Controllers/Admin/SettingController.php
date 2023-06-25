@@ -108,6 +108,8 @@ class SettingController extends Controller
                 'facebook' => $request->get('facebook'),
                 'youtube' => $request->get('youtube'),
                 'instagram' => $request->get('instagram'),
+                'twitter' => $request->get('twitter'),
+                'google' => $request->get('google'),
                 'slogan_register' => $request->get('slogan_register')
             );
             if ($logo_header_company) {

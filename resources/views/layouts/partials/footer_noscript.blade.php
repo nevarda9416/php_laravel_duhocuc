@@ -9,23 +9,23 @@
                     </div>
                     <div class="elementor-element elementor-element-b5b89f7 elementor-widget elementor-widget-text-editor" data-id="b5b89f7" data-element_type="widget" data-widget_type="text-editor.default">
                         <div class="elementor-widget-container elementor-kit-10750">
-                            <p><strong>SKY PACIFIC EDU</strong></p>
-                            <p>http://www.<a>skypacificedu</a>.edu.vn</p>
-                            <p>info@skypacificedu.edu.vn</p>
-                            <p><a>08 6285 6396</a></p>
-                            <p>247 Điện Biên Phủ, Phường 15, Quận Bình Thạnh, Hồ Chí Minh</p>
+                            <p><strong>{{ $setting['company_contact'] ?? '' }}</strong></p>
+                            <p><a href="{{ $setting['website_contact'] ?? '' }}">{{ $setting['website_contact'] ?? '' }}</a></p>
+                            <p><a href="mailto:{{ $setting['email_contact'] ?? '' }}">{{ $setting['email_contact'] ?? '' }}</a></p>
+                            <p><a href="tel:{{ $setting['telephone_contact'] ?? '' }}">{{ $setting['telephone_contact'] ?? '' }}</a></p>
+                            <p>{{ $setting['address_contact'] ?? '' }}</p>
                             <p>
                             <div class="elementor-social-icons-wrapper elementor-flex">
 <span class="elementor-grid-item" style="margin-right:5px">
-					<a href="https://www.youtube.com/channel/UCOkhgPaV1JJPtOUaRwuW3mA/videos" target="_blank">
+					<a href="{{ $setting['youtube'] ?? '' }}" target="_blank">
 						<img src="{{ asset('public/images/icon_youtube.png') }}" alt=""/>					</a>
 </span>
                                 <span class="elementor-grid-item" style="margin-right:7px">
-					<a href="https://www.facebook.com/uocmoduhoc/" target="_blank">
+					<a href="{{ $setting['twitter'] ?? '' }}" target="_blank">
 						<img src="{{ asset('public/images/icon_twitter.png') }}" alt=""/>				</a>
                                 </span>
                                 <span class="elementor-grid-item">
-					<a href="https://g.page/r/Cad6TYAwAXQREBM" target="_blank">
+					<a href="{{ $setting['google'] ?? '' }}" target="_blank">
 						<img src="{{ asset('public/images/icon_google.png') }}" alt=""/>					</a>
                                 </span>
                             </div>
@@ -40,12 +40,16 @@
                         <div class="elementor-widget-container">
                             <h4 class="elementor-heading-title elementor-size-default" style="color:#FFF !important">HỖ TRỢ KHÁCH HÀNG</h4></div>
                     </div>
-                    <div class="elementor-element elementor-element-016c223 elementor-widget elementor-widget-text-editor" data-id="016c223" data-element_type="widget" data-widget_type="text-editor.default">
-                        <div class="elementor-widget-container">
-                            <p>Hotline tư vấn Hà Nội : <a href="tel:0964562233">096 456 2233</a> <span class="small-text">(8-21h kể cả T7, CN)</span></p>
-                            <p>Hotline tư vấn TP.HCM : <a href="tel:0964561122">096 456 1122</a> <span class="small-text">(8-21h kể cả T7, CN)</span></p>
-                            <p>Giờ làm việc: T2-T6 8h-17h; T7 8h-12h; CN nghỉ</p></div>
-                    </div>
+                    @if (!empty($setting['copyright_right']))
+                        <?php echo html_entity_decode($setting['copyright_right']) ?>
+                    @else
+                        <div class="elementor-element elementor-element-016c223 elementor-widget elementor-widget-text-editor" data-id="016c223" data-element_type="widget" data-widget_type="text-editor.default">
+                            <div class="elementor-widget-container">
+                                <p>Hotline tư vấn Hà Nội : <a href="tel:0964562233">096 456 2233</a> <span class="small-text">(8-21h kể cả T7, CN)</span></p>
+                                <p>Hotline tư vấn TP.HCM : <a href="tel:0964561122">096 456 1122</a> <span class="small-text">(8-21h kể cả T7, CN)</span></p>
+                                <p>Giờ làm việc: T2-T6 8h-17h; T7 8h-12h; CN nghỉ</p></div>
+                        </div>
+                    @endif
                 </div>
             </div>
             <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6840879" data-id="6840879" data-element_type="column">

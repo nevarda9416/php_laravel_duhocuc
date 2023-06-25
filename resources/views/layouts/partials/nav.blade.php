@@ -139,7 +139,7 @@
                         <div class="elementor-widget-container">
                             <nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
                                 <ul id="menu-1-277796a" class="elementor-nav-menu">
-                                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21602"><a class="elementor-item"><i>Chào mừng bạn đến với SKY PACIFIC EDU !</i></a></li>
+                                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21602"><a class="elementor-item"><i>Chào mừng bạn đến với {{ $setting['company_contact'] ?? '' }} !</i></a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -150,7 +150,7 @@
                 <div class="elementor-widget-wrap elementor-element-populated">
                     <div class="elementor-element elementor-element-60fc103 elementor-widget elementor-widget-text-editor" data-id="60fc103" data-element_type="widget" data-widget_type="text-editor.default">
                         <div class="elementor-widget-container">
-                            <span>Hotline: <a href="tel:097876111">097 876 111</a> | Email: <a href="mailto:skypacific@gmail.com">skypacific@gmail.com</a></span></div>
+                            <span>Hotline: <a href="tel:{{ $setting['telephone_contact'] ?? '' }}">{{ $setting['telephone_contact'] ?? '' }}</a> | Email: <a href="mailto:{{ $setting['email_contact'] ?? '' }}">{{ $setting['email_contact'] ?? '' }}</a></span></div>
                     </div>
                 </div>
             </div>
@@ -158,7 +158,7 @@
                 <div class="elementor-widget-wrap elementor-element-populated">
                     <div class="elementor-element elementor-element-b59c2bb elementor-search-form--skin-full_screen elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-search-form" data-id="b59c2bb" data-element_type="widget" data-settings="{&quot;skin&quot;:&quot;full_screen&quot;}" data-widget_type="search-form.default">
                         <div class="elementor-widget-container">
-                            <form class="elementor-search-form" action="https://newocean.edu.vn" method="get" role="search">
+                            <form class="elementor-search-form" action="{{ url('/') }}" method="get" role="search">
                                 <div class="elementor-search-form__toggle" tabindex="0" role="button">
                                     <i aria-hidden="true" class="fas fa-search" style="color:#fff"></i> <span class="elementor-screen-only">Tìm kiếm</span>
                                 </div>
