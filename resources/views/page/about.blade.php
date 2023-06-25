@@ -14,9 +14,9 @@
                 </div>
             </div>
         </section>
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-5f4ef81 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5f4ef81" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}" style="width: 1519px; left: 0px;">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-5f4ef81 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5f4ef81" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}" style="width: 1519px; left: 0px;margin-top:0">
             <div class="elementor-container elementor-column-gap-default">
-                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7da0902" data-id="7da0902" data-element_type="column">
+                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7da0902" data-id="7da0902" data-element_type="column" style="width:50%">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-665c08c elementor-widget elementor-widget-image" data-id="665c08c" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
@@ -25,13 +25,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2c9b4ea" data-id="2c9b4ea" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                    <div class="elementor-widget-wrap elementor-element-populated">
+                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2c9b4ea" data-id="2c9b4ea" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" style="width:50%">
+                    <div class="elementor-widget-wrap elementor-element-populated" style="padding-top:0">
                         <div class="elementor-element elementor-element-7efb957 elementor-blockquote--skin-border elementor-blockquote--button-color-official elementor-widget elementor-widget-blockquote" data-id="7efb957" data-element_type="widget" data-widget_type="blockquote.default">
                             <div class="elementor-widget-container">
                                 <blockquote>
                                     <div class="e-q-footer">
-                                        <cite class="elementor-blockquote__author">Dòng tiêu đề</cite>
+                                        <cite class="elementor-blockquote__author" style="font-size:20px;color:#00aeef">Dòng tiêu đề</cite>
                                     </div>
                                 </blockquote>
                             </div>
@@ -46,13 +46,13 @@
                 </div>
             </div>
             <div class="elementor-container elementor-column-gap-default">
-                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2c9b4ea" data-id="2c9b4ea" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2c9b4ea" data-id="2c9b4ea" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" style="width:50%">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-7efb957 elementor-blockquote--skin-border elementor-blockquote--button-color-official elementor-widget elementor-widget-blockquote" data-id="7efb957" data-element_type="widget" data-widget_type="blockquote.default">
                             <div class="elementor-widget-container">
                                 <blockquote>
                                     <div class="e-q-footer">
-                                        <cite class="elementor-blockquote__author">Dòng tiêu đề</cite>
+                                        <cite class="elementor-blockquote__author" style="font-size:20px;color:#00aeef">Dòng tiêu đề</cite>
                                     </div>
                                 </blockquote>
                             </div>
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7da0902" data-id="7da0902" data-element_type="column">
+                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7da0902" data-id="7da0902" data-element_type="column" style="width:50%">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-665c08c elementor-widget elementor-widget-image" data-id="665c08c" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
@@ -76,7 +76,7 @@
                 </div>
             </div>
             <div class="elementor-container elementor-column-gap-default">
-                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7da0902" data-id="7da0902" data-element_type="column">
+                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7da0902" data-id="7da0902" data-element_type="column" style="width:50%">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-665c08c elementor-widget elementor-widget-image" data-id="665c08c" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
@@ -85,13 +85,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2c9b4ea" data-id="2c9b4ea" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2c9b4ea" data-id="2c9b4ea" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" style="width:50%">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-7efb957 elementor-blockquote--skin-border elementor-blockquote--button-color-official elementor-widget elementor-widget-blockquote" data-id="7efb957" data-element_type="widget" data-widget_type="blockquote.default">
                             <div class="elementor-widget-container">
                                 <blockquote>
                                     <div class="e-q-footer">
-                                        <cite class="elementor-blockquote__author">Dòng tiêu đề</cite>
+                                        <cite class="elementor-blockquote__author" style="font-size:20px;color:#00aeef">Dòng tiêu đề</cite>
                                     </div>
                                 </blockquote>
                             </div>
@@ -188,7 +188,7 @@
                 </div>
             </div>
         </section>
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-be00313 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="be00313" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-be00313 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="be00313" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;background:#fff">
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9e80f93" data-id="9e80f93" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
@@ -200,16 +200,16 @@
                 </div>
             </div>
         </section>
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-a534846 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a534846" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;">
-            <div class="elementor-container elementor-column-gap-default">
-                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-094cfd2" data-id="094cfd2" data-element_type="column">
-                    <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-8fed26c elementor-widget elementor-widget-image" data-id="8fed26c" data-element_type="widget" data-widget_type="image.default">
-                            <div class="elementor-widget-container">
-                                <img decoding="async" width="400" height="400" src="{{ asset('public/images/lanhdao_1.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="">
-                            </div>
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-a534846 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a534846" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;background:#fff">
+            <div class="elementor-container elementor-column-gap-default" style="height:490px">
+                <div class="elementor-column elementor-col-30 elementor-top-column elementor-element elementor-element-094cfd2" data-id="094cfd2" data-element_type="column" style="position:relative;margin-right:5%">
+                    <div class="elementor-element elementor-element-8fed26c elementor-widget elementor-widget-image" data-id="8fed26c" data-element_type="widget" data-widget_type="image.default" style="position:absolute;top:0;left:0;width:100%;z-index:1">
+                        <div class="elementor-widget-container">
+                            <img decoding="async" width="400" height="400" src="{{ asset('public/images/lanhdao_1.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="" style="width:300px;border:10px solid #00aeef">
                         </div>
-                        <div class="elementor-element elementor-element-32a38fc elementor-widget elementor-widget-text-editor" data-id="32a38fc" data-element_type="widget" data-widget_type="text-editor.default">
+                    </div>
+                    <div class="elementor-widget-wrap elementor-element-populated" style="background:#dcc5fd;position:absolute;height:300px;top:200px">
+                        <div class="elementor-element elementor-element-32a38fc elementor-widget elementor-widget-text-editor" data-id="32a38fc" data-element_type="widget" data-widget_type="text-editor.default" style="color:#000;padding-top:120px">
                             <div class="elementor-widget-container">
                                 <p style="text-align: center;"><strong>LÊ THU HUYỀN</strong></p>
                                 <p style="text-align: center;">Phó giám đốc</p>
@@ -218,14 +218,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6caaeb8" data-id="6caaeb8" data-element_type="column">
-                    <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-8cbe6e1 elementor-widget elementor-widget-image" data-id="8cbe6e1" data-element_type="widget" data-widget_type="image.default">
-                            <div class="elementor-widget-container">
-                                <img decoding="async" width="400" height="400" src="{{ asset('public/images/lanhdao_2.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="">
-                            </div>
+                <div class="elementor-column elementor-col-30 elementor-top-column elementor-element elementor-element-6caaeb8" data-id="6caaeb8" data-element_type="column" style="position:relative;margin-right:5%">
+                    <div class="elementor-element elementor-element-8cbe6e1 elementor-widget elementor-widget-image" data-id="8cbe6e1" data-element_type="widget" data-widget_type="image.default" style="position:absolute;top:0;left:0;width:100%;z-index:1">
+                        <div class="elementor-widget-container">
+                            <img decoding="async" width="400" height="400" src="{{ asset('public/images/lanhdao_2.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="" style="width:300px;border:10px solid #00aeef">
                         </div>
-                        <div class="elementor-element elementor-element-a725374 elementor-widget elementor-widget-text-editor" data-id="a725374" data-element_type="widget" data-widget_type="text-editor.default">
+                    </div>
+                    <div class="elementor-widget-wrap elementor-element-populated" style="background:#dcc5fd;position:absolute;height:300px;top:200px">
+                        <div class="elementor-element elementor-element-a725374 elementor-widget elementor-widget-text-editor" data-id="a725374" data-element_type="widget" data-widget_type="text-editor.default" style="color:#000;padding-top:120px">
                             <div class="elementor-widget-container">
                                 <p style="text-align: center;"><strong>LÊ THU HUYỀN</strong></p>
                                 <p style="text-align: center;">Phó giám đốc</p>
@@ -234,14 +234,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-3f0fc51" data-id="3f0fc51" data-element_type="column">
-                    <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-8cdfdf9 elementor-widget elementor-widget-image" data-id="8cdfdf9" data-element_type="widget" data-widget_type="image.default">
-                            <div class="elementor-widget-container">
-                                <img decoding="async" width="400" height="400" src="{{ asset('public/images/lanhdao_3.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="">
-                            </div>
+                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-3f0fc51" data-id="3f0fc51" data-element_type="column" style="position:relative">
+                    <div class="elementor-element elementor-element-8cdfdf9 elementor-widget elementor-widget-image" data-id="8cdfdf9" data-element_type="widget" data-widget_type="image.default" style="position:absolute;top:0;left:0;width:100%;z-index:1">
+                        <div class="elementor-widget-container">
+                            <img decoding="async" width="400" height="400" src="{{ asset('public/images/lanhdao_3.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="" style="width:300px;border:10px solid #00aeef">
                         </div>
-                        <div class="elementor-element elementor-element-406a492 elementor-widget elementor-widget-text-editor" data-id="406a492" data-element_type="widget" data-widget_type="text-editor.default">
+                    </div>
+                    <div class="elementor-widget-wrap elementor-element-populated" style="background:#dcc5fd;position:absolute;height:300px;top:200px">
+                        <div class="elementor-element elementor-element-406a492 elementor-widget elementor-widget-text-editor" data-id="406a492" data-element_type="widget" data-widget_type="text-editor.default" style="color:#000;padding-top:120px">
                             <div class="elementor-widget-container">
                                 <p style="text-align: center;"><strong>LÊ THU HUYỀN</strong></p>
                                 <p style="text-align: center;">Phó giám đốc</p>
@@ -253,7 +253,7 @@
             </div>
         </section>
         <!-- -->
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-be00313 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="be00313" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-be00313 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="be00313" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;padding:40px 0 20px;background:#fff">
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9e80f93" data-id="9e80f93" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
@@ -265,63 +265,63 @@
                 </div>
             </div>
         </section>
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-a534846 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a534846" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-a534846 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a534846" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;background:#fff">
             <div class="elementor-container elementor-column-gap-default">
-                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-094cfd2" data-id="094cfd2" data-element_type="column">
+                <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-094cfd2" data-id="094cfd2" data-element_type="column" style="width:23%;margin:0 1% 0 1%">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-8fed26c elementor-widget elementor-widget-image" data-id="8fed26c" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img decoding="async" width="400" height="400" src="{{ asset('public/images/nhansu_1.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="">
+                                <img decoding="async" width="400" height="400" src="{{ asset('public/images/nhansu_1.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="" style="border: 10px solid #ebebeb">
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-32a38fc elementor-widget elementor-widget-text-editor" data-id="32a38fc" data-element_type="widget" data-widget_type="text-editor.default">
-                            <div class="elementor-widget-container">
+                            <div class="elementor-widget-container" style="color:#000">
                                 <p style="text-align: center;"><strong>LÊ THU HUYỀN</strong></p>
                                 <p style="text-align: center;">Giáo viên tiếng Trung</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-6caaeb8" data-id="6caaeb8" data-element_type="column">
+                <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-6caaeb8" data-id="6caaeb8" data-element_type="column" style="width:23%;margin:0 1% 0 1%">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-8cbe6e1 elementor-widget elementor-widget-image" data-id="8cbe6e1" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img decoding="async" width="400" height="400" src="{{ asset('public/images/nhansu_2.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="">
+                                <img decoding="async" width="400" height="400" src="{{ asset('public/images/nhansu_2.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="" style="border: 10px solid #ebebeb">
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-a725374 elementor-widget elementor-widget-text-editor" data-id="a725374" data-element_type="widget" data-widget_type="text-editor.default">
-                            <div class="elementor-widget-container">
+                            <div class="elementor-widget-container" style="color:#000">
                                 <p style="text-align: center;"><strong>LÊ THU HUYỀN</strong></p>
                                 <p style="text-align: center;">Giáo viên tiếng Trung</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-3f0fc51" data-id="3f0fc51" data-element_type="column">
+                <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-3f0fc51" data-id="3f0fc51" data-element_type="column" style="width:23%;margin:0 1% 0 1%">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-8cdfdf9 elementor-widget elementor-widget-image" data-id="8cdfdf9" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img decoding="async" width="400" height="400" src="{{ asset('public/images/nhansu_3.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="">
+                                <img decoding="async" width="400" height="400" src="{{ asset('public/images/nhansu_3.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="" style="border: 10px solid #ebebeb">
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-406a492 elementor-widget elementor-widget-text-editor" data-id="406a492" data-element_type="widget" data-widget_type="text-editor.default">
-                            <div class="elementor-widget-container">
+                            <div class="elementor-widget-container" style="color:#000">
                                 <p style="text-align: center;"><strong>LÊ THU HUYỀN</strong></p>
                                 <p style="text-align: center;">Giáo viên tiếng Trung</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-7415412" data-id="7415412" data-element_type="column">
+                <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-7415412" data-id="7415412" data-element_type="column" style="width:23%;margin:0 1% 0 1%">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-09a85f5 elementor-widget elementor-widget-image" data-id="09a85f5" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
-                                <img decoding="async" width="400" height="400" src="{{ asset('public/images/nhansu_4.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="">
+                                <img decoding="async" width="400" height="400" src="{{ asset('public/images/nhansu_4.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="" style="border: 10px solid #ebebeb">
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-dc0dd34 elementor-widget elementor-widget-text-editor" data-id="dc0dd34" data-element_type="widget" data-widget_type="text-editor.default">
-                            <div class="elementor-widget-container">
-                                <p style="text-align: center;"><strong>LÊ THU HUYỀN</strong></p>
+                            <div class="elementor-widget-container" style="color:#000">
+                                <p style="text-align: center;margin-bottom:5px"><strong>LÊ THU HUYỀN</strong></p>
                                 <p style="text-align: center;">Giáo viên tiếng Trung</p>
                             </div>
                         </div>
@@ -331,7 +331,7 @@
         </section>
         <!-- -->
         <div data-elementor-type="wp-post" data-elementor-id="174" class="elementor elementor-174">
-            <section class="elementor-section elementor-top-section elementor-element elementor-element-ada7582 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ada7582" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;">
+            <section class="elementor-section elementor-top-section elementor-element elementor-element-ada7582 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ada7582" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;background:#fff;padding-bottom:0">
                 <div class="elementor-container elementor-column-gap-default">
                     <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6fa9242" data-id="6fa9242" data-element_type="column">
                         <div class="elementor-widget-wrap elementor-element-populated">
@@ -347,7 +347,7 @@
                                              data-page="1" data-term="0" data-scroll-top="">
                                             <div class="jet-smart-listing__heading"><span class="jet-smart-listing__title-placeholder"></span>
                                             </div>
-                                            <div class="jet-smart-listing rows-4 has-featured-position-left">
+                                            <div class="jet-smart-listing rows-4 has-featured-position-left" style="margin-bottom:0">
                                                 <div class="jet-smart-listing__featured featured-layout-simple featured-position-left featured-img-top has-post-thumb">
                                                     <div class="jet-smart-listing__post-thumbnail post-thumbnail-featured"><a href="https://newocean.edu.vn/gap-go-truong-centennial-college-truong-college-cong-lap-dung-dau-danh-sach-lua-chon-cua-hoc-sinh-quoc-te-tai-canada.html"><img width="768" height="576" src="{{ asset('public/images/duhoc_1.jpg') }}"
                                                                                                                                                                                                                                                                                             class="jet-smart-listing__post-thumbnail-img post-thumbnail-img-featured wp-post-image entered lazyloaded"
@@ -378,7 +378,7 @@
                     </div>
                 </div>
             </section>
-            @include('widgets.partner')
+            @include('homepage.partner')
         </div>
     </div>
 @endsection

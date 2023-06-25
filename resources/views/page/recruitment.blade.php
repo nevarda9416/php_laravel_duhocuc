@@ -33,7 +33,7 @@
                                             <h3 class="elementor-post__title" style="line-height:25px;margin-bottom:15px">
                                                 <a href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
                                                     INEC tuyển dụng Nhân viên IT SKY PACIFIC EDU
-                                                 </a>
+                                                </a>
                                             </h3>
                                             <div class="elementor-post__excerpt">
                                                 <p style="line-height:25px;font-size:15px">
@@ -174,29 +174,33 @@
                         </div>
                     </div>
                 </div>
-                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1541197" data-id="1541197" data-element_type="column">
-                    <div class="elementor-widget-wrap elementor-element-populated" style="position: relative;">
-                        <div class="elementor-element elementor-element-b056f95 elementor-widget elementor-widget-template elementor-sticky elementor-sticky--active elementor-section--handles-inside elementor-sticky--effects" data-id="b056f95" data-element_type="widget" data-settings="{&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;sticky_offset&quot;:20,&quot;sticky_parent&quot;:&quot;yes&quot;,&quot;sticky_effects_offset&quot;:0}"
-                             data-widget_type="template.default" style="width: 295.362px; margin-top: 0px; margin-bottom: 0px; inset-inline-start: 10px; bottom: 0px;">
-                            <div class="elementor-widget-container">
-                                <div class="elementor-template">
-                                    <div data-elementor-type="section" data-elementor-id="1231" class="elementor elementor-1231 elementor-location-archive">
-                                        <section class="elementor-section elementor-top-section elementor-element elementor-element-66ae81d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="66ae81d" data-element_type="section">
-                                            <div class="elementor-container elementor-column-gap-no">
-                                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fdda8dc" data-id="fdda8dc" data-element_type="column">
-                                                    <div class="elementor-widget-wrap elementor-element-populated">
-                                                        <a href="" title=""><img src="{{ asset('public/images/banner_3.jpg') }}" alt=""/></a>
-                                                        <a href="" title="" style="margin-top:25px"><img src="{{ asset('public/images/banner_4.jpg') }}" alt=""/></a>
+                @if (isset($widget_recruitment_right_banner))
+                    <?php echo html_entity_decode($widget_recruitment_right_banner->content) ?>
+                @else
+                    <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1541197" data-id="1541197" data-element_type="column">
+                        <div class="elementor-widget-wrap elementor-element-populated" style="position: relative;">
+                            <div class="elementor-element elementor-element-b056f95 elementor-widget elementor-widget-template elementor-sticky elementor-sticky--active elementor-section--handles-inside elementor-sticky--effects" data-id="b056f95" data-element_type="widget" data-settings="{&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;sticky_offset&quot;:20,&quot;sticky_parent&quot;:&quot;yes&quot;,&quot;sticky_effects_offset&quot;:0}"
+                                 data-widget_type="template.default" style="width: 295.362px; margin-top: 0px; margin-bottom: 0px; inset-inline-start: 10px; bottom: 0px;">
+                                <div class="elementor-widget-container">
+                                    <div class="elementor-template">
+                                        <div data-elementor-type="section" data-elementor-id="1231" class="elementor elementor-1231 elementor-location-archive">
+                                            <section class="elementor-section elementor-top-section elementor-element elementor-element-66ae81d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="66ae81d" data-element_type="section">
+                                                <div class="elementor-container elementor-column-gap-no">
+                                                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fdda8dc" data-id="fdda8dc" data-element_type="column">
+                                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                                            <a href="" title=""><img src="{{ asset('public/images/banner_3.jpg') }}" alt=""/></a>
+                                                            <a href="" title="" style="margin-top:25px"><img src="{{ asset('public/images/banner_4.jpg') }}" alt=""/></a>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </section>
+                                            </section>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                @endif
             </div>
         </main>
     </div>

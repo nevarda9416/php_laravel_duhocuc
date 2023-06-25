@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Core\Controllers\Controller;
 use App\Core\Business\UploadFileBusiness;
+use App\Core\Models\Country;
+use App\Core\Models\Partner;
+use App\Core\Models\Widget;
 use Illuminate\Http\Request;
 use App\Core\Models\Page;
 use App\Core\Models\Category;
@@ -48,11 +51,12 @@ class PageController extends Controller
         if (empty($page)) {
             return redirect('/');
         }
+        $partners = Partner::query()->orderBy('id', 'DESC')->get();
         $metaData['meta_title'] = $page->meta_title;
         $metaData['meta_keyword'] = $page->meta_keyword;
         $metaData['meta_description'] = $page->meta_description;
         $metaData['meta_image'] = $page->thumbnail_url;
-        return view('page.about', compact('page', 'metaData'));
+        return view('page.about', compact('page', 'partners', 'metaData'));
     }
 
     /**
@@ -60,7 +64,8 @@ class PageController extends Controller
      */
     public function seminar()
     {
-        return view('page.seminar');
+        $widget_seminar_middle_banner = Widget::select('content')->where('key', 'widget.seminar.middle_banner')->first();
+        return view('page.seminar', compact('widget_seminar_middle_banner'));
     }
 
     /**
@@ -68,7 +73,9 @@ class PageController extends Controller
      */
     public function consultation()
     {
-        return view('page.consultation');
+        $countries = Country::query()->orderBy('id', 'DESC')->get();
+        $widget_consultation_right_banner = Widget::select('content')->where('key', 'widget.consultation.right_banner')->first();
+        return view('page.consultation', compact('countries', 'widget_consultation_right_banner'));
     }
 
     /**
@@ -84,17 +91,8 @@ class PageController extends Controller
      */
     public function recruitment()
     {
-        /*
-        $page = Page::where('slug', '=', 'tuyen-dung')->where('status', Page::STATUS_PUBLISH)->first();
-        if (empty($page)) {
-            return redirect('/');
-        }
-        $metaData['meta_title'] = $page->meta_title;
-        $metaData['meta_keyword'] = $page->meta_keyword;
-        $metaData['meta_description'] = $page->meta_description;
-        $metaData['meta_image'] = $page->thumbnail_url;
-        */
-        return view('page.recruitment');
+        $widget_recruitment_right_banner = Widget::select('content')->where('key', 'widget.recruitment.right_banner')->first();
+        return view('page.recruitment', compact('widget_recruitment_right_banner'));
     }
 
     /**
@@ -102,6 +100,8 @@ class PageController extends Controller
      */
     public function contact()
     {
-        return view('page.contact');
+        $countries = Country::query()->orderBy('id', 'DESC')->get();
+        $widget_contact_right_banner = Widget::select('content')->where('key', 'widget.contact.right_banner')->first();
+        return view('page.contact', compact('countries', 'widget_contact_right_banner'));
     }
 }

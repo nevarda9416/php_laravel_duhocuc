@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Core\Controllers\Controller;
+use App\Core\Models\Widget;
 
 class SchoolController extends Controller
 {
@@ -55,6 +56,7 @@ class SchoolController extends Controller
      */
     public function scholarship()
     {
-        return view('school.scholarship');
+        $widget_scholarship_right_banner = Widget::select('content')->where('key', 'widget.scholarship.right_banner')->first();
+        return view('school.scholarship', compact('widget_scholarship_right_banner'));
     }
 }

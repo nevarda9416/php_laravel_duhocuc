@@ -30,7 +30,11 @@
                     </div>
                 @endif
                 <div class="elementor-element elementor-element-18754d6 elementor-widget elementor-widget-heading" data-id="18754d6" data-element_type="widget" data-widget_type="heading.default">
-                    <img src="{{ asset('public/images/form_tuvan.jpg') }}" alt=""/>
+                    @if (isset(request()->segments()[0]) && request()->segments()[0] === 'goc-tu-van' || (isset(request()->segments()[0]) && request()->segments()[0] === 'lien-he'))
+                        <img src="{{ asset('public/images/form_tuvan_1.jpg') }}" alt=""/>
+                    @else
+                        <img src="{{ asset('public/images/form_tuvan.jpg') }}" alt=""/>
+                    @endif
                 </div>
             </div>
         </div>
@@ -73,16 +77,16 @@
                                     <label for="note" class="elementor-field-label elementor-screen-only">
                                         Message </label>
                                     <input size="1" type="text" name="form_fields[note]" id="note" class="elementor-field elementor-size-sm elementor-field-textual" placeholder="Lời nhắn" aria-required="false">
-                                <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
-                                    <button type="submit" class="elementor-button elementor-size-sm" style="background-color:#00aeef" id="btn_contact">
+                                    <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
+                                        <button type="submit" class="elementor-button elementor-size-md" style="background-color:#00aeef" id="btn_contact">
 						<span>
 															<span class=" elementor-button-icon">
 																										</span>
 																						<span class="elementor-button-text">LIÊN HỆ NGAY</span>
 													</span>
-                                    </button>
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
                         </form>
                     </div>
                 </div>

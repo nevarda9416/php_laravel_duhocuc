@@ -1,5 +1,11 @@
 @extends('layouts.default')
 @section('content')
+    <style>
+        select, ::placeholder { /* Most modern browsers support this now. */
+            color: #818a91 !important;
+            font-size: 14px !important;
+        }
+    </style>
     <div data-elementor-type="wp-page" data-elementor-id="949" class="elementor elementor-949">
         @include('widgets.banner')
         <main class="elementor-section elementor-top-section elementor-element elementor-element-78364a7 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="78364a7" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;
@@ -184,41 +190,41 @@ margin-top: 20px">
                                     <div class="elementor-widget-wrap elementor-element-populated">
                                         <div class="elementor-element elementor-element-86c8255 elementor-button-align-stretch elementor-widget elementor-widget-form" data-id="86c8255" data-element_type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
                                             <div class="elementor-widget-container">
-                                                <form class="elementor-form" method="post" name="New Form">
-                                                    <input type="hidden" name="post_id" value="951">
-                                                    <input type="hidden" name="form_id" value="86c8255">
-                                                    <input type="hidden" name="referer_title" value="Liên hệ - Du học New Ocean™">
-
-                                                    <input type="hidden" name="queried_id" value="951">
-
+                                                <form class="elementor-form" method="post" name="New Form" id="form_contact">
+                                                    {{ csrf_field() }}
                                                     <div class="elementor-form-fields-wrapper elementor-labels-" style="margin-top:45px">
                                                         <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100 elementor-field-required">
-                                                            <label for="form-field-name" class="elementor-field-label elementor-screen-only">
+                                                            <label for="fullname" class="elementor-field-label elementor-screen-only">
                                                                 Name </label>
-                                                            <input size="1" type="text" name="form_fields[name]" id="form-field-name" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Tên*" required="required" aria-required="true">
+                                                            <input size="1" type="text" name="form_fields[fullname]" id="fullname" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Tên*" required="required" aria-required="true">
                                                         </div>
                                                         <div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-100 elementor-field-required" style="width:47%;margin-right:3%">
-                                                            <label for="form-field-email" class="elementor-field-label elementor-screen-only">
+                                                            <label for="email" class="elementor-field-label elementor-screen-only">
                                                                 Email </label>
-                                                            <input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Email*" required="required" aria-required="true">
+                                                            <input size="1" type="email" name="form_fields[email]" id="email" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Email*" required="required" aria-required="true">
                                                         </div>
                                                         <div class="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-field_3fde122 elementor-col-100 elementor-field-required" style="width:47%;margin-left:3%">
-                                                            <label for="form-field-field_3fde122" class="elementor-field-label elementor-screen-only">
+                                                            <label for="telephone" class="elementor-field-label elementor-screen-only">
                                                                 Điện thoại </label>
-                                                            <input size="1" type="tel" name="form_fields[field_3fde122]" id="form-field-field_3fde122" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Phone*" required="required" aria-required="true" pattern="[0-9()#&amp;+*-=.]+" title="Only numbers and phone characters (#, -, *, etc) are accepted.">
+                                                            <input size="1" type="number" name="form_fields[telephone]" id="telephone" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Phone*" required="required" aria-required="true" pattern="[0-9()#&amp;+*-=.]+" title="Only numbers and phone characters (#, -, *, etc) are accepted.">
 
                                                         </div>
                                                         <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_fc5bc25 elementor-col-100">
-                                                            <label for="form-field-field_fc5bc25" class="elementor-field-label elementor-screen-only">
+                                                            <label for="country" class="elementor-field-label elementor-screen-only">
                                                                 Chủ đề </label>
-                                                            <select name="form_fields[field_fc5bc25]" id="form-field-field_fc5bc25" class="elementor-field elementor-size-sm elementor-field-textual">
-                                                                <option value="">Quốc gia bạn muốn du học</option>
+                                                            <select name="form_fields[country]" id="country" class="elementor-field elementor-size-sm elementor-field-textual">
+                                                                <option value="0">Quốc gia bạn muốn du học</option>
+                                                                @if (!empty($countries->toArray()))
+                                                                    @foreach($countries as $country)
+                                                                        <option value="{{ $country->id }}">{{ $country->name }}</option>
+                                                                    @endforeach
+                                                                @endif
                                                             </select>
                                                         </div>
                                                         <div class="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100">
-                                                            <label for="form-field-message" class="elementor-field-label elementor-screen-only">
+                                                            <label for="note" class="elementor-field-label elementor-screen-only">
                                                                 Message </label>
-                                                            <input size="1" type="text" name="form_fields[message]" id="form-field-message" class="elementor-field elementor-size-sm elementor-field-textual" placeholder="Lời nhắn" aria-required="false">
+                                                            <input size="1" type="text" name="form_fields[note]" id="note" class="elementor-field elementor-size-sm elementor-field-textual" placeholder="Lời nhắn" aria-required="false">
                                                             <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
                                                                 <button type="submit" class="elementor-button elementor-size-md" style="background-color:#00aeef" id="btn_contact">
 						<span>
@@ -407,7 +413,11 @@ margin-top: 20px">
                                                                     <a class="page-numbers" href="https://duhocskypacific.top/chuong-trinh-du-hoc/page/5"><span class="elementor-screen-only">Page</span>5</a></nav>
                                                             </div>
                                                         </div>
-                                                        <a href="" title=""><img src="{{ asset('public/images/banner_3.jpg') }}" alt=""/></a>
+                                                        @if (isset($widget_consultation_right_banner))
+                                                            <?php echo html_entity_decode($widget_consultation_right_banner->content) ?>
+                                                        @else
+                                                            <a href="" title=""><img src="{{ asset('public/images/banner_3.jpg') }}" alt=""/></a>
+                                                        @endif
                                                     </div>
                                                 </div>
                                             </div>

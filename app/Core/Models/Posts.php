@@ -40,4 +40,5 @@ class Posts extends Model
     ];
 
     const STATUS_PUBLISH = 'publish';
+    const CATEGORY_ID_TINTUC = 12;
 }
