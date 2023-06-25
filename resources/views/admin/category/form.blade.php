@@ -83,7 +83,12 @@ switch ($action) {
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Quốc gia</label>
                             <div class="col-md-9 col-sm-9 col-xs-12">
                                 <select class="form-control" name="country_id" {{ $attribute }}>
-                                    <option></option>
+                                    <option value="0"></option>
+                                    @if (!empty($countries->toArray()))
+                                        @foreach($countries as $country)
+                                            <option value="{{ $country->id }}">{{ $country->name }}</option>
+                                        @endforeach
+                                    @endif
                                 </select>
                             </div>
                         </div>

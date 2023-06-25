@@ -23,105 +23,130 @@
                              data-widget_type="archive-posts.archive_classic">
                             <div class="elementor-widget-container">
                                 <div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid elementor-has-item-ratio">
-                                    <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:15px">
-                                        <a class="elementor-post__thumbnail__link" href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                            <div class="elementor-post__thumbnail elementor-fit-height">
-                                                <img width="525" height="300" src="{{ asset('public/images/tuyendung_1.jpg') }}" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
-                                            </div>
-                                        </a>
-                                        <div class="elementor-post__text">
-                                            <h3 class="elementor-post__title" style="line-height:25px;margin-bottom:15px">
-                                                <a href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                                    INEC tuyển dụng Nhân viên IT SKY PACIFIC EDU
+                                    @if (!empty($listPosts->toArray()))
+                                        @foreach($listPosts as $post)
+                                            <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:15px">
+                                                <a class="elementor-post__thumbnail__link" href="{{ url($post->share_url) }}" title="{{ $post->title }}">
+                                                    <div class="elementor-post__thumbnail elementor-fit-height">
+                                                        <img width="525" height="300" src="{{ env('FOLDER_UPLOAD') . $post->thumbnail_url }}" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="{{ $post->title }}" data-ll-status="loaded">
+                                                    </div>
                                                 </a>
-                                            </h3>
-                                            <div class="elementor-post__excerpt">
-                                                <p style="line-height:25px;font-size:15px">
-                                                    Nối dài chuỗi giải thưởng đã đạt được trong năm 2022 & đầu 2023, ngày 22/5/2023, công ty Đức Anh vinh dự được nhận giải "High Achiever in Vietnam for 2022" do UTS-University of Technology Sydney trao tặng.
-                                                </p>
+                                                <div class="elementor-post__text">
+                                                    <h3 class="elementor-post__title" style="line-height:25px;margin-bottom:15px">
+                                                        <a href="{{ url($post->share_url) }}" title="{{ $post->title }}">
+                                                            {{ $post->title }}
+                                                        </a>
+                                                    </h3>
+                                                    <div class="elementor-post__excerpt">
+                                                        <p style="line-height:25px;font-size:15px">
+                                                            {{ $post->excerpt }}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                            <hr style="margin-bottom:15px;background:#d6d6d6"/>
+                                        @endforeach
+                                    @else
+                                        <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:15px">
+                                            <a class="elementor-post__thumbnail__link" href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                <div class="elementor-post__thumbnail elementor-fit-height">
+                                                    <img width="525" height="300" src="{{ asset('public/images/tuyendung_1.jpg') }}" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                                </div>
+                                            </a>
+                                            <div class="elementor-post__text">
+                                                <h3 class="elementor-post__title" style="line-height:25px;margin-bottom:15px">
+                                                    <a href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                        INEC tuyển dụng Nhân viên IT SKY PACIFIC EDU
+                                                    </a>
+                                                </h3>
+                                                <div class="elementor-post__excerpt">
+                                                    <p style="line-height:25px;font-size:15px">
+                                                        Nối dài chuỗi giải thưởng đã đạt được trong năm 2022 & đầu 2023, ngày 22/5/2023, công ty Đức Anh vinh dự được nhận giải "High Achiever in Vietnam for 2022" do UTS-University of Technology Sydney trao tặng.
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </article>
-                                    <hr style="margin-bottom:15px;background:#d6d6d6"/>
-                                    <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:15px">
-                                        <a class="elementor-post__thumbnail__link" href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                            <div class="elementor-post__thumbnail elementor-fit-height">
-                                                <img width="525" height="300" src="{{ asset('public/images/tuyendung_1.jpg') }}" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                        </article>
+                                        <hr style="margin-bottom:15px;background:#d6d6d6"/>
+                                        <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:15px">
+                                            <a class="elementor-post__thumbnail__link" href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                <div class="elementor-post__thumbnail elementor-fit-height">
+                                                    <img width="525" height="300" src="{{ asset('public/images/tuyendung_1.jpg') }}" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                                </div>
+                                            </a>
+                                            <div class="elementor-post__text">
+                                                <h3 class="elementor-post__title" style="line-height:25px;margin-bottom:15px">
+                                                    <a href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                        SKY PACIFIC EDU tuyển dụng Nhân viên SEO làm việc tại TP.HCM
+                                                    </a>
+                                                </h3>
+                                                <div class="elementor-post__excerpt">
+                                                    <p style="line-height:25px;font-size:15px">
+                                                        Nối dài chuỗi giải thưởng đã đạt được trong năm 2022 & đầu 2023, ngày 22/5/2023, công ty Đức Anh vinh dự được nhận giải "High Achiever in Vietnam for 2022" do UTS-University of Technology Sydney trao tặng.
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </a>
-                                        <div class="elementor-post__text">
-                                            <h3 class="elementor-post__title" style="line-height:25px;margin-bottom:15px">
-                                                <a href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                                    SKY PACIFIC EDU tuyển dụng Nhân viên SEO làm việc tại TP.HCM
-                                                </a>
-                                            </h3>
-                                            <div class="elementor-post__excerpt">
-                                                <p style="line-height:25px;font-size:15px">
-                                                    Nối dài chuỗi giải thưởng đã đạt được trong năm 2022 & đầu 2023, ngày 22/5/2023, công ty Đức Anh vinh dự được nhận giải "High Achiever in Vietnam for 2022" do UTS-University of Technology Sydney trao tặng.
-                                                </p>
+                                        </article>
+                                        <hr style="margin-bottom:15px;background:#d6d6d6"/>
+                                        <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:15px">
+                                            <a class="elementor-post__thumbnail__link" href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                <div class="elementor-post__thumbnail elementor-fit-height">
+                                                    <img width="525" height="300" src="{{ asset('public/images/tuyendung_1.jpg') }}" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                                </div>
+                                            </a>
+                                            <div class="elementor-post__text">
+                                                <h3 class="elementor-post__title" style="line-height:25px;margin-bottom:15px">
+                                                    <a href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                        SKY PACIFIC EDU tuyển dụng Nhân viên Marketing làm việc tại TP.HCM
+                                                    </a>
+                                                </h3>
+                                                <div class="elementor-post__excerpt">
+                                                    <p style="line-height:25px;font-size:15px">
+                                                        Nối dài chuỗi giải thưởng đã đạt được trong năm 2022 & đầu 2023, ngày 22/5/2023, công ty Đức Anh vinh dự được nhận giải "High Achiever in Vietnam for 2022" do UTS-University of Technology Sydney trao tặng.
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </article>
-                                    <hr style="margin-bottom:15px;background:#d6d6d6"/>
-                                    <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:15px">
-                                        <a class="elementor-post__thumbnail__link" href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                            <div class="elementor-post__thumbnail elementor-fit-height">
-                                                <img width="525" height="300" src="{{ asset('public/images/tuyendung_1.jpg') }}" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                        </article>
+                                        <hr style="margin-bottom:15px;background:#d6d6d6"/>
+                                        <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:15px">
+                                            <a class="elementor-post__thumbnail__link" href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                <div class="elementor-post__thumbnail elementor-fit-height">
+                                                    <img width="525" height="300" src="{{ asset('public/images/tuyendung_1.jpg') }}" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                                </div>
+                                            </a>
+                                            <div class="elementor-post__text">
+                                                <h3 class="elementor-post__title" style="line-height:25px;margin-bottom:15px">
+                                                    <a href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                        INEC tuyển dụng Nhân viên biên dịch, xử lý hồ sơ
+                                                    </a>
+                                                </h3>
+                                                <div class="elementor-post__excerpt">
+                                                    <p style="line-height:25px;font-size:15px">
+                                                        Nối dài chuỗi giải thưởng đã đạt được trong năm 2022 & đầu 2023, ngày 22/5/2023, công ty Đức Anh vinh dự được nhận giải "High Achiever in Vietnam for 2022" do UTS-University of Technology Sydney trao tặng.
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </a>
-                                        <div class="elementor-post__text">
-                                            <h3 class="elementor-post__title" style="line-height:25px;margin-bottom:15px">
-                                                <a href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                                    SKY PACIFIC EDU tuyển dụng Nhân viên Marketing làm việc tại TP.HCM
-                                                </a>
-                                            </h3>
-                                            <div class="elementor-post__excerpt">
-                                                <p style="line-height:25px;font-size:15px">
-                                                    Nối dài chuỗi giải thưởng đã đạt được trong năm 2022 & đầu 2023, ngày 22/5/2023, công ty Đức Anh vinh dự được nhận giải "High Achiever in Vietnam for 2022" do UTS-University of Technology Sydney trao tặng.
-                                                </p>
+                                        </article>
+                                        <hr style="margin-bottom:15px;background:#d6d6d6"/>
+                                        <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc">
+                                            <a class="elementor-post__thumbnail__link" href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                <div class="elementor-post__thumbnail elementor-fit-height">
+                                                    <img width="525" height="300" src="{{ asset('public/images/tuyendung_1.jpg') }}" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                                </div>
+                                            </a>
+                                            <div class="elementor-post__text">
+                                                <h3 class="elementor-post__title" style="line-height:25px;margin-bottom:15px">
+                                                    <a href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                        Đức Anh A&T vinh dự nhận giải "HIGH ACHIEVER" từ UTS - Đại học trẻ tốt nhất ở Đức
+                                                    </a>
+                                                </h3>
+                                                <div class="elementor-post__excerpt">
+                                                    <p style="line-height:25px;font-size:15px">
+                                                        Nối dài chuỗi giải thưởng đã đạt được trong năm 2022 & đầu 2023, ngày 22/5/2023, công ty Đức Anh vinh dự được nhận giải "High Achiever in Vietnam for 2022" do UTS-University of Technology Sydney trao tặng.
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </article>
-                                    <hr style="margin-bottom:15px;background:#d6d6d6"/>
-                                    <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:15px">
-                                        <a class="elementor-post__thumbnail__link" href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                            <div class="elementor-post__thumbnail elementor-fit-height">
-                                                <img width="525" height="300" src="{{ asset('public/images/tuyendung_1.jpg') }}" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
-                                            </div>
-                                        </a>
-                                        <div class="elementor-post__text">
-                                            <h3 class="elementor-post__title" style="line-height:25px;margin-bottom:15px">
-                                                <a href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                                    INEC tuyển dụng Nhân viên biên dịch, xử lý hồ sơ
-                                                </a>
-                                            </h3>
-                                            <div class="elementor-post__excerpt">
-                                                <p style="line-height:25px;font-size:15px">
-                                                    Nối dài chuỗi giải thưởng đã đạt được trong năm 2022 & đầu 2023, ngày 22/5/2023, công ty Đức Anh vinh dự được nhận giải "High Achiever in Vietnam for 2022" do UTS-University of Technology Sydney trao tặng.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <hr style="margin-bottom:15px;background:#d6d6d6"/>
-                                    <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc">
-                                        <a class="elementor-post__thumbnail__link" href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                            <div class="elementor-post__thumbnail elementor-fit-height">
-                                                <img width="525" height="300" src="{{ asset('public/images/tuyendung_1.jpg') }}" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
-                                            </div>
-                                        </a>
-                                        <div class="elementor-post__text">
-                                            <h3 class="elementor-post__title" style="line-height:25px;margin-bottom:15px">
-                                                <a href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                                    Đức Anh A&T vinh dự nhận giải "HIGH ACHIEVER" từ UTS - Đại học trẻ tốt nhất ở Đức
-                                                </a>
-                                            </h3>
-                                            <div class="elementor-post__excerpt">
-                                                <p style="line-height:25px;font-size:15px">
-                                                    Nối dài chuỗi giải thưởng đã đạt được trong năm 2022 & đầu 2023, ngày 22/5/2023, công ty Đức Anh vinh dự được nhận giải "High Achiever in Vietnam for 2022" do UTS-University of Technology Sydney trao tặng.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </article>
+                                        </article>
+                                    @endif
                                 </div>
                                 <div class="e-load-more-anchor" data-page="1" data-max-page="8" data-next-page="https://newocean.edu.vn/chuong-trinh-du-hoc/page/2"></div>
                                 <nav class="elementor-pagination" aria-label="Pagination" style="display:none">

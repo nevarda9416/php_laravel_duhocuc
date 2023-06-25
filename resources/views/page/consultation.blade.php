@@ -23,105 +23,130 @@ margin-top: 20px">
                              data-widget_type="archive-posts.archive_classic">
                             <div class="elementor-widget-container">
                                 <div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid elementor-has-item-ratio">
-                                    <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:5px">
-                                        <a class="elementor-post__thumbnail__link" href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                            <div class="elementor-post__thumbnail elementor-fit-height">
-                                                <img width="525" height="300" src="{{ asset('public/images/duhoc_9.jpg') }}" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
-                                            </div>
-                                        </a>
-                                        <div class="elementor-post__text">
-                                            <h3 class="elementor-post__title" style="line-height:25px;margin-bottom:15px">
-                                                <a href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                                    Đức Anh A&T vinh dự nhận giải "HIGH ACHIEVER" từ UTS - Đại học trẻ tốt nhất ở Đức
+                                    @if (!empty($listPosts->toArray()))
+                                        @foreach($listPosts as $post)
+                                            <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:5px">
+                                                <a class="elementor-post__thumbnail__link" href="{{ url($post->share_url) }}" title="{{ $post->title }}">
+                                                    <div class="elementor-post__thumbnail elementor-fit-height">
+                                                        <img width="525" height="300" src="{{ env('FOLDER_UPLOAD') . $post->thumbnail_url }}" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="{{ $post->title }}" data-ll-status="loaded">
+                                                    </div>
                                                 </a>
-                                            </h3>
-                                            <div class="elementor-post__excerpt">
-                                                <p style="line-height:25px;font-size:15px">
-                                                    Nối dài chuỗi giải thưởng đã đạt được trong năm 2022 & đầu 2023, ngày 22/5/2023, công ty Đức Anh vinh dự được nhận giải "High Achiever in Vietnam for 2022" do UTS-University of Technology Sydney trao tặng.
-                                                </p>
+                                                <div class="elementor-post__text">
+                                                    <h3 class="elementor-post__title" style="line-height:25px;margin-bottom:15px">
+                                                        <a href="{{ url($post->share_url) }}" title="{{ $post->title }}">
+                                                            {{ $post->title }}
+                                                        </a>
+                                                    </h3>
+                                                    <div class="elementor-post__excerpt">
+                                                        <p style="line-height:25px;font-size:15px">
+                                                            {{ substr($post->excerpt, 0, 100) }}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        @endforeach
+                                        <hr style="margin-bottom:15px"/>
+                                    @else
+                                        <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:5px">
+                                            <a class="elementor-post__thumbnail__link" href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                <div class="elementor-post__thumbnail elementor-fit-height">
+                                                    <img width="525" height="300" src="{{ asset('public/images/duhoc_9.jpg') }}" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                                </div>
+                                            </a>
+                                            <div class="elementor-post__text">
+                                                <h3 class="elementor-post__title" style="line-height:25px;margin-bottom:15px">
+                                                    <a href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                        Đức Anh A&T vinh dự nhận giải "HIGH ACHIEVER" từ UTS - Đại học trẻ tốt nhất ở Đức
+                                                    </a>
+                                                </h3>
+                                                <div class="elementor-post__excerpt">
+                                                    <p style="line-height:25px;font-size:15px">
+                                                        Nối dài chuỗi giải thưởng đã đạt được trong năm 2022 & đầu 2023, ngày 22/5/2023, công ty Đức Anh vinh dự được nhận giải "High Achiever in Vietnam for 2022" do UTS-University of Technology Sydney trao tặng.
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </article>
-                                    <hr style="margin-bottom:15px"/>
-                                    <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:5px">
-                                        <a class="elementor-post__thumbnail__link" href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                            <div class="elementor-post__thumbnail elementor-fit-height">
-                                                <img width="525" height="300" src="{{ asset('public/images/duhoc_10.jpg') }}" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                        </article>
+                                        <hr style="margin-bottom:15px"/>
+                                        <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:5px">
+                                            <a class="elementor-post__thumbnail__link" href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                <div class="elementor-post__thumbnail elementor-fit-height">
+                                                    <img width="525" height="300" src="{{ asset('public/images/duhoc_10.jpg') }}" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                                </div>
+                                            </a>
+                                            <div class="elementor-post__text">
+                                                <h3 class="elementor-post__title" style="line-height:25px;margin-bottom:15px">
+                                                    <a href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                        Đức Anh A&T vinh dự nhận giải "HIGH ACHIEVER" từ UTS - Đại học trẻ tốt nhất ở Đức
+                                                    </a>
+                                                </h3>
+                                                <div class="elementor-post__excerpt">
+                                                    <p style="line-height:25px;font-size:15px">
+                                                        Nối dài chuỗi giải thưởng đã đạt được trong năm 2022 & đầu 2023, ngày 22/5/2023, công ty Đức Anh vinh dự được nhận giải "High Achiever in Vietnam for 2022" do UTS-University of Technology Sydney trao tặng.
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </a>
-                                        <div class="elementor-post__text">
-                                            <h3 class="elementor-post__title" style="line-height:25px;margin-bottom:15px">
-                                                <a href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                                    Đức Anh A&T vinh dự nhận giải "HIGH ACHIEVER" từ UTS - Đại học trẻ tốt nhất ở Đức
-                                                </a>
-                                            </h3>
-                                            <div class="elementor-post__excerpt">
-                                                <p style="line-height:25px;font-size:15px">
-                                                    Nối dài chuỗi giải thưởng đã đạt được trong năm 2022 & đầu 2023, ngày 22/5/2023, công ty Đức Anh vinh dự được nhận giải "High Achiever in Vietnam for 2022" do UTS-University of Technology Sydney trao tặng.
-                                                </p>
+                                        </article>
+                                        <hr style="margin-bottom:15px"/>
+                                        <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:5px">
+                                            <a class="elementor-post__thumbnail__link" href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                <div class="elementor-post__thumbnail elementor-fit-height">
+                                                    <img width="525" height="300" src="{{ asset('public/images/duhoc_11.jpg') }}" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                                </div>
+                                            </a>
+                                            <div class="elementor-post__text">
+                                                <h3 class="elementor-post__title" style="line-height:25px;margin-bottom:15px">
+                                                    <a href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                        Đức Anh A&T vinh dự nhận giải "HIGH ACHIEVER" từ UTS - Đại học trẻ tốt nhất ở Đức
+                                                    </a>
+                                                </h3>
+                                                <div class="elementor-post__excerpt">
+                                                    <p style="line-height:25px;font-size:15px">
+                                                        Nối dài chuỗi giải thưởng đã đạt được trong năm 2022 & đầu 2023, ngày 22/5/2023, công ty Đức Anh vinh dự được nhận giải "High Achiever in Vietnam for 2022" do UTS-University of Technology Sydney trao tặng.
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </article>
-                                    <hr style="margin-bottom:15px"/>
-                                    <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:5px">
-                                        <a class="elementor-post__thumbnail__link" href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                            <div class="elementor-post__thumbnail elementor-fit-height">
-                                                <img width="525" height="300" src="{{ asset('public/images/duhoc_11.jpg') }}" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                        </article>
+                                        <hr style="margin-bottom:15px"/>
+                                        <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc">
+                                            <a class="elementor-post__thumbnail__link" href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                <div class="elementor-post__thumbnail elementor-fit-height">
+                                                    <img width="525" height="300" src="{{ asset('public/images/duhoc_9.jpg') }}" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                                </div>
+                                            </a>
+                                            <div class="elementor-post__text">
+                                                <h3 class="elementor-post__title" style="line-height:25px;margin-bottom:15px">
+                                                    <a href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                        Đức Anh A&T vinh dự nhận giải "HIGH ACHIEVER" từ UTS - Đại học trẻ tốt nhất ở Đức
+                                                    </a>
+                                                </h3>
+                                                <div class="elementor-post__excerpt">
+                                                    <p style="line-height:25px;font-size:15px">
+                                                        Nối dài chuỗi giải thưởng đã đạt được trong năm 2022 & đầu 2023, ngày 22/5/2023, công ty Đức Anh vinh dự được nhận giải "High Achiever in Vietnam for 2022" do UTS-University of Technology Sydney trao tặng.
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </a>
-                                        <div class="elementor-post__text">
-                                            <h3 class="elementor-post__title" style="line-height:25px;margin-bottom:15px">
-                                                <a href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                                    Đức Anh A&T vinh dự nhận giải "HIGH ACHIEVER" từ UTS - Đại học trẻ tốt nhất ở Đức
-                                                </a>
-                                            </h3>
-                                            <div class="elementor-post__excerpt">
-                                                <p style="line-height:25px;font-size:15px">
-                                                    Nối dài chuỗi giải thưởng đã đạt được trong năm 2022 & đầu 2023, ngày 22/5/2023, công ty Đức Anh vinh dự được nhận giải "High Achiever in Vietnam for 2022" do UTS-University of Technology Sydney trao tặng.
-                                                </p>
+                                        </article>
+                                        <hr style="margin-bottom:15px"/>
+                                        <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:5px">
+                                            <a class="elementor-post__thumbnail__link" href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                <div class="elementor-post__thumbnail elementor-fit-height">
+                                                    <img width="525" height="300" src="{{ asset('public/images/duhoc_10.jpg') }}" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                                </div>
+                                            </a>
+                                            <div class="elementor-post__text">
+                                                <h3 class="elementor-post__title" style="line-height:25px;margin-bottom:15px">
+                                                    <a href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                        Đức Anh A&T vinh dự nhận giải "HIGH ACHIEVER" từ UTS - Đại học trẻ tốt nhất ở Đức
+                                                    </a>
+                                                </h3>
+                                                <div class="elementor-post__excerpt">
+                                                    <p style="line-height:25px;font-size:15px">
+                                                        Nối dài chuỗi giải thưởng đã đạt được trong năm 2022 & đầu 2023, ngày 22/5/2023, công ty Đức Anh vinh dự được nhận giải "High Achiever in Vietnam for 2022" do UTS-University of Technology Sydney trao tặng.
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </article>
-                                    <hr style="margin-bottom:15px"/>
-                                    <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc">
-                                        <a class="elementor-post__thumbnail__link" href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                            <div class="elementor-post__thumbnail elementor-fit-height">
-                                                <img width="525" height="300" src="{{ asset('public/images/duhoc_9.jpg') }}" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
-                                            </div>
-                                        </a>
-                                        <div class="elementor-post__text">
-                                            <h3 class="elementor-post__title" style="line-height:25px;margin-bottom:15px">
-                                                <a href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                                    Đức Anh A&T vinh dự nhận giải "HIGH ACHIEVER" từ UTS - Đại học trẻ tốt nhất ở Đức
-                                                </a>
-                                            </h3>
-                                            <div class="elementor-post__excerpt">
-                                                <p style="line-height:25px;font-size:15px">
-                                                    Nối dài chuỗi giải thưởng đã đạt được trong năm 2022 & đầu 2023, ngày 22/5/2023, công ty Đức Anh vinh dự được nhận giải "High Achiever in Vietnam for 2022" do UTS-University of Technology Sydney trao tặng.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <hr style="margin-bottom:15px"/>
-                                    <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:5px">
-                                        <a class="elementor-post__thumbnail__link" href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                            <div class="elementor-post__thumbnail elementor-fit-height">
-                                                <img width="525" height="300" src="{{ asset('public/images/duhoc_10.jpg') }}" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
-                                            </div>
-                                        </a>
-                                        <div class="elementor-post__text">
-                                            <h3 class="elementor-post__title" style="line-height:25px;margin-bottom:15px">
-                                                <a href="{{ url('/') }}/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                                    Đức Anh A&T vinh dự nhận giải "HIGH ACHIEVER" từ UTS - Đại học trẻ tốt nhất ở Đức
-                                                </a>
-                                            </h3>
-                                            <div class="elementor-post__excerpt">
-                                                <p style="line-height:25px;font-size:15px">
-                                                    Nối dài chuỗi giải thưởng đã đạt được trong năm 2022 & đầu 2023, ngày 22/5/2023, công ty Đức Anh vinh dự được nhận giải "High Achiever in Vietnam for 2022" do UTS-University of Technology Sydney trao tặng.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </article>
+                                        </article>
+                                    @endif
                                 </div>
                                 <div class="e-load-more-anchor" data-page="1" data-max-page="8" data-next-page="https://newocean.edu.vn/chuong-trinh-du-hoc/page/2"></div>
                                 <nav class="elementor-pagination" aria-label="Pagination" style="display:none">
@@ -265,111 +290,131 @@ margin-top: 20px">
                                                              data-widget_type="archive-posts.archive_classic">
                                                             <div class="elementor-widget-container">
                                                                 <div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid">
-                                                                    <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:15px">
-                                                                        <a class="elementor-post__thumbnail__link" href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                                                            <div class="elementor-post__thumbnail">
-                                                                                <img width="525" height="300" src="https://duhocskypacific.top/public/images/bg_duhoc.jpg" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
-                                                                            </div>
-                                                                        </a>
-                                                                        <div class="elementor-post__text">
-                                                                            <h3 class="elementor-post__title">
-                                                                                <a href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html" style="font-size:15px;line-height:20px;color:#363636 !important">
-                                                                                    Danh sách trung tâm tư vấn du học Mỹ TP.HCM: Cách chọn uy tín, không lòng vòng
+                                                                    @if (!empty($otherPosts->toArray()))
+                                                                        @foreach ($otherPosts as $post)
+                                                                            <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:15px">
+                                                                                <a class="elementor-post__thumbnail__link" href="{{ url($post->share_url) }}" title="{{ $post->title }}">
+                                                                                    <div class="elementor-post__thumbnail">
+                                                                                        <img width="525" height="300" src="{{ env('FOLDER_UPLOAD') . $post->thumbnail_url }}" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="{{ $post->title }}" data-ll-status="loaded">
+                                                                                    </div>
                                                                                 </a>
-                                                                            </h3>
-                                                                        </div>
-                                                                    </article>
-                                                                    <hr style="margin-bottom:15px"/>
-                                                                    <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:15px">
-                                                                        <a class="elementor-post__thumbnail__link" href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                                                            <div class="elementor-post__thumbnail">
-                                                                                <img width="525" height="300" src="https://duhocskypacific.top/public/images/bg_duhoc.jpg" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                                                                <div class="elementor-post__text">
+                                                                                    <h3 class="elementor-post__title">
+                                                                                        <a href="{{ url($post->share_url) }}" title="{{ $post->title }}" style="font-size:15px;line-height:20px;color:#363636 !important">
+                                                                                            {{ $post->title }}
+                                                                                        </a>
+                                                                                    </h3>
+                                                                                </div>
+                                                                            </article>
+                                                                            <hr style="margin-bottom:15px"/>
+                                                                        @endforeach
+                                                                    @else
+                                                                        <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:15px">
+                                                                            <a class="elementor-post__thumbnail__link" href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                                                <div class="elementor-post__thumbnail">
+                                                                                    <img width="525" height="300" src="https://duhocskypacific.top/public/images/bg_duhoc.jpg" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                                                                </div>
+                                                                            </a>
+                                                                            <div class="elementor-post__text">
+                                                                                <h3 class="elementor-post__title">
+                                                                                    <a href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html" style="font-size:15px;line-height:20px;color:#363636 !important">
+                                                                                        Danh sách trung tâm tư vấn du học Mỹ TP.HCM: Cách chọn uy tín, không lòng vòng
+                                                                                    </a>
+                                                                                </h3>
                                                                             </div>
-                                                                        </a>
-                                                                        <div class="elementor-post__text">
-                                                                            <h3 class="elementor-post__title">
-                                                                                <a href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html" style="font-size:15px;line-height:20px;color:#363636 !important">
-                                                                                    Du học Mỹ nên chọn ngành gì? Top 10 ngành dễ xin việc & thu nhập cao
-                                                                                </a>
-                                                                            </h3>
-                                                                        </div>
-                                                                    </article>
-                                                                    <hr style="margin-bottom:15px"/>
-                                                                    <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:15px">
-                                                                        <a class="elementor-post__thumbnail__link" href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                                                            <div class="elementor-post__thumbnail">
-                                                                                <img width="525" height="300" src="https://duhocskypacific.top/public/images/bg_duhoc.jpg" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                                                        </article>
+                                                                        <hr style="margin-bottom:15px"/>
+                                                                        <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:15px">
+                                                                            <a class="elementor-post__thumbnail__link" href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                                                <div class="elementor-post__thumbnail">
+                                                                                    <img width="525" height="300" src="https://duhocskypacific.top/public/images/bg_duhoc.jpg" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                                                                </div>
+                                                                            </a>
+                                                                            <div class="elementor-post__text">
+                                                                                <h3 class="elementor-post__title">
+                                                                                    <a href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html" style="font-size:15px;line-height:20px;color:#363636 !important">
+                                                                                        Du học Mỹ nên chọn ngành gì? Top 10 ngành dễ xin việc & thu nhập cao
+                                                                                    </a>
+                                                                                </h3>
                                                                             </div>
-                                                                        </a>
-                                                                        <div class="elementor-post__text">
-                                                                            <h3 class="elementor-post__title">
-                                                                                <a href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html" style="font-size:15px;line-height:20px;color:#363636 !important">
-                                                                                    Danh sách trung tâm tư vấn du học Mỹ TP.HCM: Cách chọn uy tín, không lòng vòng
-                                                                                </a>
-                                                                            </h3>
-                                                                        </div>
-                                                                    </article>
-                                                                    <hr style="margin-bottom:15px"/>
-                                                                    <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:15px">
-                                                                        <a class="elementor-post__thumbnail__link" href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                                                            <div class="elementor-post__thumbnail">
-                                                                                <img width="525" height="300" src="https://duhocskypacific.top/public/images/bg_duhoc.jpg" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                                                        </article>
+                                                                        <hr style="margin-bottom:15px"/>
+                                                                        <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:15px">
+                                                                            <a class="elementor-post__thumbnail__link" href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                                                <div class="elementor-post__thumbnail">
+                                                                                    <img width="525" height="300" src="https://duhocskypacific.top/public/images/bg_duhoc.jpg" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                                                                </div>
+                                                                            </a>
+                                                                            <div class="elementor-post__text">
+                                                                                <h3 class="elementor-post__title">
+                                                                                    <a href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html" style="font-size:15px;line-height:20px;color:#363636 !important">
+                                                                                        Danh sách trung tâm tư vấn du học Mỹ TP.HCM: Cách chọn uy tín, không lòng vòng
+                                                                                    </a>
+                                                                                </h3>
                                                                             </div>
-                                                                        </a>
-                                                                        <div class="elementor-post__text">
-                                                                            <h3 class="elementor-post__title">
-                                                                                <a href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html" style="font-size:15px;line-height:20px;color:#363636 !important">
-                                                                                    Du học Mỹ nên chọn ngành gì? Top 10 ngành dễ xin việc & thu nhập cao
-                                                                                </a>
-                                                                            </h3>
-                                                                        </div>
-                                                                    </article>
-                                                                    <hr style="margin-bottom:15px"/>
-                                                                    <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:15px">
-                                                                        <a class="elementor-post__thumbnail__link" href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                                                            <div class="elementor-post__thumbnail">
-                                                                                <img width="525" height="300" src="https://duhocskypacific.top/public/images/bg_duhoc.jpg" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                                                        </article>
+                                                                        <hr style="margin-bottom:15px"/>
+                                                                        <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:15px">
+                                                                            <a class="elementor-post__thumbnail__link" href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                                                <div class="elementor-post__thumbnail">
+                                                                                    <img width="525" height="300" src="https://duhocskypacific.top/public/images/bg_duhoc.jpg" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                                                                </div>
+                                                                            </a>
+                                                                            <div class="elementor-post__text">
+                                                                                <h3 class="elementor-post__title">
+                                                                                    <a href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html" style="font-size:15px;line-height:20px;color:#363636 !important">
+                                                                                        Du học Mỹ nên chọn ngành gì? Top 10 ngành dễ xin việc & thu nhập cao
+                                                                                    </a>
+                                                                                </h3>
                                                                             </div>
-                                                                        </a>
-                                                                        <div class="elementor-post__text">
-                                                                            <h3 class="elementor-post__title">
-                                                                                <a href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html" style="font-size:15px;line-height:20px;color:#363636 !important">
-                                                                                    Danh sách trung tâm tư vấn du học Mỹ TP.HCM: Cách chọn uy tín, không lòng vòng
-                                                                                </a>
-                                                                            </h3>
-                                                                        </div>
-                                                                    </article>
-                                                                    <hr style="margin-bottom:15px"/>
-                                                                    <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:15px">
-                                                                        <a class="elementor-post__thumbnail__link" href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                                                            <div class="elementor-post__thumbnail">
-                                                                                <img width="525" height="300" src="https://duhocskypacific.top/public/images/bg_duhoc.jpg" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                                                        </article>
+                                                                        <hr style="margin-bottom:15px"/>
+                                                                        <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:15px">
+                                                                            <a class="elementor-post__thumbnail__link" href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                                                <div class="elementor-post__thumbnail">
+                                                                                    <img width="525" height="300" src="https://duhocskypacific.top/public/images/bg_duhoc.jpg" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                                                                </div>
+                                                                            </a>
+                                                                            <div class="elementor-post__text">
+                                                                                <h3 class="elementor-post__title">
+                                                                                    <a href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html" style="font-size:15px;line-height:20px;color:#363636 !important">
+                                                                                        Danh sách trung tâm tư vấn du học Mỹ TP.HCM: Cách chọn uy tín, không lòng vòng
+                                                                                    </a>
+                                                                                </h3>
                                                                             </div>
-                                                                        </a>
-                                                                        <div class="elementor-post__text">
-                                                                            <h3 class="elementor-post__title">
-                                                                                <a href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html" style="font-size:15px;line-height:20px;color:#363636 !important">
-                                                                                    Du học Mỹ nên chọn ngành gì? Top 10 ngành dễ xin việc & thu nhập cao
-                                                                                </a>
-                                                                            </h3>
-                                                                        </div>
-                                                                    </article>
-                                                                    <hr style="margin-bottom:15px"/>
-                                                                    <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:15px">
-                                                                        <a class="elementor-post__thumbnail__link" href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
-                                                                            <div class="elementor-post__thumbnail">
-                                                                                <img width="525" height="300" src="https://duhocskypacific.top/public/images/bg_duhoc.jpg" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                                                        </article>
+                                                                        <hr style="margin-bottom:15px"/>
+                                                                        <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:15px">
+                                                                            <a class="elementor-post__thumbnail__link" href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                                                <div class="elementor-post__thumbnail">
+                                                                                    <img width="525" height="300" src="https://duhocskypacific.top/public/images/bg_duhoc.jpg" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                                                                </div>
+                                                                            </a>
+                                                                            <div class="elementor-post__text">
+                                                                                <h3 class="elementor-post__title">
+                                                                                    <a href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html" style="font-size:15px;line-height:20px;color:#363636 !important">
+                                                                                        Du học Mỹ nên chọn ngành gì? Top 10 ngành dễ xin việc & thu nhập cao
+                                                                                    </a>
+                                                                                </h3>
                                                                             </div>
-                                                                        </a>
-                                                                        <div class="elementor-post__text">
-                                                                            <h3 class="elementor-post__title">
-                                                                                <a href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html" style="font-size:15px;line-height:20px;color:#363636 !important">
-                                                                                    Danh sách trung tâm tư vấn du học Mỹ TP.HCM: Cách chọn uy tín, không lòng vòng
-                                                                                </a>
-                                                                            </h3>
-                                                                        </div>
-                                                                    </article>
-                                                                    <hr/>
+                                                                        </article>
+                                                                        <hr style="margin-bottom:15px"/>
+                                                                        <article class="elementor-post elementor-grid-item post-20353 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-du-hoc-bac-thpt tag-du-hoc-cap-3 tag-du-hoc-thpt tag-du-hoc-trung-hoc" style="margin-bottom:15px">
+                                                                            <a class="elementor-post__thumbnail__link" href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html">
+                                                                                <div class="elementor-post__thumbnail">
+                                                                                    <img width="525" height="300" src="https://duhocskypacific.top/public/images/bg_duhoc.jpg" class="attachment-medium size-medium wp-image-20355 entered lazyloaded" alt="" data-ll-status="loaded">
+                                                                                </div>
+                                                                            </a>
+                                                                            <div class="elementor-post__text">
+                                                                                <h3 class="elementor-post__title">
+                                                                                    <a href="https://duhocskypacific.top/du-hoc-cap-3-diem-khac-nhau-giua-bang-ibdp-a-level-va-sace.html" style="font-size:15px;line-height:20px;color:#363636 !important">
+                                                                                        Danh sách trung tâm tư vấn du học Mỹ TP.HCM: Cách chọn uy tín, không lòng vòng
+                                                                                    </a>
+                                                                                </h3>
+                                                                            </div>
+                                                                        </article>
+                                                                        <hr/>
+                                                                    @endif
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -413,8 +458,8 @@ margin-top: 20px">
                                                                     <a class="page-numbers" href="https://duhocskypacific.top/chuong-trinh-du-hoc/page/5"><span class="elementor-screen-only">Page</span>5</a></nav>
                                                             </div>
                                                         </div>
-                                                        @if (isset($widget_consultation_right_banner))
-                                                            <?php echo html_entity_decode($widget_consultation_right_banner->content) ?>
+                                                        @if (isset($widget_scholarship_right_banner))
+                                                            <?php echo html_entity_decode($widget_scholarship_right_banner->content) ?>
                                                         @else
                                                             <a href="" title=""><img src="{{ asset('public/images/banner_3.jpg') }}" alt=""/></a>
                                                         @endif

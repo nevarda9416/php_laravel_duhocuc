@@ -51,53 +51,76 @@
                                         <div class="jet-smart-listing__heading"><span class="jet-smart-listing__title-placeholder"></span></div>
                                         <div class="jet-smart-listing rows-4 no-featured">
                                             <div class="jet-smart-listing__posts">
-                                                <div class="jet-smart-listing__post-wrapper">
-                                                    <div class="jet-smart-listing__post has-thumb-postion-" style="border:none">
-                                                        <div class="jet-smart-listing__post-content">
-                                                            <div class="jet-title-fields" style="background:#00aeef">
-                                                                <div class="jet-title-fields__item">
-                                                                    <div class="jet-title-fields__item-value" style="border-bottom: 2px solid #fff;"><span class="sukien_ngay" style="color:#fff">12</span></div>
-                                                                </div>
-                                                                <div class="jet-title-fields__item">
-                                                                    <div class="jet-title-fields__item-value"><span class="sukien_thang" style="color:#fff">Tháng 9</span></div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="jet-smart-listing__post-title post-title-simple" style="padding-top:0"><a href="{{ url('gap-go-dai-dien-truong-hoc-vien-dai-hoc-crown-uc-cihe-thang-5-nam-2023.html') }}" style="color:#181818 !important">Gặp gỡ đại diện Trường Học viện Đại học Crown, Úc (CIHE) tháng 5 năm 2023</a></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <hr style="margin:10px 0 15px;background:#d4d4d4;width:100%"/>
-                                                <div class="jet-smart-listing__post-wrapper">
-                                                    <div class="jet-smart-listing__post has-thumb-postion-" style="border:none">
-                                                        <div class="jet-smart-listing__post-content">
-                                                            <div class="jet-title-fields" style="background:#00aeef">
-                                                                <div class="jet-title-fields__item">
-                                                                    <div class="jet-title-fields__item-value" style="border-bottom: 2px solid #fff;"><span class="sukien_ngay" style="color:#fff">11</span></div>
-                                                                </div>
-                                                                <div class="jet-title-fields__item">
-                                                                    <div class="jet-title-fields__item-value"><span class="sukien_thang" style="color:#fff">Tháng 5</span></div>
+                                                @if (!empty($listSeminars->toArray()))
+                                                    @foreach($listSeminars as $post)
+                                                        <div class="jet-smart-listing__post-wrapper">
+                                                            <div class="jet-smart-listing__post has-thumb-postion-" style="border:none">
+                                                                <div class="jet-smart-listing__post-content">
+                                                                    <div class="jet-title-fields" style="background:#00aeef">
+                                                                        <div class="jet-title-fields__item">
+                                                                            <div class="jet-title-fields__item-value" style="border-bottom: 2px solid #fff;"><span class="sukien_ngay" style="color:#fff">
+                                                                                    {{ date('d', $post->date) }}
+                                                                                </span></div>
+                                                                        </div>
+                                                                        <div class="jet-title-fields__item">
+                                                                            <div class="jet-title-fields__item-value"><span class="sukien_thang" style="color:#fff">Tháng {{ date('m', $post->date) }}</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="jet-smart-listing__post-title post-title-simple" style="padding-top:0"><a href="{{ url($post->share_url) }}" title="{{ $post->title }}" style="color:#181818 !important">{{ $post->title }}</a></div>
                                                                 </div>
                                                             </div>
-                                                            <div class="jet-smart-listing__post-title post-title-simple" style="padding-top:0"><a href="{{ url('gap-go-truong-niagara-college-truong-dao-tao-quan-tri-kinh-doanh-nau-an-du-lich-khach-san-noi-tieng-nhat-canada.html') }}" style="color:#181818 !important">Gặp gỡ Trường Niagara, College &#8211; Trường đào tạo quản trị kinh doanh nổi tiếng nhất Canada</a></div>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <hr style="margin:10px 0 15px;background:#d4d4d4;width:100%"/>
-                                                <div class="jet-smart-listing__post-wrapper">
-                                                    <div class="jet-smart-listing__post has-thumb-postion-" style="border:none">
-                                                        <div class="jet-smart-listing__post-content">
-                                                            <div class="jet-title-fields" style="background:#00aeef">
-                                                                <div class="jet-title-fields__item">
-                                                                    <div class="jet-title-fields__item-value" style="border-bottom: 2px solid #fff;"><span class="sukien_ngay" style="color:#fff">17</span></div>
+                                                        <hr style="margin:10px 0 15px;background:#d4d4d4;width:100%"/>
+                                                    @endforeach
+                                                @else
+                                                    <div class="jet-smart-listing__post-wrapper">
+                                                        <div class="jet-smart-listing__post has-thumb-postion-" style="border:none">
+                                                            <div class="jet-smart-listing__post-content">
+                                                                <div class="jet-title-fields" style="background:#00aeef">
+                                                                    <div class="jet-title-fields__item">
+                                                                        <div class="jet-title-fields__item-value" style="border-bottom: 2px solid #fff;"><span class="sukien_ngay" style="color:#fff">12</span></div>
+                                                                    </div>
+                                                                    <div class="jet-title-fields__item">
+                                                                        <div class="jet-title-fields__item-value"><span class="sukien_thang" style="color:#fff">Tháng 9</span></div>
+                                                                    </div>
                                                                 </div>
-                                                                <div class="jet-title-fields__item">
-                                                                    <div class="jet-title-fields__item-value"><span class="sukien_thang" style="color:#fff">Tháng 4</span></div>
-                                                                </div>
+                                                                <div class="jet-smart-listing__post-title post-title-simple" style="padding-top:0"><a href="{{ url('gap-go-dai-dien-truong-hoc-vien-dai-hoc-crown-uc-cihe-thang-5-nam-2023.html') }}" style="color:#181818 !important">Gặp gỡ đại diện Trường Học viện Đại học Crown, Úc (CIHE) tháng 5 năm 2023</a></div>
                                                             </div>
-                                                            <div class="jet-smart-listing__post-title post-title-simple" style="padding-top:0"><a href="{{ url('gap-go-truong-dai-hoc-southern-cross-uc-nam-trong-danh-sach-100-truong-dai-hoc-tre-xuat-sac-nhat-the-gioi.html') }}" style="color:#181818 !important">Gặp gỡ Trường Đại học Southern Cross, Úc nằm trong danh sách 100 trường đại học</a></div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                    <hr style="margin:10px 0 15px;background:#d4d4d4;width:100%"/>
+                                                    <div class="jet-smart-listing__post-wrapper">
+                                                        <div class="jet-smart-listing__post has-thumb-postion-" style="border:none">
+                                                            <div class="jet-smart-listing__post-content">
+                                                                <div class="jet-title-fields" style="background:#00aeef">
+                                                                    <div class="jet-title-fields__item">
+                                                                        <div class="jet-title-fields__item-value" style="border-bottom: 2px solid #fff;"><span class="sukien_ngay" style="color:#fff">11</span></div>
+                                                                    </div>
+                                                                    <div class="jet-title-fields__item">
+                                                                        <div class="jet-title-fields__item-value"><span class="sukien_thang" style="color:#fff">Tháng 5</span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="jet-smart-listing__post-title post-title-simple" style="padding-top:0"><a href="{{ url('gap-go-truong-niagara-college-truong-dao-tao-quan-tri-kinh-doanh-nau-an-du-lich-khach-san-noi-tieng-nhat-canada.html') }}" style="color:#181818 !important">Gặp gỡ Trường Niagara, College &#8211; Trường đào tạo quản trị kinh doanh nổi tiếng nhất Canada</a></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr style="margin:10px 0 15px;background:#d4d4d4;width:100%"/>
+                                                    <div class="jet-smart-listing__post-wrapper">
+                                                        <div class="jet-smart-listing__post has-thumb-postion-" style="border:none">
+                                                            <div class="jet-smart-listing__post-content">
+                                                                <div class="jet-title-fields" style="background:#00aeef">
+                                                                    <div class="jet-title-fields__item">
+                                                                        <div class="jet-title-fields__item-value" style="border-bottom: 2px solid #fff;"><span class="sukien_ngay" style="color:#fff">17</span></div>
+                                                                    </div>
+                                                                    <div class="jet-title-fields__item">
+                                                                        <div class="jet-title-fields__item-value"><span class="sukien_thang" style="color:#fff">Tháng 4</span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="jet-smart-listing__post-title post-title-simple" style="padding-top:0"><a href="{{ url('gap-go-truong-dai-hoc-southern-cross-uc-nam-trong-danh-sach-100-truong-dai-hoc-tre-xuat-sac-nhat-the-gioi.html') }}" style="color:#181818 !important">Gặp gỡ Trường Đại học Southern Cross, Úc nằm trong danh sách 100 trường đại học</a></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                @endif
                                             </div>
                                         </div>
                                     </div>

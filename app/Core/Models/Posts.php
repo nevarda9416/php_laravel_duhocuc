@@ -40,5 +40,9 @@ class Posts extends Model
     ];
 
     const STATUS_PUBLISH = 'publish';
+    const CATEGORY_ID_SUKIEN = 11;
     const CATEGORY_ID_TINTUC = 12;
+    const CATEGORY_ID_TUYENDUNG = 13;
+    const CATEGORY_ID_HOCBONG = 14;
+    const CATEGORY_ID_HOITHAO = 15;
 }

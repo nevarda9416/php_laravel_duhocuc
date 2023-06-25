@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Core\Business\UploadFileBusiness;
 use App\Core\Controllers\Controller;
+use App\Core\Models\Country;
 use Illuminate\Http\Request;
 use App\Core\Models\Category;
 use App\Core\Connection\RedisServer;
@@ -29,7 +30,8 @@ class CategoryController extends Controller
     public function index()
     {
         $categories = Category::all();
-        return view('admin.category.index', compact('categories'));
+        $countries = Country::query()->orderBy('id', 'DESC')->get();
+        return view('admin.category.index', compact('categories', 'countries'));
     }
 
     /**
@@ -106,7 +108,8 @@ class CategoryController extends Controller
         $category = Category::find($id);
         $categoryParent = Category::find($category->parent_id);
         $categories = Category::all();
-        return view('admin.category.form', compact('action', 'category', 'categoryParent', 'categories'));
+        $countries = Country::query()->orderBy('id', 'DESC')->get();
+        return view('admin.category.form', compact('action', 'category', 'categoryParent', 'categories', 'countries'));
     }
 
     /**
@@ -121,7 +124,8 @@ class CategoryController extends Controller
         $category = Category::find($id);
         $categoryParent = Category::find($category->parent_id);
         $categories = Category::all();
-        return view('admin.category.form', compact('action', 'category', 'categoryParent', 'categories'));
+        $countries = Country::query()->orderBy('id', 'DESC')->get();
+        return view('admin.category.form', compact('action', 'category', 'categoryParent', 'categories', 'countries'));
     }
 
     /**

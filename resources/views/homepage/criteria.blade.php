@@ -31,6 +31,17 @@
         background: #00aeef;
         color: #FFF !important;
     }
+
+    .elementor-element-06153c3 {
+        width: 100% !important;
+    }
+
+    @media (max-width: 767px) {
+        .elementor-element-06153c3 .elementor-col-20 {
+            width: 100% !important;
+            margin-bottom: 20px !important;
+        }
+    }
 </style>
 @if (isset($widget_criteria))
     <?php echo html_entity_decode($widget_criteria->content) ?>
@@ -145,7 +156,8 @@
                     </div>
                 </div>
             </div>
-            <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-90ecce8" data-id="90ecce8" data-element_type="column">
+            <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-90ecce8" data-id="90ecce8" data-element_type="column"
+                 style="margin:0 2.5% 0 2.5%">
                 <div class="elementor-widget-wrap elementor-element-populated">
                     <div class="elementor-element elementor-element-05671f5 elementor-view-framed elementor-shape-circle elementor-widget elementor-widget-icon" data-id="05671f5" data-element_type="widget" data-widget_type="icon.default">
                         <div class="elementor-widget-container">

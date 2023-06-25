@@ -6,6 +6,7 @@ use App\Core\Controllers\Controller;
 use App\Core\Business\UploadFileBusiness;
 use App\Core\Models\Country;
 use App\Core\Models\Partner;
+use App\Core\Models\Posts;
 use App\Core\Models\Widget;
 use Illuminate\Http\Request;
 use App\Core\Models\Page;
@@ -65,7 +66,9 @@ class PageController extends Controller
     public function seminar()
     {
         $widget_seminar_middle_banner = Widget::select('content')->where('key', 'widget.seminar.middle_banner')->first();
-        return view('page.seminar', compact('widget_seminar_middle_banner'));
+        $listSeminars = Posts::query()->where('category_id', Posts::CATEGORY_ID_HOITHAO)->where('status', Posts::STATUS_PUBLISH)->take(3)->skip(0)->orderBy('id', 'DESC')->get();
+        $listEvents = Posts::query()->where('category_id', Posts::CATEGORY_ID_SUKIEN)->where('status', Posts::STATUS_PUBLISH)->take(5)->skip(0)->orderBy('id', 'DESC')->get();
+        return view('page.seminar', compact('widget_seminar_middle_banner', 'listSeminars', 'listEvents'));
     }
 
     /**
@@ -73,9 +76,11 @@ class PageController extends Controller
      */
     public function consultation()
     {
+        $listPosts = Posts::query()->where('category_id', Posts::CATEGORY_ID_HOCBONG)->where('status', Posts::STATUS_PUBLISH)->take(5)->skip(0)->orderBy('id', 'DESC')->get();
+        $otherPosts = Posts::query()->where('category_id', Posts::CATEGORY_ID_TINTUC)->where('status', Posts::STATUS_PUBLISH)->take(7)->skip(0)->orderBy('id', 'DESC')->get();
         $countries = Country::query()->orderBy('id', 'DESC')->get();
         $widget_consultation_right_banner = Widget::select('content')->where('key', 'widget.consultation.right_banner')->first();
-        return view('page.consultation', compact('countries', 'widget_consultation_right_banner'));
+        return view('page.consultation', compact('widget_consultation_right_banner', 'listPosts', 'otherPosts', 'countries'));
     }
 
     /**
@@ -91,8 +96,9 @@ class PageController extends Controller
      */
     public function recruitment()
     {
+        $listPosts = Posts::query()->where('category_id', Posts::CATEGORY_ID_TUYENDUNG)->where('status', Posts::STATUS_PUBLISH)->take(5)->skip(0)->orderBy('id', 'DESC')->get();
         $widget_recruitment_right_banner = Widget::select('content')->where('key', 'widget.recruitment.right_banner')->first();
-        return view('page.recruitment', compact('widget_recruitment_right_banner'));
+        return view('page.recruitment', compact('widget_recruitment_right_banner', 'listPosts'));
     }
 
     /**

@@ -253,4 +253,5 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('{slug}', ['uses' => 'PageController@detail']);
     Route::post('register/customer', 'FormController@register');
     Route::post('register/newsletter_subcriber ', 'FormController@subcribe');
+    Route::get('bai-viet/{slug}', ['uses' => 'BlogController@detail']);
 });

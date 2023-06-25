@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 use App\Core\Business\UploadFileBusiness;
 use App\Core\Controllers\Controller;
+use App\Core\Models\Country;
 use App\Core\Models\Partner;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -28,7 +29,8 @@ class PartnersController extends Controller
         try {
             $action = 'store';
             $partners = $this->search($request);
-            return view('admin.partner.index', compact('action','partners'));
+            $countries = Country::query()->orderBy('id', 'DESC')->get();
+            return view('admin.partner.index', compact('action','partners', 'countries'));
         } catch (\Exception $exception) {
             return redirect('cms/partners')->with('error', 'Lỗi lấy dữ liệu đối tác: ' . $exception->getMessage());
         }
@@ -83,7 +85,8 @@ class PartnersController extends Controller
             $partner->thumb_url = $partner->thumb_url != ''?$this->get_url_static_image() . $partner->thumb_url:'';
             $partner->logo = $partner->logo != ''?$this->get_url_static_image() . $partner->logo:'';
             $partners = $this->search($request);
-            return view('admin.partner.form', compact('action','partner', 'partners'));
+            $countries = Country::query()->orderBy('id', 'DESC')->get();
+            return view('admin.partner.form', compact('action','partner', 'partners', 'countries'));
         } catch (\Exception $exception) {
             return redirect('cms/partners')->with('error', 'Lỗi edit đối tác: ' . $exception->getMessage());
         }

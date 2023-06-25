@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Core\Controllers\Controller;
+use App\Core\Models\Country;
+use App\Core\Models\Posts;
 use App\Core\Models\Widget;
 
 class SchoolController extends Controller
@@ -56,7 +58,10 @@ class SchoolController extends Controller
      */
     public function scholarship()
     {
+        $listPosts = Posts::query()->where('category_id', Posts::CATEGORY_ID_HOCBONG)->where('status', Posts::STATUS_PUBLISH)->take(5)->skip(0)->orderBy('id', 'DESC')->get();
+        $otherPosts = Posts::query()->where('category_id', Posts::CATEGORY_ID_TINTUC)->where('status', Posts::STATUS_PUBLISH)->take(7)->skip(0)->orderBy('id', 'DESC')->get();
+        $countries = Country::query()->orderBy('id', 'DESC')->get();
         $widget_scholarship_right_banner = Widget::select('content')->where('key', 'widget.scholarship.right_banner')->first();
-        return view('school.scholarship', compact('widget_scholarship_right_banner'));
+        return view('school.scholarship', compact('widget_scholarship_right_banner', 'listPosts', 'otherPosts', 'countries'));
     }
 }

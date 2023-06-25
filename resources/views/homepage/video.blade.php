@@ -27,6 +27,31 @@
                                 <div class="jet-smart-listing__heading"><span class="jet-smart-listing__title-placeholder"></span></div>
                                 <div class="jet-smart-listing rows-4 no-featured">
                                     <div class="jet-smart-listing__posts">
+                                        @if (!empty($listEvents->toArray()))
+                                            @foreach($listEvents as $post)
+                                                <div class="jet-smart-listing__post-wrapper">
+                                                    <div class="jet-smart-listing__post has-thumb-postion-">
+                                                        <div class="jet-smart-listing__post-content">
+                                                            <div class="jet-title-fields">
+                                                                <div class="jet-title-fields__item">
+                                                                    <div class="jet-title-fields__item-value" style="border-bottom: 2px solid #00aeef;"><span class="sukien_ngay">{{ date('d', $post->date) }}</span></div>
+                                                                </div>
+                                                                <div class="jet-title-fields__item">
+                                                                    <div class="jet-title-fields__item-value"><span class="sukien_thang">Tháng {{ date('m', $post->date) }}</span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="jet-content-fields">
+                                                                <div class="jet-content-fields__item" style="display:flex">
+                                                                    <div class="jet-content-fields__item-label"><i class="fas fa-clock"></i> {{ $post->time }}</div>
+                                                                    <div class="jet-content-fields__item-label"><i class="fas fa-map-marker-alt"></i>&ensp;{{ $post->place }}</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="jet-smart-listing__post-title post-title-simple"><a href="{{ url($post->share_url) }}">{{ $post->title }}</a></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            @endforeach
+                                        @else
                                         <div class="jet-smart-listing__post-wrapper">
                                             <div class="jet-smart-listing__post has-thumb-postion-">
                                                 <div class="jet-smart-listing__post-content">
@@ -132,12 +157,13 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
                             <div class="jet-smart-listing-loading"></div>
                         </div>
-                        <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
+                        <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons" style="display:none">
                             <button type="submit" class="elementor-button elementor-size-sm" style="background-color:#00aeef;border:#00aeef">
 						<span>
                                 <span class=" elementor-button-icon">
@@ -236,7 +262,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
+                <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons" style="display:none">
                     <button type="submit" class="elementor-button elementor-size-sm" style="background-color:#00aeef;border:#00aeef">
 						<span>
                                 <span class=" elementor-button-icon">

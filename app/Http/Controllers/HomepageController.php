@@ -19,17 +19,16 @@ class HomepageController extends Controller
      */
     public function index()
     {
-        $first_post = Posts::query()->where('status', Posts::STATUS_PUBLISH)->take(1)->orderBy('id', 'DESC')->first();
-        $list_posts = Posts::query()->where('status', Posts::STATUS_PUBLISH)->take(13)->skip(1)->orderBy('id', 'DESC')->get();
         $countries = Country::query()->orderBy('id', 'DESC')->get();
         $partners = Partner::query()->orderBy('id', 'DESC')->get();
         $setting = Setting::where('key', '=', 'footer_info')->first();
         $widget_criteria = Widget::select('content')->where('key', 'widget.homepage.criteria')->first();
+        $listEvents = Posts::query()->where('category_id', Posts::CATEGORY_ID_SUKIEN)->where('status', Posts::STATUS_PUBLISH)->take(5)->skip(0)->orderBy('id', 'DESC')->get();
         $metaData['meta_title'] = $setting->meta_title;
         $metaData['meta_keyword'] = $setting->meta_keyword;
         $metaData['meta_description'] = $setting->meta_description;
         $metaData['meta_image'] = $setting->meta_image;
-        return view('homepage.index', compact('first_post', 'list_posts', 'countries', 'partners', 'widget_criteria', 'metaData'));
+        return view('homepage.index', compact('countries', 'partners', 'widget_criteria', 'listEvents', 'metaData'));
     }
 
     /**
