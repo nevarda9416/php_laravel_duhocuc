@@ -39,10 +39,10 @@ class BlogController extends Controller
      */
     public function detail($slug)
     {
-        $blog = DB::table('posts')->select('title', 'excerpt', 'content', 'author_name', 'published_at', 'meta_title', 'meta_keyword', 'meta_description')->where('slug', str_replace('.html', '', $slug))->first();
-        //if (empty($blog)) {
+        $blog = DB::table('posts')->select('title', 'excerpt', 'content', 'author_name', 'published_at', 'meta_title', 'meta_keyword', 'meta_description', 'created_at')->where('slug', str_replace('.html', '', $slug))->first();
+        if (empty($blog)) {
             return redirect('/');
-        //}
+        }
         $metaData['meta_title'] = $blog->meta_title;
         $metaData['meta_keyword'] = $blog->meta_keyword;
         $metaData['meta_description'] = $blog->meta_description;

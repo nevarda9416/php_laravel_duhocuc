@@ -22,7 +22,7 @@
                 </div>
                 <div class="x_content">
                     <br/>
-                    <form class="form-horizontal form-label-left input_mask" action="{{ url('menu/store') }}" method="post">
+                    <form class="form-horizontal form-label-left input_mask" action="{{ url('cms/menu/store') }}" method="post">
                         {{ csrf_field() }}
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Menu cha</label>
@@ -30,7 +30,7 @@
                                 <select class="form-control" name="parent_id">
                                     <option value="0" selected>Không</option>
                                     @foreach($menus as $menu)
-                                        <option value="{{ $menu->id }}">{{ $menu->name }}</option>
+                                        <option value="{{ $menu->id }}">{{ $menu->item_title }}</option>
                                     @endforeach
                                 </select>
                             </div>

@@ -22,7 +22,7 @@
                 </div>
                 <div class="x_content">
                     <br/>
-                    <form class="form-horizontal form-label-left input_mask" action="{{ url('cms/media/store') }}" method="post" enctype="multipart/form-data">
+                    <form class="form-horizontal form-label-left input_mask" action="{{ url('cms/medias/store') }}" method="post" enctype="multipart/form-data">
                         {{ csrf_field() }}
                         <input type="hidden" name="user_id" value="{{ auth()->user()->id }}">
                         <div class="form-group">

@@ -19,7 +19,7 @@ class MenuController extends Controller
      */
     public function index()
     {
-        $menus = Category::all();
+        $menus = Menu::all();
         $menu_headers = Menu::where([
             ['position', 'menu_header']
         ])->orderBy('order', 'ASC')->get();
@@ -61,7 +61,7 @@ class MenuController extends Controller
                 Menu::where('id', $menu->id)->update([
                     'order' => $menu->id
                 ]);
-                \Activity::addLog('Tạo mới menu', 'Tài khoản ' . auth()->user()->email . ' tạo mới menu ' . $item_title . ' vào lúc ' . date('H:i A') . ' ngày ' . date('d/m/Y'));
+                Activity::addLog('Tạo mới menu', 'Tài khoản ' . auth()->user()->email . ' tạo mới menu ' . $item_title . ' vào lúc ' . date('H:i A') . ' ngày ' . date('d/m/Y'));
                 return redirect('cms/menu')->with('message', 'Tạo mới menu ' . $item_title . ' thành công');
             }
         } catch (\Exception $exception) {
@@ -93,7 +93,7 @@ class MenuController extends Controller
     public function edit($id)
     {
         $menu = Menu::find($id);
-        $menus = Category::all();
+        $menus = Menu::all();
         $menu_headers = Menu::where([
             ['position', 'menu_header']
         ])->get();

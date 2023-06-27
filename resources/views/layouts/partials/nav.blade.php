@@ -218,10 +218,6 @@
                                                             <div class="elementor-container elementor-column-gap-default">
                                                                 <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-8f0d5cb" data-id="8f0d5cb" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                                                                     <div class="elementor-widget-wrap elementor-element-populated" style="background:#00aeef">
-                                                                        <div class="elementor-element elementor-element-909a84c elementor-widget elementor-widget-heading" data-id="909a84c" data-element_type="widget" data-widget_type="heading.default">
-                                                                            <div class="elementor-widget-container">
-                                                                                <h2 class="elementor-heading-title elementor-size-small"><a>DU HỌC CHÂU ÚC</a></h2></div>
-                                                                        </div>
                                                                         <div class="elementor-element elementor-element-684374e elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="684374e" data-element_type="widget" data-widget_type="icon-list.default">
                                                                             <div class="elementor-widget-container">
                                                                                 <ul class="elementor-icon-list-items">
@@ -231,6 +227,56 @@
                                                                                                 <i aria-hidden="true" class="fas fa-caret-right"></i>
                                                                                             </span>
                                                                                             <span class="elementor-icon-list-text">Du học Úc</span>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li class="elementor-icon-list-item">
+                                                                                        <a href="{{ url('du-hoc/du-hoc-han') }}">
+                                                                                            <span class="elementor-icon-list-icon">
+                                                                                                <i aria-hidden="true" class="fas fa-caret-right"></i>
+                                                                                            </span>
+                                                                                            <span class="elementor-icon-list-text">Du học Hàn</span>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li class="elementor-icon-list-item">
+                                                                                        <a href="{{ url('du-hoc/du-hoc-dai-loan') }}">
+                                                                                            <span class="elementor-icon-list-icon">
+                                                                                                <i aria-hidden="true" class="fas fa-caret-right"></i>
+                                                                                            </span>
+                                                                                            <span class="elementor-icon-list-text">Du học Đài Loan</span>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-8f0d5cb" data-id="8f0d5cb" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                                    <div class="elementor-widget-wrap elementor-element-populated" style="background:#00aeef">
+                                                                        <div class="elementor-element elementor-element-684374e elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="684374e" data-element_type="widget" data-widget_type="icon-list.default">
+                                                                            <div class="elementor-widget-container">
+                                                                                <ul class="elementor-icon-list-items">
+                                                                                    <li class="elementor-icon-list-item">
+                                                                                        <a href="{{ url('du-hoc/du-hoc-trung-quoc') }}">
+                                                                                            <span class="elementor-icon-list-icon">
+                                                                                                <i aria-hidden="true" class="fas fa-caret-right"></i>
+                                                                                            </span>
+                                                                                            <span class="elementor-icon-list-text">Du học Trung Quốc</span>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li class="elementor-icon-list-item">
+                                                                                        <a href="{{ url('du-hoc/du-hoc-anh') }}">
+                                                                                            <span class="elementor-icon-list-icon">
+                                                                                                <i aria-hidden="true" class="fas fa-caret-right"></i>
+                                                                                            </span>
+                                                                                            <span class="elementor-icon-list-text">Du học Anh</span>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li class="elementor-icon-list-item">
+                                                                                        <a href="{{ url('du-hoc/du-hoc-duc') }}">
+                                                                                            <span class="elementor-icon-list-icon">
+                                                                                                <i aria-hidden="true" class="fas fa-caret-right"></i>
+                                                                                            </span>
+                                                                                            <span class="elementor-icon-list-text">Du học Đức</span>
                                                                                         </a>
                                                                                     </li>
                                                                                 </ul>

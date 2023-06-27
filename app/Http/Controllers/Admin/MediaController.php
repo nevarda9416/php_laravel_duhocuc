@@ -84,14 +84,14 @@ class MediaController extends Controller
             ]);
             // check exists of name
             if (Media::where('file', '=', '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $fileName)->exists()) {
-                return redirect('cms/media')->with('error', "Ảnh / video đã tồn tại");
+                return redirect('cms/medias')->with('error', "Ảnh / video đã tồn tại");
             } else {
                 // Ok then save
                 if ($file) {
                     UploadFileBusiness::uploadFileToFolder($file);
                 }
                 $media->save();
-                return redirect('cms/media')->with('message', "Thêm mới ảnh / video thành công");
+                return redirect('cms/medias')->with('message', "Thêm mới ảnh / video thành công");
             }
         } catch (\Exception $exception) {
             return back()->with('error', 'Lỗi thêm mới ảnh / video: ' . $exception->getMessage());
@@ -146,9 +146,9 @@ class MediaController extends Controller
                 $media->delete();
                 File::delete($fileMedia);
             }
-            return redirect('cms/media')->with('message', 'Xóa file ' . $media->title . ' thành công');
+            return redirect('cms/medias')->with('message', 'Xóa file ' . $media->title . ' thành công');
         } catch (\Exception $exception) {
-            return redirect('cms/media')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
+            return redirect('cms/medias')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
     }
 }

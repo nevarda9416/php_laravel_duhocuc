@@ -36,11 +36,13 @@ class PageController extends Controller
         if (empty($page)) {
             return redirect('/');
         }
+        $countries = Country::query()->orderBy('id', 'DESC')->get();
+        $list_posts = Posts::query()->where('category_id', Posts::CATEGORY_ID_TINTUC)->where('status', Posts::STATUS_PUBLISH)->take(4)->skip(0)->orderBy('id', 'DESC')->get();
         $metaData['meta_title'] = $page->meta_title;
         $metaData['meta_keyword'] = $page->meta_keyword;
         $metaData['meta_description'] = $page->meta_description;
         $metaData['meta_image'] = $page->thumbnail_url;
-        return view('page.detail', compact('page', 'metaData'));
+        return view('page.detail', compact('page', 'countries', 'list_posts', 'metaData'));
     }
 
     /**

@@ -34,10 +34,10 @@
                                         <td>{{ $menu->item_url }}</td>
                                         <td><?php echo $menu->is_actived == 1 ? '<span class="label label-success">Hiển thị ngoài frontend</span>' : '<span class="label label-danger">Không hiển thị ngoài frontend</span>'; ?></td>
                                         <td>
-                                            <a href='{{ url("menu/edit/$menu->id") }}' class="btn btn-xs">
+                                            <a href='{{ url("cms/menu/edit/$menu->id") }}' class="btn btn-xs">
                                                 <i class="fa fa-edit"></i> Edit
                                             </a>
-                                            <a href='{{ url("menu/delete/$menu->id") }}' class="btn btn-xs" onclick="return confirm('Bạn có chắc muốn xóa menu {{ $menu->item_title }} này chứ?')">
+                                            <a href='{{ url("cms/menu/delete/$menu->id") }}' class="btn btn-xs" onclick="return confirm('Bạn có chắc muốn xóa menu {{ $menu->item_title }} này chứ?')">
                                                 <i class="fa fa-trash-o"></i> Delete
                                             </a>
                                         </td>

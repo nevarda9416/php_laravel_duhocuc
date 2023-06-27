@@ -35,7 +35,7 @@ class StudyAbroadController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function detail($slug)
+    public function detail($slug = 'du-hoc-uc')
     {
         $study_abroad = Page::where('slug', $slug)->first();
         if (empty($study_abroad)) {

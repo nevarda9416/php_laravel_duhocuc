@@ -117,7 +117,8 @@ class PartnersController extends Controller
             // reload to view
             $partner->logo = $partner->logo != ''?$this->get_url_static_image() . $partner->logo:'';
             $partners = $this->search($request);
-            return view('admin.partner.form', compact('action', 'partner', 'partners'));
+            $countries = Country::query()->orderBy('id', 'DESC')->get();
+            return view('admin.partner.form', compact('action', 'partner', 'partners', 'countries'));
         } catch (\Exception $exception) {
             return redirect('cms/partners/edit/' . $id)->with('error', 'Lỗi cập nhật dữ liệu: ' . $exception->getMessage());
         }

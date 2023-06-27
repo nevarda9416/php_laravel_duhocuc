@@ -2,7 +2,7 @@
 @section('content')
     <div class="page-title">
         <div class="title_left">
-            <a href="{{ url('/menu') }}" title="Tạo mới menu" class="btn btn-primary"><i class="fa fa-pencil-square-o"></i> Tạo mới menu</a>
+            <a href="{{ url('cms/menu') }}" title="Tạo mới menu" class="btn btn-primary"><i class="fa fa-pencil-square-o"></i> Tạo mới menu</a>
         </div>
     </div>
     <div class="clearfix"></div>
@@ -22,7 +22,7 @@
                 </div>
                 <div class="x_content">
                     <br/>
-                    <form class="form-horizontal form-label-left input_mask" action="{{ url('menu/update/' . $menu->id) }}" method="post">
+                    <form class="form-horizontal form-label-left input_mask" action="{{ url('cms/menu/update/' . $menu->id) }}" method="post">
                         {{ csrf_field() }}
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Menu cha</label>
@@ -30,7 +30,7 @@
                                 <select class="form-control" name="parent_id">
                                     <option value="0" selected>Không</option>
                                     @foreach($menus as $item)
-                                        <option value="{{ $item->id }}"{{ $menu->parent_id == $item->id ? ' selected' : '' }}>{{ $item->name }}</option>
+                                        <option value="{{ $item->id }}"{{ $menu->parent_id == $item->id ? ' selected' : '' }}>{{ $item->item_title }}</option>
                                     @endforeach
                                 </select>
                             </div>
