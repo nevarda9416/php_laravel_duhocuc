@@ -10,7 +10,8 @@
         "laravel/framework": "5.3.*",
         "league/flysystem-sftp": "^1.0",
         "nesbot/carbon": "^1.39",
-        "spatie/laravel-permission": "*"
+        "spatie/laravel-permission": "*",
+        "maatwebsite/excel": "~2.1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

@@ -29,9 +29,10 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $categories = Category::all();
+        $categories = Category::paginate($this->limit);
+        $parentCategories = Category::where('parent_id', 0)->get();
         $countries = Country::query()->orderBy('id', 'DESC')->get();
-        return view('admin.category.index', compact('categories', 'countries'));
+        return view('admin.category.index', compact('categories', 'parentCategories', 'countries'));
     }
 
     /**
@@ -107,7 +108,7 @@ class CategoryController extends Controller
         $action = 'show';
         $category = Category::find($id);
         $categoryParent = Category::find($category->parent_id);
-        $categories = Category::all();
+        $categories = Category::paginate($this->limit);
         $countries = Country::query()->orderBy('id', 'DESC')->get();
         return view('admin.category.form', compact('action', 'category', 'categoryParent', 'categories', 'countries'));
     }
@@ -123,9 +124,10 @@ class CategoryController extends Controller
         $action = 'edit';
         $category = Category::find($id);
         $categoryParent = Category::find($category->parent_id);
-        $categories = Category::all();
+        $categories = Category::paginate($this->limit);
+        $parentCategories = Category::where('parent_id', 0)->get();
         $countries = Country::query()->orderBy('id', 'DESC')->get();
-        return view('admin.category.form', compact('action', 'category', 'categoryParent', 'categories', 'countries'));
+        return view('admin.category.form', compact('action', 'category', 'categoryParent', 'categories', 'parentCategories', 'countries'));
     }
 
     /**

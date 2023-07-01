@@ -42,14 +42,14 @@
                                 <div class="elementor-element elementor-element-c2167f6 elementor-view-framed elementor-shape-circle elementor-widget elementor-widget-icon" data-id="c2167f6" data-element_type="widget" data-widget_type="icon.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-icon-wrapper">
-                                            <a href="{{ url('truong-hoc/dai-hoc-uc') }}" title=""><img src="{{ asset('public/images/flag_2.jpg') }}" alt="" style="max-width:87%"/></a>
+                                            <a href="{{ url('truong-hoc/dai-hoc-uc') }}" title=""><img src="{{ asset('public/images/nuocuc.png') }}" alt="" style="max-width:87%"/></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-0d3b378 elementor-widget elementor-widget-counter" data-id="0d3b378" data-element_type="widget" data-widget_type="counter.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-counter">
-                                            <div class="elementor-counter-title"><a href="{{ url('truong-hoc/dai-hoc-uc') }}" title="">CÁC TRƯỜNG TẠI ANH</a></div>
+                                            <div class="elementor-counter-title"><a href="{{ url('truong-hoc/dai-hoc-uc') }}" title="">CÁC TRƯỜNG TẠI ÚC</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -67,14 +67,14 @@
                                 <div class="elementor-element elementor-element-c2167f6 elementor-view-framed elementor-shape-circle elementor-widget elementor-widget-icon" data-id="c2167f6" data-element_type="widget" data-widget_type="icon.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-icon-wrapper">
-                                            <a href="{{ url('truong-hoc/dai-hoc-uc') }}" title=""><img src="{{ asset('public/images/flag_3.jpg') }}" alt="" style="max-width:87%"/></a>
+                                            <a href="{{ url('truong-hoc/dai-hoc-dai-loan') }}" title=""><img src="{{ asset('public/images/dailoan.png') }}" alt="" style="max-width:87%"/></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-0d3b378 elementor-widget elementor-widget-counter" data-id="0d3b378" data-element_type="widget" data-widget_type="counter.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-counter">
-                                            <div class="elementor-counter-title"><a href="{{ url('truong-hoc/dai-hoc-uc') }}" title="">CÁC TRƯỜNG TẠI ANH</a></div>
+                                            <div class="elementor-counter-title"><a href="{{ url('truong-hoc/dai-hoc-dai-loan') }}" title="">CÁC TRƯỜNG TẠI ĐÀI LOAN</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -92,14 +92,14 @@
                                 <div class="elementor-element elementor-element-c2167f6 elementor-view-framed elementor-shape-circle elementor-widget elementor-widget-icon" data-id="c2167f6" data-element_type="widget" data-widget_type="icon.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-icon-wrapper">
-                                            <a href="{{ url('truong-hoc/dai-hoc-uc') }}" title=""><img src="{{ asset('public/images/flag_4.jpg') }}" alt="" style="max-width:87%"/></a>
+                                            <a href="{{ url('truong-hoc/dai-hoc-uc') }}" title=""><img src="{{ asset('public/images/hanquoc.png') }}" alt="" style="max-width:87%"/></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-0d3b378 elementor-widget elementor-widget-counter" data-id="0d3b378" data-element_type="widget" data-widget_type="counter.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-counter">
-                                            <div class="elementor-counter-title"><a href="{{ url('truong-hoc/dai-hoc-uc') }}" title="">CÁC TRƯỜNG TẠI ANH</a></div>
+                                            <div class="elementor-counter-title"><a href="{{ url('truong-hoc/dai-hoc-han-quoc') }}" title="">CÁC TRƯỜNG TẠI HÀN QUỐC</a></div>
                                         </div>
                                     </div>
                                 </div>

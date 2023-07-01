@@ -90,6 +90,7 @@ Route::group(['middleware' => 'auth', 'prefix' => 'cms'], function () {
     // Quản lý người dùng đăng ký
     Route::group(['prefix' => 'customers'], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'Admin\CustomerController@index']);
+        Route::get('download', ['as' => 'download', 'uses' => 'Admin\CustomerController@downloadCustomers']);
     });
     Route::group(['prefix' => 'subcribers'], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'Admin\CustomerController@subcriber']);
@@ -131,7 +132,7 @@ Route::group(['middleware' => 'auth', 'prefix' => 'cms'], function () {
         Route::post('/store', ['uses' => 'Admin\BannerController@store']);
         Route::get('/show/{id?}', ['uses' => 'Admin\BannerController@show']);
         Route::get('/edit/{id?}', ['uses' => 'Admin\BannerController@edit']);
-        Route::post('/edit/{id?}', ['uses' => 'Admin\BannerController@update']);
+        Route::post('/update/{id?}', ['uses' => 'Admin\BannerController@update']);
         Route::get('/delete/{id?}', ['uses' => 'Admin\BannerController@destroy']);
         Route::get('/search', ['uses' => 'Admin\BannerController@search_form']);
         Route::post('/search', ['uses' => 'Admin\BannerController@search_submit']);

@@ -22,7 +22,7 @@
                 </div>
                 <div class="x_content">
                     <br/>
-                    <form class="form-horizontal form-label-left input_mask" action="{{ url('cms/categories/store') }}" method="post" autocomplete="off">
+                    <form class="form-horizontal form-label-left input_mask" action="{{ url('cms/categories/store') }}" method="post" autocomplete="off" enctype="multipart/form-data">
                         {{ csrf_field() }}
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Tên danh mục <span
@@ -36,7 +36,7 @@
                             <div class="col-md-5 col-sm-5 col-xs-12">
                                 <select class="form-control" name="parent_id">
                                     <option value="0" selected>Không</option>
-                                    @foreach($categories as $category)
+                                    @foreach($parentCategories as $category)
                                         <option value="{{ $category->id }}">{{ $category->name }}</option>
                                     @endforeach
                                 </select>

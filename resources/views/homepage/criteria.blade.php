@@ -43,7 +43,7 @@
         }
     }
 </style>
-@if (isset($widget_criteria))
+@if ($widget_criteria)
     <?php echo html_entity_decode($widget_criteria->content) ?>
 @else
     <section class="elementor-section elementor-top-section elementor-element elementor-element-06153c3 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="06153c3" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}"

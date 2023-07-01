@@ -29,7 +29,7 @@
                             <div class="col-md-5 col-sm-5 col-xs-12">
                                 <select class="form-control" name="parent_id">
                                     <option value="0" selected>Không</option>
-                                    @foreach($menus as $menu)
+                                    @foreach($parentMenus as $menu)
                                         <option value="{{ $menu->id }}">{{ $menu->item_title }}</option>
                                     @endforeach
                                 </select>

@@ -21,6 +21,11 @@
                     <li><a href="{{ url('cms/widgets/homepage/criteria') }}">Đồng hành cùng bạn</a></li>
                 </ul>
             </li>
+            <li><a><i class="fa fa-laptop"></i>Nội dung khóa học<span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                    <li><a href="{{ url('cms/widgets/course/description') }}">Giới thiệu</a></li>
+                </ul>
+            </li>
             <li><a style="font-size:12px"><i class="fa fa-laptop"></i>Nội dung trang du học Úc<span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="{{ url('cms/widgets/study/description') }}">Giới thiệu</a></li>

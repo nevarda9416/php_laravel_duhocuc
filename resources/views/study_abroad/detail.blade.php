@@ -2,7 +2,7 @@
 @section('content')
     <div data-elementor-type="wp-post" data-elementor-id="174" class="elementor elementor-174">
         @include('widgets.banner')
-        @if (isset($widget_study_description))
+        @if ($widget_study_description)
             <?php echo html_entity_decode($widget_study_description->content) ?>
         @else
             <section class="elementor-section elementor-top-section elementor-element elementor-element-184019e elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="184019e" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}" style="width: 1519px; left: 0px;margin-top:20px">
@@ -35,7 +35,7 @@
                 </div>
             </section>
         @endif
-        @if (isset($widget_study_why_chosen))
+        @if ($widget_study_why_chosen)
             <?php echo html_entity_decode($widget_study_why_chosen->content) ?>
         @else
             <section class="elementor-section elementor-top-section elementor-element elementor-element-f24d1f4 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f24d1f4" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;background: #f1f1f1">
@@ -206,7 +206,7 @@
                 </div>
             </section>
         @endif
-        @if (isset($widget_study_request_input))
+        @if ($widget_study_request_input)
             <?php echo html_entity_decode($widget_study_request_input->content) ?>
         @else
             <section class="elementor-section elementor-top-section elementor-element elementor-element-01aa9bc elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="01aa9bc" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width:1519px;left:0px;padding-top:30px;background:#f1f1f1">
@@ -340,7 +340,7 @@
                 </div>
             </section>
         @endif
-        @if (isset($widget_study_middle_banner))
+        @if ($widget_study_middle_banner)
             <?php echo html_entity_decode($widget_study_middle_banner->content) ?>
         @else
             <section class="elementor-section elementor-top-section elementor-element elementor-element-e6c3ee0 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e6c3ee0" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px">
@@ -349,7 +349,7 @@
                 </div>
             </section>
         @endif
-        @if (isset($widget_study_cost))
+        @if ($widget_study_cost)
             <?php echo html_entity_decode($widget_study_cost->content) ?>
         @else
             <section class="elementor-section elementor-top-section elementor-element elementor-element-f24d1f4 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f24d1f4" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;padding:30px 0 30px 0">
@@ -456,7 +456,7 @@
                 </div>
             </section>
         @endif
-        @if (isset($widget_study_why_skypacific))
+        @if ($widget_study_why_skypacific)
             <?php echo html_entity_decode($widget_study_why_skypacific->content) ?>
         @else
             <section class="elementor-section elementor-top-section elementor-element elementor-element-1a09e34 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1a09e34" data-element_type="section" id="dangky" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;padding-top:30px">
@@ -513,7 +513,7 @@
             </section>
         @endif
         @include('widgets.form')
-        @if (isset($widget_study_experience))
+        @if ($widget_study_experience)
             <?php echo html_entity_decode($widget_study_experience->content) ?>
         @else
             <section class="elementor-section elementor-top-section elementor-element elementor-element-1a09e34 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1a09e34" data-element_type="section" id="dangky" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;padding:30px 0 30px 0">

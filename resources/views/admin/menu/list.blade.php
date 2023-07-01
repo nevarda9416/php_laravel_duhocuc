@@ -14,6 +14,8 @@
         <div class="x_content">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
+                    <?php $menu_headers->setPath('/cms/menu'); ?>
+                    {{ $menu_headers->links() }}
                     <form class="form-horizontal form-label-left" id="menu_header_form">
                         {{ csrf_field() }}
                         <table class="table">
@@ -52,6 +54,7 @@
                             </tbody>
                         </table>
                     </form>
+                    {{ $menu_headers->links() }}
                 </div>
             </div>
         </div>
@@ -144,7 +147,7 @@
                 $.map($(this).find('tr'), function(el) {
                     $.ajax({
                         type: 'POST',
-                        url: '{{ url('menu/order') }}',
+                        url: '{{ url('cms/menus/order') }}',
                         data: $('#menu_header_form').serialize() + "&menuId=" + $(el).attr('data-menuId')
                             + "&order=" + $(el).index(), // serializes the form's elements
                         success: function (result, status, xhr) {
@@ -177,7 +180,7 @@
                 $.map($(this).find('tr'), function(el) {
                     $.ajax({
                         type: 'POST',
-                        url: '{{ url('menu/order') }}',
+                        url: '{{ url('cms/menus/order') }}',
                         data: $('#menu_footer_form').serialize() + "&menuId=" + $(el).attr('data-menuId')
                             + "&order=" + $(el).index(), // serializes the form's elements
                         success: function (result, status, xhr) {

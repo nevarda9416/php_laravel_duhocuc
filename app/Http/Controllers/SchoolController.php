@@ -26,7 +26,8 @@ class SchoolController extends Controller
      */
     public function course()
     {
-        return view('school.course');
+        $widget_course_description = Widget::select('content')->where('key', 'widget.course.description')->first();
+        return view('school.course', compact('widget_course_description'));
     }
 
     /**

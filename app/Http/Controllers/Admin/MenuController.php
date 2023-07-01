@@ -12,6 +12,16 @@ use App\Helpers\Activity;
 
 class MenuController extends Controller
 {
+    public $limit;
+
+    /**
+     * CategoryController constructor.
+     */
+    public function __construct()
+    {
+        $this->limit = config()->get('constants.LIMIT_DATA_PAGINATE');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -19,12 +29,12 @@ class MenuController extends Controller
      */
     public function index()
     {
-        $menus = Menu::all();
+        $parentMenus = Menu::where('parent_id', 0)->get();
         $menu_headers = Menu::where([
             ['position', 'menu_header']
-        ])->orderBy('order', 'ASC')->get();
-        $menu_footers = Menu::whereIn('position', ['menu_footer_1', 'menu_footer_2'])->orderBy('order', 'ASC')->get();
-        return view('admin.menu.index', compact('menus', 'menu_headers', 'menu_footers'));
+        ])->orderBy('order', 'ASC')->paginate($this->limit);
+        $menu_footers = Menu::whereIn('position', ['menu_footer_1', 'menu_footer_2'])->orderBy('order', 'ASC')->paginate($this->limit);
+        return view('admin.menu.index', compact('parentMenus', 'menu_headers', 'menu_footers'));
     }
 
     /**

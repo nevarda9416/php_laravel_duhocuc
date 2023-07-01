@@ -27,7 +27,7 @@
                 <option value="0"></option>
                 @if (!empty($countries->toArray()))
                     @foreach($countries as $country)
-                        <option value="{{ $country->id }}"{{$partner->country_id == $country->id ? ' selected' : ''}}>{{ $country->name }}</option>
+                        <option value="{{ $country->id }}"{{isset($partner) && $partner->country_id == $country->id ? ' selected' : ''}}>{{ $country->name }}</option>
                     @endforeach
                 @endif
             </select>

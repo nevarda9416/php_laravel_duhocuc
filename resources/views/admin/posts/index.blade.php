@@ -74,7 +74,7 @@
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         @if (!isset($isElasticsearchData))
-                            <?php $posts->setPath('posts'); ?>
+                            <?php $posts->setPath('/cms/posts'); ?>
                             {{ $posts->links() }}
                         @endif
                         <p class="text-muted">Tổng số bài viết được đăng: {{ $countPublishPosts ?? '' }} bài</p>
@@ -176,7 +176,7 @@
                             </tbody>
                         </table>
                         @if (!isset($isElasticsearchData))
-                            <?php $posts->setPath('posts'); ?>
+                            <?php $posts->setPath('/cms/posts'); ?>
                             {{ $posts->links() }}
                         @endif
                     </div>

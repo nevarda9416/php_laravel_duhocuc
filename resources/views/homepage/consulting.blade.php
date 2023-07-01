@@ -15,7 +15,7 @@ style="background: #d8f4ff;margin-top: 40px">
                             <div class="elementor-main-swiper swiper-container">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <a href="/du-hoc-anh">
+                                        <a href="/du-hoc/du-hoc-anh">
                                             <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học Anh" data-background="https://newocean.edu.vn/wp-content/uploads/2020/03/anh-1.jpg">
 
                                                 <div class="swiper-lazy-preloader"></div>
@@ -31,7 +31,7 @@ style="background: #d8f4ff;margin-top: 40px">
                                             </div>
                                         </a></div>
                                     <div class="swiper-slide">
-                                        <a href="/du-hoc-uc">
+                                        <a href="/du-hoc/du-hoc-uc">
                                             <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học Úc" data-background="https://newocean.edu.vn/wp-content/uploads/2020/03/uc.jpg">
 
                                                 <div class="swiper-lazy-preloader"></div>
@@ -39,7 +39,7 @@ style="background: #d8f4ff;margin-top: 40px">
                                             </div>
                                         </a></div>
                                     <div class="swiper-slide">
-                                        <a href="/du-hoc-canada">
+                                        <a href="/du-hoc/du-hoc-canada">
                                             <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học Canada" data-background="https://newocean.edu.vn/wp-content/uploads/2020/03/canada.jpg">
 
                                                 <div class="swiper-lazy-preloader"></div>
@@ -55,7 +55,7 @@ style="background: #d8f4ff;margin-top: 40px">
                                             </div>
                                         </a></div>
                                     <div class="swiper-slide">
-                                        <a href="/du-hoc-han-quoc">
+                                        <a href="/du-hoc/du-hoc-han-quoc">
                                             <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học Hàn Quốc" data-background="https://newocean.edu.vn/wp-content/uploads/2020/03/hanquoc.jpg">
 
                                                 <div class="swiper-lazy-preloader"></div>
@@ -63,7 +63,7 @@ style="background: #d8f4ff;margin-top: 40px">
                                             </div>
                                         </a></div>
                                     <div class="swiper-slide">
-                                        <a href="/du-hoc-new-zealand">
+                                        <a href="/du-hoc/du-hoc-uc">
                                             <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học New Zealand" data-background="https://newocean.edu.vn/wp-content/uploads/2020/03/newzealand.jpg">
 
                                                 <div class="swiper-lazy-preloader"></div>
@@ -71,15 +71,15 @@ style="background: #d8f4ff;margin-top: 40px">
                                             </div>
                                         </a></div>
                                     <div class="swiper-slide">
-                                        <a href="/du-hoc-ba-lan">
-                                            <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học Ba Lan" data-background="https://newocean.edu.vn/wp-content/uploads/2020/03/balan.jpg">
+                                        <a href="/du-hoc/du-hoc-dai-loan">
+                                            <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học Đài Loan" data-background="https://newocean.edu.vn/wp-content/uploads/2020/03/balan.jpg">
 
                                                 <div class="swiper-lazy-preloader"></div>
 
                                             </div>
                                         </a></div>
                                     <div class="swiper-slide">
-                                        <a href="/du-hoc-trung-quoc">
+                                        <a href="/du-hoc/du-hoc-trung-quoc">
                                             <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học Trung Quốc" data-background="https://newocean.edu.vn/wp-content/uploads/2020/03/trungquoc.jpg">
 
                                                 <div class="swiper-lazy-preloader"></div>

@@ -69,7 +69,6 @@ class BannerController extends Controller
                 if ($file) {
                     UploadFileBusiness::uploadFileToFolder($file);
                 }
-                TableMysql::resetAutoIncrement('banners'); // id bảng banners không liên quan tới bảng khác
                 $banner->save();
                 return redirect('cms/banners/edit/' . $banner->id)->with('message', "Tạo mới banner '" . $title . "' thành công");
             }

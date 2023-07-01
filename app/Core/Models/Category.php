@@ -9,6 +9,8 @@ class Category extends Model
         'description',
         'parent_id',
         'category_type',
+        'country_id',
+        'thumbnail_url',
         'is_actived',
         'meta_title',
         'meta_keyword',

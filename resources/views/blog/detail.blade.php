@@ -71,7 +71,7 @@
                         </div>
                     </div>
                 </div>
-                @if (isset($widget_recruitment_right_banner))
+                @if ($widget_recruitment_right_banner)
                     <?php echo html_entity_decode($widget_recruitment_right_banner->content) ?>
                 @else
                     <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1541197" data-id="1541197" data-element_type="column">

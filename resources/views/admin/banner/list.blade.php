@@ -11,7 +11,7 @@
                 <div class="clearfix"></div>
             </div>
             <div class="x_content">
-                <?php $banners->setPath('/banner'); ?>
+                <?php $banners->setPath('/cms/banners'); ?>
                 {{ $banners->links() }}
                 <table class="table">
                     <thead>
@@ -27,10 +27,10 @@
                             <td>{{$banner->id}}</td>
                             <td>{{$banner->name}}</td>
                             <td>
-                                <a href='{{ url("banner/edit/$banner->id") }}' class="btn btn-xs btn-warning">
+                                <a href='{{ url("cms/banners/edit/$banner->id") }}' class="btn btn-xs btn-warning">
                                     <i class="fa fa-edit"></i> Edit
                                 </a>
-                                <a href='{{ url("banner/delete/$banner->id") }}' class="btn btn-xs btn-danger" onclick="return confirm('Bạn có chắc muốn xóa banner {{$banner->name}} này chứ?')">
+                                <a href='{{ url("cms/banners/delete/$banner->id") }}' class="btn btn-xs btn-danger" onclick="return confirm('Bạn có chắc muốn xóa banner {{$banner->name}} này chứ?')">
                                     <i class="fa fa-trash-o"></i> Delete
                                 </a>
                             </td>

@@ -32,7 +32,7 @@ switch ($action) {
                 </div>
                 <div class="x_content">
                     <br/>
-                    <form class="form-horizontal form-label-left input_mask" action="{{ url("cms/categories/update/$category->id") }}" method="post" accept-charset="UTF-8">
+                    <form class="form-horizontal form-label-left input_mask" action="{{ url("cms/categories/update/$category->id") }}" method="post" accept-charset="UTF-8" enctype="multipart/form-data">
                         {{ csrf_field() }}
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Tên danh mục <span
@@ -47,7 +47,7 @@ switch ($action) {
                                 <select class="form-control" name="parent_id" {{ $attribute }}>
                                     <option value="0">Không</option>
                                     @if ($action != 'show')
-                                        @foreach($categories as $key=>$value)
+                                        @foreach($parentCategories as $key=>$value)
                                             @if ($category->parent_id == $value->id)
                                                 <option value="{{ $categoryParent->id }}" selected>{{ $categoryParent->name }}</option>
                                             @else
@@ -73,9 +73,9 @@ switch ($action) {
                             <div class="col-md-9 col-sm-9 col-xs-12">
                                 <select class="form-control" name="category_type" {{ $attribute }}>
                                     <option></option>
-                                    <option value="suc-khoe"{{ $category->category_type == 'course' ? ' selected' : '' }}>Khóa học ngôn ngữ</option>
-                                    <option value="hoi-dap"{{ $category->category_type == 'school' ? ' selected' : '' }}>Trường học các nước</option>
-                                    <option value="tin-tuc"{{ $category->category_type == 'major' ? ' selected' : '' }}>Ngành học các nước</option>
+                                    <option value="course"{{ $category->category_type == 'course' ? ' selected' : '' }}>Khóa học ngôn ngữ</option>
+                                    <option value="school"{{ $category->category_type == 'school' ? ' selected' : '' }}>Trường học các nước</option>
+                                    <option value="major"{{ $category->category_type == 'major' ? ' selected' : '' }}>Ngành học các nước</option>
                                 </select>
                             </div>
                         </div>

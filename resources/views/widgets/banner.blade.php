@@ -10,9 +10,17 @@ style="padding-bottom:0">
                             <rs-module-wrap id="rev_slider_20_1_wrapper" data-source="gallery" style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
                                 <rs-module id="rev_slider_20_1" style="" data-version="6.5.31">
                                     <rs-slides>
-                                        <rs-slide style="position: absolute;" data-key="rs-103" data-title="Slide" data-thumb="{{ asset('public/images/banner.jpg') }}" data-link="//newocean.edu.vn/du-hoc-canada/du-hoc-canada-khong-chung-minh-tai-chinh/?click=banner-home" data-tag="l" data-target="_self" data-seoz="front" data-anim="f:slidebased;" data-in="o:1;y:(100%);m:true;col:5;" data-out="a:false;">
-                                            <img decoding="async" src="//newocean.edu.vn/wp-content/plugins/revslider/public/assets/assets/dummy.png" alt="" title="poster canada" width="2297" height="822" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="{{ asset('public/images/banner.jpg') }}" data-no-retina>
-                                        </rs-slide>
+                                        @if (!empty($banners))
+                                            @foreach($banners as $banner)
+                                                <rs-slide style="position: absolute;" data-key="rs-103" data-title="{{ $banner->title }}" data-thumb="{{ env('FOLDER_UPLOAD') . $banner->file }}" data-link="/" data-tag="l" data-target="_self" data-seoz="front" data-anim="f:slidebased;" data-in="o:1;y:(100%);m:true;col:5;" data-out="a:false;">
+                                                    <img decoding="async" src="{{ env('FOLDER_UPLOAD') . $banner->file }}" alt="{{ $banner->title }}" title="poster canada" width="2297" height="822" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="{{ env('FOLDER_UPLOAD') . $banner->file }}" data-no-retina>
+                                                </rs-slide>
+                                            @endforeach
+                                        @else
+                                            <rs-slide style="position: absolute;" data-key="rs-103" data-title="Slide" data-thumb="{{ asset('public/images/banner.jpg') }}" data-link="/" data-tag="l" data-target="_self" data-seoz="front" data-anim="f:slidebased;" data-in="o:1;y:(100%);m:true;col:5;" data-out="a:false;">
+                                                <img decoding="async" src="{{ asset('public/images/banner.jpg') }}" alt="" title="poster canada" width="2297" height="822" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="{{ asset('public/images/banner.jpg') }}" data-no-retina>
+                                            </rs-slide>
+                                        @endif
                                     </rs-slides>
                                 </rs-module>
                                 <script>

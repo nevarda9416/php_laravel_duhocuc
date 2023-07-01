@@ -12,7 +12,7 @@
                                 <h2 class="elementor-heading-title elementor-size-default" style="font-size:14pt !important;font-weight:bold;color:#181818 !important">CHƯƠNG TRÌNH HỘI THẢO SẮP DIỄN RA</h2>
                             </div>
                         </div>
-                        @if (isset($widget_seminar_middle_banner))
+                        @if ($widget_seminar_middle_banner)
                             <?php echo html_entity_decode($widget_seminar_middle_banner->content) ?>
                         @else
                             <div class="elementor-element elementor-element-9e97130 sukien_csss elementor-widget elementor-widget-jet-blog-smart-listing" data-id="9e97130" data-element_type="widget" data-widget_type="jet-blog-smart-listing.default">

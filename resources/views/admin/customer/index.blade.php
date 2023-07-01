@@ -6,8 +6,11 @@
                 <div class="x_content">
                     <div class="row">
                         <div class="col-md-12 col-sm-12 col-xs-12">
-                            <?php $customers->setPath('customer'); ?>
+                            <?php $customers->setPath('/cms/customers'); ?>
                             {{ $customers->links() }}
+                                <a href='{{ url("cms/customers/download") }}' class="btn btn-xs btn-primary">
+                                    <i class="fa fa-download"></i> Download danh sách
+                                </a>
                             <table class="table">
                                 <thead>
                                 <tr>

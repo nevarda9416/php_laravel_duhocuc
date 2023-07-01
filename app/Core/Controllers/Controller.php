@@ -2,6 +2,7 @@
 
 namespace App\Core\Controllers;
 
+use App\Core\Models\Menu;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -32,6 +33,15 @@ class Controller extends BaseController
             else
                 $setting = array('telephone_contact' => '', 'email_contact' => '', 'copyright_left' => '', 'copyright_right' => '');
             $view->with(array('setting' => $setting));
+        });
+        view()->composer('layouts.partials.nav', function ($view) {
+            $parentMenus = DB::table('menus')->where('parent_id', 0)->orderBy('order', 'ASC')->get();
+            $childMenus = DB::table('menus')->where('parent_id', Menu::MENU_ITEM_DU_HOC_CAC_NUOC)->orderBy('order', 'ASC')->get(); // Du học các nước
+            $view->with(array('parentMenus' => $parentMenus, 'childMenus' => $childMenus));
+        });
+        view()->composer('widgets.banner', function ($view) {
+            $banners = DB::table('banners')->orderBy('id', 'DESC')->get();
+            $view->with(array('banners' => $banners));
         });
     }
 

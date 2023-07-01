@@ -458,7 +458,7 @@ margin-top: 20px">
                                                                     <a class="page-numbers" href="https://duhocskypacific.top/chuong-trinh-du-hoc/page/5"><span class="elementor-screen-only">Page</span>5</a></nav>
                                                             </div>
                                                         </div>
-                                                        @if (isset($widget_scholarship_right_banner))
+                                                        @if ($widget_scholarship_right_banner)
                                                             <?php echo html_entity_decode($widget_scholarship_right_banner->content) ?>
                                                         @else
                                                             <a href="" title=""><img src="{{ asset('public/images/banner_3.jpg') }}" alt=""/></a>

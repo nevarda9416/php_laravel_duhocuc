@@ -10,6 +10,8 @@
             <div class="clearfix"></div>
         </div>
         <div class="x_content">
+            <?php $categories->setPath('/cms/categories'); ?>
+            {{ $categories->links() }}
             <table class="table">
                 <thead>
                 <tr>
@@ -40,6 +42,7 @@
                     @endforeach
                 </tbody>
             </table>
+            {{ $categories->links() }}
         </div>
     </div>
 </div>

@@ -17,4 +17,5 @@ class Menu extends Model
         'is_actived',
         'order'
     ];
+    const MENU_ITEM_DU_HOC_CAC_NUOC = 2;
 }

@@ -200,6 +200,79 @@
                                 <div class="jet-menu-container">
                                     <div class="jet-menu-inner">
                                         <ul class="jet-menu jet-menu--animation-type-fade jet-menu--roll-up">
+                                            @if (!empty($parentMenus->toArray()))
+                                                @foreach($parentMenus as $parentMenu)
+                                                    @if ($parentMenu->id === \App\Core\Models\Menu::MENU_ITEM_DU_HOC_CAC_NUOC)
+                                                        <li id="jet-menu-item-20892" class="jet-menu-item jet-menu-item-type-custom jet-menu-item-object-custom jet-has-roll-up jet-mega-menu-item jet-regular-item jet-menu-item-has-children jet-menu-item-20892">
+                                                            <a rel="nofollow" href="#" class="top-level-link" title="{{ $parentMenu->item_title }}">
+                                                                <div class="jet-menu-item-wrapper">
+                                                                    <div class="jet-menu-title">{{ $parentMenu->item_title }}</div>
+                                                                    <i class="jet-dropdown-arrow fa fa-angle-down"></i></div>
+                                                            </a>
+                                                    @else
+                                                        <li id="jet-menu-item-20891" class="jet-menu-item jet-menu-item-type-post_type jet-menu-item-object-page jet-menu-item-has-children jet-has-roll-up jet-simple-menu-item jet-regular-item jet-menu-item-20891">
+                                                            <a href="{{ url($parentMenu->item_url) }}" class="top-level-link" title="{{ $parentMenu->item_title }}">
+                                                                <div class="jet-menu-item-wrapper">
+                                                                    <div class="jet-menu-title">{{ $parentMenu->item_title }}</div>
+                                                                </div>
+                                                            </a>
+                                                    @endif
+                                                        @if (!empty($childMenus->toArray()) && $parentMenu->id === \App\Core\Models\Menu::MENU_ITEM_DU_HOC_CAC_NUOC)
+                                                            <div class="jet-sub-mega-menu" data-template-id="20924">
+                                                                <div data-elementor-type="wp-post" data-elementor-id="20924" class="elementor elementor-20924">
+                                                                    <section class="elementor-section elementor-top-section elementor-element elementor-element-9c9ec1d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9c9ec1d" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                                        <div class="elementor-container elementor-column-gap-default">
+                                                                            <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-8f0d5cb" data-id="8f0d5cb" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                                                <div class="elementor-widget-wrap elementor-element-populated" style="background:#00aeef">
+                                                                                    <div class="elementor-element elementor-element-684374e elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="684374e" data-element_type="widget" data-widget_type="icon-list.default">
+                                                                                        <div class="elementor-widget-container">
+                                                                                            <ul class="elementor-icon-list-items">
+                                                                                                @foreach($childMenus as $item => $childMenu)
+                                                                                                    <li class="elementor-icon-list-item">
+                                                                                                        <a href="{{ url($childMenu->item_url) }}" title="{{ $childMenu->item_title }}">
+                                                                                                            <span class="elementor-icon-list-icon">
+                                                                                                                <i aria-hidden="true" class="fas fa-caret-right"></i>
+                                                                                                            </span>
+                                                                                                            <span class="elementor-icon-list-text">{{ $childMenu->item_title }}</span>
+                                                                                                        </a>
+                                                                                                    </li>
+                                                                                                    @if ($item === 3) @break; @endif
+                                                                                                @endforeach
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-8f0d5cb" data-id="8f0d5cb" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                                                <div class="elementor-widget-wrap elementor-element-populated" style="background:#00aeef">
+                                                                                    <div class="elementor-element elementor-element-684374e elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="684374e" data-element_type="widget" data-widget_type="icon-list.default">
+                                                                                        <div class="elementor-widget-container">
+                                                                                            <ul class="elementor-icon-list-items">
+                                                                                                @foreach($childMenus as $item => $childMenu)
+                                                                                                    @if ($item <= 3) @continue; @endif
+                                                                                                    <li class="elementor-icon-list-item">
+                                                                                                        <a href="{{ url($childMenu->item_url) }}" title="{{ $childMenu->item_title }}">
+                                                                                                            <span class="elementor-icon-list-icon">
+                                                                                                                <i aria-hidden="true" class="fas fa-caret-right"></i>
+                                                                                                            </span>
+                                                                                                            <span class="elementor-icon-list-text">{{ $childMenu->item_title }}</span>
+                                                                                                        </a>
+                                                                                                    </li>
+                                                                                                    @if ($item === 7) @break; @endif
+                                                                                                @endforeach
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </section>
+                                                                </div>
+                                                            </div>
+                                                        @endif
+                                                    </li>
+                                                @endforeach
+                                            @else
                                             <li id="jet-menu-item-20891" class="jet-menu-item jet-menu-item-type-post_type jet-menu-item-object-page jet-menu-item-has-children jet-has-roll-up jet-simple-menu-item jet-regular-item jet-menu-item-20891">
                                                 <a href="{{ url('gioi-thieu-chung') }}" class="top-level-link">
                                                     <div class="jet-menu-item-wrapper">
@@ -335,6 +408,7 @@
                                                         <div class="jet-menu-title">Liên hệ</div>
                                                     </div>
                                                 </a></li>
+                                            @endif
                                         </ul>
                                     </div>
                                 </div>

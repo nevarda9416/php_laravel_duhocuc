@@ -13,7 +13,7 @@
     <div class="col-md-7 col-sm-7 col-xs-12">
         <div class="x_panel">
             <div class="x_title">
-                <h2>{{__(ucfirst($action))}} banner <strong>{{$banner->name}}</strong></h2>
+                <h2>{{ ucfirst($action) }} banner <strong>{{$banner->name}}</strong></h2>
                 <ul class="nav navbar-right panel_toolbox">
                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                     </li>
@@ -58,10 +58,6 @@
                         <div class="col-md-5 col-sm-5 col-xs-12">
                             <select class="form-control" name="position">
                                 <option value="homepage"{{$banner->position=='homepage'?' selected':''}}>Trang chủ</option>
-                                <option value="about"{{$banner->position=='about'?' selected':''}}>Về chúng tôi</option>
-                                <option value="activity"{{$banner->position=='activity'?' selected':''}}>Hoạt động</option>
-                                <option value="activity_detail"{{$banner->position=='activity_detail'?' selected':''}}>Hoạt động chi tiết</option>
-                                <option value="solution"{{$banner->position=='solution'?' selected':''}}>Giải pháp</option>
                             </select>
                         </div>
                     </div>
