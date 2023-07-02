@@ -12,6 +12,35 @@
                                 <h3 class="elementor-heading-title elementor-size-large elementor-align-left">TRƯỜNG HỌC CÁC NƯỚC</h3>
                             </div>
                         </div>
+                        @if (!empty($categories->toArray()))
+                            @foreach ($categories as $category)
+                            <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-f5f345f" data-id="f5f345f" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-c2167f6 elementor-view-framed elementor-shape-circle elementor-widget elementor-widget-icon" data-id="c2167f6" data-element_type="widget" data-widget_type="icon.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="elementor-icon-wrapper">
+                                                <a href="{{ url('truong-hoc/' . $category->slug) }}" title="{{ $category->name }}"><img src="{{ env('FOLDER_UPLOAD') . $category->thumbnail_url }}" alt="{{ $category->name }}" style="max-width:87%"/></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-0d3b378 elementor-widget elementor-widget-counter" data-id="0d3b378" data-element_type="widget" data-widget_type="counter.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="elementor-counter">
+                                                <div class="elementor-counter-title"><a href="{{ url('truong-hoc/' . $category->slug) }}" title="{{ $category->name }}">{{ $category->name }}</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-f284d95 elementor-widget elementor-widget-spacer" data-id="f284d95" data-element_type="widget" data-widget_type="spacer.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="elementor-spacer">
+                                                <div class="elementor-spacer-inner"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            @endforeach
+                        @else
                         <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-f5f345f" data-id="f5f345f" data-element_type="column">
                             <div class="elementor-widget-wrap elementor-element-populated">
                                 <div class="elementor-element elementor-element-c2167f6 elementor-view-framed elementor-shape-circle elementor-widget elementor-widget-icon" data-id="c2167f6" data-element_type="widget" data-widget_type="icon.default">
@@ -312,6 +341,7 @@
                                 </div>
                             </div>
                         </div>
+                        @endif
                     </div>
                 </div>
             </div>

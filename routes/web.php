@@ -94,6 +94,7 @@ Route::group(['middleware' => 'auth', 'prefix' => 'cms'], function () {
     });
     Route::group(['prefix' => 'subcribers'], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'Admin\CustomerController@subcriber']);
+        Route::get('download', ['as' => 'download', 'uses' => 'Admin\CustomerController@downloadSubcribers']);
     });
     // Trang quản trị những câu hỏi thường gặp
     Route::group(['prefix' => 'frequently-questions', 'as' => 'q&a'], function () {
@@ -243,9 +244,13 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('du-hoc/du-hoc-uc', ['uses' => 'StudyAbroadController@detail']);
     Route::get('du-hoc/{slug}', ['uses' => 'PageController@detail']);
     Route::get('khoa-hoc-ngon-ngu', ['uses' => 'SchoolController@course']);
+    Route::get('khoa-hoc-ngon-ngu/{slug}', ['uses' => 'PageController@detail']);
     Route::get('truong-hoc', ['uses' => 'SchoolController@index']);
     Route::get('truong-hoc/{slug}', ['uses' => 'SchoolController@detail']);
+    Route::get('truong-hoc/{slug1}/{slug2}', ['uses' => 'SchoolController@detail2']);
     Route::get('nganh-hoc', ['uses' => 'SchoolController@major']);
+    Route::get('nganh-hoc/{slug}', ['uses' => 'SchoolController@majorDetail']);
+    Route::get('nganh-hoc/{slug1}/{slug2}', ['uses' => 'SchoolController@majorDetail2']);
     Route::get('hoc-bong', ['uses' => 'SchoolController@scholarship']);
     Route::get('hoi-thao', ['uses' => 'PageController@seminar']);
     Route::get('goc-tu-van', ['uses' => 'PageController@consultation']);

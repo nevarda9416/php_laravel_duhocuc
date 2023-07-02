@@ -49,9 +49,17 @@ switch ($action) {
                                     @if ($action != 'show')
                                         @foreach($parentCategories as $key=>$value)
                                             @if ($category->parent_id == $value->id)
-                                                <option value="{{ $categoryParent->id }}" selected>{{ $categoryParent->name }}</option>
+                                                <option value="{{ $categoryParent->id }}" selected>
+                                                    @if ($categoryParent->parent_id > 0)
+                                                    |--
+                                                    @endif{{ $categoryParent->name }}
+                                                </option>
                                             @else
-                                                <option value="{{ $value->id }}">{{ $value->name }}</option>
+                                                <option value="{{ $value->id }}">
+                                                    @if ($value->parent_id > 0) &nbsp;&nbsp;&nbsp;&nbsp;
+                                                    |--
+                                                    @endif{{ $value->name }}
+                                                </option>
                                             @endif
                                         @endforeach
                                     @else
@@ -86,7 +94,7 @@ switch ($action) {
                                     <option value="0"></option>
                                     @if (!empty($countries->toArray()))
                                         @foreach($countries as $country)
-                                            <option value="{{ $country->id }}">{{ $country->name }}</option>
+                                            <option value="{{ $country->id }}"{{$country->id===$category->country_id?' selected':''}}>{{ $country->name }}</option>
                                         @endforeach
                                     @endif
                                 </select>

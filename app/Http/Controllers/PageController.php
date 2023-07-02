@@ -32,7 +32,7 @@ class PageController extends Controller
         if ($slug === '') {
             return redirect('/');
         }
-        $page = Page::where('slug', '=', $slug)->where('status', Page::STATUS_PUBLISH)->first();
+        $page = Page::join('categories', 'categories.id', '=', 'pages.category_id')->where('pages.slug', '=', $slug)->where('categories.category_type', Category::CATEGORY_TYPE_COURSE)->where('pages.status', Page::STATUS_PUBLISH)->first();
         if (empty($page)) {
             return redirect('/');
         }

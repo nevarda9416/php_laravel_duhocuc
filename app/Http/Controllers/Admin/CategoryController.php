@@ -30,7 +30,7 @@ class CategoryController extends Controller
     public function index()
     {
         $categories = Category::paginate($this->limit);
-        $parentCategories = Category::where('parent_id', 0)->get();
+        $parentCategories = Category::where('parent_id', 0)->orWhere('parent_id', Category::CATEGORY_ID_SCHOOL)->get();
         $countries = Country::query()->orderBy('id', 'DESC')->get();
         return view('admin.category.index', compact('categories', 'parentCategories', 'countries'));
     }
@@ -73,9 +73,9 @@ class CategoryController extends Controller
                 'meta_description' => $request->get('meta_description')
             ]);
             // Not ok thì redirect với thông báo category đã tồn tại
-            if (Category::where('slug', '=', $slug)->exists()) {
-                return redirect('/cms/categories')->with('error', 'Danh mục ' . $name . ' đã tồn tại');
-            } else {
+//            if (Category::where('slug', '=', $slug)->exists()) {
+//                return redirect('/cms/categories')->with('error', 'Danh mục ' . $name . ' đã tồn tại');
+//            } else {
                 // Ok thì save mới
                 if ($file) {
                     UploadFileBusiness::uploadFileToFolder($file);
@@ -91,7 +91,7 @@ class CategoryController extends Controller
                     'share_url' => $share_url
                 ]);
                 return redirect('/cms/categories')->with('message', 'Tạo mới danh mục ' . $name . ' thành công');
-            }
+//            }
         } catch (\Exception $exception) {
             return redirect('/cms/categories')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
@@ -125,7 +125,7 @@ class CategoryController extends Controller
         $category = Category::find($id);
         $categoryParent = Category::find($category->parent_id);
         $categories = Category::paginate($this->limit);
-        $parentCategories = Category::where('parent_id', 0)->get();
+        $parentCategories = Category::where('parent_id', 0)->orWhere('parent_id', Category::CATEGORY_ID_SCHOOL)->get();
         $countries = Country::query()->orderBy('id', 'DESC')->get();
         return view('admin.category.form', compact('action', 'category', 'categoryParent', 'categories', 'parentCategories', 'countries'));
     }

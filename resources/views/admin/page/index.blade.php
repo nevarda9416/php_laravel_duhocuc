@@ -21,6 +21,8 @@
                     <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
+                    <?php $pages->setPath('/cms/pages'); ?>
+                    {{ $pages->links() }}
                     <table class="table">
                         <thead>
                         <tr>
@@ -51,6 +53,7 @@
                             @endforeach
                         </tbody>
                     </table>
+                    {{ $pages->links() }}
                 </div>
             </div>
         </div>

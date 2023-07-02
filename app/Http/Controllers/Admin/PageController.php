@@ -11,6 +11,17 @@ use Config;
 
 class PageController extends Controller
 {
+
+    public $limit;
+
+    /**
+     * PostsController constructor.
+     */
+    public function __construct()
+    {
+        $this->limit = config()->get('constants.LIMIT_DATA_PAGINATE');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -18,7 +29,7 @@ class PageController extends Controller
      */
     public function index()
     {
-        $pages = Page::where('type', '!=', 'landing')->get();
+        $pages = Page::where('type', '!=', 'landing')->paginate($this->limit);
         return view('admin.page.index', compact('pages'));
     }
 
@@ -79,16 +90,16 @@ class PageController extends Controller
             ]);
             // Tạo slug và check trùng slug (name)
             // Not ok thì redirect với thông báo trang tĩnh đã tồn tại
-            if (Page::where('slug', '=', $slug)->exists()) {
-                return redirect('cms/pages')->with('message', 'Trang tĩnh đã tồn tại');
-            } else {
+//            if (Page::where('slug', '=', $slug)->exists()) {
+//                return redirect('cms/pages')->with('message', 'Trang tĩnh đã tồn tại');
+//            } else {
                 // Ok thì upload file và save mới
                 if ($file) {
                     UploadFileBusiness::uploadFileToFolder($file);
                 }
                 $page->save();
                 return redirect('cms/pages')->with('message', 'Tạo mới trang tĩnh thành công');
-            }
+//            }
         } catch (\Exception $exception) {
             return redirect('cms/pages')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
@@ -121,7 +132,8 @@ class PageController extends Controller
         $page = Page::find($id);
         $category = Category::find($page->category_id);
         $categories = Category::all();
-        return view('admin.page.form', compact('action', 'page', 'category', 'categories'));
+        $categoryPage = Category::where('id', $page->category_id)->pluck('id')->first();
+        return view('admin.page.form', compact('action', 'page', 'category', 'categories', 'categoryPage'));
     }
 
     /**

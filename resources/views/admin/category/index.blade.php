@@ -37,7 +37,12 @@
                                 <select class="form-control" name="parent_id">
                                     <option value="0" selected>Không</option>
                                     @foreach($parentCategories as $category)
-                                        <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                        <option value="{{ $category->id }}">
+                                            @if ($category->parent_id > 0) &nbsp;&nbsp;&nbsp;&nbsp;
+                                            |--
+                                            @endif
+                                            {{ $category->name }}
+                                        </option>
                                     @endforeach
                                 </select>
                             </div>

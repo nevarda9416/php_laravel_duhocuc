@@ -60,11 +60,31 @@ switch ($action) {
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Danh mục</label>
                             <div class="col-md-3 col-sm-3 col-xs-12">
                                 <select class="form-control" name="category_id" {{ $attribute }}>
-                                    <option value="0">Không</option>
+                                    <option value="0"></option>
                                     @if ($action != 'show')
-                                        @foreach($categories as $key=>$value)
-                                            @if (!empty($category->id))
-                                                <option value="{{ $value->id }}"{{$value->id==$category->id?' selected':''}}>{{ $value->name }}</option>
+                                        @foreach ($categories as $category)
+                                            @if ($category->id == $categoryPage)
+                                                <option value="{{ $category->id }}" selected>
+                                                    @if ($category->parent_id > 0) &nbsp;&nbsp;&nbsp;&nbsp;
+                                                        @if (in_array($category->parent_id, \App\Core\Models\Category::CATEGORY_ID_LIST_SCHOOL))
+                                                            |----
+                                                        @else
+                                                            |--
+                                                        @endif
+                                                    @endif
+                                                    {{ $category->name }}
+                                                </option>
+                                            @else
+                                                <option value="{{ $category->id }}">
+                                                    @if ($category->parent_id > 0) &nbsp;&nbsp;&nbsp;&nbsp;
+                                                        @if (in_array($category->parent_id, \App\Core\Models\Category::CATEGORY_ID_LIST_SCHOOL))
+                                                            |----
+                                                        @else
+                                                            |--
+                                                        @endif
+                                                    @endif
+                                                    {{ $category->name }}
+                                                </option>
                                             @endif
                                         @endforeach
                                     @else

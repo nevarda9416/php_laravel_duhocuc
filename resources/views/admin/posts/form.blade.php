@@ -60,17 +60,30 @@ switch ($action) {
                         <label class="control-label col-md-2 col-sm-2 col-xs-12">Danh mục</label>
                         <div class="col-md-3 col-sm-3 col-xs-12">
                             <select class="form-control" name="category_id" {{ $attribute }}>
+                                <option value="0"></option>
                                 @foreach ($categories as $category)
                                     @if ($category->id == $categoryPost)
                                         <option value="{{ $category->id }}" selected>
-                                            @if ($category->parent_id > 0) &nbsp;&nbsp;&nbsp;&nbsp;
-                                            |--
-                                            @endif{{ $category->name }}</option>
+                                            @if ($category->parent_id > 0) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                @if (in_array($category->parent_id, \App\Core\Models\Category::CATEGORY_ID_LIST_SCHOOL))
+                                                    |----
+                                                @else
+                                                    |--
+                                                @endif
+                                            @endif
+                                            {{ $category->name }}
+                                        </option>
                                     @else
                                         <option value="{{ $category->id }}">
-                                            @if ($category->parent_id > 0) &nbsp;&nbsp;&nbsp;&nbsp;
-                                            |--
-                                            @endif{{ $category->name }}</option>
+                                            @if ($category->parent_id > 0) &nbsp;&nbsp;
+                                                @if (in_array($category->parent_id, \App\Core\Models\Category::CATEGORY_ID_LIST_SCHOOL))
+                                                    |----
+                                                @else
+                                                    |--
+                                                @endif
+                                            @endif
+                                            {{ $category->name }}
+                                        </option>
                                     @endif
                                 @endforeach
                             </select>

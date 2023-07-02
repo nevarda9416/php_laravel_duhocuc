@@ -27,9 +27,12 @@ class CustomerController extends Controller
         return view('admin.customer.index', compact('customers'));
     }
 
+    /**
+     * @return mixed
+     */
     public function downloadCustomers()
     {
-        $customers = DB::table('customers')->orderBy('id', 'DESC')->get();
+        $customers = DB::table('customers')->select('fullname', 'email', 'telephone', 'country', 'note')->orderBy('id', 'DESC')->get();
         $customers = json_decode(json_encode($customers), true);
         return Excel::create('customers', function ($excel) use ($customers) {
             $excel->sheet('customers', function ($sheet) use ($customers) {
@@ -47,5 +50,19 @@ class CustomerController extends Controller
     {
         $customers = DB::table('newsletter_subcribers')->orderBy('id', 'DESC')->paginate($this->limit);
         return view('admin.customer.subcriber', compact('customers'));
+    }
+
+    /**
+     * @return mixed
+     */
+    public function downloadSubcribers()
+    {
+        $subcribers = DB::table('newsletter_subcribers')->select('email')->orderBy('id', 'DESC')->get();
+        $subcribers = json_decode(json_encode($subcribers), true);
+        return Excel::create('subcribers', function ($excel) use ($subcribers) {
+            $excel->sheet('subcribers', function ($sheet) use ($subcribers) {
+                $sheet->fromArray($subcribers);
+            });
+        })->download('xlsx');
     }
 }

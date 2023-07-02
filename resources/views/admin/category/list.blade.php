@@ -22,24 +22,34 @@
                 </tr>
                 </thead>
                 <tbody>
-                    @foreach($categories as $category)
-                        <tr>
-                            <td>{{ $category->id }}</td>
-                            <td>@if ($category->parent_id > 0) &nbsp;&nbsp;&nbsp;&nbsp;|-- @endif{{ $category->name }}</td>
-                            <td>{{ $category->parent_id }}</td>
-                            <td>
-                                <a href='{{ url("cms/categories/show/$category->id") }}' class="btn btn-xs">
-                                    <i class="fa fa-eye"></i> Show
-                                </a>
-                                <a href='{{ url("cms/categories/edit/$category->id") }}' class="btn btn-xs">
-                                    <i class="fa fa-edit"></i> Edit
-                                </a>
-                                <a href='{{ url("cms/categories/delete/$category->id") }}' class="btn btn-xs" onclick="return confirm('Bạn có chắc muốn xóa danh mục bài viết {{ $category->name }} này chứ?')">
-                                    <i class="fa fa-trash-o"></i> Delete
-                                </a>
-                            </td>
-                        </tr>
-                    @endforeach
+                @foreach($categories as $category)
+                    <tr>
+                        <td>{{ $category->id }}</td>
+                        <td>
+                            @if ($category->parent_id > 0)
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                @if (in_array($category->parent_id, \App\Core\Models\Category::CATEGORY_ID_LIST_SCHOOL))
+                                    |----
+                                @else
+                                &nbsp;&nbsp;&nbsp;&nbsp;|--
+                                @endif
+                            @endif
+                            {{ $category->name }}
+                        </td>
+                        <td>{{ $category->parent_id }}</td>
+                        <td>
+                            <a href='{{ url("cms/categories/show/$category->id") }}' class="btn btn-xs">
+                                <i class="fa fa-eye"></i> Show
+                            </a>
+                            <a href='{{ url("cms/categories/edit/$category->id") }}' class="btn btn-xs">
+                                <i class="fa fa-edit"></i> Edit
+                            </a>
+                            <a href='{{ url("cms/categories/delete/$category->id") }}' class="btn btn-xs" onclick="return confirm('Bạn có chắc muốn xóa danh mục bài viết {{ $category->name }} này chứ?')">
+                                <i class="fa fa-trash-o"></i> Delete
+                            </a>
+                        </td>
+                    </tr>
+                @endforeach
                 </tbody>
             </table>
             {{ $categories->links() }}

@@ -16,4 +16,9 @@ class Category extends Model
         'meta_keyword',
         'meta_description'
     ];
+    const CATEGORY_ID_SCHOOL = 41;
+    const CATEGORY_ID_LIST_SCHOOL = [42,43,44,45,46,47,48,49,50];//temp
+    const CATEGORY_TYPE_COURSE = 'course';
+    const CATEGORY_TYPE_SCHOOL = 'school';
+    const CATEGORY_TYPE_MAJOR = 'major';
 }
