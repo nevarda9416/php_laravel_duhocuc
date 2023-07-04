@@ -18,7 +18,7 @@ margin-top: 20px">
                                 <h2 class="elementor-heading-title elementor-size-large" style="font-size:15pt !important;color:#181818 !important;">HỌC BỔNG DU HỌC</h2>
                             </div>
                         </div>
-                        <div class="elementor-element elementor-element-1c5f801 elementor-grid-1 elementor-grid-tablet-1 elementor-posts--thumbnail-left elementor-hidden-mobile elementor-grid-mobile-1 elementor-widget elementor-widget-archive-posts" data-id="1c5f801" data-element_type="widget"
+                        <div class="elementor-element elementor-element-1c5f801 elementor-grid-1 elementor-grid-tablet-1 elementor-posts--thumbnail-left elementor-grid-mobile-1 elementor-widget elementor-widget-archive-posts" data-id="1c5f801" data-element_type="widget"
                              data-settings="{&quot;archive_classic_columns&quot;:&quot;1&quot;,&quot;archive_classic_columns_tablet&quot;:&quot;1&quot;,&quot;archive_classic_columns_mobile&quot;:&quot;1&quot;,&quot;archive_classic_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:35,&quot;sizes&quot;:[]},&quot;archive_classic_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;archive_classic_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;pagination_type&quot;:&quot;numbers&quot;}"
                              data-widget_type="archive-posts.archive_classic">
                             <div class="elementor-widget-container">
@@ -157,47 +157,6 @@ margin-top: 20px">
                                     <a class="page-numbers" href="{{ url('/') }}/chuong-trinh-du-hoc/page/5"><span class="elementor-screen-only">Page</span>5</a></nav>
                             </div>
                         </div>
-                        <div class="elementor-element elementor-element-ff6b8ab elementor-grid-1 elementor-grid-tablet-1 elementor-hidden-desktop elementor-hidden-tablet elementor-grid-mobile-1 elementor-posts--thumbnail-top elementor-widget elementor-widget-archive-posts" data-id="ff6b8ab" data-element_type="widget"
-                             data-settings="{&quot;archive_classic_columns&quot;:&quot;1&quot;,&quot;archive_classic_columns_tablet&quot;:&quot;1&quot;,&quot;archive_classic_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;archive_classic_columns_mobile&quot;:&quot;1&quot;,&quot;archive_classic_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:35,&quot;sizes&quot;:[]},&quot;archive_classic_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;pagination_type&quot;:&quot;numbers&quot;}"
-                             data-widget_type="archive-posts.archive_classic">
-                            <div class="elementor-widget-container">
-                                <div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid elementor-has-item-ratio">
-                                    <article class="elementor-post elementor-grid-item post-22796 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-li-xi-du-hoc tag-li-xi-tet">
-                                        <a class="elementor-post__thumbnail__link" href="{{ url('/') }}/chuong-trinh-li-xi-du-hoc-2023.html">
-                                            <div class="elementor-post__thumbnail">
-                                                <img width="768" height="576" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20768%20576'%3E%3C/svg%3E" class="attachment-medium_large size-medium_large wp-image-22797" alt="Li xi Du hoc 2023" data-lazy-src="https://newocean.edu.vn/wp-content/uploads/2023/01/Li-xi-tet-khai-xuan-lixi-2tr-800-×-600-px-768x576.jpg">
-                                                <noscript>
-                                                    <img width="768" height="576" src="{{ asset('public/images/tuyendung_1.jpg') }}" class="attachment-medium_large size-medium_large wp-image-22797" alt=""/>
-                                                </noscript>
-                                            </div>
-                                        </a>
-                                        <div class="elementor-post__text">
-                                            <h2 class="elementor-post__title">
-                                                <a href="{{ url('/') }}/chuong-trinh-li-xi-du-hoc-2023.html">
-                                                    Chương trình Lì xì du học 2023 </a>
-                                            </h2>
-                                            <div class="elementor-post__meta-data">
-					<span class="elementor-post-author">
-			Tuấn Hưng		</span>
-                                                <span class="elementor-post-date">
-			18/01/2023		</span>
-                                            </div>
-                                            <div class="elementor-post__excerpt">
-                                                <p>Du học ngay từ đầu năm để nhận lấy sự may mắn từ khí trời đất năm mới; nhân dịp xuân mới Quý Mão 2023,</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="e-load-more-anchor" data-page="1" data-max-page="8" data-next-page="https://newocean.edu.vn/chuong-trinh-du-hoc/page/2"></div>
-                                <nav class="elementor-pagination" aria-label="Pagination">
-                                    <span aria-current="page" class="page-numbers current"><span class="elementor-screen-only">Page</span>1</span>
-                                    <a class="page-numbers" href="{{ url('/') }}/chuong-trinh-du-hoc/page/2"><span class="elementor-screen-only">Page</span>2</a>
-                                    <a class="page-numbers" href="{{ url('/') }}/chuong-trinh-du-hoc/page/3"><span class="elementor-screen-only">Page</span>3</a>
-                                    <span class="page-numbers dots">…</span>
-                                    <a class="page-numbers" href="{{ url('/') }}/chuong-trinh-du-hoc/page/5"><span class="elementor-screen-only">Page</span>5</a></nav>
-                            </div>
-                        </div>
-
                         <section data-id="393752b" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}" style="width: 1519px; left: 0px;">
                             <div class="elementor-container elementor-column-gap-default">
                                 <div class="elementor-column elementor-col-40 elementor-top-column elementor-element elementor-element-d43ce87" data-id="d43ce87" data-element_type="column">
@@ -285,7 +244,7 @@ margin-top: 20px">
                                                                 <h2 class="elementor-heading-title elementor-size-large" style="font-size:15pt !important;color:#181818 !important;">DANH SÁCH BÀI VIẾT GỢI Ý</h2>
                                                             </div>
                                                         </div>
-                                                        <div class="elementor-element elementor-element-1c5f801 elementor-grid-1 elementor-grid-tablet-1 elementor-posts--thumbnail-left elementor-hidden-mobile elementor-grid-mobile-1 elementor-widget elementor-widget-archive-posts" data-id="1c5f801" data-element_type="widget"
+                                                        <div class="elementor-element elementor-element-1c5f801 elementor-grid-1 elementor-grid-tablet-1 elementor-posts--thumbnail-left elementor-grid-mobile-1 elementor-widget elementor-widget-archive-posts" data-id="1c5f801" data-element_type="widget"
                                                              data-settings="{&quot;archive_classic_columns&quot;:&quot;1&quot;,&quot;archive_classic_columns_tablet&quot;:&quot;1&quot;,&quot;archive_classic_columns_mobile&quot;:&quot;1&quot;,&quot;archive_classic_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:35,&quot;sizes&quot;:[]},&quot;archive_classic_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;archive_classic_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;pagination_type&quot;:&quot;numbers&quot;}"
                                                              data-widget_type="archive-posts.archive_classic">
                                                             <div class="elementor-widget-container">
@@ -416,46 +375,6 @@ margin-top: 20px">
                                                                         <hr/>
                                                                     @endif
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="elementor-element elementor-element-ff6b8ab elementor-grid-1 elementor-grid-tablet-1 elementor-hidden-desktop elementor-hidden-tablet elementor-grid-mobile-1 elementor-posts--thumbnail-top elementor-widget elementor-widget-archive-posts" data-id="ff6b8ab" data-element_type="widget"
-                                                             data-settings="{&quot;archive_classic_columns&quot;:&quot;1&quot;,&quot;archive_classic_columns_tablet&quot;:&quot;1&quot;,&quot;archive_classic_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;archive_classic_columns_mobile&quot;:&quot;1&quot;,&quot;archive_classic_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:35,&quot;sizes&quot;:[]},&quot;archive_classic_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;pagination_type&quot;:&quot;numbers&quot;}"
-                                                             data-widget_type="archive-posts.archive_classic">
-                                                            <div class="elementor-widget-container">
-                                                                <div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid">
-                                                                    <article class="elementor-post elementor-grid-item post-22796 post type-post status-publish format-standard has-post-thumbnail hentry category-chuong-trinh-du-hoc category-tin-tuc-du-hoc tag-li-xi-du-hoc tag-li-xi-tet">
-                                                                        <a class="elementor-post__thumbnail__link" href="https://duhocskypacific.top/chuong-trinh-li-xi-du-hoc-2023.html">
-                                                                            <div class="elementor-post__thumbnail">
-                                                                                <img width="768" height="576" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20768%20576'%3E%3C/svg%3E" class="attachment-medium_large size-medium_large wp-image-22797" alt="Li xi Du hoc 2023" data-lazy-src="https://newocean.edu.vn/wp-content/uploads/2023/01/Li-xi-tet-khai-xuan-lixi-2tr-800-×-600-px-768x576.jpg">
-                                                                                <noscript>
-                                                                                    <img width="768" height="576" src="https://duhocskypacific.top/public/images/tuyendung_1.jpg" class="attachment-medium_large size-medium_large wp-image-22797" alt=""/>
-                                                                                </noscript>
-                                                                            </div>
-                                                                        </a>
-                                                                        <div class="elementor-post__text">
-                                                                            <h2 class="elementor-post__title">
-                                                                                <a href="https://duhocskypacific.top/chuong-trinh-li-xi-du-hoc-2023.html">
-                                                                                    Chương trình Lì xì du học 2023 </a>
-                                                                            </h2>
-                                                                            <div class="elementor-post__meta-data">
-					<span class="elementor-post-author">
-			Tuấn Hưng		</span>
-                                                                                <span class="elementor-post-date">
-			18/01/2023		</span>
-                                                                            </div>
-                                                                            <div class="elementor-post__excerpt">
-                                                                                <p>Du học ngay từ đầu năm để nhận lấy sự may mắn từ khí trời đất năm mới; nhân dịp xuân mới Quý Mão 2023,</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </article>
-                                                                </div>
-                                                                <div class="e-load-more-anchor" data-page="1" data-max-page="8" data-next-page="https://newocean.edu.vn/chuong-trinh-du-hoc/page/2"></div>
-                                                                <nav class="elementor-pagination" aria-label="Pagination">
-                                                                    <span aria-current="page" class="page-numbers current"><span class="elementor-screen-only">Page</span>1</span>
-                                                                    <a class="page-numbers" href="https://duhocskypacific.top/chuong-trinh-du-hoc/page/2"><span class="elementor-screen-only">Page</span>2</a>
-                                                                    <a class="page-numbers" href="https://duhocskypacific.top/chuong-trinh-du-hoc/page/3"><span class="elementor-screen-only">Page</span>3</a>
-                                                                    <span class="page-numbers dots">…</span>
-                                                                    <a class="page-numbers" href="https://duhocskypacific.top/chuong-trinh-du-hoc/page/5"><span class="elementor-screen-only">Page</span>5</a></nav>
                                                             </div>
                                                         </div>
                                                         @if ($widget_consultation_right_banner)

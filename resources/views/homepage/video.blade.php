@@ -10,7 +10,7 @@
         color: #00aeef;
     }
 </style>
-<section class="elementor-section elementor-top-section elementor-element elementor-element-49fc4ca elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="49fc4ca" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-49fc4ca elementor-hidden-tablet elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="49fc4ca" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
     <div class="elementor-container elementor-column-gap-default">
         <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2009f73" data-id="2009f73" data-element_type="column">
             <div class="elementor-widget-wrap elementor-element-populated">
