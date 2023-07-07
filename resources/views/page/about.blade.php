@@ -1,5 +1,12 @@
 @extends('layouts.default')
 @section('content')
+    <style>
+        @media (max-width: 767px) {
+            .elementor-949 .elementor-element.elementor-element-094cfd2, .elementor-949 .elementor-element.elementor-element-6caaeb8, .elementor-949 .elementor-element.elementor-element-3f0fc51 {
+                width: 100%;
+            }
+        }
+    </style>
     <div data-elementor-type="wp-page" data-elementor-id="949" class="elementor elementor-949">
         @include('widgets.banner')
         <section class="elementor-section elementor-top-section elementor-element elementor-element-0492c4d elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0492c4d" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}" style="width: 1519px; left: 0px;">
@@ -201,8 +208,8 @@
             </div>
         </section>
         <section class="elementor-section elementor-top-section elementor-element elementor-element-a534846 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a534846" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;background:#fff">
-            <div class="elementor-container elementor-column-gap-default" style="height:490px">
-                <div class="elementor-column elementor-col-30 elementor-top-column elementor-element elementor-element-094cfd2" data-id="094cfd2" data-element_type="column" style="position:relative;margin-right:5%">
+            <div class="elementor-container elementor-column-gap-default" style="height:auto">
+                <div class="elementor-column elementor-col-30 elementor-top-column elementor-element elementor-element-094cfd2" data-id="094cfd2" data-element_type="column" style="position:relative;margin:0 2%;height:500px">
                     <div class="elementor-element elementor-element-8fed26c elementor-widget elementor-widget-image" data-id="8fed26c" data-element_type="widget" data-widget_type="image.default" style="position:absolute;top:0;left:0;width:100%;z-index:1">
                         <div class="elementor-widget-container">
                             <img decoding="async" width="400" height="400" src="{{ asset('public/images/lanhdao_1.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="" style="width:300px;border:10px solid #00aeef">
@@ -218,7 +225,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="elementor-column elementor-col-30 elementor-top-column elementor-element elementor-element-6caaeb8" data-id="6caaeb8" data-element_type="column" style="position:relative;margin-right:5%">
+                <div class="elementor-column elementor-col-30 elementor-top-column elementor-element elementor-element-6caaeb8" data-id="6caaeb8" data-element_type="column" style="position:relative;margin:0 2%;height:500px">
                     <div class="elementor-element elementor-element-8cbe6e1 elementor-widget elementor-widget-image" data-id="8cbe6e1" data-element_type="widget" data-widget_type="image.default" style="position:absolute;top:0;left:0;width:100%;z-index:1">
                         <div class="elementor-widget-container">
                             <img decoding="async" width="400" height="400" src="{{ asset('public/images/lanhdao_2.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="" style="width:300px;border:10px solid #00aeef">
@@ -234,7 +241,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-3f0fc51" data-id="3f0fc51" data-element_type="column" style="position:relative">
+                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-3f0fc51" data-id="3f0fc51" data-element_type="column" style="position:relative;margin:0 2%;height:500px">
                     <div class="elementor-element elementor-element-8cdfdf9 elementor-widget elementor-widget-image" data-id="8cdfdf9" data-element_type="widget" data-widget_type="image.default" style="position:absolute;top:0;left:0;width:100%;z-index:1">
                         <div class="elementor-widget-container">
                             <img decoding="async" width="400" height="400" src="{{ asset('public/images/lanhdao_3.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="" style="width:300px;border:10px solid #00aeef">

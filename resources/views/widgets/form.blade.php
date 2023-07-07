@@ -5,13 +5,13 @@
     }
 </style>
 @if (isset(request()->segments()[0]) && request()->segments()[0] === 'du-hoc')
-    <section class="elementor-section elementor-top-section elementor-element elementor-element-3bb0cbe elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3bb0cbe" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}" style="width: 1519px; left: 0px;">
+    <section class="elementor-section elementor-top-section elementor-element elementor-element-3bb0cbe elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3bb0cbe" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}" style="width: 1519px; left: 0px;padding-top: 30px">
         <div class="elementor-container elementor-column-gap-default">
             <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-91f0399" data-id="91f0399" data-element_type="column">
                 <div class="elementor-widget-wrap elementor-element-populated">
                     <div class="elementor-element elementor-element-b11d8f3 elementor-widget elementor-widget-heading elementor-align-center" data-id="b11d8f3" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                            <h3 class="elementor-heading-title elementor-size-large">ĐĂNG KÝ TƯ VẤN DU HỌC ÚC</h3>
+                            <h3 class="elementor-heading-title elementor-size-large">ĐĂNG KÝ TƯ VẤN DU HỌC {{ mb_strtoupper(str_replace('Du học ', '', $page->title ?? '')) }}</h3>
                         </div>
                     </div>
                 </div>

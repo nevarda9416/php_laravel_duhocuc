@@ -132,9 +132,9 @@
 <header data-elementor-type="header" data-elementor-id="20880" class="elementor elementor-20880 elementor-location-header">
     <header class="elementor-section elementor-top-section elementor-element elementor-element-cb01285 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cb01285" data-element_type="section" id="scrolltop" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
         <div class="elementor-container elementor-column-gap-no">
-            <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-90c4824 elementor-hidden-tablet elementor-hidden-mobile" data-id="90c4824" data-element_type="column">
+            <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-90c4824 elementor-hidden-tablet" data-id="90c4824" data-element_type="column">
                 <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-element elementor-element-277796a elementor-nav-menu__align-right elementor-hidden-tablet elementor-hidden-mobile elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-widget elementor-widget-nav-menu" data-id="277796a" data-element_type="widget"
+                    <div class="elementor-element elementor-element-277796a elementor-nav-menu__align-right elementor-hidden-tablet elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-widget elementor-widget-nav-menu" data-id="277796a" data-element_type="widget"
                          data-settings="{&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-caret-down\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}" data-widget_type="nav-menu.default">
                         <div class="elementor-widget-container">
                             <nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
@@ -154,11 +154,12 @@
                     </div>
                 </div>
             </div>
-            <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1bee1f2 elementor-hidden-tablet elementor-hidden-mobile" data-id="1bee1f2" data-element_type="column">
+            <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1bee1f2 elementor-hidden-tablet" data-id="1bee1f2" data-element_type="column">
                 <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-element elementor-element-b59c2bb elementor-search-form--skin-full_screen elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-search-form" data-id="b59c2bb" data-element_type="widget" data-settings="{&quot;skin&quot;:&quot;full_screen&quot;}" data-widget_type="search-form.default">
+                    <div class="elementor-element elementor-element-b59c2bb elementor-search-form--skin-full_screen elementor-hidden-tablet elementor-widget elementor-widget-search-form" data-id="b59c2bb" data-element_type="widget" data-settings="{&quot;skin&quot;:&quot;full_screen&quot;}" data-widget_type="search-form.default">
                         <div class="elementor-widget-container">
-                            <form class="elementor-search-form" action="{{ url('/') }}" method="get" role="search">
+                            <form class="elementor-search-form" action="{{ url('/') }}" method="get" role="search" style="text-align:center;font-size:0.9rem">
+                                <i>Tìm kiếm ...</i>
                                 <div class="elementor-search-form__toggle" tabindex="0" role="button">
                                     <i aria-hidden="true" class="fas fa-search" style="color:#fff"></i> <span class="elementor-screen-only">Tìm kiếm</span>
                                 </div>
@@ -204,7 +205,7 @@
                                                 @foreach($parentMenus as $parentMenu)
                                                     @if ($parentMenu->id === \App\Core\Models\Menu::MENU_ITEM_DU_HOC_CAC_NUOC)
                                                         <li id="jet-menu-item-20892" class="jet-menu-item jet-menu-item-type-custom jet-menu-item-object-custom jet-has-roll-up jet-mega-menu-item jet-regular-item jet-menu-item-has-children jet-menu-item-20892">
-                                                            <a rel="nofollow" href="#" class="top-level-link" title="{{ $parentMenu->item_title }}">
+                                                            <a rel="nofollow" href="{{ url($parentMenu->item_url) }}" class="top-level-link" title="{{ $parentMenu->item_title }}">
                                                                 <div class="jet-menu-item-wrapper">
                                                                     <div class="jet-menu-title">{{ $parentMenu->item_title }}</div>
                                                                     <i class="jet-dropdown-arrow fa fa-angle-down"></i></div>

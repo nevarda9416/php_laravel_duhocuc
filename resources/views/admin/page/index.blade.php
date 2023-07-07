@@ -12,6 +12,8 @@
             <div class="x_panel">
                 <div class="x_title">
                     <a href="{{ url('cms/pages/create') }}" title="Tạo mới trang giới thiệu" class="btn btn-primary"><i class="fa fa-pencil-square-o"></i> Tạo mới trang giới thiệu</a>
+                    <a href="{{ url('cms/widgets/template/study_abroad') }}" title="Mẫu trang du học các nước" class="btn btn-success"><i class="fa fa-pencil-square"></i> Mẫu trang du học các nước</a>
+
                     <ul class="nav navbar-right panel_toolbox">
                         <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                         </li>

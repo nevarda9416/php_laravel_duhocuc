@@ -139,7 +139,7 @@ Route::group(['middleware' => 'auth', 'prefix' => 'cms'], function () {
         Route::post('/search', ['uses' => 'Admin\BannerController@search_submit']);
     });
     // Đường dẫn allow upload ảnh từ trong ckeditor
-    Route::post('ckeditor/image_upload', 'CKEditorController@upload')->name('upload');
+    Route::post('ckeditor/image_upload', 'Admin\CKEditorController@upload')->name('upload');
     // Thư viện ảnh
     Route::group(['prefix' => 'medias', 'as' => 'media'], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'Admin\MediaController@index']);
@@ -241,8 +241,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('thoat',  ['uses' => 'Auth\LoginController@logout']);
     Route::get('gioi-thieu-chung', ['uses' => 'PageController@about']);
     Route::get('du-hoc', ['uses' => 'StudyAbroadController@index']);
-    Route::get('du-hoc/du-hoc-uc', ['uses' => 'StudyAbroadController@detail']);
-    Route::get('du-hoc/{slug}', ['uses' => 'PageController@detail']);
+    Route::get('du-hoc/{slug}', ['uses' => 'StudyAbroadController@detail']);
     Route::get('khoa-hoc-ngon-ngu', ['uses' => 'SchoolController@course']);
     Route::get('khoa-hoc-ngon-ngu/{slug}', ['uses' => 'PageController@detail']);
     Route::get('truong-hoc', ['uses' => 'SchoolController@index']);

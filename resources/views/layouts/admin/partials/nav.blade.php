@@ -10,7 +10,7 @@
             <li><a href="{{ url('cms/pages') }}" title="Các trang giới thiệu"><i class="fa fa-legal"></i>Các trang giới thiệu</a></li>
             <li><a href="{{ url('cms/customers') }}"><i class="fa fa-users"></i>Quản lý người dùng đăng ký</a></li>
             <li><a href="{{ url('cms/subcribers') }}"><i class="fa fa-envelope-o"></i>Email đăng ký nhận tin</a></li>
-            <li><a href="{{ url('cms/frequently-questions') }}"><i class="fa fa-question"></i>Câu hỏi thường gặp</a></li>
+            {{--<li><a href="{{ url('cms/founders') }}"><i class="fa fa-user-md"></i>Quản lý người điều hành</a></li>--}}
             <li><a href="{{ url('cms/partners') }}"><i class="fa fa-hand-peace-o"></i>Quản lý đối tác</a></li>
             <li><a href="{{ url('cms/banners') }}"><i class="fa fa fa-picture-o"></i>Quản lý banner</a></li>
             <li><a href="{{ url('cms/medias') }}"><i class="fa fa-file-o"></i>Quản lý file</a></li>
@@ -26,13 +26,13 @@
                     <li><a href="{{ url('cms/widgets/course/description') }}">Giới thiệu</a></li>
                 </ul>
             </li>
-            <li><a style="font-size:12px"><i class="fa fa-laptop"></i>Nội dung trang du học Úc<span class="fa fa-chevron-down"></span></a>
+            <li><a style="font-size:12px"><i class="fa fa-laptop"></i>Nội dung trang du học<span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="{{ url('cms/widgets/study/description') }}">Giới thiệu</a></li>
-                    <li><a href="{{ url('cms/widgets/study/why_chosen') }}">Tại sao nên chọn du học Úc</a></li>
-                    <li><a href="{{ url('cms/widgets/study/request_input') }}">Yêu cầu đầu vào du học Úc</a></li>
+                    <li><a href="{{ url('cms/widgets/study/why_chosen') }}">Tại sao nên chọn du học</a></li>
+                    <li><a href="{{ url('cms/widgets/study/request_input') }}">Yêu cầu đầu vào du học</a></li>
                     <li><a href="{{ url('cms/widgets/study/middle_banner') }}">Banner giữa trang</a></li>
-                    <li><a href="{{ url('cms/widgets/study/cost') }}">Chi phí du học Úc</a></li>
+                    <li><a href="{{ url('cms/widgets/study/cost') }}">Chi phí du học</a></li>
                     <li><a href="{{ url('cms/widgets/study/why_skypacific') }}">Tại sao nên chọn SKY PACIFIC</a></li>
                     <li><a href="{{ url('cms/widgets/study/experience') }}">Trải nghiệm cựu học sinh</a></li>
                 </ul>

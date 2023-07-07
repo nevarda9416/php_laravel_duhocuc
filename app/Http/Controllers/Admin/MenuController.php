@@ -104,11 +104,12 @@ class MenuController extends Controller
     {
         $menu = Menu::find($id);
         $menus = Menu::all();
+        $parentMenus = Menu::where('parent_id', 0)->get();
         $menu_headers = Menu::where([
             ['position', 'menu_header']
-        ])->get();
+        ])->paginate($this->limit);
         $menu_footers = Menu::whereIn('position', ['menu_footer_1', 'menu_footer_2'])->get();
-        return view('admin.menu.form', compact('menu', 'menus', 'menu_headers', 'menu_footers'));
+        return view('admin.menu.form', compact('menu', 'menus', 'parentMenus', 'menu_headers', 'menu_footers'));
     }
 
     /**

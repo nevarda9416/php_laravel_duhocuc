@@ -8,6 +8,7 @@ use App\Core\Business\PostsBusiness;
 use App\Core\Business\UploadFileBusiness;
 use App\Core\Connection\ElasticsearchServer;
 use App\Core\Enums\CommonEnum;
+use App\Core\Models\Widget;
 use App\Core\Repositories\Redis\CategoryRedis;
 use App\Core\Repositories\Elasticsearch\PostsElasticsearch;
 use Illuminate\Http\Request;
@@ -43,10 +44,11 @@ class BlogController extends Controller
         if (empty($blog)) {
             return redirect('/');
         }
+        $widget_recruitment_right_banner = Widget::select('content')->where('key', 'widget.recruitment.right_banner')->first();
         $metaData['meta_title'] = $blog->meta_title;
         $metaData['meta_keyword'] = $blog->meta_keyword;
         $metaData['meta_description'] = $blog->meta_description;
-        return view('blog.detail', compact('blog', 'metaData'));
+        return view('blog.detail', compact('blog', 'widget_recruitment_right_banner', 'metaData'));
     }
 
     /**

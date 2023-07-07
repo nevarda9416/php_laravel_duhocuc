@@ -90,7 +90,8 @@ class PageController extends Controller
      */
     public function partner()
     {
-        return view('page.partner');
+        $partners = Partner::query()->orderBy('id', 'DESC')->get();
+        return view('page.partner', compact('partners'));
     }
 
     /**

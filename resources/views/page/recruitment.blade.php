@@ -165,7 +165,7 @@
                     <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1541197" data-id="1541197" data-element_type="column">
                         <div class="elementor-widget-wrap elementor-element-populated" style="position: relative;">
                             <div class="elementor-element elementor-element-b056f95 elementor-widget elementor-widget-template elementor-sticky elementor-sticky--active elementor-section--handles-inside elementor-sticky--effects" data-id="b056f95" data-element_type="widget" data-settings="{&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;sticky_offset&quot;:20,&quot;sticky_parent&quot;:&quot;yes&quot;,&quot;sticky_effects_offset&quot;:0}"
-                                 data-widget_type="template.default" style="width: 295.362px; margin-top: 0px; margin-bottom: 0px; inset-inline-start: 10px; bottom: 0px;">
+                                 data-widget_type="template.default" style="margin-top: 0px; margin-bottom: 0px; inset-inline-start: 10px; bottom: 0px;">
                                 <div class="elementor-widget-container">
                                     <div class="elementor-template">
                                         <div data-elementor-type="section" data-elementor-id="1231" class="elementor elementor-1231 elementor-location-archive">

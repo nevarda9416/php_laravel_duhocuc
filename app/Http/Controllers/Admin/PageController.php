@@ -55,7 +55,6 @@ class PageController extends Controller
         try {
             $this->validate($request, [
                 'title' => 'required',
-                'content' => 'required',
                 'status' => 'required'
             ]);
             $title = $request->get('title');
@@ -148,7 +147,6 @@ class PageController extends Controller
         try {
             $this->validate($request, [
                 'title' => 'required',
-                'content' => 'required',
                 'status' => 'required'
             ]);
             $title = $request->get('title');
@@ -208,5 +206,10 @@ class PageController extends Controller
         } catch (\Exception $exception) {
             return redirect('cms/pages')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
+    }
+
+    public function templateStudyAbroad()
+    {
+        return view('admin.page.template.study_abroad');
     }
 }

@@ -38,7 +38,7 @@ class SchoolController extends Controller
      */
     public function index()
     {
-        $categories = Category::where('category_type', Category::CATEGORY_TYPE_SCHOOL)->where('parent_id', '!=', 0)->get();
+        $categories = Category::where('category_type', Category::CATEGORY_TYPE_SCHOOL)->where('parent_id', Category::CATEGORY_ID_SCHOOL)->get();
         return view('school.index', compact('categories'));
     }
 
@@ -90,7 +90,7 @@ class SchoolController extends Controller
      */
     public function major()
     {
-        $categories = Category::where('category_type', Category::CATEGORY_TYPE_SCHOOL)->where('parent_id', '!=', 0)->get();
+        $categories = Category::where('category_type', Category::CATEGORY_TYPE_SCHOOL)->where('parent_id', Category::CATEGORY_ID_SCHOOL)->get();
         return view('school.major', compact('categories'));
     }
 

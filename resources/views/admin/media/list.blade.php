@@ -10,6 +10,8 @@
             <div class="clearfix"></div>
         </div>
         <div class="x_content">
+            <?php $medias->setPath('/cms/medias'); ?>
+            {{ $medias->links() }}
             <table class="table">
                 <thead>
                 <tr>
@@ -22,6 +24,9 @@
                     <tr>
                         <td><a href="{{ env('FOLDER_UPLOAD') . $media->file }}" target="_blank">{{ $media->file }}</a></td>
                         <td>
+                            {{--<a href='{{ url("cms/medias/edit/$media->id") }}' class="btn btn-xs">--}}
+                                {{--<i class="fa fa-edit"></i> Edit--}}
+                            {{--</a>--}}
                             <a href='{{ url("cms/medias/delete/$media->id") }}' class="btn btn-xs" onclick="return confirm('Bạn có chắc muốn xóa file {{ $media->title }} này chứ?')">
                                 <i class="fa fa-trash-o"></i> Delete
                             </a>
@@ -30,6 +35,7 @@
                 @endforeach
                 </tbody>
             </table>
+            {{ $medias->links() }}
         </div>
     </div>
 </div>
