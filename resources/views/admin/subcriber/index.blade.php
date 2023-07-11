@@ -6,9 +6,9 @@
                 <div class="x_content">
                     <div class="row">
                         @include('components.alert')
-                        @include('admin.customer.list')
+                        @include('admin.subcriber.list')
                         @if ($action === 'edit')
-                            @include('admin.customer.form')
+                            @include('admin.subcriber.form')
                         @endif
                     </div>
                 </div>

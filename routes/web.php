@@ -90,11 +90,17 @@ Route::group(['middleware' => 'auth', 'prefix' => 'cms'], function () {
     // Quản lý người dùng đăng ký
     Route::group(['prefix' => 'customers'], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'Admin\CustomerController@index']);
-        Route::get('download', ['as' => 'download', 'uses' => 'Admin\CustomerController@downloadCustomers']);
+        Route::get('download', ['as' => 'download', 'uses' => 'Admin\CustomerController@download']);
+        Route::get('edit/{id?}', ['uses' => 'Admin\CustomerController@edit']);
+        Route::post('update/{id?}', ['uses' => 'Admin\CustomerController@update']);
+        Route::get('delete/{id?}', ['uses' => 'Admin\CustomerController@destroy']);
     });
     Route::group(['prefix' => 'subcribers'], function () {
-        Route::get('/', ['as' => 'index', 'uses' => 'Admin\CustomerController@subcriber']);
-        Route::get('download', ['as' => 'download', 'uses' => 'Admin\CustomerController@downloadSubcribers']);
+        Route::get('/', ['as' => 'index', 'uses' => 'Admin\SubcriberController@index']);
+        Route::get('download', ['as' => 'download', 'uses' => 'Admin\SubcriberController@download']);
+        Route::get('edit/{id?}', ['uses' => 'Admin\SubcriberController@edit']);
+        Route::post('update/{id?}', ['uses' => 'Admin\SubcriberController@update']);
+        Route::get('delete/{id?}', ['uses' => 'Admin\SubcriberController@destroy']);
     });
     // Trang quản trị những câu hỏi thường gặp
     Route::group(['prefix' => 'frequently-questions', 'as' => 'q&a'], function () {

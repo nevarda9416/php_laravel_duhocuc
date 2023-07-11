@@ -13,6 +13,9 @@
                                     <h3 class="elementor-heading-title elementor-size-large elementor-align-left">NGÀNH HỌC CÁC NƯỚC</h3>
                                 </div>
                             </div>
+                            @if ($widget_major_description)
+                                <?php echo html_entity_decode($widget_major_description->content) ?>
+                            @endif
                             @foreach ($categories as $category)
                                 <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-f5f345f" data-id="f5f345f" data-element_type="column">
                                     <div class="elementor-widget-wrap elementor-element-populated">

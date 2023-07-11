@@ -18,6 +18,8 @@ class Posts extends Model
         'category_type',
         'price',
         'address',
+        'continent',
+        'country',
         'province',
         'district',
         'subdistrict',

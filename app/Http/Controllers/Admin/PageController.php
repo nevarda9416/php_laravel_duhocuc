@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Core\Business\UploadFileBusiness;
 use App\Core\Controllers\Controller;
+use App\Core\Models\Country;
 use Illuminate\Http\Request;
 use App\Core\Models\Page;
 use App\Core\Models\Category;
@@ -41,7 +42,8 @@ class PageController extends Controller
     public function create()
     {
         $categories = Category::all();
-        return view('admin.page.create', compact('categories'));
+        $countries = Country::query()->select('id', 'name')->orderBy('id', 'DESC')->get();
+        return view('admin.page.create', compact('categories', 'countries'));
     }
 
     /**
@@ -79,10 +81,12 @@ class PageController extends Controller
                 'slug' => $slug,
                 'status' => $request->get('status'),
                 'category_id' => $request->get('category_id'),
+                'country_id' => $request->get('country_id'),
                 'thumbnail_url' => ($file) ? $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $original_name : '',
                 'latitude' => $request->get('latitude'),
                 'longitude' => $request->get('longitude'),
                 'type' => 'page',
+                'has_template_content' => $request->get('has_template_content'),
                 'meta_title' => $request->get('meta_title'),
                 'meta_keyword' => $request->get('meta_keyword'),
                 'meta_description' => $request->get('meta_description')
@@ -116,7 +120,8 @@ class PageController extends Controller
         $page = Page::find($id);
         $category = Category::find($page->category_id);
         $categories = Category::all();
-        return view('admin.page.form', compact('action', 'page', 'category', 'categories'));
+        $countries = Country::query()->select('id', 'name')->orderBy('id', 'DESC')->get();
+        return view('admin.page.form', compact('action', 'page', 'category', 'categories', 'countries'));
     }
 
     /**
@@ -132,7 +137,8 @@ class PageController extends Controller
         $category = Category::find($page->category_id);
         $categories = Category::all();
         $categoryPage = Category::where('id', $page->category_id)->pluck('id')->first();
-        return view('admin.page.form', compact('action', 'page', 'category', 'categories', 'categoryPage'));
+        $countries = Country::query()->select('id', 'name')->orderBy('id', 'DESC')->get();
+        return view('admin.page.form', compact('action', 'page', 'category', 'categories', 'categoryPage', 'countries'));
     }
 
     /**
@@ -173,9 +179,11 @@ class PageController extends Controller
             $page->slug = $slug;
             $page->status = $request->get('status');
             $page->category_id = $request->get('category_id');
+            $page->country_id = $request->get('country_id');
             $page->latitude = $request->get('latitude');
             $page->longitude = $request->get('longitude');
             $page->type = 'page';
+            $page->has_template_content = $request->get('has_template_content');
             $page->meta_title = $request->get('meta_title');
             $page->meta_keyword = $request->get('meta_keyword');
             $page->meta_description = $request->get('meta_description');

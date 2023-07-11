@@ -16,10 +16,12 @@ class Page extends Model
         'slug',
         'status',
         'category_id',
+        'country_id',
         'thumbnail_url',
         'latitude',
         'longitude',
         'type',
+        'has_template_content',
         'meta_title',
         'meta_keyword',
         'meta_description'

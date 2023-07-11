@@ -8,6 +8,7 @@ use App\Core\Business\UploadFileBusiness;
 use App\Core\Connection\ElasticsearchServer;
 use App\Core\Controllers\Controller;
 use App\Core\Enums\CommonEnum;
+use App\Core\Models\Country;
 use App\Core\Repositories\Redis\CategoryRedis;
 use App\Core\Repositories\Elasticsearch\PostsElasticsearch;
 use Illuminate\Http\Request;
@@ -56,7 +57,8 @@ class PostsController extends Controller
     public function create($type)
     {
         $categories = Category::select('id', 'name', 'parent_id')->where('is_actived', 1)->get();
-        return view('admin.posts.create', compact('type', 'categories'));
+        $countries = Country::query()->select('id', 'name')->orderBy('id', 'DESC')->get();
+        return view('admin.posts.create', compact('type', 'categories', 'countries'));
     }
 
     /**
@@ -113,6 +115,7 @@ class PostsController extends Controller
                     'district' => $request->get('district'),
                     'subdistrict' => $request->get('subdistrict'),
                     'category_id' => $request->get('category_id'),
+                    'country' => $request->get('country'),
                     'thumbnail_url' => ($thumbnail_url) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $thumbnail_name : null,
                     'date' => $request->get('date') == null ? strtotime(date('Y-m-d H:i:s')) : strtotime($request->get('date')),
                     'time' => $request->get('time'),
@@ -219,7 +222,8 @@ class PostsController extends Controller
             ->where('post_has_tags.post_id', '=', $id)
             ->pluck('tags.name')
             ->all();
-        return view('admin.posts.form', compact('action', 'post', 'categories', 'categoryPost', 'tagPost'));
+        $countries = Country::query()->select('id', 'name')->orderBy('id', 'DESC')->get();
+        return view('admin.posts.form', compact('action', 'post', 'categories', 'categoryPost', 'tagPost', 'countries'));
     }
 
     /**
@@ -274,6 +278,7 @@ class PostsController extends Controller
                 $post->district = $request->get('district');
                 $post->subdistrict = $request->get('subdistrict');
                 $post->category_id = $request->get('category_id');
+                $post->country = $request->get('country');
                 $post->date = $request->get('date') == null ? strtotime(date('Y-m-d H:i:s')) : strtotime($request->get('date'));
                 $post->time = $request->get('time');
                 $post->place = $request->get('place');

@@ -26,20 +26,20 @@ class SchoolController extends Controller
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function course()
+    public function index()
     {
-        $categories = Category::where('category_type', Category::CATEGORY_TYPE_COURSE)->where('parent_id', '!=', 0)->get();
-        $widget_course_description = Widget::select('content')->where('key', 'widget.course.description')->first();
-        return view('school.course', compact('categories', 'widget_course_description'));
+        $categories = Category::where('category_type', Category::CATEGORY_TYPE_SCHOOL)->where('parent_id', Category::CATEGORY_ID_SCHOOL)->get();
+        return view('school.index', compact('categories'));
     }
 
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function index()
+    public function course()
     {
-        $categories = Category::where('category_type', Category::CATEGORY_TYPE_SCHOOL)->where('parent_id', Category::CATEGORY_ID_SCHOOL)->get();
-        return view('school.index', compact('categories'));
+        $categories = Category::where('category_type', Category::CATEGORY_TYPE_COURSE)->where('parent_id', '!=', 0)->get();
+        $widget_course_description = Widget::select('content')->where('key', 'widget.course.description')->first();
+        return view('school.course', compact('categories', 'widget_course_description'));
     }
 
     /**
@@ -51,7 +51,11 @@ class SchoolController extends Controller
         if ($slug === '') {
             return redirect('/');
         }
-        $page = Page::join('categories', 'categories.id', '=', 'pages.category_id')->where('pages.slug', '=', $slug)->where('categories.category_type', Category::CATEGORY_TYPE_SCHOOL)->orWhere('categories.category_type', Category::CATEGORY_TYPE_MAJOR)->where('pages.status', Page::STATUS_PUBLISH)->first();
+        $page = Page::join('categories', 'categories.id', '=', 'pages.category_id')->where('pages.slug', '=', $slug)
+            ->where(function ($query) {
+                $query->where('categories.category_type', Category::CATEGORY_TYPE_SCHOOL)
+                    ->orWhere('categories.category_type', Category::CATEGORY_TYPE_MAJOR);
+            })->where('pages.status', Page::STATUS_PUBLISH)->first();
         if (empty($page)) {
             return redirect('/');
         }
@@ -90,8 +94,9 @@ class SchoolController extends Controller
      */
     public function major()
     {
-        $categories = Category::where('category_type', Category::CATEGORY_TYPE_SCHOOL)->where('parent_id', Category::CATEGORY_ID_SCHOOL)->get();
-        return view('school.major', compact('categories'));
+        $categories = Category::where('category_type', Category::CATEGORY_TYPE_MAJOR)->where('parent_id', '!=', 0)->get();
+        $widget_major_description = Widget::select('content')->where('key', 'widget.major.description')->first();
+        return view('school.major', compact('categories', 'widget_major_description'));
     }
 
     /**
@@ -103,14 +108,15 @@ class SchoolController extends Controller
         if ($slug === '') {
             return redirect('/');
         }
-        $page = Page::join('categories', 'categories.id', '=', 'pages.category_id')->where('pages.slug', '=', $slug)->where('categories.category_type', Category::CATEGORY_TYPE_SCHOOL)->orWhere('categories.category_type', Category::CATEGORY_TYPE_MAJOR)->where('pages.status', Page::STATUS_PUBLISH)->first();
+        $page = Page::join('categories', 'categories.id', '=', 'pages.category_id')->where('pages.slug', '=', $slug)->where('categories.category_type', Category::CATEGORY_TYPE_MAJOR)->where('pages.status', Page::STATUS_PUBLISH)->first();
         if (empty($page)) {
             return redirect('/');
         }
-        $categoryParent = Category::where('slug', $slug)->where('parent_id', '!=', 0)->first();
-        $categories = Category::where('parent_id', $categoryParent->id)->where('category_type', Category::CATEGORY_TYPE_MAJOR)->get();
-        $country = Country::find($categoryParent->country_id);
-        return view('school.major_detail', compact('slug', 'categories', 'country'));
+        $metaData['meta_title'] = $page->meta_title;
+        $metaData['meta_keyword'] = $page->meta_keyword;
+        $metaData['meta_description'] = $page->meta_description;
+        $metaData['meta_image'] = $page->thumbnail_url;
+        return view('school.detail2', compact('page'));
     }
 
     /**

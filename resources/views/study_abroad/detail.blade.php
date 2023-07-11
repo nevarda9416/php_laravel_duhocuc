@@ -3,7 +3,19 @@
     <div data-elementor-type="wp-post" data-elementor-id="174" class="elementor elementor-174">
         @include('widgets.banner')
         @if ($page->content)
-            <?php echo html_entity_decode(str_replace('{UC}', str_replace('Du học ', '', $page->title ?? ''), $page->content)) ?>
+            @if ($page->has_template_content !== 1)
+                <section class="elementor-section elementor-top-section elementor-element elementor-element-184019e elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="184019e" data-settings="" style="padding-top: 30px; left: 0px;">
+                    <div class="elementor-container elementor-column-gap-default">
+                        <div background_background="" class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d026ca2" data-element_type="column" data-id="d026ca2" data-settings="">
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <?php echo html_entity_decode(str_replace('{UC}', str_replace('Du học ', '', $page->title ?? ''), $page->content)) ?>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            @else
+                <?php echo html_entity_decode(str_replace('{UC}', str_replace('Du học ', '', $page->title ?? ''), $page->content)) ?>
+            @endif
         @else
             @if ($widget_study_description)
                 <?php echo html_entity_decode(str_replace('{UC}', str_replace('Du học ', '', $page->title ?? ''), $widget_study_description->content)) ?>

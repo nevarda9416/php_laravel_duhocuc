@@ -17,6 +17,7 @@ class Customer extends Authenticatable
         'list_post_ids',
         'is_blocked',
         'type',
+        'country',
         'latitude',
         'longitude',
         'website',

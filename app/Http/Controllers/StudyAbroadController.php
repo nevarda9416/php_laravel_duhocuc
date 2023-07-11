@@ -52,7 +52,7 @@ class StudyAbroadController extends Controller
         $widget_study_cost = Widget::select('content')->where('key', 'widget.study.cost')->first();
         $widget_study_why_skypacific = Widget::select('content')->where('key', 'widget.study.why_skypacific')->first();
         $widget_study_experience= Widget::select('content')->where('key', 'widget.study.experience')->first();
-        $list_posts = Posts::query()->where('category_id', Posts::CATEGORY_ID_TINTUC)->where('status', Posts::STATUS_PUBLISH)->take(4)->skip(0)->orderBy('id', 'DESC')->get();
+        $list_posts = Posts::query()->where('category_id', Posts::CATEGORY_ID_TINTUC)->where('country', $page->country_id)->where('status', Posts::STATUS_PUBLISH)->take(4)->skip(0)->orderBy('id', 'DESC')->get();
         $metaData['meta_title'] = $page->meta_title ?? '';
         $metaData['meta_keyword'] = $page->meta_keyword ?? '';
         $metaData['meta_description'] = $page->meta_description ?? '';

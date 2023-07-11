@@ -90,6 +90,19 @@ switch ($action) {
                         </div>
                     </div>
                     <div class="form-group">
+                        <label class="control-label col-md-2 col-sm-2 col-xs-12">Quốc gia</label>
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                            <select class="form-control" name="country">
+                                <option value="0"></option>
+                                @if (!empty($countries->toArray()))
+                                    @foreach($countries as $country)
+                                        <option value="{{ $country->id }}"{{ $country->id == $post->country ?  ' selected' : '' }} {{ $attribute }}>{{ $country->name }}</option>
+                                    @endforeach
+                                @endif
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <label class="control-label col-md-2 col-sm-2 col-xs-12">Tên người viết <span
                                     class="required">*</span></label>
                         <div class="col-md-3 col-sm-3 col-xs-12">

@@ -56,6 +56,14 @@ switch ($action) {
                             </div>
                         </div>
                         <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Có sử dụng template</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <div class="checkbox">
+                                    <input type="checkbox" class="flat" name="has_template_content" value="1"{{ $page->has_template_content == 1 ?  ' checked' : '' }} {{ $attribute }}>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Danh mục</label>
                             <div class="col-md-3 col-sm-3 col-xs-12">
                                 <select class="form-control" name="category_id" {{ $attribute }}>
@@ -90,6 +98,19 @@ switch ($action) {
                                         @if (!empty($category->id))
                                             <option value="{{ $category->id }}" selected>{{ $category->name }}</option>
                                         @endif
+                                    @endif
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Quốc gia</label>
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <select class="form-control" name="country_id">
+                                    <option value="0"></option>
+                                    @if (!empty($countries->toArray()))
+                                        @foreach($countries as $country)
+                                            <option value="{{ $country->id }}"{{ $country->id == $page->country_id ?  ' selected' : '' }} {{ $attribute }}>{{ $country->name }}</option>
+                                        @endforeach
                                     @endif
                                 </select>
                             </div>
@@ -136,7 +157,6 @@ switch ($action) {
                                 <textarea class="form-control" name="meta_description" rows="3" required="required" {{ $attribute }}>{{ $page->meta_description }}</textarea>
                             </div>
                         </div>
-
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Ảnh đại diện (không bắt buộc)</label>
                             <div class="col-md-5 col-sm-5 col-xs-12">
@@ -144,17 +164,26 @@ switch ($action) {
                                 <div id="thumbnail_preview"></div>
                             </div>
                         </div>
+                        @if (!empty($page->thumbnail_url))
+                            <div class="form-group">
+                                <label class="control-label col-md-2 col-sm-2 col-xs-12"></label>
+                                <div class="col-md-5 col-sm-5 col-xs-12">
+                                    <p>Ảnh đại diện hiện tại (bên dưới)</p>
+                                    <p><img src="{{ Config::get('constants.STATIC_IMAGES') . $page->thumbnail_url }}" width="100%"/></p>
+                                </div>
+                            </div>
+                        @endif
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Trạng thái bài viết</label>
                             <div class="col-md-5 col-sm-5 col-xs-12">
                                 <div class="radio">
                                     <label>
-                                        <input type="radio" checked="checked" value="publish" name="status"> Đăng bài
+                                        <input type="radio" checked="checked" value="publish" name="status"{{ $page->status == 'publish' ?  ' checked' : '' }} {{ $attribute }}> Đăng bài
                                     </label>
                                 </div>
                                 <div class="radio">
                                     <label>
-                                        <input type="radio" value="draft" name="status"> Bản nháp
+                                        <input type="radio" value="draft" name="status"{{ $page->status == 'draft' ?  ' checked' : '' }} {{ $attribute }}> Bản nháp
                                     </label>
                                 </div>
                             </div>

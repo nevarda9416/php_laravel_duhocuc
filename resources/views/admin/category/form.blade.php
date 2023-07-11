@@ -145,7 +145,6 @@ switch ($action) {
                                 <textarea class="form-control" name="meta_description" rows="3" required="required" {{ $attribute }}>{{ $category->meta_description }}</textarea>
                             </div>
                         </div>
-
                         @if ($action != 'show')
                             <div class="ln_solid"></div>
                             <div class="form-group">

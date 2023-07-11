@@ -8,7 +8,6 @@ use App\Core\Models\Country;
 use App\Core\Models\Partner;
 use App\Core\Models\Posts;
 use App\Core\Models\Widget;
-use Illuminate\Http\Request;
 use App\Core\Models\Page;
 use App\Core\Models\Category;
 
@@ -55,11 +54,14 @@ class PageController extends Controller
             return redirect('/');
         }
         $partners = Partner::query()->orderBy('id', 'DESC')->get();
+        $widget_about_description = Widget::select('content')->where('key', 'widget.about.description')->first();
+        $widget_about_why_skypacific = Widget::select('content')->where('key', 'widget.about.why_skypacific')->first();
+        $widget_about_picture = Widget::select('content')->where('key', 'widget.about.picture')->first();
         $metaData['meta_title'] = $page->meta_title;
         $metaData['meta_keyword'] = $page->meta_keyword;
         $metaData['meta_description'] = $page->meta_description;
         $metaData['meta_image'] = $page->thumbnail_url;
-        return view('page.about', compact('page', 'partners', 'metaData'));
+        return view('page.about', compact('page', 'partners', 'widget_about_description', 'widget_about_why_skypacific', 'widget_about_picture', 'metaData'));
     }
 
     /**

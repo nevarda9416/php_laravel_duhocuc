@@ -21,20 +21,21 @@
                     <li><a href="{{ url('cms/widgets/homepage/criteria') }}">Đồng hành cùng bạn</a></li>
                 </ul>
             </li>
+            <li><a style="font-size:12px"><i class="fa fa-laptop"></i>Nội dung trang giới thiệu<span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                    <li><a href="{{ url('cms/widgets/about/description') }}">Về chúng tôi</a></li>
+                    <li><a href="{{ url('cms/widgets/about/why_skypacific') }}">Vì sao nên chọn SKY PACIFIC</a></li>
+                    <li><a href="{{ url('cms/widgets/about/picture') }}">Hình ảnh về SKY PACIFIC</a></li>
+                </ul>
+            </li>
             <li><a><i class="fa fa-laptop"></i>Nội dung khóa học<span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="{{ url('cms/widgets/course/description') }}">Giới thiệu</a></li>
                 </ul>
             </li>
-            <li><a style="font-size:12px"><i class="fa fa-laptop"></i>Nội dung trang du học<span class="fa fa-chevron-down"></span></a>
+            <li><a><i class="fa fa-laptop"></i>Nội dung ngành học<span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="{{ url('cms/widgets/study/description') }}">Giới thiệu</a></li>
-                    <li><a href="{{ url('cms/widgets/study/why_chosen') }}">Tại sao nên chọn du học</a></li>
-                    <li><a href="{{ url('cms/widgets/study/request_input') }}">Yêu cầu đầu vào du học</a></li>
-                    <li><a href="{{ url('cms/widgets/study/middle_banner') }}">Banner giữa trang</a></li>
-                    <li><a href="{{ url('cms/widgets/study/cost') }}">Chi phí du học</a></li>
-                    <li><a href="{{ url('cms/widgets/study/why_skypacific') }}">Tại sao nên chọn SKY PACIFIC</a></li>
-                    <li><a href="{{ url('cms/widgets/study/experience') }}">Trải nghiệm cựu học sinh</a></li>
+                    <li><a href="{{ url('cms/widgets/major/description') }}">Giới thiệu</a></li>
                 </ul>
             </li>
             <li><a><i class="fa fa-laptop"></i>Nội dung trang học bổng<span class="fa fa-chevron-down"></span></a>
