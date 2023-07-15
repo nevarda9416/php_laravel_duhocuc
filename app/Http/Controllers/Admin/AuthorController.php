@@ -42,9 +42,8 @@ class AuthorController extends Controller
         try {
             // get vals of the form items
             $name = $request->get('name');
-            $slug = sanitize($name);
             /* Start avatar */
-            $avatar = $request->avatar;
+            $avatar = $request->thumbnail_url;
             if ($avatar) {
                 $avatar_name = $avatar->getClientOriginalName();
             }
@@ -52,31 +51,28 @@ class AuthorController extends Controller
             $yearDir = date('Y');
             $monthDir = date('m');
             $dayDir = date('d');
-
             // make the data from the form which save to the database
             $author = new Author([
                 'name' => $name,
-                'slug' => $slug,
                 'avatar' => ($avatar) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $avatar_name : null,
-                'share_url' => '/ve-chung-toi/' . $slug,
-                'content' => $request->get('content'),
+                'position' => $request->get('position'),
+                'team' => $request->get('team'),
+                'dictum' => $request->get('dictum'),
                 'user_id' => $request->get('user_id')
             ]);
-
             // check exists of name
             if (Author::where('name', '=', $name)->exists()) {
-                return redirect('founder')->with('error', "Tác giả '" . $name . "' đã tồn tại");
+                return redirect('founder')->with('error', "Người quản lý '" . $name . "' đã tồn tại");
             } else {
                 // Ok then save
                 if ($avatar) {
                     UploadFileBusiness::uploadFileToFolder($avatar);
                 }
-                TableMysql::resetAutoIncrement('authors'); // id bảng authors không liên quan tới bảng khác
                 $author->save();
-                return redirect('founder/edit/' . $author->id)->with('message', "Tạo mới tác giả '" . $name . "' thành công");
+                return redirect('cms/founders/edit/' . $author->id)->with('message', "Tạo mới người quản lý '" . $name . "' thành công");
             }
         } catch (\Exception $exception) {
-            return back()->with('error', 'Lỗi tạo mới tác giả: ' . $exception->getMessage());
+            return back()->with('error', 'Lỗi tạo mới người quản lý: ' . $exception->getMessage());
         }
     }
 
@@ -89,9 +85,9 @@ class AuthorController extends Controller
     public function edit($id)
     {
         $action = 'edit';
-        $author = DB::table('authors')->select('id', 'name', 'avatar', 'share_url', 'content')->where('id', $id)->first();
+        $author = DB::table('authors')->select('id', 'name', 'avatar', 'share_url', 'content', 'position', 'team', 'dictum')->where('id', $id)->first();
         $authors = DB::table('authors')->select('id', 'name', 'avatar')->paginate($this->limit);
-        return view('author.form', compact('action', 'author', 'authors'));
+        return view('admin.author.form', compact('action', 'author', 'authors'));
     }
 
     /**
@@ -108,7 +104,7 @@ class AuthorController extends Controller
             // get other data from the form
             $name = $request->get('name');
             /* Start avatar url */
-            $avatar = $request->avatar;
+            $avatar = $request->thumbnail_url;
             if ($avatar) {
                 $avatar_name = $avatar->getClientOriginalName();
             }
@@ -116,19 +112,19 @@ class AuthorController extends Controller
             $yearDir = date('Y');
             $monthDir = date('m');
             $dayDir = date('d');
-
             $author->name = $name;
-            $author->avatar = ($avatar) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $avatar_name : $author->avatar;
-            $author->share_url = $request->get('share_url');
+            $author->position = $request->get('position');
+            $author->team = $request->get('team');
+            $author->dictum = $request->get('dictum');
             $author->updated_at = date('Y-m-d H:i:s');
-            $author->content = $request->get('content');
             $author->user_id = $request->get('user_id');
             // update the data
             if ($avatar) {
+                $author->avatar = ($avatar) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $avatar_name : $author->avatar;
                 UploadFileBusiness::uploadFileToFolder($avatar);
             }
             $author->save();
-            return back()->with('message', "Sửa tác giả '" . $name . "' thành công");
+            return back()->with('message', "Sửa người quản lý '" . $name . "' thành công");
         } catch (\Exception $exception) {
             return back()->with('error', 'Lỗi cập nhật dữ liệu: ' . $exception->getMessage());
         }
@@ -145,7 +141,7 @@ class AuthorController extends Controller
         try {
             $author = Author::find($id);
             $author->delete();
-            return redirect('founder')->with('message', 'Xóa tác giả ' . $author->name . ' thành công');
+            return redirect('cms/founders')->with('message', 'Xóa người quản lý ' . $author->name . ' thành công');
         } catch (Exception $exception) {
             Log::error($exception->getMessage());
             return back()->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());

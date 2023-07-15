@@ -12,6 +12,9 @@ class Author extends Model
         'share_url',
         'avatar',
         'content',
+        'position',
+        'team',
+        'dictum',
         'user_id'
     ];
 }

@@ -11,7 +11,7 @@
                 <div class="clearfix"></div>
             </div>
             <div class="x_content">
-                <?php $authors->setPath('/founder'); ?>
+                <?php $authors->setPath('/cms/founders'); ?>
                 {{ $authors->links() }}
                 <table class="table">
                     <thead>
@@ -27,11 +27,11 @@
                             <td>{{$author->id}}</td>
                             <td>{{$author->name}}</td>
                             <td>
-                                <a href='{{ url("founder/edit/$author->id") }}' class="btn btn-xs btn-warning">
-                                    <i class="fa fa-edit"></i> Edit
+                                <a href='{{ url("cms/founders/edit/$author->id") }}' class="btn btn-xs btn-warning">
+                                    <i class="fa fa-edit"></i> Sửa
                                 </a>
-                                <a href='{{ url("founder/delete/$author->id") }}' class="btn btn-xs btn-danger" onclick="return confirm('Bạn có chắc muốn xóa tác giả {{$author->name}} này chứ?')">
-                                    <i class="fa fa-trash-o"></i> Delete
+                                <a href='{{ url("cms/founders/delete/$author->id") }}' class="btn btn-xs btn-danger" onclick="return confirm('Bạn có chắc muốn xóa tác giả {{$author->name}} này chứ?')">
+                                    <i class="fa fa-trash-o"></i> Xóa
                                 </a>
                             </td>
                         </tr>

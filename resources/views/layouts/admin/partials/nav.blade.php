@@ -10,7 +10,7 @@
             <li><a href="{{ url('cms/pages') }}" title="Các trang giới thiệu"><i class="fa fa-legal"></i>Các trang giới thiệu</a></li>
             <li><a href="{{ url('cms/customers') }}"><i class="fa fa-users"></i>Quản lý người dùng đăng ký</a></li>
             <li><a href="{{ url('cms/subcribers') }}"><i class="fa fa-envelope-o"></i>Email đăng ký nhận tin</a></li>
-            {{--<li><a href="{{ url('cms/founders') }}"><i class="fa fa-user-md"></i>Quản lý người điều hành</a></li>--}}
+            <li><a href="{{ url('cms/founders') }}"><i class="fa fa-user-md"></i>Danh sách người quản lý</a></li>
             <li><a href="{{ url('cms/partners') }}"><i class="fa fa-hand-peace-o"></i>Quản lý đối tác</a></li>
             <li><a href="{{ url('cms/banners') }}"><i class="fa fa fa-picture-o"></i>Quản lý banner</a></li>
             <li><a href="{{ url('cms/medias') }}"><i class="fa fa-file-o"></i>Quản lý file</a></li>

@@ -202,147 +202,77 @@
                 </div>
             </section>
         @endif
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-be00313 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="be00313" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;background:#fff">
-            <div class="elementor-container elementor-column-gap-default">
-                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9e80f93" data-id="9e80f93" data-element_type="column">
-                    <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-9c00e38 elementor-widget elementor-widget-heading elementor-align-left" data-id="9c00e38" data-element_type="widget" data-widget_type="heading.default">
-                            <div class="elementor-widget-container">
-                                <h3 class="elementor-heading-title elementor-size-large">BAN LÃNH ĐẠO</h3></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-a534846 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a534846" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;background:#fff">
-            <div class="elementor-container elementor-column-gap-default" style="height:auto">
-                <div class="elementor-column elementor-col-30 elementor-top-column elementor-element elementor-element-094cfd2" data-id="094cfd2" data-element_type="column" style="position:relative;margin:0 2%;height:500px">
-                    <div class="elementor-element elementor-element-8fed26c elementor-widget elementor-widget-image" data-id="8fed26c" data-element_type="widget" data-widget_type="image.default" style="position:absolute;top:0;left:0;width:100%;z-index:1">
-                        <div class="elementor-widget-container">
-                            <img decoding="async" width="400" height="400" src="{{ asset('public/images/lanhdao_1.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="" style="width:300px;border:10px solid #00aeef">
-                        </div>
-                    </div>
-                    <div class="elementor-widget-wrap elementor-element-populated" style="background:#dcc5fd;position:absolute;height:300px;top:200px">
-                        <div class="elementor-element elementor-element-32a38fc elementor-widget elementor-widget-text-editor" data-id="32a38fc" data-element_type="widget" data-widget_type="text-editor.default" style="color:#000;padding-top:120px">
-                            <div class="elementor-widget-container">
-                                <p style="text-align: center;"><strong>LÊ THU HUYỀN</strong></p>
-                                <p style="text-align: center;">Phó giám đốc</p>
-                                <p style="text-align: center;">"Chúng tôi sẽ luôn nỗ lực để hỗ trợ thật tốt cho các em học sinh trên hành trình chinh phục tương lai"</p>
+        @if (!empty((array)$leaderFounders))
+            <section class="elementor-section elementor-top-section elementor-element elementor-element-be00313 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="be00313" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;background:#fff">
+                <div class="elementor-container elementor-column-gap-default">
+                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9e80f93" data-id="9e80f93" data-element_type="column">
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-9c00e38 elementor-widget elementor-widget-heading elementor-align-left" data-id="9c00e38" data-element_type="widget" data-widget_type="heading.default">
+                                <div class="elementor-widget-container">
+                                    <h3 class="elementor-heading-title elementor-size-large">BAN LÃNH ĐẠO</h3></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="elementor-column elementor-col-30 elementor-top-column elementor-element elementor-element-6caaeb8" data-id="6caaeb8" data-element_type="column" style="position:relative;margin:0 2%;height:500px">
-                    <div class="elementor-element elementor-element-8cbe6e1 elementor-widget elementor-widget-image" data-id="8cbe6e1" data-element_type="widget" data-widget_type="image.default" style="position:absolute;top:0;left:0;width:100%;z-index:1">
-                        <div class="elementor-widget-container">
-                            <img decoding="async" width="400" height="400" src="{{ asset('public/images/lanhdao_2.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="" style="width:300px;border:10px solid #00aeef">
+            </section>
+            <section class="elementor-section elementor-top-section elementor-element elementor-element-a534846 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a534846" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;background:#fff">
+                <div class="elementor-container elementor-column-gap-default" style="height:auto">
+                    @foreach ($leaderFounders as $founder)
+                        <div class="elementor-column elementor-col-30 elementor-top-column elementor-element elementor-element-094cfd2" data-id="094cfd2" data-element_type="column" style="position:relative;margin:0 2%;height:500px">
+                            <div class="elementor-element elementor-element-8fed26c elementor-widget elementor-widget-image" data-id="8fed26c" data-element_type="widget" data-widget_type="image.default" style="position:absolute;top:0;left:0;width:100%;z-index:1">
+                                <div class="elementor-widget-container">
+                                    <img decoding="async" width="400" height="400" src="{{ env('FOLDER_UPLOAD') . $founder->avatar }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="{{ $founder->name }}" style="width:300px;border:10px solid #00aeef">
+                                </div>
+                            </div>
+                            <div class="elementor-widget-wrap elementor-element-populated" style="background:#dcc5fd;position:absolute;height:300px;top:200px">
+                                <div class="elementor-element elementor-element-32a38fc elementor-widget elementor-widget-text-editor" data-id="32a38fc" data-element_type="widget" data-widget_type="text-editor.default" style="color:#000;padding-top:120px">
+                                    <div class="elementor-widget-container">
+                                        <p style="text-align: center;"><strong>{{ strtoupper($founder->name) }}</strong></p>
+                                        <p style="text-align: center;">{{ $founder->position }}</p>
+                                        <p style="text-align: center;">"{{ $founder->dictum }}"</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="elementor-widget-wrap elementor-element-populated" style="background:#dcc5fd;position:absolute;height:300px;top:200px">
-                        <div class="elementor-element elementor-element-a725374 elementor-widget elementor-widget-text-editor" data-id="a725374" data-element_type="widget" data-widget_type="text-editor.default" style="color:#000;padding-top:120px">
-                            <div class="elementor-widget-container">
-                                <p style="text-align: center;"><strong>LÊ THU HUYỀN</strong></p>
-                                <p style="text-align: center;">Phó giám đốc</p>
-                                <p style="text-align: center;">"Chúng tôi sẽ luôn nỗ lực để hỗ trợ thật tốt cho các em học sinh trên hành trình chinh phục tương lai"</p>
+                    @endforeach
+                </div>
+            </section>
+        @endif
+        @if (!empty((array)$otherFounders))
+            <section class="elementor-section elementor-top-section elementor-element elementor-element-be00313 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="be00313" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;padding:40px 0 20px;background:#fff">
+                <div class="elementor-container elementor-column-gap-default">
+                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9e80f93" data-id="9e80f93" data-element_type="column">
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-9c00e38 elementor-widget elementor-widget-heading elementor-align-left" data-id="9c00e38" data-element_type="widget" data-widget_type="heading.default">
+                                <div class="elementor-widget-container">
+                                    <h3 class="elementor-heading-title elementor-size-large">ĐỘI NGŨ GIÁO VIÊN VÀ NHÂN VIÊN</h3></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-3f0fc51" data-id="3f0fc51" data-element_type="column" style="position:relative;margin:0 2%;height:500px">
-                    <div class="elementor-element elementor-element-8cdfdf9 elementor-widget elementor-widget-image" data-id="8cdfdf9" data-element_type="widget" data-widget_type="image.default" style="position:absolute;top:0;left:0;width:100%;z-index:1">
-                        <div class="elementor-widget-container">
-                            <img decoding="async" width="400" height="400" src="{{ asset('public/images/lanhdao_3.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="" style="width:300px;border:10px solid #00aeef">
-                        </div>
-                    </div>
-                    <div class="elementor-widget-wrap elementor-element-populated" style="background:#dcc5fd;position:absolute;height:300px;top:200px">
-                        <div class="elementor-element elementor-element-406a492 elementor-widget elementor-widget-text-editor" data-id="406a492" data-element_type="widget" data-widget_type="text-editor.default" style="color:#000;padding-top:120px">
-                            <div class="elementor-widget-container">
-                                <p style="text-align: center;"><strong>LÊ THU HUYỀN</strong></p>
-                                <p style="text-align: center;">Phó giám đốc</p>
-                                <p style="text-align: center;">"Chúng tôi sẽ luôn nỗ lực để hỗ trợ thật tốt cho các em học sinh trên hành trình chinh phục tương lai"</p>
+            </section>
+            <section class="elementor-section elementor-top-section elementor-element elementor-element-a534846 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a534846" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;background:#fff">
+                <div class="elementor-container elementor-column-gap-default">
+                    @foreach ($otherFounders as $founder)
+                        <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-094cfd2" data-id="094cfd2" data-element_type="column" style="width:23%;margin:0 1% 0 1%">
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class="elementor-element elementor-element-8fed26c elementor-widget elementor-widget-image" data-id="8fed26c" data-element_type="widget" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <img decoding="async" width="400" height="400" src="{{ env('FOLDER_UPLOAD') . $founder->avatar }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="{{ $founder->name }}" style="border: 10px solid #ebebeb">
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-32a38fc elementor-widget elementor-widget-text-editor" data-id="32a38fc" data-element_type="widget" data-widget_type="text-editor.default">
+                                    <div class="elementor-widget-container" style="color:#000">
+                                        <p style="text-align: center;"><strong>{{ strtoupper($founder->name) }}</strong></p>
+                                        <p style="text-align: center;">{{ $founder->position }}</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    @endforeach
                 </div>
-            </div>
-        </section>
-        <!-- -->
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-be00313 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="be00313" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;padding:40px 0 20px;background:#fff">
-            <div class="elementor-container elementor-column-gap-default">
-                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9e80f93" data-id="9e80f93" data-element_type="column">
-                    <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-9c00e38 elementor-widget elementor-widget-heading elementor-align-left" data-id="9c00e38" data-element_type="widget" data-widget_type="heading.default">
-                            <div class="elementor-widget-container">
-                                <h3 class="elementor-heading-title elementor-size-large">ĐỘI NGŨ GIÁO VIÊN VÀ NHÂN VIÊN</h3></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="elementor-section elementor-top-section elementor-element elementor-element-a534846 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a534846" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1519px; left: 0px;background:#fff">
-            <div class="elementor-container elementor-column-gap-default">
-                <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-094cfd2" data-id="094cfd2" data-element_type="column" style="width:23%;margin:0 1% 0 1%">
-                    <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-8fed26c elementor-widget elementor-widget-image" data-id="8fed26c" data-element_type="widget" data-widget_type="image.default">
-                            <div class="elementor-widget-container">
-                                <img decoding="async" width="400" height="400" src="{{ asset('public/images/nhansu_1.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="" style="border: 10px solid #ebebeb">
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-32a38fc elementor-widget elementor-widget-text-editor" data-id="32a38fc" data-element_type="widget" data-widget_type="text-editor.default">
-                            <div class="elementor-widget-container" style="color:#000">
-                                <p style="text-align: center;"><strong>LÊ THU HUYỀN</strong></p>
-                                <p style="text-align: center;">Giáo viên tiếng Trung</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-6caaeb8" data-id="6caaeb8" data-element_type="column" style="width:23%;margin:0 1% 0 1%">
-                    <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-8cbe6e1 elementor-widget elementor-widget-image" data-id="8cbe6e1" data-element_type="widget" data-widget_type="image.default">
-                            <div class="elementor-widget-container">
-                                <img decoding="async" width="400" height="400" src="{{ asset('public/images/nhansu_2.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="" style="border: 10px solid #ebebeb">
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-a725374 elementor-widget elementor-widget-text-editor" data-id="a725374" data-element_type="widget" data-widget_type="text-editor.default">
-                            <div class="elementor-widget-container" style="color:#000">
-                                <p style="text-align: center;"><strong>LÊ THU HUYỀN</strong></p>
-                                <p style="text-align: center;">Giáo viên tiếng Trung</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-3f0fc51" data-id="3f0fc51" data-element_type="column" style="width:23%;margin:0 1% 0 1%">
-                    <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-8cdfdf9 elementor-widget elementor-widget-image" data-id="8cdfdf9" data-element_type="widget" data-widget_type="image.default">
-                            <div class="elementor-widget-container">
-                                <img decoding="async" width="400" height="400" src="{{ asset('public/images/nhansu_3.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="" style="border: 10px solid #ebebeb">
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-406a492 elementor-widget elementor-widget-text-editor" data-id="406a492" data-element_type="widget" data-widget_type="text-editor.default">
-                            <div class="elementor-widget-container" style="color:#000">
-                                <p style="text-align: center;"><strong>LÊ THU HUYỀN</strong></p>
-                                <p style="text-align: center;">Giáo viên tiếng Trung</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-7415412" data-id="7415412" data-element_type="column" style="width:23%;margin:0 1% 0 1%">
-                    <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-09a85f5 elementor-widget elementor-widget-image" data-id="09a85f5" data-element_type="widget" data-widget_type="image.default">
-                            <div class="elementor-widget-container">
-                                <img decoding="async" width="400" height="400" src="{{ asset('public/images/nhansu_4.png') }}" class="attachment-large size-large wp-image-10693 entered lazyloaded" alt="" style="border: 10px solid #ebebeb">
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-dc0dd34 elementor-widget elementor-widget-text-editor" data-id="dc0dd34" data-element_type="widget" data-widget_type="text-editor.default">
-                            <div class="elementor-widget-container" style="color:#000">
-                                <p style="text-align: center;margin-bottom:5px"><strong>LÊ THU HUYỀN</strong></p>
-                                <p style="text-align: center;">Giáo viên tiếng Trung</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        @endif
         <div data-elementor-type="wp-post" data-elementor-id="174" class="elementor elementor-174">
             @if ($widget_about_picture)
                 <?php echo html_entity_decode($widget_about_picture->content) ?>

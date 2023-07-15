@@ -4,9 +4,11 @@ namespace App\Http\Controllers\Admin;
 
 use App\Core\Business\UploadFileBusiness;
 use App\Core\Controllers\Controller;
+use App\Core\Models\Category;
 use App\Core\Models\Media;
 use File;
 use Illuminate\Http\Request;
+use Exception;
 
 class MediaController extends Controller
 {
@@ -27,17 +29,9 @@ class MediaController extends Controller
      */
     public function index(Request $request)
     {
+        $categories = Category::all();
         $medias = Media::paginate($this->limit);
-        return view('admin.media.index', compact('medias'))->with('i', ($request->get('page', 1) - 1) * $this->limit);
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
+        return view('admin.media.index', compact('categories', 'medias'))->with('i', ($request->get('page', 1) - 1) * $this->limit);
     }
 
     /**
@@ -68,6 +62,7 @@ class MediaController extends Controller
                 'title' => $request->get('title'),
                 'file' => ($file) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $fileName : null,
                 'url' => $request->get('url'),
+                'category_id' => $request->get('category_id'),
                 'quality' => $request->get('quality'),
                 'width' => $request->get('width'),
                 'height' => $request->get('height'),
@@ -93,20 +88,9 @@ class MediaController extends Controller
                 $media->save();
                 return redirect('cms/medias')->with('message', "Thêm mới ảnh / video thành công");
             }
-        } catch (\Exception $exception) {
+        } catch (Exception $exception) {
             return back()->with('error', 'Lỗi thêm mới ảnh / video: ' . $exception->getMessage());
         }
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Media $media
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Media $media)
-    {
-        //
     }
 
     /**
@@ -115,9 +99,12 @@ class MediaController extends Controller
      * @param  \App\Media $media
      * @return \Illuminate\Http\Response
      */
-    public function edit(Media $media)
+    public function edit($id)
     {
-        //
+        $categories = Category::all();
+        $media = Media::find($id);
+        $medias = Media::paginate($this->limit);
+        return view('admin.media.form', compact('categories', 'media', 'medias'));
     }
 
     /**
@@ -127,9 +114,46 @@ class MediaController extends Controller
      * @param  \App\Media $media
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Media $media)
+    public function update(Request $request, $id)
     {
-        //
+        try {
+            $this->validate($request, [
+                'title' => 'required'
+            ]);
+            $file = $request->file;
+            $original_name = '';
+            if ($file) {
+                $original_name = $file->getClientOriginalName();
+            }
+            $yearDir = date('Y');
+            $monthDir = date('m');
+            $dayDir = date('d');
+            $media = Media::find($id);
+            if ($file) {
+                UploadFileBusiness::uploadFileToFolder($file);
+                $media->file = ($file) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $original_name : null;
+            }
+            $media->title = $request->get('title');
+            $media->url = $request->get('url');
+            $media->category_id = $request->get('category_id');
+            $media->quality = $request->get('quality');
+            $media->width = $request->get('width');
+            $media->height = $request->get('height');
+            $media->type = $request->get('type');
+            $media->alt = $request->get('alt');
+            $media->caption = $request->get('caption');
+            $media->description = $request->get('description');
+            $media->copyright = $request->get('copyright');
+            $media->uploaded_by = $request->get('uploaded_by');
+            $media->meta_title = $request->get('meta_title');
+            $media->meta_keyword = $request->get('meta_keyword');
+            $media->meta_description = $request->get('meta_description');
+            $media->user_id = $request->get('user_id');
+            $media->save();
+            return redirect('cms/medias/edit/' . $id)->with('message', 'Sửa ảnh / video ' . $media->title . ' thành công');
+        } catch (Exception $exception) {
+            return redirect('cms/medias/edit/' . $id)->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
+        }
     }
 
     /**
@@ -147,7 +171,7 @@ class MediaController extends Controller
                 File::delete($fileMedia);
             }
             return redirect('cms/medias')->with('message', 'Xóa file ' . $media->title . ' thành công');
-        } catch (\Exception $exception) {
+        } catch (Exception $exception) {
             return redirect('cms/medias')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
     }

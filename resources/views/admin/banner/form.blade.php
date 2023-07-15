@@ -58,6 +58,11 @@
                         <div class="col-md-5 col-sm-5 col-xs-12">
                             <select class="form-control" name="position">
                                 <option value="homepage"{{$banner->position=='homepage'?' selected':''}}>Trang chủ</option>
+                                <option value="scholarship"{{$banner->position=='scholarship'?' selected':''}}>Học bổng</option>
+                                <option value="seminar"{{$banner->position=='seminar'?' selected':''}}>Hội thảo</option>
+                                <option value="contact"{{$banner->position=='contact'?' selected':''}}>Liên hệ</option>
+                                <option value="consultation"{{$banner->position=='consultation'?' selected':''}}>Góc tư vấn</option>
+                                <option value="recruitment"{{$banner->position=='recruitment'?' selected':''}}>Tuyển dụng</option>
                             </select>
                         </div>
                     </div>

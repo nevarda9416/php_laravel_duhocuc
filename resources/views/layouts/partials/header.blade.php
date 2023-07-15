@@ -3937,42 +3937,34 @@
             backface-visibility: hidden
         }</style>
     <link rel="stylesheet preload prefetch" href="{{asset('public/css/1ab8181ff7d8c241e0921085c97e1980.css')}}" as="style" media="all"/>
-    <meta name="description" content="Công Ty Tư vấn Du học New Ocean, Trung Tâm Tư Vấn Du Học hỗ trợ chuyên sâu dịch vụ về du học như tư vấn chọn trường, xin thư mời, phỏng vấn"/>
-    <link rel="canonical" href="https://newocean.edu.vn/"/>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>{{ !empty($metaData['meta_title']) ? $metaData['meta_title'] : config()->get('constants.SITE_NAME') }}</title>
+    <meta name="keywords" content="{{ !empty($metaData['meta_keyword']) ? $metaData['meta_keyword'] : '' }}"/>
+    <meta name="description" content="{{ !empty($metaData['meta_description']) ? $metaData['meta_description'] : 'Chuyên trang chia sẻ về những kinh nghiệm, hỏi đáp thắc mắc khi đi du lịch, du lịch phượt, tour du lịch, vé tham quan' }}"/>
+    <meta name="robots" content="noindex, nofollow"/>
+    <meta property="fb:app_id" content=""/>
+    <meta name="google-signin-client_id" content="">
+    <meta name="google-site-verification" content=""/>
+    <link rel="canonical" href="<?php echo config()->get('constants.FRONTEND_URL') . $_SERVER['REQUEST_URI'] ?>"/>
+    <meta name="twitter:title" content="{{ !empty($metaData['meta_title']) ? $metaData['meta_title'] : config()->get('constants.SITE_NAME') }}"/>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ !empty($metaData['meta_image']) ? $metaData['meta_image'] : '/images/logo@3x.png' }}">
     <meta property="og:locale" content="vi_VN"/>
+    <meta property="og:title" content="{{ !empty($metaData['meta_title']) ? $metaData['meta_title'] : config()->get('constants.SITE_NAME') }}" itemprop="headline"/>
+    <meta property="og:description" content="{{ !empty($metaData['meta_description']) ? $metaData['meta_description'] : 'Chuyên trang chia sẻ về những kinh nghiệm, hỏi đáp thắc mắc khi đi du lịch, du lịch phượt, tour du lịch, vé tham quan' }}" itemprop="description"/>
+    <meta property="og:image" content="{{ !empty($metaData['meta_image']) ? $metaData['meta_image'] : '/images/logo@3x.png' }}" itemprop="thumbnailUrl"/>
+    <meta property="og:image:alt" content="{{ !empty($metaData['meta_title']) ? $metaData['meta_title'] : config()->get('constants.SITE_NAME') }}">
+    <meta property="og:image:width" content="600"/>
+    <meta property="og:image:height" content="315"/>
+    <meta property="og:url" content="{{ Request::fullUrl() }}" itemprop="url"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Công Ty Tư vấn Du học New Ocean | Trung Tâm Tư Vấn Du Học"/>
-    <meta property="og:description" content="Công Ty Tư vấn Du học New Ocean, Trung Tâm Tư Vấn Du Học hỗ trợ chuyên sâu dịch vụ về du học như tư vấn chọn trường, xin thư mời, phỏng vấn"/>
-    <meta property="og:url" content="https://newocean.edu.vn/"/>
-    <meta property="og:site_name" content="Du học New Ocean™"/>
-    <meta property="article:publisher" content="https://www.facebook.com/uocmoduhoc"/>
-    <meta property="article:modified_time" content="2023-04-20T09:40:49+00:00"/>
-    <meta property="og:image" content="https://newocean.edu.vn/wp-content/uploads/2020/05/Tu-van-Du-hoc-1200x628-1.jpg"/>
-    <meta property="og:image:width" content="1200"/>
-    <meta property="og:image:height" content="628"/>
-    <meta property="og:image:type" content="image/jpeg"/>
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:label1" content="Ước tính thời gian đọc"/>
-    <meta name="twitter:data1" content="10 phút"/>
-    <script type="application/ld+json" class="yoast-schema-graph">
-        {"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://newocean.edu.vn/","url":"https://newocean.edu.vn/","name":"Công Ty Tư vấn Du học New Ocean | Trung Tâm Tư Vấn Du Học","isPartOf":{"@id":"https://newocean.edu.vn/#website"},"about":{"@id":"https://newocean.edu.vn/#organization"},"primaryImageOfPage":{"@id":"https://newocean.edu.vn/#primaryimage"},"image":{"@id":"https://newocean.edu.vn/#primaryimage"},"thumbnailUrl":"https://newocean.edu.vn/wp-content/uploads/2020/05/Tu-van-Du-hoc-1200x628-1.jpg","datePublished":"2019-11-26T12:36:36+00:00","dateModified":"2023-04-20T09:40:49+00:00","description":"Công Ty Tư vấn Du học New Ocean, Trung Tâm Tư Vấn Du Học hỗ trợ chuyên sâu dịch vụ về du học như tư vấn chọn trường, xin thư mời, phỏng vấn","breadcrumb":{"@id":"https://newocean.edu.vn/#breadcrumb"},"inLanguage":"vi","potentialAction":[{"@type":"ReadAction","target":["https://newocean.edu.vn/"]}]},{"@type":"ImageObject","inLanguage":"vi","@id":"https://newocean.edu.vn/#primaryimage","url":"https://newocean.edu.vn/wp-content/uploads/2020/05/Tu-van-Du-hoc-1200x628-1.jpg","contentUrl":"https://newocean.edu.vn/wp-content/uploads/2020/05/Tu-van-Du-hoc-1200x628-1.jpg","width":1200,"height":628,"caption":"Công ty tư vấn du học, công ty du học, trung tâm du học, trung tâm tư vấn du học"},{"@type":"BreadcrumbList","@id":"https://newocean.edu.vn/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://newocean.edu.vn/#website","url":"https://newocean.edu.vn/","name":"Du học New Ocean | Tư Vấn Du Học New Ocean | Công Ty Du học New Ocean","description":"Chắp cánh ước mơ du học","publisher":{"@id":"https://newocean.edu.vn/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://newocean.edu.vn/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"vi"},{"@type":"Organization","@id":"https://newocean.edu.vn/#organization","name":"Công ty tư vấn du học New Ocean","url":"https://newocean.edu.vn/","logo":{"@type":"ImageObject","inLanguage":"vi","@id":"https://newocean.edu.vn/#/schema/logo/image/","url":"https://newocean.edu.vn/wp-content/uploads/2019/12/logo-du-hoc-new-ocean-scaled.png","contentUrl":"https://newocean.edu.vn/wp-content/uploads/2019/12/logo-du-hoc-new-ocean-scaled.png","width":2560,"height":1970,"caption":"Công ty tư vấn du học New Ocean"},"image":{"@id":"https://newocean.edu.vn/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/uocmoduhoc","https://www.youtube.com/channel/UCOkhgPaV1JJPtOUaRwuW3mA/videos","https://www.flickr.com/photos/new-ocean/albums","https://www.google.com/search?q=Tư Vấn Du Học New Ocean&amp;amp;stick=H4sIAAAAAAAA_-NgU1I1qDA2NDZNTDJPSTUytDCxMDS1MqgwNDQ3MTA0NrAwMEkxT0w0X8QqE3Jsg0LYw11L8xRcShU8Hu7uTVbwSy1X8E9OTcwDAL4VPTZIAAAA&amp;amp;hl=vi&amp;amp;mat=CecDnxXRrSHAElcB8pgkaL0aAHmrKfcuaIYyZWWBPOCa-WbY3bjwJLjTVdJZqG6NsvcXhdvnKnPY9jaqqrG8wYZOOepyU2ULGyxGdOx6RByKnRK8d0o1aPK9ASWN08ncR58&amp;amp;authuser=1","https://www.google.com/search?q=Tư Vấn Du Học New Ocean&amp;amp;stick=H4sIAAAAAAAA_-NgU1I1qDA2NDc1SjMxNkw2MUoxTkyzMqhITUu0SDMwTkpMNjKwMElNW8QqE3Jsg0LYw11L8xRcShU8Hu7uTVbwSy1X8E9OTcwDADDSGDVIAAAA&amp;amp;hl=vi&amp;amp;mat=CZhOr7W6nIYrElcB8pgkaA3I9nca90qT-RfHzMwF9OG1CDy9-QDsobfv0O_s2DQKDIiED37yCdd0oxxKG21qW0X_1LIiBd3ZSvxsF1cwDHNUo58kfDcm83isQKOvMYh9k7U&amp;amp;authuser=1"]}]}
+    <meta property="og:ttl" content="2419200"/>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </script>
-    <!-- / Yoast SEO Premium plugin. -->
     <link rel='dns-prefetch' href='//connect.facebook.net'/>
     <link rel='dns-prefetch' href='//maps.googleapis.com'/>
     <link rel='dns-prefetch' href='//maps.gstatic.com'/>
@@ -4413,7 +4405,6 @@
     </script>
     <script src='https://newocean.edu.vn/wp-content/plugins/ar-contactus/res/js/contactus.min.js?ver=2.2.7' id='contactus-js' defer></script>
     <script data-minify="1" src='https://newocean.edu.vn/wp-content/cache/min/1/wp-content/plugins/ar-contactus/res/js/scripts.js?ver=1682646089' id='contactus.scripts-js' defer></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- Google Tag Manager -->
     <!-- End Google Tag Manager -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -4422,7 +4413,6 @@
     <link as="font" href="{{asset('public/assets/fonts/awesome/fa-regular-400.woff2')}}" crossorigin>
     <link rel="preload" as="font" href="{{asset('public/assets/fonts/eicons/eicons.woff2')}}" crossorigin>
     <meta name="generator" content="Elementor 3.13.2; features: e_dom_optimization, e_optimized_assets_loading, a11y_improvements, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
-    <meta property="fb:app_id" content="394781937574480"/>
     <meta name="generator" content="Powered by Slider Revolution 6.5.31 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface."/>
     <link rel="icon" href="https://newocean.edu.vn/wp-content/uploads/2020/03/ico.png" sizes="32x32"/>
     <link rel="icon" href="https://newocean.edu.vn/wp-content/uploads/2020/03/ico.png" sizes="192x192"/>

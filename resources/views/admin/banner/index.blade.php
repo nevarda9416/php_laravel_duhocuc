@@ -46,10 +46,11 @@
                         <div class="col-md-5 col-sm-5 col-xs-12">
                             <select class="form-control" name="position">
                                 <option value="homepage" selected>Trang chủ</option>
-                                <option value="about">Về chúng tôi</option>
-                                <option value="activity">Hoạt động</option>
-                                <option value="activity_detail">Hoạt động chi tiết</option>
-                                <option value="solution">Giải pháp</option>
+                                <option value="scholarship">Học bổng</option>
+                                <option value="seminar">Hội thảo</option>
+                                <option value="contact">Liên hệ</option>
+                                <option value="consultation">Góc tư vấn</option>
+                                <option value="recruitment">Tuyển dụng</option>
                             </select>
                         </div>
                     </div>

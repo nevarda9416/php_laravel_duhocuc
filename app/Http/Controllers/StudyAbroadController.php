@@ -52,11 +52,13 @@ class StudyAbroadController extends Controller
         $widget_study_cost = Widget::select('content')->where('key', 'widget.study.cost')->first();
         $widget_study_why_skypacific = Widget::select('content')->where('key', 'widget.study.why_skypacific')->first();
         $widget_study_experience= Widget::select('content')->where('key', 'widget.study.experience')->first();
+        $widget_scholarship_right_banner = Widget::select('content')->where('key', 'widget.scholarship.right_banner')->first();
         $list_posts = Posts::query()->where('category_id', Posts::CATEGORY_ID_TINTUC)->where('country', $page->country_id)->where('status', Posts::STATUS_PUBLISH)->take(4)->skip(0)->orderBy('id', 'DESC')->get();
+        $otherPosts = Posts::query()->where('category_id', Posts::CATEGORY_ID_TINTUC)->where('status', Posts::STATUS_PUBLISH)->take(7)->skip(0)->orderBy('id', 'DESC')->get();
         $metaData['meta_title'] = $page->meta_title ?? '';
         $metaData['meta_keyword'] = $page->meta_keyword ?? '';
         $metaData['meta_description'] = $page->meta_description ?? '';
         $metaData['meta_image'] = $page->thumbnail_url ?? '';
-        return view('study_abroad.detail', compact('page', 'countries', 'widget_study_description', 'widget_study_why_chosen', 'widget_study_request_input', 'widget_study_middle_banner', 'widget_study_cost', 'widget_study_why_skypacific', 'widget_study_experience', 'list_posts', 'metaData'));
+        return view('study_abroad.detail', compact('page', 'countries', 'widget_study_description', 'widget_study_why_chosen', 'widget_study_request_input', 'widget_study_middle_banner', 'widget_study_cost', 'widget_study_why_skypacific', 'widget_study_experience', 'widget_scholarship_right_banner', 'list_posts', 'otherPosts', 'metaData'));
     }
 }

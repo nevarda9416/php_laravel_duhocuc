@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Core\Controllers\Controller;
 use App\Core\Business\UploadFileBusiness;
+use App\Core\Models\Author;
 use App\Core\Models\Country;
 use App\Core\Models\Partner;
 use App\Core\Models\Posts;
@@ -53,6 +54,8 @@ class PageController extends Controller
         if (empty($page)) {
             return redirect('/');
         }
+        $leaderFounders = Author::select('name', 'avatar', 'position', 'dictum')->where('team', 'leader')->get();
+        $otherFounders = Author::select('name', 'avatar', 'position')->where('team', 'teacher')->orWhere('team', 'staff')->get();
         $partners = Partner::query()->orderBy('id', 'DESC')->get();
         $widget_about_description = Widget::select('content')->where('key', 'widget.about.description')->first();
         $widget_about_why_skypacific = Widget::select('content')->where('key', 'widget.about.why_skypacific')->first();
@@ -61,7 +64,7 @@ class PageController extends Controller
         $metaData['meta_keyword'] = $page->meta_keyword;
         $metaData['meta_description'] = $page->meta_description;
         $metaData['meta_image'] = $page->thumbnail_url;
-        return view('page.about', compact('page', 'partners', 'widget_about_description', 'widget_about_why_skypacific', 'widget_about_picture', 'metaData'));
+        return view('page.about', compact('page', 'leaderFounders', 'otherFounders', 'partners', 'widget_about_description', 'widget_about_why_skypacific', 'widget_about_picture', 'metaData'));
     }
 
     /**

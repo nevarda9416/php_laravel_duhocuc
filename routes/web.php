@@ -102,27 +102,13 @@ Route::group(['middleware' => 'auth', 'prefix' => 'cms'], function () {
         Route::post('update/{id?}', ['uses' => 'Admin\SubcriberController@update']);
         Route::get('delete/{id?}', ['uses' => 'Admin\SubcriberController@destroy']);
     });
-    // Trang quản trị những câu hỏi thường gặp
-    Route::group(['prefix' => 'frequently-questions', 'as' => 'q&a'], function () {
-        Route::get('/', ['as' => 'index', 'uses' => 'Admin\QuestionController@index']);
-        Route::get('create', ['uses' => 'Admin\QuestionController@create']);
-        Route::post('store', ['uses' => 'Admin\QuestionController@store']);
-        Route::get('show/{id?}', ['uses' => 'Admin\QuestionController@show']);
-        Route::get('show/{question_id?}/answer/{action?}/{answer_id?}', ['uses' => 'Admin\QuestionController@show']);
-        Route::get('edit/{id?}', ['uses' => 'Admin\QuestionController@edit']);
-        Route::get('edit/{question_id?}/answer/{action?}/{answer_id?}', ['uses' => 'Admin\QuestionController@edit']);
-        Route::post('update/{id?}', ['uses' => 'Admin\QuestionController@update']);
-        Route::get('delete/{id?}', ['uses' => 'Admin\QuestionController@destroy']);
-    });
-    Route::group(['prefix' => 'frequently-answers', 'as' => 'q&a'], function () {
-        Route::get('/', ['as' => 'index', 'uses' => 'Admin\AnswerController@index']);
-        Route::get('create', ['uses' => 'Admin\AnswerController@create']);
-        Route::post('store', ['uses' => 'Admin\AnswerController@store']);
-        Route::get('show/{id?}', ['uses' => 'Admin\AnswerController@show']);
-        Route::get('edit/{id?}', ['uses' => 'Admin\AnswerController@edit']);
-        Route::post('update/{id?}', ['uses' => 'Admin\AnswerController@update']);
-        Route::get('delete/{id?}', ['uses' => 'Admin\AnswerController@destroy']);
-        Route::get('index/all', ['uses' => 'Admin\AnswerController@indexAllAnswersToElasticsearch']);
+    // Quản lý người điều hành
+    Route::group(['prefix' => 'founders'], function () {
+        Route::get('/', ['as' => 'index', 'uses' => 'Admin\AuthorController@index']);
+        Route::post('store', ['uses' => 'Admin\AuthorController@store']);
+        Route::get('edit/{id?}', ['uses' => 'Admin\AuthorController@edit']);
+        Route::post('update/{id?}', ['uses' => 'Admin\AuthorController@update']);
+        Route::get('delete/{id?}', ['uses' => 'Admin\AuthorController@destroy']);
     });
     // Quản lý đối tác
     Route::group(['prefix' => 'partners'], function () {
@@ -136,25 +122,25 @@ Route::group(['middleware' => 'auth', 'prefix' => 'cms'], function () {
     // QUẢN TRỊ BANNER
     Route::group(['prefix' => 'banners',], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'Admin\BannerController@index']);
-        Route::post('/store', ['uses' => 'Admin\BannerController@store']);
-        Route::get('/show/{id?}', ['uses' => 'Admin\BannerController@show']);
-        Route::get('/edit/{id?}', ['uses' => 'Admin\BannerController@edit']);
-        Route::post('/update/{id?}', ['uses' => 'Admin\BannerController@update']);
-        Route::get('/delete/{id?}', ['uses' => 'Admin\BannerController@destroy']);
-        Route::get('/search', ['uses' => 'Admin\BannerController@search_form']);
-        Route::post('/search', ['uses' => 'Admin\BannerController@search_submit']);
+        Route::post('store', ['uses' => 'Admin\BannerController@store']);
+        Route::get('show/{id?}', ['uses' => 'Admin\BannerController@show']);
+        Route::get('edit/{id?}', ['uses' => 'Admin\BannerController@edit']);
+        Route::post('update/{id?}', ['uses' => 'Admin\BannerController@update']);
+        Route::get('delete/{id?}', ['uses' => 'Admin\BannerController@destroy']);
+        Route::get('search', ['uses' => 'Admin\BannerController@search_form']);
+        Route::post('search', ['uses' => 'Admin\BannerController@search_submit']);
     });
     // Đường dẫn allow upload ảnh từ trong ckeditor
     Route::post('ckeditor/image_upload', 'Admin\CKEditorController@upload')->name('upload');
     // Thư viện ảnh
     Route::group(['prefix' => 'medias', 'as' => 'media'], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'Admin\MediaController@index']);
-        Route::get('/create', ['as' => 'create', 'uses' => 'Admin\MediaController@create']);
-        Route::post('/store', ['as' => 'store', 'uses' => 'Admin\MediaController@store']);
-        Route::get('/show/{id}', ['as' => 'show', 'uses' => 'Admin\MediaController@show']);
-        Route::get('/edit/{id}', ['as' => 'edit', 'uses' => 'Admin\MediaController@edit']);
-        Route::post('/update/{id}', ['as' => 'update', 'uses' => 'Admin\MediaController@update']);
-        Route::get('/delete/{id}', ['as' => 'delete', 'uses' => 'Admin\MediaController@destroy']);
+        Route::get('create', ['as' => 'create', 'uses' => 'Admin\MediaController@create']);
+        Route::post('store', ['as' => 'store', 'uses' => 'Admin\MediaController@store']);
+        Route::get('show/{id}', ['as' => 'show', 'uses' => 'Admin\MediaController@show']);
+        Route::get('edit/{id}', ['as' => 'edit', 'uses' => 'Admin\MediaController@edit']);
+        Route::post('update/{id}', ['as' => 'update', 'uses' => 'Admin\MediaController@update']);
+        Route::get('delete/{id}', ['as' => 'delete', 'uses' => 'Admin\MediaController@destroy']);
     });
     // Cấu hình website
     Route::group(['prefix' => 'setting', 'middleware' => 'auth'], function () {
@@ -169,11 +155,11 @@ Route::group(['middleware' => 'auth', 'prefix' => 'cms'], function () {
     // Quản trị menu
     Route::group(['prefix' => 'menu', 'as' => 'menu'], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'Admin\MenuController@index']);
-        Route::post('/store', ['uses' => 'Admin\MenuController@store']);
-        Route::get('/edit/{id?}', ['uses' => 'Admin\MenuController@edit']);
-        Route::post('/update/{id?}', ['uses' => 'Admin\MenuController@update']);
-        Route::get('/delete/{id?}', ['uses' => 'Admin\MenuController@destroy']);
-        Route::post('/order', ['uses' => 'Admin\MenuController@order']);
+        Route::post('store', ['uses' => 'Admin\MenuController@store']);
+        Route::get('edit/{id?}', ['uses' => 'Admin\MenuController@edit']);
+        Route::post('update/{id?}', ['uses' => 'Admin\MenuController@update']);
+        Route::get('delete/{id?}', ['uses' => 'Admin\MenuController@destroy']);
+        Route::post('order', ['uses' => 'Admin\MenuController@order']);
     });
     // Trang quản trị widget
     Route::group(['prefix' => 'widgets'], function () {
@@ -205,34 +191,14 @@ Route::group(['middleware' => 'auth', 'prefix' => 'cms'], function () {
     Route::group(['prefix' => 'account'], function () {
         Route::match(array('GET', 'POST'), '/profile', ['uses' => 'Admin\MyAccountController@profile']);
     });
-    // Quản lý comment (Đối tác nói về chúng tôi)
-    Route::group(['prefix' => 'comments'], function () {
-        Route::get('/', ['as' => 'index', 'uses' => 'Admin\CommentController@index']);
-        Route::post('store', ['uses' => 'Admin\CommentController@store']);
-        Route::get('edit/{id?}', ['uses' => 'Admin\CommentController@edit']);
-        Route::post('update/{id?}', ['uses' => 'Admin\CommentController@update']);
-        Route::get('delete/{id?}', ['uses' => 'Admin\CommentController@destroy']);
-    });
     // Quản trị menu
     Route::group(['prefix' => 'menus', 'as' => 'menu'], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'Admin\MenuController@index']);
-        Route::post('/store', ['uses' => 'Admin\MenuController@store']);
-        Route::get('/edit/{id?}', ['uses' => 'Admin\MenuController@edit']);
-        Route::post('/update/{id?}', ['uses' => 'Admin\MenuController@update']);
-        Route::get('/delete/{id?}', ['uses' => 'Admin\MenuController@destroy']);
-        Route::post('/order', ['uses' => 'Admin\MenuController@order']);
-    });
-    // QUẢN TRỊ TAGS
-    Route::group(['prefix' => 'tags',], function () {
-        Route::get('/', ['as' => 'index', 'uses' => 'Admin\TagsController@index']);
-        Route::post('store', ['uses' => 'Admin\TagsController@store']);
-        Route::get('show/{id?}', ['uses' => 'Admin\TagsController@show']);
-        Route::get('edit/{id?}', ['uses' => 'Admin\TagsController@edit']);
-        Route::post('edit/{id?}', ['uses' => 'Admin\TagsController@update']);
-        Route::get('delete/{id?}', ['uses' => 'Admin\TagsController@destroy']);
-        Route::get('search', ['uses' => 'Admin\TagsController@begin_search']);
-        Route::post('search', ['uses' => 'Admin\TagsController@ajax_search']);
-        Route::post('addtags', ['uses' => 'Admin\TagsController@add_tags']);
+        Route::post('store', ['uses' => 'Admin\MenuController@store']);
+        Route::get('edit/{id?}', ['uses' => 'Admin\MenuController@edit']);
+        Route::post('update/{id?}', ['uses' => 'Admin\MenuController@update']);
+        Route::get('delete/{id?}', ['uses' => 'Admin\MenuController@destroy']);
+        Route::post('order', ['uses' => 'Admin\MenuController@order']);
     });
 });
 
