@@ -23,10 +23,10 @@
                         @if (auth()->user()->role == 'admin')
                             <td>
                                 <a href='{{ url("cms/users/edit/$user->id") }}' class="btn btn-xs">
-                                    <i class="fa fa-edit"></i> Edit
+                                    <i class="fa fa-edit"></i> Sửa
                                 </a>
                                 <a href='{{ url("cms/users/delete/$user->id") }}' class="btn btn-xs" onclick="return confirm('Bạn có chắc muốn xóa user {{ $user->name }} này chứ?')">
-                                    <i class="fa fa-trash-o"></i> Delete
+                                    <i class="fa fa-trash-o"></i> Xóa
                                 </a>
                             </td>
                         @endif

@@ -40,13 +40,13 @@
                                     <td>{{ date('d/m/Y H:i:s A', strtotime($page->created_at)) }}</td>
                                     <td>
                                         <a href='{{ url("cms/pages/show/$page->id") }}' class="btn btn-xs">
-                                            <i class="fa fa-eye"></i> Show
+                                            <i class="fa fa-eye"></i> Xem
                                         </a>
                                         <a href='{{ url("cms/pages/edit/$page->id") }}' class="btn btn-xs">
-                                            <i class="fa fa-edit"></i> Edit
+                                            <i class="fa fa-edit"></i> Sửa
                                         </a>
                                         <a href='{{ url("cms/pages/delete/$page->id") }}' class="btn btn-xs" onclick="return confirm('Bạn có chắc muốn xóa bài viết {{ $page->title }} này chứ?')">
-                                            <i class="fa fa-trash-o"></i> Delete
+                                            <i class="fa fa-trash-o"></i> Xóa
                                         </a>
                                     </td>
                                 </tr>

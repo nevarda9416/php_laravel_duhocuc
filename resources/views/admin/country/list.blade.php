@@ -25,10 +25,10 @@
                             <td>{{ $country->name }}</td>
                             <td>
                                 <a href='{{ url("cms/countries/edit/$country->id") }}' class="btn btn-xs">
-                                    <i class="fa fa-edit"></i> Edit
+                                    <i class="fa fa-edit"></i> Sửa
                                 </a>
                                 <a href='{{ url("cms/countries/delete/$country->id") }}' class="btn btn-xs" onclick="return confirm('Bạn có chắc muốn xóa quốc gia {{ $country->name }} này chứ?')">
-                                    <i class="fa fa-trash-o"></i> Delete
+                                    <i class="fa fa-trash-o"></i> Xóa
                                 </a>
                             </td>
                         </tr>

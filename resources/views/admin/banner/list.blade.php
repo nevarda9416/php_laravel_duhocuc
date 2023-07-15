@@ -28,10 +28,10 @@
                             <td>{{$banner->name}}</td>
                             <td>
                                 <a href='{{ url("cms/banners/edit/$banner->id") }}' class="btn btn-xs btn-warning">
-                                    <i class="fa fa-edit"></i> Edit
+                                    <i class="fa fa-edit"></i> Sửa
                                 </a>
                                 <a href='{{ url("cms/banners/delete/$banner->id") }}' class="btn btn-xs btn-danger" onclick="return confirm('Bạn có chắc muốn xóa banner {{$banner->name}} này chứ?')">
-                                    <i class="fa fa-trash-o"></i> Delete
+                                    <i class="fa fa-trash-o"></i> Xóa
                                 </a>
                             </td>
                         </tr>

@@ -85,13 +85,13 @@
                                 </td>
                                 <td>
                                     <a href='{{ config()->get('constants.FRONTEND_URL') . $post->share_url }}' class="btn btn-xs" target="_blank">
-                                        <i class="fa fa-eye"></i> Preview
+                                        <i class="fa fa-eye"></i> Xem lại
                                     </a>
                                     <a href='{{ url("category/$category_id/posts/edit/$post->id") }}' class="btn btn-xs">
-                                        <i class="fa fa-edit"></i> Edit
+                                        <i class="fa fa-edit"></i> Sửa
                                     </a>
                                     <a href='{{ url("category/$category_id/posts/delete/$post->id") }}' class="btn btn-xs" onclick="return confirm('Bạn có chắc muốn xóa bài viết {{ $post->title }} này chứ?')">
-                                        <i class="fa fa-trash-o"></i> Delete
+                                        <i class="fa fa-trash-o"></i> Xóa
                                     </a>
                                 </td>
                             </tr>

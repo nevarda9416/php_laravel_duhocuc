@@ -28,10 +28,10 @@ $i = 0;
                 </td>
                 <td>
                     <a href='{{ url("cms/partners/edit/" . $val->id . $partners['url_ext']) }}' class="btn btn-xs">
-                        <i class="fa fa-edit"></i> Edit
+                        <i class="fa fa-edit"></i> Sửa
                     </a>
                     <a href='{{ url("cms/partners/delete/" . $val->id . $partners['url_ext']) }}' class="btn btn-xs" onclick="return confirm('Bạn có chắc muốn xóa đối tác {{ $val->name }} này chứ?')">
-                        <i class="fa fa-trash-o"></i> Delete
+                        <i class="fa fa-trash-o"></i> Xóa
                     </a>
                 </td>
             </tr>
