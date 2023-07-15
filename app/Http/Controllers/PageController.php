@@ -72,7 +72,7 @@ class PageController extends Controller
      */
     public function seminar()
     {
-        $widget_seminar_middle_banner = Widget::select('content')->where('key', 'widget.seminar.middle_banner')->first();
+        $widget_seminar_middle_banner = Widget::select('content', 'link')->where('key', 'widget.seminar.middle_banner')->first();
         $listSeminars = Posts::query()->where('category_id', Posts::CATEGORY_ID_HOITHAO)->where('status', Posts::STATUS_PUBLISH)->take(3)->skip(0)->orderBy('id', 'DESC')->get();
         $listEvents = Posts::query()->where('category_id', Posts::CATEGORY_ID_SUKIEN)->where('status', Posts::STATUS_PUBLISH)->take(5)->skip(0)->orderBy('id', 'DESC')->get();
         return view('page.seminar', compact('widget_seminar_middle_banner', 'listSeminars', 'listEvents'));

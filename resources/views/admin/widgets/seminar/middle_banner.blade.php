@@ -30,6 +30,12 @@
                                 <textarea class="form-control editor_basic" name="{{$position}}" id="{{$position}}" required="required" rows="5">{{$widget->content??''}}</textarea>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-1 col-sm-1 col-xs-12">Link banner</label>
+                            <div class="col-md-11 col-sm-11 col-xs-12">
+                                <input type="text" class="form-control" name="link" value="{{$widget->link??''}}">
+                            </div>
+                        </div>
                         <div class="ln_solid"></div>
                         <div class="form-group">
                             <div class="col-md-11 col-sm-11 col-xs-12 col-md-offset-1">

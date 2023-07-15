@@ -24,7 +24,7 @@ class WidgetController extends Controller
     public function getPosition($page, $position, $id = '')
     {
         if ($page == 'activity_detail') $page = 'activity.detail';
-        $widget = Widget::select('content')->where('key', 'widget.' . $page . '.' . $position . ($id !== '' ? '.' . $id : ''))->first();
+        $widget = Widget::select('content', 'link')->where('key', 'widget.' . $page . '.' . $position . ($id !== '' ? '.' . $id : ''))->first();
         return view('admin.widgets.' . $page . '.' . $position . ($id !== '' ? '.' . $id : ''), compact('page', 'position', 'widget'));
     }
 
@@ -42,8 +42,10 @@ class WidgetController extends Controller
                 'type' => $arrInput['type'],
                 'content' => $arrInput[$position],
                 'updated_at' => date('Y-m-d H:i:s')
-            );//echo '<pre/>';print_r($arrWidget);die();
-            //TableMysql::resetAutoIncrement('widgets'); // id bảng settings không liên quan tới bảng khác
+            );
+            if (isset($arrInput['link'])) {
+                $arrWidget['link'] = $arrInput['link'];
+            }
             $widget = Widget::where('key', $arrInput['key']);
             if ($widget->exists()) { // TH setting có tồn tại ==> Update setting
                 $widget->update($arrWidget);

@@ -14,6 +14,7 @@ class Widget extends Model
         'position',
         'key',
         'type',
-        'content'
+        'content',
+        'link'
     ];
 }

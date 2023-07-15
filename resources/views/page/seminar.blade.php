@@ -6,7 +6,7 @@
                  style="background:#fff">
             <div class="elementor-container elementor-column-gap-default">
                 <div class="elementor-column elementor-col-70 elementor-top-column elementor-element elementor-element-2009f73" data-id="2009f73" data-element_type="column">
-                    <div class="elementor-widget-wrap elementor-element-populated">
+                    <div class="elementor-widget-wrap elementor-element-populated" style="position:relative">
                         <div class="elementor-element elementor-element-3f639ea elementor-widget elementor-widget-heading elementor-align-center" data-id="3f639ea" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
                                 <h2 class="elementor-heading-title elementor-size-default" style="font-size:14pt !important;font-weight:bold;color:#181818 !important">CHƯƠNG TRÌNH HỘI THẢO SẮP DIỄN RA</h2>
@@ -32,6 +32,16 @@
                                     </div>
                                 </div>
                             </div>
+                        @endif
+                        @if ($widget_seminar_middle_banner->link)
+                            <a href="{{ $widget_seminar_middle_banner->link }}" title="CHƯƠNG TRÌNH HỘI THẢO SẮP DIỄN RA">
+                                <button class="elementor-button elementor-size-md" style="background-color:#00aeef;border-color:#00aeef;padding:10px 30px;position:absolute;bottom:30%;right:5%" id="btn_contact">
+                                    <span>
+                                        <span class=" elementor-button-icon"></span>
+                                        <span class="elementor-button-text">CHI TIẾT</span>
+                                    </span>
+                                </button>
+                            </a>
                         @endif
                     </div>
                 </div>
