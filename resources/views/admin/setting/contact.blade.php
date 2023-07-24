@@ -67,6 +67,12 @@
                             </div>
                         </div>
                         <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Link google map</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <input type="text" class="form-control" name="link_google_map" value="{{ $contact['link_google_map'] ?? '' }}">
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Thời gian hỗ trợ</label>
                             <div class="col-md-9 col-sm-9 col-xs-12">
                                 <input type="text" class="form-control" name="timer_support" value="{{ $contact['timer_support'] ?? '' }}">
@@ -124,6 +130,12 @@
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Link google</label>
                             <div class="col-md-9 col-sm-9 col-xs-12">
                                 <input type="text" class="form-control" name="google" value="{{ $contact['google'] ?? '' }}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Link tiktok</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <input type="text" class="form-control" name="tiktok" value="{{ $contact['tiktok'] ?? '' }}">
                             </div>
                         </div>
                         <div class="form-group">

@@ -42,9 +42,27 @@
                         </div>
                     </div>
                     <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Url banner</label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <input type="text" class="form-control" name="url">
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12">Vị trí</label>
                         <div class="col-md-5 col-sm-5 col-xs-12">
                             <select class="form-control" name="position">
+                                <option value="top" selected>Top</option>
+                                <option value="left">Left</option>
+                                <option value="middle">Middle</option>
+                                <option value="right">Right</option>
+                                <option value="bottom">Bottom</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Trang</label>
+                        <div class="col-md-5 col-sm-5 col-xs-12">
+                            <select class="form-control" name="page">
                                 <option value="homepage" selected>Trang chủ</option>
                                 <option value="scholarship">Học bổng</option>
                                 <option value="seminar">Hội thảo</option>

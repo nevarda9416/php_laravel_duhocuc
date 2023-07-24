@@ -244,6 +244,7 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
+                                                                            @if ($childMenus->count() > 4)
                                                                             <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-8f0d5cb" data-id="8f0d5cb" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                                                                                 <div class="elementor-widget-wrap elementor-element-populated" style="background:#00aeef">
                                                                                     <div class="elementor-element elementor-element-684374e elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="684374e" data-element_type="widget" data-widget_type="icon-list.default">
@@ -266,6 +267,7 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
+                                                                            @endif
                                                                         </div>
                                                                     </section>
                                                                 </div>
@@ -275,7 +277,7 @@
                                                 @endforeach
                                             @else
                                             <li id="jet-menu-item-20891" class="jet-menu-item jet-menu-item-type-post_type jet-menu-item-object-page jet-menu-item-has-children jet-has-roll-up jet-simple-menu-item jet-regular-item jet-menu-item-20891">
-                                                <a href="{{ url('gioi-thieu-chung') }}" class="top-level-link">
+                                                <a href="{{ url('gioi-thieu') }}" class="top-level-link">
                                                     <div class="jet-menu-item-wrapper">
                                                         <div class="jet-menu-title">Giới thiệu</div>
                                                     </div>

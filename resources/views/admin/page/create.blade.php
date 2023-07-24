@@ -139,7 +139,6 @@
                                 <textarea class="form-control" name="meta_description" rows="3" required="required"></textarea>
                             </div>
                         </div>
-
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Ảnh đại diện (không bắt buộc)</label>
                             <div class="col-md-5 col-sm-5 col-xs-12">

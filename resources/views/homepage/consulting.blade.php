@@ -1,5 +1,5 @@
 <section class="elementor-section elementor-top-section elementor-element elementor-element-d4696b4 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d4696b4" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}"
-style="background: #d8f4ff;margin-top: 40px">
+style="background: #d8f4ff;margin-top:0">
     <div class="elementor-container elementor-column-gap-default">
         <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-35d5e40" data-id="35d5e40" data-element_type="column">
             <div class="elementor-widget-wrap elementor-element-populated">
@@ -15,57 +15,33 @@ style="background: #d8f4ff;margin-top: 40px">
                             <div class="elementor-main-swiper swiper-container">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <a href="/du-hoc/du-hoc-anh">
-                                            <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học Anh" data-background="https://newocean.edu.vn/wp-content/uploads/2020/03/anh-1.jpg">
-
+                                        <a href="/du-hoc/du-hoc-duc">
+                                            <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học ĐÚc" data-background="">
+                                                <img src="https://duhocskypacific.top/cms/public/uploads/2023/07/21/duhocduc.jpg" alt="" style="width:100%;height:100%">
                                                 <div class="swiper-lazy-preloader"></div>
-
                                             </div>
                                         </a></div>
-                                    
-                                    <div class="swiper-slide">
+										<div class="swiper-slide">
                                         <a href="/du-hoc/du-hoc-uc">
-                                            <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học Úc" data-background="https://newocean.edu.vn/wp-content/uploads/2020/03/uc.jpg">
-
+                                            <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học Úc" data-background="">
+                                                <img src="https://duhocskypacific.top/cms/public/uploads/2023/07/21/duhocuc.jpg" alt="" style="width:100%;height:100%">
                                                 <div class="swiper-lazy-preloader"></div>
-
                                             </div>
                                         </a></div>
-                                    <div class="swiper-slide">
-                                        <a href="/du-hoc/du-hoc-canada">
-                                            <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học Canada" data-background="https://newocean.edu.vn/wp-content/uploads/2020/03/canada.jpg">
-
-                                                <div class="swiper-lazy-preloader"></div>
-
-                                            </div>
-                                        </a></div>
-                                    
                                     <div class="swiper-slide">
                                         <a href="/du-hoc/du-hoc-han-quoc">
-                                            <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học Hàn Quốc" data-background="https://newocean.edu.vn/wp-content/uploads/2020/03/hanquoc.jpg">
-
+                                            <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học Hàn Quốc" data-background="">
+                                                <img src="https://duhocskypacific.top/cms/public/uploads/2023/07/21/duhochanquoc.jpg" alt="" style="width:100%;height:100%">
                                                 <div class="swiper-lazy-preloader"></div>
-
                                             </div>
                                         </a></div>
-                                   
                                     <div class="swiper-slide">
                                         <a href="/du-hoc/du-hoc-dai-loan">
-                                            <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học Đài Loan" data-background="https://duhocskypacific.top/cms/public/uploads/2023/07/03/dailoan.jpg">
-
+                                            <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học Đài Loan" data-background="">
+                                                <img src="https://duhocskypacific.top/cms/public/uploads/2023/07/21/duhocdailoan.jpg" alt="" style="width:100%;height:100%">
                                                 <div class="swiper-lazy-preloader"></div>
-
                                             </div>
                                         </a></div>
-                                    <div class="swiper-slide">
-                                        <a href="/du-hoc/du-hoc-trung-quoc">
-                                            <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học Trung Quốc" data-background="https://newocean.edu.vn/wp-content/uploads/2020/03/trungquoc.jpg">
-
-                                                <div class="swiper-lazy-preloader"></div>
-
-                                            </div>
-                                        </a></div>
-                                    
                                 </div>
                                 <div class="swiper-pagination"></div>
                                 <div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">

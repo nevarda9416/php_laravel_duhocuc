@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Core\Controllers\Controller;
+use App\Core\Models\Category;
 use App\Core\Models\Country;
 use App\Core\Models\Page;
 use App\Core\Models\Posts;
@@ -27,7 +28,8 @@ class StudyAbroadController extends Controller
      */
     public function index()
     {
-        return view('destination.index');
+        $categories = Category::query()->where('parent_id', Category::CATEGORY_ID_STUDYABROAD)->where('is_actived', 1)->get();
+        return view('study_abroad.index', compact('categories'));
     }
 
     /**

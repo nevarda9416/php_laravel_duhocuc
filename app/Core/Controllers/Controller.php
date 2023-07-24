@@ -27,16 +27,17 @@ class Controller extends BaseController
             $view->with(array('setting' => $setting));
         });
         view()->composer('layouts.partials.footer_noscript', function ($view) {
+            $banner = DB::table('banners')->orderBy('id', 'ASC')->first();
             $setting = DB::table('settings')->where('key', '=', 'footer_info')->first();
             if (!empty((array)$setting))
                 $setting = json_decode($setting->value, true);
             else
                 $setting = array('telephone_contact' => '', 'email_contact' => '', 'copyright_left' => '', 'copyright_right' => '');
-            $view->with(array('setting' => $setting));
+            $view->with(array('banner' => $banner, 'setting' => $setting));
         });
         view()->composer('layouts.partials.nav', function ($view) {
-            $parentMenus = DB::table('menus')->where('parent_id', 0)->orderBy('order', 'ASC')->get();
-            $childMenus = DB::table('menus')->where('parent_id', Menu::MENU_ITEM_DU_HOC_CAC_NUOC)->orderBy('order', 'ASC')->get(); // Du học các nước
+            $parentMenus = DB::table('menus')->where('is_actived', 1)->where('parent_id', 0)->orderBy('order', 'ASC')->get();
+            $childMenus = DB::table('menus')->where('is_actived', 1)->where('parent_id', Menu::MENU_ITEM_DU_HOC_CAC_NUOC)->orderBy('order', 'ASC')->get(); // Du học các nước
             $view->with(array('parentMenus' => $parentMenus, 'childMenus' => $childMenus));
         });
         view()->composer('widgets.banner', function ($view) {

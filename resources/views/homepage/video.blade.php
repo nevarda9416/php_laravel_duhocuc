@@ -42,8 +42,8 @@
                                                             </div>
                                                             <div class="jet-content-fields">
                                                                 <div class="jet-content-fields__item" style="display:flex">
-                                                                    <div class="jet-content-fields__item-label"><i class="fas fa-clock"></i> {{ $post->time }}</div>
-                                                                    <div class="jet-content-fields__item-label"><i class="fas fa-map-marker-alt"></i>&ensp;{{ $post->place }}</div>
+                                                                    @if($post->time)<div class="jet-content-fields__item-label sukien_gio"><i class="fas fa-clock"></i> {{ $post->time }}</div>@endif
+                                                                    @if($post->place)<div class="jet-content-fields__item-label"><i class="fas fa-map-marker-alt"></i>&ensp;{{ $post->place }}</div>@endif
                                                                 </div>
                                                             </div>
                                                             <div class="jet-smart-listing__post-title post-title-simple"><a href="{{ url($post->share_url) }}">{{ $post->title }}</a></div>
@@ -182,26 +182,56 @@
                     <div class="elementor-widget-container">
                         <h2 class="elementor-heading-title elementor-size-default" style="color: #181818 !important;font-weight:bold">VIDEO NỔI BẬT</h2></div>
                 </div>
-                <div class="elementor-element elementor-element-55e45c0 elementor-widget elementor-widget-video" data-id="55e45c0" data-element_type="widget"
-                     data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/www.youtube.com\/watch?v=rtplfPGFt6Q&quot;,&quot;lazy_load&quot;:&quot;yes&quot;,&quot;show_image_overlay&quot;:&quot;yes&quot;,&quot;image_overlay&quot;:{&quot;url&quot;:&quot;https:\/\/newocean.edu.vn\/wp-content\/uploads\/2023\/04\/EwvU00nP4-1.jpg&quot;,&quot;id&quot;:24963,&quot;size&quot;:&quot;&quot;,&quot;alt&quot;:&quot;H\u1ecdc sinh nh\u1ead visa du h\u1ecdc \u00daC, H\u1ecdc b\u1ed5ng 30% ng\u00e0nh Marketing du h\u1ecdc t\u1ea1i \u00dac&quot;,&quot;source&quot;:&quot;library&quot;},&quot;lightbox&quot;:&quot;yes&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;}"
-                     data-widget_type="video.default">
-                    <div class="elementor-widget-container">
-                        <div class="elementor-wrapper elementor-open-lightbox">
-                            <div class="elementor-custom-embed-image-overlay" data-elementor-open-lightbox="yes"
-                                 data-elementor-lightbox="{&quot;type&quot;:&quot;video&quot;,&quot;videoType&quot;:&quot;youtube&quot;,&quot;url&quot;:&quot;https:\/\/www.youtube.com\/embed\/giU9ZrcJWeY?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0&quot;,&quot;modalOptions&quot;:{&quot;id&quot;:&quot;elementor-lightbox-55e45c0&quot;,&quot;entranceAnimation&quot;:&quot;&quot;,&quot;entranceAnimation_tablet&quot;:&quot;&quot;,&quot;entranceAnimation_mobile&quot;:&quot;&quot;,&quot;videoAspectRatio&quot;:&quot;169&quot;}}"
-                                 data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJ0eXBlIjoidmlkZW8iLCJ2aWRlb1R5cGUiOiJ5b3V0dWJlIiwidXJsIjoiaHR0cHM6XC9cL3d3dy55b3V0dWJlLmNvbVwvZW1iZWRcL0gtRXd2VTAwblA0P2ZlYXR1cmU9b2VtYmVkJnN0YXJ0JmVuZCZ3bW9kZT1vcGFxdWUmbG9vcD0wJmNvbnRyb2xzPTEmbXV0ZT0wJnJlbD0wJm1vZGVzdGJyYW5kaW5nPTAiLCJtb2RhbE9wdGlvbnMiOnsiaWQiOiJlbGVtZW50b3ItbGlnaHRib3gtNTVlNDVjMCIsImVudHJhbmNlQW5pbWF0aW9uIjoiIiwiZW50cmFuY2VBbmltYXRpb25fdGFibGV0IjoiIiwiZW50cmFuY2VBbmltYXRpb25fbW9iaWxlIjoiIiwidmlkZW9Bc3BlY3RSYXRpbyI6IjE2OSJ9fQ%3D%3D">
-                                <img decoding="async" width="1280" height="720" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201280%20720'%3E%3C/svg%3E" class="attachment-full size-full wp-image-24963" alt="Học sinh nhậ visa du học ÚC, Học bổng 30% ngành Marketing du học tại Úc"
-                                     data-lazy-srcset="https://duhocskypacific.top/cms/public/uploads/2023/07/03/thu2.jpg 1280w, https://newocean.edu.vn/wp-content/uploads/2023/04/EwvU00nP4-1-533x300.jpg 533w, https://newocean.edu.vn/wp-content/uploads/2023/04/EwvU00nP4-1-1024x576.jpg 1024w, https://newocean.edu.vn/wp-content/uploads/2023/04/EwvU00nP4-1-768x432.jpg 768w" data-lazy-sizes="(max-width: 1280px) 100vw, 1280px"
-                                     data-lazy-src="https://duhocskypacific.top/cms/public/uploads/2023/07/03/thu2.jpg"/>
-                                <noscript><img decoding="async" width="1280" height="720" src="https://duhocskypacific.top/cms/public/uploads/2023/07/03/thu2.jpg" class="attachment-full size-full wp-image-24963" alt="Học sinh nhậ visa du học ÚC, Học bổng 30% ngành Marketing du học tại Úc"
-                                               srcset="https://duhocskypacific.top/cms/public/uploads/2023/07/03/thu2.jpg 1280w, https://duhocskypacific.top/cms/public/uploads/2023/07/03/thu1.jpg 533w, https://duhocskypacific.top/cms/public/uploads/2023/07/03/thu1.jpg 1024w, https://newocean.edu.vn/wp-content/uploads/2023/04/EwvU00nP4-1-768x432.jpg 768w" sizes="(max-width: 1280px) 100vw, 1280px"/></noscript>
-                                <div class="elementor-custom-embed-play" role="button" aria-label="Play Video about Học sinh nhậ visa du học ÚC, Học bổng 30% ngành Marketing du học tại Úc" tabindex="0">
-                                    <i aria-hidden="true" class="eicon-play"></i> <span class="elementor-screen-only">Play Video about Học sinh nhậ visa du học ÚC, Học bổng 30% ngành Marketing du học tại Úc</span>
+                @if (!empty($videos->toArray()))
+                    <?php
+                    $topVideo = array_slice($videos->toArray(), 0, 1);
+                    $topVideo = $topVideo[0];
+                    $listVideos = array_slice($videos->toArray(), 1, 3);
+                    ?>
+                    @if (!empty($topVideo))
+                            <div class="elementor-element elementor-element-55e45c0 elementor-widget elementor-widget-video" data-id="55e45c0" data-element_type="widget"
+                                 data-settings="{&quot;youtube_url&quot;:&quot;{{ $topVideo['url'] }}&quot;,&quot;lazy_load&quot;:&quot;yes&quot;,&quot;show_image_overlay&quot;:&quot;yes&quot;,&quot;image_overlay&quot;:{&quot;url&quot;:&quot;https:\/\/newocean.edu.vn\/wp-content\/uploads\/2023\/04\/EwvU00nP4-1.jpg&quot;,&quot;id&quot;:24963,&quot;size&quot;:&quot;&quot;,&quot;alt&quot;:&quot;H\u1ecdc sinh nh\u1ead visa du h\u1ecdc \u00daC, H\u1ecdc b\u1ed5ng 30% ng\u00e0nh Marketing du h\u1ecdc t\u1ea1i \u00dac&quot;,&quot;source&quot;:&quot;library&quot;},&quot;lightbox&quot;:&quot;yes&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;}"
+                                 data-widget_type="video.default">
+                                <div class="elementor-widget-container">
+                                    <div class="elementor-wrapper elementor-open-lightbox">
+                                        <div class="elementor-custom-embed-image-overlay" data-elementor-open-lightbox="yes"
+                                             data-elementor-lightbox="{&quot;type&quot;:&quot;video&quot;,&quot;videoType&quot;:&quot;youtube&quot;,&quot;url&quot;:&quot;{{ $topVideo['url'] }}?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0&quot;,&quot;modalOptions&quot;:{&quot;id&quot;:&quot;elementor-lightbox-55e45c0&quot;,&quot;entranceAnimation&quot;:&quot;&quot;,&quot;entranceAnimation_tablet&quot;:&quot;&quot;,&quot;entranceAnimation_mobile&quot;:&quot;&quot;,&quot;videoAspectRatio&quot;:&quot;169&quot;}}"
+                                             data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJ0eXBlIjoidmlkZW8iLCJ2aWRlb1R5cGUiOiJ5b3V0dWJlIiwidXJsIjoiaHR0cHM6XC9cL3d3dy55b3V0dWJlLmNvbVwvZW1iZWRcL0gtRXd2VTAwblA0P2ZlYXR1cmU9b2VtYmVkJnN0YXJ0JmVuZCZ3bW9kZT1vcGFxdWUmbG9vcD0wJmNvbnRyb2xzPTEmbXV0ZT0wJnJlbD0wJm1vZGVzdGJyYW5kaW5nPTAiLCJtb2RhbE9wdGlvbnMiOnsiaWQiOiJlbGVtZW50b3ItbGlnaHRib3gtNTVlNDVjMCIsImVudHJhbmNlQW5pbWF0aW9uIjoiIiwiZW50cmFuY2VBbmltYXRpb25fdGFibGV0IjoiIiwiZW50cmFuY2VBbmltYXRpb25fbW9iaWxlIjoiIiwidmlkZW9Bc3BlY3RSYXRpbyI6IjE2OSJ9fQ%3D%3D">
+                                            <img decoding="async" width="1280" height="720" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201280%20720'%3E%3C/svg%3E" class="attachment-full size-full wp-image-24963" alt="{{ $topVideo['title'] }}"
+                                             data-lazy-srcset="{{ env('FOLDER_UPLOAD') . $topVideo['file'] }} 1280w" data-lazy-sizes="(max-width: 1280px) 100vw, 1280px"
+                                             data-lazy-src="{{ env('FOLDER_UPLOAD') . $topVideo['file'] }}"/>
+                                        <noscript><img decoding="async" width="1280" height="720" src="{{ env('FOLDER_UPLOAD') . $topVideo['file'] }}" class="attachment-full size-full wp-image-24963" alt="{{ $topVideo['title'] }}"
+                                                       srcset="{{ env('FOLDER_UPLOAD') . $topVideo['file'] }} 1280w" sizes="(max-width: 1280px) 100vw, 1280px"/></noscript>
+                                        <div class="elementor-custom-embed-play" role="button" aria-label="{{ $topVideo['title'] }}" tabindex="0">
+                                            <i aria-hidden="true" class="eicon-play"></i> <span class="elementor-screen-only">{{ $topVideo['title'] }}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endif
+                @else
+                    <div class="elementor-element elementor-element-55e45c0 elementor-widget elementor-widget-video" data-id="55e45c0" data-element_type="widget"
+                         data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/www.youtube.com\/watch?v=rtplfPGFt6Q&quot;,&quot;lazy_load&quot;:&quot;yes&quot;,&quot;show_image_overlay&quot;:&quot;yes&quot;,&quot;image_overlay&quot;:{&quot;url&quot;:&quot;https:\/\/newocean.edu.vn\/wp-content\/uploads\/2023\/04\/EwvU00nP4-1.jpg&quot;,&quot;id&quot;:24963,&quot;size&quot;:&quot;&quot;,&quot;alt&quot;:&quot;H\u1ecdc sinh nh\u1ead visa du h\u1ecdc \u00daC, H\u1ecdc b\u1ed5ng 30% ng\u00e0nh Marketing du h\u1ecdc t\u1ea1i \u00dac&quot;,&quot;source&quot;:&quot;library&quot;},&quot;lightbox&quot;:&quot;yes&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;}"
+                         data-widget_type="video.default">
+                        <div class="elementor-widget-container">
+                            <div class="elementor-wrapper elementor-open-lightbox">
+                                <div class="elementor-custom-embed-image-overlay" data-elementor-open-lightbox="yes"
+                                     data-elementor-lightbox="{&quot;type&quot;:&quot;video&quot;,&quot;videoType&quot;:&quot;youtube&quot;,&quot;url&quot;:&quot;https:\/\/www.youtube.com\/embed\/giU9ZrcJWeY?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0&quot;,&quot;modalOptions&quot;:{&quot;id&quot;:&quot;elementor-lightbox-55e45c0&quot;,&quot;entranceAnimation&quot;:&quot;&quot;,&quot;entranceAnimation_tablet&quot;:&quot;&quot;,&quot;entranceAnimation_mobile&quot;:&quot;&quot;,&quot;videoAspectRatio&quot;:&quot;169&quot;}}"
+                                     data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJ0eXBlIjoidmlkZW8iLCJ2aWRlb1R5cGUiOiJ5b3V0dWJlIiwidXJsIjoiaHR0cHM6XC9cL3d3dy55b3V0dWJlLmNvbVwvZW1iZWRcL0gtRXd2VTAwblA0P2ZlYXR1cmU9b2VtYmVkJnN0YXJ0JmVuZCZ3bW9kZT1vcGFxdWUmbG9vcD0wJmNvbnRyb2xzPTEmbXV0ZT0wJnJlbD0wJm1vZGVzdGJyYW5kaW5nPTAiLCJtb2RhbE9wdGlvbnMiOnsiaWQiOiJlbGVtZW50b3ItbGlnaHRib3gtNTVlNDVjMCIsImVudHJhbmNlQW5pbWF0aW9uIjoiIiwiZW50cmFuY2VBbmltYXRpb25fdGFibGV0IjoiIiwiZW50cmFuY2VBbmltYXRpb25fbW9iaWxlIjoiIiwidmlkZW9Bc3BlY3RSYXRpbyI6IjE2OSJ9fQ%3D%3D">
+                                    <img decoding="async" width="1280" height="720" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201280%20720'%3E%3C/svg%3E" class="attachment-full size-full wp-image-24963" alt="Học sinh nhậ visa du học ÚC, Học bổng 30% ngành Marketing du học tại Úc"
+                                         data-lazy-srcset="https://duhocskypacific.top/cms/public/uploads/2023/07/03/thu2.jpg 1280w, https://newocean.edu.vn/wp-content/uploads/2023/04/EwvU00nP4-1-533x300.jpg 533w, https://newocean.edu.vn/wp-content/uploads/2023/04/EwvU00nP4-1-1024x576.jpg 1024w, https://newocean.edu.vn/wp-content/uploads/2023/04/EwvU00nP4-1-768x432.jpg 768w" data-lazy-sizes="(max-width: 1280px) 100vw, 1280px"
+                                         data-lazy-src="https://duhocskypacific.top/cms/public/uploads/2023/07/03/thu2.jpg"/>
+                                    <noscript><img decoding="async" width="1280" height="720" src="https://duhocskypacific.top/cms/public/uploads/2023/07/03/thu2.jpg" class="attachment-full size-full wp-image-24963" alt="Học sinh nhậ visa du học ÚC, Học bổng 30% ngành Marketing du học tại Úc"
+                                                   srcset="https://duhocskypacific.top/cms/public/uploads/2023/07/03/thu2.jpg 1280w, https://duhocskypacific.top/cms/public/uploads/2023/07/03/thu1.jpg 533w, https://duhocskypacific.top/cms/public/uploads/2023/07/03/thu1.jpg 1024w, https://newocean.edu.vn/wp-content/uploads/2023/04/EwvU00nP4-1-768x432.jpg 768w" sizes="(max-width: 1280px) 100vw, 1280px"/></noscript>
+                                    <div class="elementor-custom-embed-play" role="button" aria-label="Play Video about Học sinh nhậ visa du học ÚC, Học bổng 30% ngành Marketing du học tại Úc" tabindex="0">
+                                        <i aria-hidden="true" class="eicon-play"></i> <span class="elementor-screen-only">Play Video about Học sinh nhậ visa du học ÚC, Học bổng 30% ngành Marketing du học tại Úc</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                @endif
                 <div class="elementor-element elementor-element-2bf13a2 elementor-skin-carousel elementor-widget elementor-widget-media-carousel" data-id="2bf13a2" data-element_type="widget"
                      data-settings="{&quot;slides_per_view&quot;:&quot;3&quot;,&quot;slides_to_scroll&quot;:&quot;1&quot;,&quot;lazyload&quot;:&quot;yes&quot;,&quot;skin&quot;:&quot;carousel&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;speed&quot;:500,&quot;autoplay&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;loop&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]}}"
                      data-widget_type="media-carousel.default">
@@ -209,54 +239,60 @@
                         <div class="elementor-swiper">
                             <div class="elementor-main-swiper swiper-container">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <a href="{{ url('/') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="2bf13a2" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjQ4NDUsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzAzXC92aXNhLWR1LWhvYy11Yy0zOS0yMDIzLmpwZyIsInNsaWRlc2hvdyI6IjJiZjEzYTIifQ%3D%3D"
-                                           data-elementor-lightbox-video="https://www.youtube.com/embed/hjWpLzUr6gs?feature=oembed&amp;autoplay=1&amp;rel=0&amp;controls=0">
-                                            <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Visa du học Úc 2023 có nhanh nhất trong 1 ngày" data-background="https://duhocskypacific.top/cms/public/uploads/2023/07/03/thu1.jpg">
-
-                                                <div class="swiper-lazy-preloader"></div>
-
-                                                <div class="elementor-custom-embed-play">
-                                                    <i aria-hidden="true" class="eicon-play"></i> <span class="elementor-screen-only">Play</span>
-                                                </div>
+                                    @if (!empty($listVideos))
+                                        @foreach ($listVideos as $video)
+                                            <div class="swiper-slide">
+                                                <a href="{{ url('/') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="2bf13a2" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjQ4NDUsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzAzXC92aXNhLWR1LWhvYy11Yy0zOS0yMDIzLmpwZyIsInNsaWRlc2hvdyI6IjJiZjEzYTIifQ%3D%3D"
+                                                   data-elementor-lightbox-video="{{ $video['url'] }}?feature=oembed&amp;autoplay=1&amp;rel=0&amp;controls=0">
+                                                    <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="{{ $video['title'] }}" data-background="{{ env('FOLDER_UPLOAD') . $video['file'] }}"
+                                                    style="background-size:cover">
+                                                        <div class="swiper-lazy-preloader"></div>
+                                                        <div class="elementor-custom-embed-play">
+                                                            <i aria-hidden="true" class="eicon-play"></i> <span class="elementor-screen-only">Play</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
                                             </div>
-                                        </a></div>
-                                    <div class="swiper-slide">
-                                        <a href="{{ url('/') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="2bf13a2"
-                                           data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjQ2MzUsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzAyXC9Ib2ktdGhhby1kdS1ob2MtU2luZ2Fwb3JlLTIwMjMtdHJ1b25nLUpDVS5qcGciLCJzbGlkZXNob3ciOiIyYmYxM2EyIn0%3D" data-elementor-lightbox-video="https://www.youtube.com/embed/mv3X0WD0QmE?feature=oembed&amp;autoplay=1&amp;rel=0&amp;controls=0">
-                                            <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Hội thảo du học Singapore 2023 trường JCU" data-background="https://duhocskypacific.top/cms/public/uploads/2023/07/03/thu3.jpg">
+                                        @endforeach
+                                    @else
+                                        <div class="swiper-slide">
+                                            <a href="{{ url('/') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="2bf13a2" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjQ4NDUsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzAzXC92aXNhLWR1LWhvYy11Yy0zOS0yMDIzLmpwZyIsInNsaWRlc2hvdyI6IjJiZjEzYTIifQ%3D%3D"
+                                               data-elementor-lightbox-video="https://www.youtube.com/embed/hjWpLzUr6gs?feature=oembed&amp;autoplay=1&amp;rel=0&amp;controls=0">
+                                                <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Visa du học Úc 2023 có nhanh nhất trong 1 ngày" data-background="https://duhocskypacific.top/cms/public/uploads/2023/07/03/thu1.jpg">
 
-                                                <div class="swiper-lazy-preloader"></div>
+                                                    <div class="swiper-lazy-preloader"></div>
 
-                                                <div class="elementor-custom-embed-play">
-                                                    <i aria-hidden="true" class="eicon-play"></i> <span class="elementor-screen-only">Play</span>
+                                                    <div class="elementor-custom-embed-play">
+                                                        <i aria-hidden="true" class="eicon-play"></i> <span class="elementor-screen-only">Play</span>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </a></div>
-                                    <div class="swiper-slide">
-                                        <a href="{{ url('/') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="2bf13a2" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjQ0ODIsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzAyXC92aXNhLWR1LWhvYy12dS10dS1hbmguanBnIiwic2xpZGVzaG93IjoiMmJmMTNhMiJ9"
-                                           data-elementor-lightbox-video="https://www.youtube.com/embed/rtplfPGFt6Q?feature=oembed&amp;autoplay=1&amp;rel=0&amp;controls=0">
-                                            <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Visa du học Vũ Tú Anh" data-background="https://duhocskypacific.top/cms/public/uploads/2023/07/03/thu0.jpg">
+                                            </a></div>
+                                        <div class="swiper-slide">
+                                            <a href="{{ url('/') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="2bf13a2"
+                                               data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjQ2MzUsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzAyXC9Ib2ktdGhhby1kdS1ob2MtU2luZ2Fwb3JlLTIwMjMtdHJ1b25nLUpDVS5qcGciLCJzbGlkZXNob3ciOiIyYmYxM2EyIn0%3D" data-elementor-lightbox-video="https://www.youtube.com/embed/mv3X0WD0QmE?feature=oembed&amp;autoplay=1&amp;rel=0&amp;controls=0">
+                                                <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Hội thảo du học Singapore 2023 trường JCU" data-background="https://duhocskypacific.top/cms/public/uploads/2023/07/03/thu3.jpg">
 
-                                                <div class="swiper-lazy-preloader"></div>
+                                                    <div class="swiper-lazy-preloader"></div>
 
-                                                <div class="elementor-custom-embed-play">
-                                                    <i aria-hidden="true" class="eicon-play"></i> <span class="elementor-screen-only">Play</span>
+                                                    <div class="elementor-custom-embed-play">
+                                                        <i aria-hidden="true" class="eicon-play"></i> <span class="elementor-screen-only">Play</span>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </a></div>
-                                    <div class="swiper-slide">
-                                        <a href="{{ url('/') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="2bf13a2" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjQ0MzMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzAyXC92aXNhLWR1LWhvYy1iYWxhbi5qcGciLCJzbGlkZXNob3ciOiIyYmYxM2EyIn0%3D"
-                                           data-elementor-lightbox-video="https://www.youtube.com/embed/hjWpLzUr6gs?feature=oembed&amp;autoplay=1&amp;rel=0&amp;controls=0">
-                                            <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học sinh nhận visa du học Ba Lan" data-background="https://duhocskypacific.top/cms/public/uploads/2023/07/03/thu1.jpg">
+                                            </a></div>
+                                        <div class="swiper-slide">
+                                            <a href="{{ url('/') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="2bf13a2" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjQ0ODIsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzAyXC92aXNhLWR1LWhvYy12dS10dS1hbmguanBnIiwic2xpZGVzaG93IjoiMmJmMTNhMiJ9"
+                                               data-elementor-lightbox-video="https://www.youtube.com/embed/rtplfPGFt6Q?feature=oembed&amp;autoplay=1&amp;rel=0&amp;controls=0">
+                                                <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Visa du học Vũ Tú Anh" data-background="https://duhocskypacific.top/cms/public/uploads/2023/07/03/thu0.jpg">
 
-                                                <div class="swiper-lazy-preloader"></div>
+                                                    <div class="swiper-lazy-preloader"></div>
 
-                                                <div class="elementor-custom-embed-play">
-                                                    <i aria-hidden="true" class="eicon-play"></i> <span class="elementor-screen-only">Play</span>
+                                                    <div class="elementor-custom-embed-play">
+                                                        <i aria-hidden="true" class="eicon-play"></i> <span class="elementor-screen-only">Play</span>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </a></div>
+                                            </a>
+                                        </div>
+                                    @endif
                                 </div>
                             </div>
                         </div>

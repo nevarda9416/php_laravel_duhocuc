@@ -222,8 +222,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'/>
-    <!-- This site is optimized with the Yoast SEO Premium plugin v20.7 (Yoast SEO v20.7) - https://yoast.com/wordpress/plugins/seo/ -->
-    <title>Công Ty Tư vấn Du học New Ocean | Trung Tâm Tư Vấn Du Học</title>
     <link rel="stylesheet preload prefetch" as="style" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Condensed%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;subset=vietnamese&#038;display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Condensed%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;subset=vietnamese&#038;display=swap" media="print"
           onload="this.media='all'"/>
@@ -594,7 +592,7 @@
         }
 
         .arcu-widget .arcu-online-badge.online {
-            background-color: #35ac19
+            background-color: #00aeef
         }
 
         .arcu-widget .arcu-unread-badge {
@@ -4414,10 +4412,10 @@
     <link rel="preload" as="font" href="{{asset('public/assets/fonts/eicons/eicons.woff2')}}" crossorigin>
     <meta name="generator" content="Elementor 3.13.2; features: e_dom_optimization, e_optimized_assets_loading, a11y_improvements, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
     <meta name="generator" content="Powered by Slider Revolution 6.5.31 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface."/>
-    <link rel="icon" href="https://newocean.edu.vn/wp-content/uploads/2020/03/ico.png" sizes="32x32"/>
-    <link rel="icon" href="https://newocean.edu.vn/wp-content/uploads/2020/03/ico.png" sizes="192x192"/>
-    <link rel="apple-touch-icon" href="https://newocean.edu.vn/wp-content/uploads/2020/03/ico.png"/>
-    <meta name="msapplication-TileImage" content="https://newocean.edu.vn/wp-content/uploads/2020/03/ico.png"/>
+    <link rel="icon" href="{{ asset('public/images/ico.png') }}" sizes="32x32"/>
+    <link rel="icon" href="{{ asset('public/images/ico.png') }}" sizes="192x192"/>
+    <link rel="apple-touch-icon" href="{{ asset('public/images/ico.png') }}"/>
+    <meta name="msapplication-TileImage" content="{{ asset('public/images/ico.png') }}"/>
     <script>function setREVStartSize(e) {
             //window.requestAnimationFrame(function() {
             window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;

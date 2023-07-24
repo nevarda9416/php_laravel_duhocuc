@@ -1,5 +1,5 @@
 <section class="elementor-section elementor-top-section elementor-element elementor-element-8d2a4c7 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8d2a4c7" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}"
-style="padding-bottom:0">
+style="padding-bottom:0;height:500px">
     <div class="elementor-container elementor-column-gap-no">
         <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a5fb2c5" data-id="a5fb2c5" data-element_type="column">
             <div class="elementor-widget-wrap elementor-element-populated">
@@ -12,7 +12,7 @@ style="padding-bottom:0">
                                     <rs-slides>
                                         @if (!empty($banners))
                                             @foreach($banners as $banner)
-                                                <img decoding="async" src="{{ env('FOLDER_UPLOAD') . $banner->file }}" alt="{{ $banner->title }}" style="width:100%;height:100%" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="{{ env('FOLDER_UPLOAD') . $banner->file }}" data-no-retina>
+                                                <a href="{{ $banner->url }}" title="{{ $banner->title }}"><img decoding="async" src="{{ env('FOLDER_UPLOAD') . $banner->file }}" alt="{{ $banner->title }}" style="width:100%;height:100%" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="{{ env('FOLDER_UPLOAD') . $banner->file }}" data-no-retina></a>
                                             @endforeach
                                         @else
                                             <rs-slide style="position: absolute;" data-key="rs-103" data-title="Slide" data-thumb="{{ asset('public/images/banner.jpg') }}" data-link="/" data-tag="l" data-target="_self" data-seoz="front" data-anim="f:slidebased;" data-in="o:1;y:(100%);m:true;col:5;" data-out="a:false;">

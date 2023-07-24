@@ -6,7 +6,7 @@ use App\Core\Enums\RedisEnum;
 use App\Core\Enums\ValidateEnum;
 
 return [
-    'SITE_NAME' => 'Cộng đồng chia sẻ kinh nghiệm và hỏi đáp du lịch',
+    'SITE_NAME' => 'Du học Sky Pacific',
     'FRONTEND_URL' => env('FRONTEND_URL', 'https://duhocskypacific.top'),
     'FRONTEND_API' => 'https://103.216.112.45:8085',
     'STATIC_IMAGES' => env('STATIC_IMAGES', env('FOLDER_PUBLIC', '') . 'uploads'),

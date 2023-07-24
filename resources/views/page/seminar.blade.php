@@ -9,7 +9,7 @@
                     <div class="elementor-widget-wrap elementor-element-populated" style="position:relative">
                         <div class="elementor-element elementor-element-3f639ea elementor-widget elementor-widget-heading elementor-align-center" data-id="3f639ea" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
-                                <h2 class="elementor-heading-title elementor-size-default" style="font-size:14pt !important;font-weight:bold;color:#181818 !important">CHƯƠNG TRÌNH HỘI THẢO SẮP DIỄN RA</h2>
+                                <h2 class="elementor-heading-title elementor-size-default" style="font-size:14pt !important;font-weight:bold;color:#181818 !important;font-family:system-ui;font-size:28px !important;">CHƯƠNG TRÌNH HỘI THẢO SẮP DIỄN RA</h2>
                             </div>
                         </div>
                         @if ($widget_seminar_middle_banner)

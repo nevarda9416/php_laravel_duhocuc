@@ -63,6 +63,7 @@ class MediaController extends Controller
                 'file' => ($file) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $fileName : null,
                 'url' => $request->get('url'),
                 'category_id' => $request->get('category_id'),
+                'media_type' => $request->get('media_type'),
                 'quality' => $request->get('quality'),
                 'width' => $request->get('width'),
                 'height' => $request->get('height'),
@@ -136,6 +137,7 @@ class MediaController extends Controller
             $media->title = $request->get('title');
             $media->url = $request->get('url');
             $media->category_id = $request->get('category_id');
+            $media->media_type = $request->get('media_type');
             $media->quality = $request->get('quality');
             $media->width = $request->get('width');
             $media->height = $request->get('height');

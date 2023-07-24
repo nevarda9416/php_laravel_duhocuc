@@ -6,6 +6,7 @@ use App\Core\Controllers\Controller;
 use App\Core\Business\UploadFileBusiness;
 use App\Core\Models\Author;
 use App\Core\Models\Country;
+use App\Core\Models\Media;
 use App\Core\Models\Partner;
 use App\Core\Models\Posts;
 use App\Core\Models\Widget;
@@ -72,10 +73,11 @@ class PageController extends Controller
      */
     public function seminar()
     {
+        $videos = Media::query()->where('media_type', 'video')->take(4)->get();
         $widget_seminar_middle_banner = Widget::select('content', 'link')->where('key', 'widget.seminar.middle_banner')->first();
-        $listSeminars = Posts::query()->where('category_id', Posts::CATEGORY_ID_HOITHAO)->where('status', Posts::STATUS_PUBLISH)->take(3)->skip(0)->orderBy('id', 'DESC')->get();
-        $listEvents = Posts::query()->where('category_id', Posts::CATEGORY_ID_SUKIEN)->where('status', Posts::STATUS_PUBLISH)->take(5)->skip(0)->orderBy('id', 'DESC')->get();
-        return view('page.seminar', compact('widget_seminar_middle_banner', 'listSeminars', 'listEvents'));
+        $listSeminars = Posts::query()->where('category_id', Posts::CATEGORY_ID_HOITHAO)->where('status', Posts::STATUS_PUBLISH)->take(3)->skip(0)->orderBy('date', 'ASC')->get();
+        $listEvents = Posts::query()->where('category_id', Posts::CATEGORY_ID_SUKIEN)->where('status', Posts::STATUS_PUBLISH)->take(5)->skip(0)->orderBy('date', 'ASC')->get();
+        return view('page.seminar', compact('videos', 'widget_seminar_middle_banner', 'listSeminars', 'listEvents'));
     }
 
     /**
@@ -87,7 +89,8 @@ class PageController extends Controller
         $otherPosts = Posts::query()->where('category_id', Posts::CATEGORY_ID_TINTUC)->where('status', Posts::STATUS_PUBLISH)->take(7)->skip(0)->orderBy('id', 'DESC')->get();
         $countries = Country::query()->orderBy('id', 'DESC')->get();
         $widget_consultation_right_banner = Widget::select('content')->where('key', 'widget.consultation.right_banner')->first();
-        return view('page.consultation', compact('widget_consultation_right_banner', 'listPosts', 'otherPosts', 'countries'));
+        $widget_scholarship_right_banner = Widget::select('content')->where('key', 'widget.scholarship.right_banner')->first();
+        return view('page.consultation', compact('listPosts', 'otherPosts', 'countries', 'widget_consultation_right_banner', 'widget_scholarship_right_banner'));
     }
 
     /**
@@ -95,8 +98,9 @@ class PageController extends Controller
      */
     public function partner()
     {
+        $countries = Country::query()->orderBy('id', 'DESC')->get();
         $partners = Partner::query()->orderBy('id', 'DESC')->get();
-        return view('page.partner', compact('partners'));
+        return view('page.partner', compact('countries', 'partners'));
     }
 
     /**

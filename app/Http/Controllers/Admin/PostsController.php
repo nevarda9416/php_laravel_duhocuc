@@ -236,7 +236,7 @@ class PostsController extends Controller
     public function update(Request $request, $id)
     {
         $title = $request->get('title');
-        $slug = $this->sanitize($title);
+        $slug = $request->get('slug');
         $content = $request->get('content');
         $plain_text = strip_tags($content);
 
@@ -255,6 +255,7 @@ class PostsController extends Controller
         try {
             $this->validate($request, [
                 'title' => 'required',
+                'slug' => 'required',
                 'content' => 'required',
                 'status' => 'required'
             ]);

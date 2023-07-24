@@ -54,9 +54,27 @@
                         </div>
                     </div>
                     <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Url banner</label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <input type="text" class="form-control" name="url" value="{{$banner->url??''}}">
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12">Vị trí</label>
                         <div class="col-md-5 col-sm-5 col-xs-12">
                             <select class="form-control" name="position">
+                                <option value="top"{{$banner->position=='top'?' selected':''}}>Top</option>
+                                <option value="left"{{$banner->position=='left'?' selected':''}}>Left</option>
+                                <option value="middle"{{$banner->position=='middle'?' selected':''}}>Middle</option>
+                                <option value="right"{{$banner->position=='right'?' selected':''}}>Right</option>
+                                <option value="bottom"{{$banner->position=='bottom'?' selected':''}}>Bottom</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Trang</label>
+                        <div class="col-md-5 col-sm-5 col-xs-12">
+                            <select class="form-control" name="page">
                                 <option value="homepage"{{$banner->position=='homepage'?' selected':''}}>Trang chủ</option>
                                 <option value="scholarship"{{$banner->position=='scholarship'?' selected':''}}>Học bổng</option>
                                 <option value="seminar"{{$banner->position=='seminar'?' selected':''}}>Hội thảo</option>

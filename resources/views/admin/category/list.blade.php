@@ -1,3 +1,8 @@
+<?php
+$queryString = app('request')->getQueryString();
+if ($queryString != '')
+    $queryString = '?' . $queryString;
+?>
 <div class="col-md-6 col-sm-6 col-xs-6">
     <div class="x_panel">
         <div class="x_title">
@@ -38,13 +43,13 @@
                         </td>
                         <td>{{ $category->parent_id }}</td>
                         <td>
-                            <a href='{{ url("cms/categories/show/$category->id") }}' class="btn btn-xs">
+                            <a href='{{ url("cms/categories/show/$category->id$queryString") }}' class="btn btn-xs">
                                 <i class="fa fa-eye"></i> Xem
                             </a>
-                            <a href='{{ url("cms/categories/edit/$category->id") }}' class="btn btn-xs">
+                            <a href='{{ url("cms/categories/edit/$category->id$queryString") }}' class="btn btn-xs">
                                 <i class="fa fa-edit"></i> Sửa
                             </a>
-                            <a href='{{ url("cms/categories/delete/$category->id") }}' class="btn btn-xs" onclick="return confirm('Bạn có chắc muốn xóa danh mục bài viết {{ $category->name }} này chứ?')">
+                            <a href='{{ url("cms/categories/delete/$category->id$queryString") }}' class="btn btn-xs" onclick="return confirm('Bạn có chắc muốn xóa danh mục bài viết {{ $category->name }} này chứ?')">
                                 <i class="fa fa-trash-o"></i> Xóa
                             </a>
                         </td>

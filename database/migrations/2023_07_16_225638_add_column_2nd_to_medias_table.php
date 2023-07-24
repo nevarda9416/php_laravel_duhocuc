@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateNewsletterSubcribersTable extends Migration
+class AddColumn2ndToMediasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateNewsletterSubcribersTable extends Migration
      */
     public function up()
     {
-        Schema::create('newsletter_subcribers', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('email');
-            $table->unsignedTinyInteger('status');
-            $table->timestamps();
+        Schema::table('medias', function (Blueprint $table) {
+            $table->string('media_type', 10)->after('page_id')->nullable();
         });
     }
 

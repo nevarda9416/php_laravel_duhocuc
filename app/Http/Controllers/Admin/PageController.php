@@ -30,7 +30,7 @@ class PageController extends Controller
      */
     public function index()
     {
-        $pages = Page::where('type', '!=', 'landing')->paginate($this->limit);
+        $pages = Page::where('type', '!=', 'landing')->orderBy('id', 'DESC')->paginate($this->limit);
         return view('admin.page.index', compact('pages'));
     }
 
@@ -82,7 +82,7 @@ class PageController extends Controller
                 'status' => $request->get('status'),
                 'category_id' => $request->get('category_id'),
                 'country_id' => $request->get('country_id'),
-                'thumbnail_url' => ($file) ? $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $original_name : '',
+                'thumbnail_url' => ($file) ? '/'. $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $original_name : '',
                 'latitude' => $request->get('latitude'),
                 'longitude' => $request->get('longitude'),
                 'type' => 'page',
@@ -153,10 +153,11 @@ class PageController extends Controller
         try {
             $this->validate($request, [
                 'title' => 'required',
+                'slug' => 'required',
                 'status' => 'required'
             ]);
             $title = $request->get('title');
-            $slug = $this->sanitize($title);
+            $slug = $request->get('slug');
             $content = $request->get('content');
             $plain_text = strip_tags($content);
             $file = $request->thumbnail_url;
@@ -189,7 +190,7 @@ class PageController extends Controller
             $page->meta_description = $request->get('meta_description');
             // Ok thì upload file và save mới
             if ($file) {
-                $page->thumbnail_url = ($file) ? $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $original_name : ''; // Chức năng edit lại ảnh đại diện cần xem lại cơ chế thay đổi
+                $page->thumbnail_url = ($file) ? '/'. $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $original_name : ''; // Chức năng edit lại ảnh đại diện cần xem lại cơ chế thay đổi
                 UploadFileBusiness::uploadFileToFolder($file);
             }
             $page->save();

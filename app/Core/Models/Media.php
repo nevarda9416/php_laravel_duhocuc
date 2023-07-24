@@ -14,6 +14,7 @@ class Media extends Model
         'category_id',
         'post_id',
         'page_id',
+        'media_type',
         'mime_type',
         'quality',
         'width',

@@ -41,10 +41,16 @@ switch ($action) {
                         </div>
                     </div>
                     <div class="form-group">
+                        <label class="control-label col-md-2 col-sm-2 col-xs-12">Slug <span
+                                    class="required">*</span></label>
+                        <div class="col-md-10 col-sm-10 col-xs-12">
+                            <input type="text" class="form-control" name="slug" required="required" value="{{ $post->slug }}" {{ $attribute }}>
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <label class="control-label col-md-2 col-sm-2 col-xs-12">Tóm tắt</label>
                         <div class="col-md-10 col-sm-10 col-xs-12">
                             <textarea id="excerpt" class="form-control" name="excerpt" rows="3" {{ $attribute }}>{{ $post->excerpt }}</textarea>
-                            <label class="label label-info word-left">Tối đa được <strong>{{ config()->get('constants.LIMIT_WORD_COUNT_EXCERPT') }}</strong> từ</label>
                         </div>
                     </div>
                     <div class="form-group">

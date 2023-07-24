@@ -42,6 +42,13 @@ switch ($action) {
                             </div>
                         </div>
                         <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Slug <span
+                                        class="required">*</span></label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <input type="text" class="form-control" name="slug" required="required" value="{{ $page->slug }}" {{ $attribute }}>
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Tóm tắt</label>
                             <div class="col-md-9 col-sm-9 col-xs-12">
                                 <textarea type="text" class="form-control" name="excerpt" {{ $attribute }} rows="3">{{ $page->excerpt }}</textarea>
@@ -135,7 +142,6 @@ switch ($action) {
                                 <input type="hidden" name="user_id" value="{{(auth()->user()) ? auth()->user()->id : 0}}">
                             </div>
                         </div>
-
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Tiêu đề (SEO) <span
                                     class="required">*</span></label>
@@ -166,7 +172,7 @@ switch ($action) {
                         </div>
                         @if (!empty($page->thumbnail_url))
                             <div class="form-group">
-                                <label class="control-label col-md-2 col-sm-2 col-xs-12"></label>
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12"></label>
                                 <div class="col-md-5 col-sm-5 col-xs-12">
                                     <p>Ảnh đại diện hiện tại (bên dưới)</p>
                                     <p><img src="{{ Config::get('constants.STATIC_IMAGES') . $page->thumbnail_url }}" width="100%"/></p>

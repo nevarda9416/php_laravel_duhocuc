@@ -100,6 +100,7 @@ class SettingController extends Controller
                 'website_contact' => $request->get('website_contact'),
                 'email_contact' => $request->get('email_contact'),
                 'address_contact' => $request->get('address_contact'),
+                'link_google_map' => $request->get('link_google_map'),
                 'timer_support' => $request->get('timer_support'),
                 'logo_header_company' => ($logo_header_company) ? '/public/assets/images/logo/' . $logo_header_company->getClientOriginalName() : (isset($contact->logo_header_company) ? $contact->logo_header_company : null),
                 'logo_company' => ($logo_company) ? '/public/assets/images/logo/' . $logo_company->getClientOriginalName() : (isset($contact->logo_company) ? $contact->logo_company : null),
@@ -110,6 +111,7 @@ class SettingController extends Controller
                 'instagram' => $request->get('instagram'),
                 'twitter' => $request->get('twitter'),
                 'google' => $request->get('google'),
+                'tiktok' => $request->get('tiktok'),
                 'slogan_register' => $request->get('slogan_register')
             );
             if ($logo_header_company) {

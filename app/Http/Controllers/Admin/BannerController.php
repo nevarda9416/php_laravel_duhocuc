@@ -57,7 +57,9 @@ class BannerController extends Controller
                 'title' => $title,
                 'name' => $request->get('name'),
                 'file' => ($file) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $filename : null,
+                'url' => $request->get('url'),
                 'position' => $request->get('position'),
+                'page' => $request->get('page'),
                 'user_id' => $request->get('user_id')
             ]);
 
@@ -86,7 +88,7 @@ class BannerController extends Controller
     public function edit($id)
     {
         $action = 'edit';
-        $banner = DB::table('banners')->select('id', 'title', 'name', 'file', 'position', 'user_id')->where('id', $id)->first();
+        $banner = DB::table('banners')->select('id', 'title', 'name', 'file', 'url', 'position', 'page', 'user_id')->where('id', $id)->first();
         $banners = DB::table('banners')->select('id', 'title', 'name')->paginate($this->limit);
         return view('admin.banner.form', compact('action', 'banner', 'banners'));
     }
@@ -117,7 +119,9 @@ class BannerController extends Controller
             $banner->title = $title;
             $banner->name = $request->get('name');
             $banner->file = ($file) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $filename : $banner->file;
+            $banner->url = $request->get('url');
             $banner->position = $request->get('position');
+            $banner->page = $request->get('page');
             $banner->user_id = $request->get('user_id');
             // update the data
             if ($file) {

@@ -10,7 +10,9 @@ class Banner extends Model
         'title',
         'name',
         'file',
+        'url',
         'position',
+        'page',
         'user_id'
     ];
 }

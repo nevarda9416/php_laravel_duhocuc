@@ -26,6 +26,16 @@
                         {{ csrf_field() }}
                         <input type="hidden" name="user_id" value="{{ auth()->user()->id }}">
                         <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Loại thư viện</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <select class="form-control" name="media_type">
+                                    <option></option>
+                                    <option value="picture"{{ $media->media_type === 'picture' ? ' selected' : '' }}>Ảnh</option>
+                                    <option value="video"{{ $media->media_type === 'video' ? ' selected' : '' }}>Video</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Tiêu đề ảnh / video <span
                                         class="required">*</span></label>
                             <div class="col-md-9 col-sm-9 col-xs-12">

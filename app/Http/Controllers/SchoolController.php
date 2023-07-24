@@ -65,7 +65,7 @@ class SchoolController extends Controller
         $metaData['meta_keyword'] = $page->meta_keyword;
         $metaData['meta_description'] = $page->meta_description;
         $metaData['meta_image'] = $page->thumbnail_url;
-        return view('school.detail', compact('slug', 'page', 'categories'));
+        return view('school.detail', compact('slug', 'page', 'categories', 'metaData'));
     }
 
     /**
@@ -82,11 +82,13 @@ class SchoolController extends Controller
         if (empty($page)) {
             return redirect('/');
         }
+        $otherPosts = Posts::query()->where('category_id', Posts::CATEGORY_ID_TINTUC)->where('status', Posts::STATUS_PUBLISH)->take(7)->skip(0)->orderBy('id', 'DESC')->get();
+        $widget_scholarship_right_banner = Widget::select('content')->where('key', 'widget.scholarship.right_banner')->first();
         $metaData['meta_title'] = $page->meta_title;
         $metaData['meta_keyword'] = $page->meta_keyword;
         $metaData['meta_description'] = $page->meta_description;
         $metaData['meta_image'] = $page->thumbnail_url;
-        return view('school.detail2', compact('page'));
+        return view('school.detail2', compact('page', 'otherPosts', 'widget_scholarship_right_banner', 'metaData'));
     }
 
     /**
@@ -116,7 +118,7 @@ class SchoolController extends Controller
         $metaData['meta_keyword'] = $page->meta_keyword;
         $metaData['meta_description'] = $page->meta_description;
         $metaData['meta_image'] = $page->thumbnail_url;
-        return view('school.detail2', compact('page'));
+        return view('school.detail2', compact('page', 'metaData'));
     }
 
     /**
@@ -137,7 +139,7 @@ class SchoolController extends Controller
         $metaData['meta_keyword'] = $page->meta_keyword;
         $metaData['meta_description'] = $page->meta_description;
         $metaData['meta_image'] = $page->thumbnail_url;
-        return view('school.major_detail2', compact('page'));
+        return view('school.major_detail2', compact('page', 'metaData'));
     }
 
     /**

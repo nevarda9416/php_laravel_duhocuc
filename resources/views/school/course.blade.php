@@ -28,7 +28,7 @@
                                         @foreach ($categories as $category)
                                             <a class="e-gallery-item elementor-gallery-item elementor-animated-content" data-e-gallery-tags="2" href="{{ url('khoa-hoc-ngon-ngu/' . $category->slug) }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-c7ca10e"
                                                data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU0NjMsInVybCI6Imh0dHBzOlwvXC9uZXdvY2Vhbi5lZHUudm5cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzAxXC8xMjIwNzAxMzRfMzk4MDM0MDU3ODY2MTM1MF8xNzEwOTg5NjQ3MjkxODg1NDg0X28tc2NhbGVkLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1jN2NhMTBlIn0%3D"
-                                               style="position:relative;background:linear-gradient(rgba(0,174,239,0.45),rgba(0,174,239,0.45)),url({{ env('FOLDER_UPLOAD') . $category->thumbnail_url }});height:141px;text-align:center">
+                                               style="position:relative;background:url({{ env('FOLDER_UPLOAD') . $category->thumbnail_url }});height:141px;text-align:center">
                                                 <div class="elementor-gallery-item__image" data-width="600" data-height="400" aria-label="{{ $category->name }}" role="img"
                                                      style="position:absolute;width:100%;top:50%;transform:translateY(-50%);color:rgb(255, 255, 255);padding:0 10px;">{{ $category->name }}
                                                 </div>

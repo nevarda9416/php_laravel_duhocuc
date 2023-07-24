@@ -11,8 +11,8 @@
                                 <div class="elementor-widget-container">
                                     <h3 class="elementor-heading-title elementor-size-large elementor-align-left">{{ $page->title }}</h3>
                                 </div>
+                                <div class="elementor-widget-container elementor-align-left"><?php echo html_entity_decode($page->content) ?></div>
                             </div>
-                            <?php echo html_entity_decode($page->content) ?>
                             @foreach ($categories as $category)
                                 <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-f5f345f" data-id="f5f345f" data-element_type="column">
                                     <div class="elementor-widget-wrap elementor-element-populated">
