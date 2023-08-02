@@ -139,7 +139,9 @@
                         <div class="elementor-widget-container">
                             <nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
                                 <ul id="menu-1-277796a" class="elementor-nav-menu">
-                                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21602"><a class="elementor-item"><i>Chào mừng bạn đến với {{ $setting['company_contact'] ?? '' }} !</i></a></li>
+                                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21602"><a class="elementor-item"><i>
+                                        @lang('text.welcome')
+                                        {{ $setting['company_contact'] ?? '' }} !</i></a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -159,7 +161,7 @@
                     <div class="elementor-element elementor-element-b59c2bb elementor-search-form--skin-full_screen elementor-hidden-tablet elementor-widget elementor-widget-search-form" data-id="b59c2bb" data-element_type="widget" data-settings="{&quot;skin&quot;:&quot;full_screen&quot;}" data-widget_type="search-form.default">
                         <div class="elementor-widget-container">
                             <form class="elementor-search-form" action="{{ url('/') }}" method="get" role="search" style="text-align:center;font-size:0.9rem">
-                                <i>Tìm kiếm ...</i>
+                                <i>@lang('text.search') ...</i>
                                 <div class="elementor-search-form__toggle" tabindex="0" role="button">
                                     <i aria-hidden="true" class="fas fa-search" style="color:#fff"></i> <span class="elementor-screen-only">Tìm kiếm</span>
                                 </div>
@@ -174,6 +176,8 @@
                                         <i aria-hidden="true" class="eicon-close"></i> <span class="elementor-screen-only">Close this search box.</span>
                                     </div>
                                 </div>
+                                <a href="{{ url('change-language/vi') }}" title=""><img width="" style="height:20px;margin-right:5px" src="{{ asset('public/images/icon_vietnamese.png') }}" alt=""/></a>
+                                <a href="{{ url('change-language/en') }}" title=""><img width="" style="height:20px" src="{{ asset('public/images/icon_english.png') }}" alt=""/></a>
                             </form>
                         </div>
                     </div>

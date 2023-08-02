@@ -3,12 +3,8 @@ namespace App\Http\Controllers\Admin;
 use App\Core\Controllers\Controller;
 use App\Helpers\Activity;
 use App\Core\Models\Category;
-use App\Core\Models\Page;
 use App\Core\Models\Posts;
-use App\Core\Models\Disease;
-use App\Core\Models\Question;
 use App\Core\Models\User;
-use Illuminate\Support\Facades\DB;
 
 class DashboardController extends Controller
 {

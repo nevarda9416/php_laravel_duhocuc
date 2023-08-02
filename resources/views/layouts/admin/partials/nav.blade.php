@@ -19,48 +19,59 @@
             <li><a><i class="fa fa-laptop"></i>Nội dung trang chủ<span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="{{ url('cms/widgets/homepage/criteria') }}">Đồng hành cùng bạn</a></li>
+                    <li><a href="{{ url('cms/widgets/homepage/criteria/en') }}">Đồng hành cùng bạn (EN)</a></li>
                 </ul>
             </li>
             <li><a style="font-size:12px"><i class="fa fa-laptop"></i>Nội dung trang giới thiệu<span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="{{ url('cms/widgets/about/description') }}">Về chúng tôi</a></li>
+                    <li><a href="{{ url('cms/widgets/about/description/en') }}">Về chúng tôi (EN)</a></li>
                     <li><a href="{{ url('cms/widgets/about/why_skypacific') }}">Vì sao nên chọn SKY PACIFIC</a></li>
+                    <li><a href="{{ url('cms/widgets/about/why_skypacific/en') }}">Vì sao nên chọn SKY PACIFIC (EN)</a></li>
                     <li><a href="{{ url('cms/widgets/about/picture') }}">Hình ảnh về SKY PACIFIC</a></li>
+                    <li><a href="{{ url('cms/widgets/about/picture/en') }}">Hình ảnh về SKY PACIFIC (EN)</a></li>
                 </ul>
             </li>
             <li><a><i class="fa fa-laptop"></i>Nội dung khóa học<span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="{{ url('cms/widgets/course/description') }}">Giới thiệu</a></li>
+                    <li><a href="{{ url('cms/widgets/course/description/en') }}">Giới thiệu (EN)</a></li>
                 </ul>
             </li>
             <li><a><i class="fa fa-laptop"></i>Nội dung ngành học<span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="{{ url('cms/widgets/major/description') }}">Giới thiệu</a></li>
+                    <li><a href="{{ url('cms/widgets/major/description/en') }}">Giới thiệu (EN)</a></li>
                 </ul>
             </li>
             <li><a><i class="fa fa-laptop"></i>Nội dung trang học bổng<span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="{{ url('cms/widgets/scholarship/right_banner') }}">Banner cột phải</a></li>
+                    <li><a href="{{ url('cms/widgets/scholarship/right_banner/en') }}">Banner cột phải (EN)</a></li>
                 </ul>
             </li>
             <li><a><i class="fa fa-laptop"></i>Nội dung trang hội thảo<span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="{{ url('cms/widgets/seminar/middle_banner') }}">Banner giữa trang</a></li>
+                    <li><a href="{{ url('cms/widgets/seminar/middle_banner/en') }}">Banner giữa trang (EN)</a></li>
                 </ul>
             </li>
             <li><a><i class="fa fa-laptop"></i>Nội dung trang tư vấn<span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="{{ url('cms/widgets/consultation/right_banner') }}">Banner cột phải</a></li>
+                    <li><a href="{{ url('cms/widgets/consultation/right_banner/en') }}">Banner cột phải (EN)</a></li>
                 </ul>
             </li>
             <li><a><i class="fa fa-laptop"></i>Nội dung trang tuyển dụng<span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="{{ url('cms/widgets/recruitment/right_banner') }}">Banner cột phải</a></li>
+                    <li><a href="{{ url('cms/widgets/recruitment/right_banner/en') }}">Banner cột phải (EN)</a></li>
                 </ul>
             </li>
             <li><a><i class="fa fa-laptop"></i>Nội dung trang liên hệ<span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="{{ url('cms/widgets/contact/right_banner') }}">Banner cột phải</a></li>
+                    <li><a href="{{ url('cms/widgets/contact/right_banner/en') }}">Banner cột phải (EN)</a></li>
                 </ul>
             </li>
             <li><a href="{{ url('cms/users') }}"><i class="fa fa-user"></i>Quản lý tài khoản</a></li>

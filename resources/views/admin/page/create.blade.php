@@ -32,6 +32,17 @@
                     <form class="form-horizontal form-label-left input_mask" action="{{ url('cms/pages/store') }}" method="post" enctype="multipart/form-data">
                         {{ csrf_field() }}
                         <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Ngôn ngữ website <span
+                                        class="required">*</span></label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <select class="form-control" name="language" required>
+                                    <option value="">-- Chọn --</option>
+                                    <option value="vi">Tiếng Việt</option>
+                                    <option value="en">Tiếng Anh</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Tiêu đề <span
                                         class="required">*</span></label>
                             <div class="col-md-9 col-sm-9 col-xs-12">

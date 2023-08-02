@@ -122,7 +122,8 @@ class PostsController extends Controller
                     'place' => $request->get('place'),
                     'meta_title' => $request->get('meta_title'),
                     'meta_keyword' => $request->get('meta_keyword'),
-                    'meta_description' => $request->get('meta_description')
+                    'meta_description' => $request->get('meta_description'),
+                    'language' => $request->get('language')
                 ]);
 
                 if ($thumbnail_url) {
@@ -286,7 +287,7 @@ class PostsController extends Controller
                 $post->meta_title = $request->get('meta_title');
                 $post->meta_keyword = $request->get('meta_keyword');
                 $post->meta_description = $request->get('meta_description');
-
+                $post->language = $request->get('language');
                 // update share url post
                 $category = Category::find($request->get('category_id'));
                 if ($category->parent_id == 0) {

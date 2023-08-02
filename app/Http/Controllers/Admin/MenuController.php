@@ -60,7 +60,8 @@ class MenuController extends Controller
                 'item_url' => $request->get('item_url'),
                 'item_title' => $request->get('item_title'),
                 'user_id' => $request->get('user_id'),
-                'is_actived' => $request->get('is_actived')
+                'is_actived' => $request->get('is_actived'),
+                'language' => $request->get('language')
             ]);
             // Not ok thì redirect với thông báo menu đã tồn tại
             if (Menu::where('item_title', '=', $item_title)->exists()) {
@@ -138,6 +139,7 @@ class MenuController extends Controller
                 $menu->item_title = $item_title;
                 $menu->user_id = $request->get('user_id');
                 $menu->is_actived = $request->get('is_actived');
+                $menu->language = $request->get('language');
                 Activity::addLog('Sửa menu', 'Tài khoản ' . auth()->user()->email . ' sửa menu ' . $item_title . ' vào lúc ' . date('H:i A') . ' ngày ' . date('d/m/Y'));
                 $menu->save();
                 return redirect('cms/menu/edit/' . $id)->with('message', 'Sửa menu ' . $item_title . ' thành công');

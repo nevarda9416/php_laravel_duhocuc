@@ -13,6 +13,8 @@ class Banner extends Model
         'url',
         'position',
         'page',
+        'device_type',
+        'route',
         'user_id'
     ];
 }

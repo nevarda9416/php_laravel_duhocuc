@@ -11,7 +11,9 @@ class Category extends Model
         'category_type',
         'country_id',
         'thumbnail_url',
+        'thumbnail_url_2',
         'is_actived',
+        'language',
         'meta_title',
         'meta_keyword',
         'meta_description'

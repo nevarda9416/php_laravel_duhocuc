@@ -159,7 +159,7 @@
             menuSubheaderText: "",
 
             menuHeaderLayout: 'icon-left',
-            menuHeaderIcon: 'https://newocean.edu.vn/wp-content/uploads/2023/01/no-chat-1.jpg',
+            menuHeaderIcon: '{{ asset("public/images/ico.jpg") }}',
             menuHeaderTextAlign: 'left',
 
             showHeaderCloseBtn: true,

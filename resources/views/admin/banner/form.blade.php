@@ -76,11 +76,31 @@
                         <div class="col-md-5 col-sm-5 col-xs-12">
                             <select class="form-control" name="page">
                                 <option value="homepage"{{$banner->position=='homepage'?' selected':''}}>Trang chủ</option>
+                                <option value="about"{{$banner->position=='about'?' selected':''}}>Giới thiệu</option>
+                                <option value="study_abroad"{{$banner->position=='study_abroad'?' selected':''}}>Du học các nước</option>
+                                <option value="course"{{$banner->position=='course'?' selected':''}}>Khóa học ngôn ngữ</option>
+                                <option value="school"{{$banner->position=='school'?' selected':''}}>Trường học</option>
                                 <option value="scholarship"{{$banner->position=='scholarship'?' selected':''}}>Học bổng</option>
                                 <option value="seminar"{{$banner->position=='seminar'?' selected':''}}>Hội thảo</option>
                                 <option value="contact"{{$banner->position=='contact'?' selected':''}}>Liên hệ</option>
                                 <option value="consultation"{{$banner->position=='consultation'?' selected':''}}>Góc tư vấn</option>
+                                <option value="partner"{{$banner->position=='partner'?' selected':''}}>Đối tác</option>
                                 <option value="recruitment"{{$banner->position=='recruitment'?' selected':''}}>Tuyển dụng</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Đường dẫn trang</label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <input type="text" class="form-control" name="route" value="{{$banner->route??''}}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Thiết bị</label>
+                        <div class="col-md-5 col-sm-5 col-xs-12">
+                            <select class="form-control" name="device_type">
+                                <option value="desktop"{{$banner->device_type=='desktop'?' selected':''}}>Máy tính</option>
+                                <option value="mobile"{{$banner->device_type=='mobile'?' selected':''}}>Điện thoại</option>
                             </select>
                         </div>
                     </div>

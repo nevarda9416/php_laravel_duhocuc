@@ -25,6 +25,17 @@
                     <form class="form-horizontal form-label-left input_mask" action="{{ url('cms/categories/store') }}" method="post" autocomplete="off" enctype="multipart/form-data">
                         {{ csrf_field() }}
                         <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Ngôn ngữ website <span
+                                        class="required">*</span></label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <select class="form-control" name="language" required>
+                                    <option value="">-- Chọn --</option>
+                                    <option value="vi">Tiếng Việt</option>
+                                    <option value="en">Tiếng Anh</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Tên danh mục <span
                                         class="required">*</span></label>
                             <div class="col-md-9 col-sm-9 col-xs-12">
@@ -93,6 +104,13 @@
                             </div>
                         </div>
                         <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Ảnh đại diện trong trang con</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <input type="file" class="form-control" name="thumbnail_url_2">
+                                <div id="thumbnail_preview_2" class="mt-4"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Tiêu đề (SEO) <span
                                     class="required">*</span></label>
                             <div class="col-md-9 col-sm-9 col-xs-12">
@@ -127,4 +145,5 @@
         </div>
         @include('admin.category.list')
     </div>
+    @include('admin.components.thumbnail_preview')
 @endsection

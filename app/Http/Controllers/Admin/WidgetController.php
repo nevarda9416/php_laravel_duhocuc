@@ -21,11 +21,11 @@ class WidgetController extends Controller
         $this->limit = config()->get('constants.LIMIT_DATA_PAGINATE');
     }
 
-    public function getPosition($page, $position, $id = '')
+    public function getPosition($page, $position, $language = 'vi', $id = '')
     {
         if ($page == 'activity_detail') $page = 'activity.detail';
         $widget = Widget::select('content', 'link')->where('key', 'widget.' . $page . '.' . $position . ($id !== '' ? '.' . $id : ''))->first();
-        return view('admin.widgets.' . $page . '.' . $position . ($id !== '' ? '.' . $id : ''), compact('page', 'position', 'widget'));
+        return view('admin.widgets.' . $page . ($language !== 'vi' ? '.' . $language : '') . '.' . $position . ($id !== '' ? '.' . $id : ''), compact('page', 'position', 'language', 'widget'));
     }
 
     public function postPosition(Request $request)

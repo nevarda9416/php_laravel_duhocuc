@@ -89,7 +89,8 @@ class PageController extends Controller
                 'has_template_content' => $request->get('has_template_content'),
                 'meta_title' => $request->get('meta_title'),
                 'meta_keyword' => $request->get('meta_keyword'),
-                'meta_description' => $request->get('meta_description')
+                'meta_description' => $request->get('meta_description'),
+                'language' => $request->get('language')
             ]);
             // Tạo slug và check trùng slug (name)
             // Not ok thì redirect với thông báo trang tĩnh đã tồn tại
@@ -188,6 +189,7 @@ class PageController extends Controller
             $page->meta_title = $request->get('meta_title');
             $page->meta_keyword = $request->get('meta_keyword');
             $page->meta_description = $request->get('meta_description');
+            $page->language = $request->get('language');
             // Ok thì upload file và save mới
             if ($file) {
                 $page->thumbnail_url = ($file) ? '/'. $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $original_name : ''; // Chức năng edit lại ảnh đại diện cần xem lại cơ chế thay đổi

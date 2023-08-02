@@ -38,7 +38,8 @@ class Posts extends Model
         'place',
         'meta_title',
         'meta_keyword',
-        'meta_description'
+        'meta_description',
+        'language'
     ];
 
     const STATUS_PUBLISH = 'publish';

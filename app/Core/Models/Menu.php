@@ -15,7 +15,8 @@ class Menu extends Model
         'item_title',
         'user_id',
         'is_actived',
-        'order'
+        'order',
+        'language'
     ];
     const MENU_ITEM_DU_HOC_CAC_NUOC = 2;
 }

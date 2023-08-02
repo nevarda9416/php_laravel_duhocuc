@@ -34,6 +34,17 @@ switch ($action) {
                 <form class="form-horizontal form-label-left input_mask" action="{{ url('cms/posts/update/'. $post->id) }}" method="post" id="postForm" enctype="multipart/form-data">
                     {{ csrf_field() }}
                     <div class="form-group">
+                        <label class="control-label col-md-2 col-sm-2 col-xs-12">Ngôn ngữ website <span
+                                    class="required">*</span></label>
+                        <div class="col-md-10 col-sm-10 col-xs-12">
+                            <select class="form-control" name="language" required>
+                                <option value="">-- Chọn --</option>
+                                <option value="vi"{{ $post->language == 'vi' ? ' selected' : '' }}>Tiếng Việt</option>
+                                <option value="en"{{ $post->language == 'en' ? ' selected' : '' }}>Tiếng Anh</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <label class="control-label col-md-2 col-sm-2 col-xs-12">Tiêu đề <span
                                     class="required">*</span></label>
                         <div class="col-md-10 col-sm-10 col-xs-12">

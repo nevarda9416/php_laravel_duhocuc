@@ -58,7 +58,8 @@ class AuthorController extends Controller
                 'position' => $request->get('position'),
                 'team' => $request->get('team'),
                 'dictum' => $request->get('dictum'),
-                'user_id' => $request->get('user_id')
+                'user_id' => $request->get('user_id'),
+                'language' => $request->get('language')
             ]);
             // check exists of name
             if (Author::where('name', '=', $name)->exists()) {
@@ -85,7 +86,7 @@ class AuthorController extends Controller
     public function edit($id)
     {
         $action = 'edit';
-        $author = DB::table('authors')->select('id', 'name', 'avatar', 'share_url', 'content', 'position', 'team', 'dictum')->where('id', $id)->first();
+        $author = DB::table('authors')->select('id', 'name', 'avatar', 'share_url', 'content', 'position', 'team', 'dictum', 'language')->where('id', $id)->first();
         $authors = DB::table('authors')->select('id', 'name', 'avatar')->paginate($this->limit);
         return view('admin.author.form', compact('action', 'author', 'authors'));
     }
@@ -118,6 +119,7 @@ class AuthorController extends Controller
             $author->dictum = $request->get('dictum');
             $author->updated_at = date('Y-m-d H:i:s');
             $author->user_id = $request->get('user_id');
+            $author->language = $request->get('language');
             // update the data
             if ($avatar) {
                 $author->avatar = ($avatar) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $avatar_name : $author->avatar;

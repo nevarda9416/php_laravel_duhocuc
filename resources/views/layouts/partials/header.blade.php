@@ -3944,7 +3944,6 @@
     <title>{{ !empty($metaData['meta_title']) ? $metaData['meta_title'] : config()->get('constants.SITE_NAME') }}</title>
     <meta name="keywords" content="{{ !empty($metaData['meta_keyword']) ? $metaData['meta_keyword'] : '' }}"/>
     <meta name="description" content="{{ !empty($metaData['meta_description']) ? $metaData['meta_description'] : 'Chuyên trang chia sẻ về những kinh nghiệm, hỏi đáp thắc mắc khi đi du lịch, du lịch phượt, tour du lịch, vé tham quan' }}"/>
-    <meta name="robots" content="noindex, nofollow"/>
     <meta property="fb:app_id" content=""/>
     <meta name="google-signin-client_id" content="">
     <meta name="google-site-verification" content=""/>

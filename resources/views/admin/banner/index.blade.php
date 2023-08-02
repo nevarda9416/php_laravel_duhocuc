@@ -64,11 +64,31 @@
                         <div class="col-md-5 col-sm-5 col-xs-12">
                             <select class="form-control" name="page">
                                 <option value="homepage" selected>Trang chủ</option>
+                                <option value="about">Giới thiệu</option>
+                                <option value="study_abroad">Du học các nước</option>
+                                <option value="course">Khóa học ngôn ngữ</option>
+                                <option value="school">Trường học</option>
                                 <option value="scholarship">Học bổng</option>
                                 <option value="seminar">Hội thảo</option>
                                 <option value="contact">Liên hệ</option>
                                 <option value="consultation">Góc tư vấn</option>
+                                <option value="partner">Đối tác</option>
                                 <option value="recruitment">Tuyển dụng</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Đường dẫn trang</label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <input type="text" class="form-control" name="route">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Thiết bị</label>
+                        <div class="col-md-5 col-sm-5 col-xs-12">
+                            <select class="form-control" name="device_type">
+                                <option value="desktop" selected>Máy tính</option>
+                                <option value="mobile">Điện thoại</option>
                             </select>
                         </div>
                     </div>

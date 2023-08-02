@@ -16,6 +16,7 @@ class AddColumn1stToPostsTable extends Migration
         Schema::table('categories', function (Blueprint $table) {
             $table->unsignedSmallInteger('country_id')->after('category_type')->nullable()->default(0);
             $table->string('thumbnail_url')->after('country_id')->nullable();
+            $table->string('thumbnail_url_2')->after('thumbnail_url')->nullable();
         });
     }
 

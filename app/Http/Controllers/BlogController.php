@@ -40,11 +40,16 @@ class BlogController extends Controller
      */
     public function detail($slug)
     {
-        $blog = DB::table('posts')->select('title', 'excerpt', 'content', 'author_name', 'published_at', 'meta_title', 'meta_keyword', 'meta_description', 'created_at')->where('slug', str_replace('.html', '', $slug))->first();
+        if (session()->has('locale')) {
+            $language = session()->get('locale');
+        } else {
+            $language = null;
+        }
+        $blog = DB::table('posts')->select('title', 'excerpt', 'content', 'author_name', 'published_at', 'meta_title', 'meta_keyword', 'meta_description', 'created_at')->where('language', $language)->where('slug', str_replace('.html', '', $slug))->first();
         if (empty($blog)) {
             return redirect('/');
         }
-        $widget_recruitment_right_banner = Widget::select('content')->where('key', 'widget.recruitment.right_banner')->first();
+        $widget_recruitment_right_banner = Widget::select('content')->where('key', 'widget.recruitment.right_banner' . (!is_null($language) && $language !== 'vi' ? '.' . $language : ''))->first();
         $metaData['meta_title'] = $blog->meta_title;
         $metaData['meta_keyword'] = $blog->meta_keyword;
         $metaData['meta_description'] = $blog->meta_description;

@@ -15,6 +15,7 @@ class Author extends Model
         'position',
         'team',
         'dictum',
-        'user_id'
+        'user_id',
+        'language'
     ];
 }

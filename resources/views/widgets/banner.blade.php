@@ -10,14 +10,23 @@ style="padding-bottom:0;height:500px">
                             <rs-module-wrap id="rev_slider_20_1_wrapper" data-source="gallery" style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
                                 <rs-module id="rev_slider_20_1" style="" data-version="6.5.31">
                                     <rs-slides>
-                                        @if (!empty($banners))
-                                            @foreach($banners as $banner)
-                                                <a href="{{ $banner->url }}" title="{{ $banner->title }}"><img decoding="async" src="{{ env('FOLDER_UPLOAD') . $banner->file }}" alt="{{ $banner->title }}" style="width:100%;height:100%" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="{{ env('FOLDER_UPLOAD') . $banner->file }}" data-no-retina></a>
+                                        @if (!empty($banners_desktop))
+                                            @foreach($banners_desktop as $banner)
+                                                <rs-slide class="show-desktop hide-mobile" style="position: absolute;" data-key="rs-{{ $banner->id }}" data-title="Slide" data-thumb="{{ env('FOLDER_UPLOAD') . $banner->file }}" data-link="{{ $banner->url }}" data-tag="l" data-target="_self" data-seoz="front" data-anim="f:slidebased;" data-in="o:1;y:(100%);m:true;col:5;" data-out="a:false;">
+                                                    <img decoding="async" src="{{ env('FOLDER_UPLOAD') . $banner->file }}" alt="{{ $banner->title }}" style="width:100%;height:100%" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="{{ env('FOLDER_UPLOAD') . $banner->file }}" data-no-retina>
+                                                </rs-slide>
                                             @endforeach
                                         @else
                                             <rs-slide style="position: absolute;" data-key="rs-103" data-title="Slide" data-thumb="{{ asset('public/images/banner.jpg') }}" data-link="/" data-tag="l" data-target="_self" data-seoz="front" data-anim="f:slidebased;" data-in="o:1;y:(100%);m:true;col:5;" data-out="a:false;">
                                                 <img decoding="async" src="{{ asset('public/images/banner.jpg') }}" alt="" title="poster canada" width="2297" height="822" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="{{ asset('public/images/banner.jpg') }}" data-no-retina>
                                             </rs-slide>
+                                        @endif
+                                        @if (!empty($banners_mobile))
+                                            @foreach($banners_mobile as $banner)
+                                                <rs-slide class="hide-desktop show-mobile" style="position: absolute;" data-key="rs-{{ $banner->id }}" data-title="Slide" data-thumb="{{ env('FOLDER_UPLOAD') . $banner->file }}" data-link="{{ $banner->url }}" data-tag="l" data-target="_self" data-seoz="front" data-anim="f:slidebased;" data-in="o:1;y:(100%);m:true;col:5;" data-out="a:false;">
+                                                    <img decoding="async" src="{{ env('FOLDER_UPLOAD') . $banner->file }}" alt="{{ $banner->title }}" style="width:100%;height:100%" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="{{ env('FOLDER_UPLOAD') . $banner->file }}" data-no-retina>
+                                                </rs-slide>
+                                            @endforeach
                                         @endif
                                     </rs-slides>
                                 </rs-module>

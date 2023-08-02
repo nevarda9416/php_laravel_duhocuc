@@ -60,6 +60,8 @@ class BannerController extends Controller
                 'url' => $request->get('url'),
                 'position' => $request->get('position'),
                 'page' => $request->get('page'),
+                'device_type' => $request->get('device_type'),
+                'route' => $request->get('route'),
                 'user_id' => $request->get('user_id')
             ]);
 
@@ -88,7 +90,7 @@ class BannerController extends Controller
     public function edit($id)
     {
         $action = 'edit';
-        $banner = DB::table('banners')->select('id', 'title', 'name', 'file', 'url', 'position', 'page', 'user_id')->where('id', $id)->first();
+        $banner = DB::table('banners')->select('id', 'title', 'name', 'file', 'url', 'position', 'page', 'device_type', 'route', 'user_id')->where('id', $id)->first();
         $banners = DB::table('banners')->select('id', 'title', 'name')->paginate($this->limit);
         return view('admin.banner.form', compact('action', 'banner', 'banners'));
     }
@@ -122,6 +124,8 @@ class BannerController extends Controller
             $banner->url = $request->get('url');
             $banner->position = $request->get('position');
             $banner->page = $request->get('page');
+            $banner->device_type = $request->get('device_type');
+            $banner->route = $request->get('route');
             $banner->user_id = $request->get('user_id');
             // update the data
             if ($file) {

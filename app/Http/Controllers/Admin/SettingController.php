@@ -63,15 +63,21 @@ class SettingController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function contact()
+    public function contact(Request $request)
     {
+        //echo $request->get('lang');
         $setting = Setting::where('key', '=', 'footer_info')->first();
+        $setting_en = Setting::where('key', '=', 'footer_info_en')->first();
         if (!empty((array)$setting))
             $contact = json_decode($setting->value, true);
         else
             $contact = array('telephone_contact' => '', 'email_contact' => '', 'address_contact' => '', 'timer_support' => '', 'copyright_left' => '', 'copyright_right' => '');
+        if (!empty((array)$setting_en))
+            $contact_en = json_decode($setting_en->value, true);
+        else
+            $contact_en = array('telephone_contact' => '', 'email_contact' => '', 'address_contact' => '', 'timer_support' => '', 'copyright_left' => '', 'copyright_right' => '');
         $allow_update_html_landingpage = Setting::select('value')->where('key', 'allow_update_html_landingpage')->orderBy('id', 'ASC')->first();
-        return view('admin.setting.contact', compact('setting', 'contact', 'allow_update_html_landingpage'));
+        return view('admin.setting.contact', compact('setting', 'setting_en', 'contact', 'contact_en', 'allow_update_html_landingpage'));
     }
 
     /**
@@ -84,6 +90,91 @@ class SettingController extends Controller
     {
         try {
             $key = 'footer_info';
+            $setting = Setting::where('key', '=', $key);
+            if ($setting->exists()) {
+                $contact = json_decode($setting->first()->value);
+            } else {
+                $contact = new \StdClass();
+            }
+            $logo_header_company = $request->logo_header_company;
+            $logo_company = $request->logo_company;
+            $value = array(
+                'company_contact' => $request->get('company_contact'),
+                'telephone_contact' => $request->get('telephone_contact'),
+                'fax_contact' => $request->get('fax_contact'),
+                'website_name' => $request->get('website_name'),
+                'website_contact' => $request->get('website_contact'),
+                'email_contact' => $request->get('email_contact'),
+                'address_contact' => $request->get('address_contact'),
+                'link_google_map' => $request->get('link_google_map'),
+                'timer_support' => $request->get('timer_support'),
+                'logo_header_company' => ($logo_header_company) ? '/public/assets/images/logo/' . $logo_header_company->getClientOriginalName() : (isset($contact->logo_header_company) ? $contact->logo_header_company : null),
+                'logo_company' => ($logo_company) ? '/public/assets/images/logo/' . $logo_company->getClientOriginalName() : (isset($contact->logo_company) ? $contact->logo_company : null),
+                'copyright_left' => $request->get('copyright_left'),
+                'copyright_right' => $request->get('copyright_right'),
+                'facebook' => $request->get('facebook'),
+                'youtube' => $request->get('youtube'),
+                'instagram' => $request->get('instagram'),
+                'twitter' => $request->get('twitter'),
+                'google' => $request->get('google'),
+                'tiktok' => $request->get('tiktok'),
+                'slogan_register' => $request->get('slogan_register')
+            );
+            if ($logo_header_company) {
+                // Upload file to local server
+                $logo_header_company->move('public/assets/images/logo', $logo_header_company->getClientOriginalName());
+            }
+            if ($logo_company) {
+                // Upload file to local server
+                $logo_company->move('public/assets/images/logo', $logo_company->getClientOriginalName());
+            }
+            /* Start thumbnail url */
+            $meta_image = $request->meta_image;
+            if ($meta_image) {
+                // Upload file to local server
+                $meta_image->move('public/assets/images', $meta_image->getClientOriginalName());
+            }
+            /* End thumbnail url */
+            // TH setting có tồn tại ==> Update setting
+            if ($setting->exists()) {
+                $setting->update([
+                    'key' => $key,
+                    'value' => json_encode($value),
+                    'meta_title' => $request->get('meta_title'),
+                    'meta_keyword' => $request->get('meta_keyword'),
+                    'meta_description' => $request->get('meta_description'),
+                    'meta_image' => ($meta_image) ? '/public/assets/images/' . $meta_image->getClientOriginalName() : (isset($setting->first()->meta_image) ? $setting->first()->meta_image : null),
+                    'user_id' => $request->get('user_id')
+                ]);
+                return redirect('cms/contact')->with('message', 'Sửa thông tin liên hệ thành công');
+            } else { // TH setting không tồn tại ==> Tạo mới setting
+                $setting = new Setting([
+                    'key' => $key,
+                    'value' => json_encode($value),
+                    'meta_title' => $request->get('meta_title'),
+                    'meta_keyword' => $request->get('meta_keyword'),
+                    'meta_description' => $request->get('meta_description'),
+                    'meta_image' => ($meta_image) ? '/public/assets/images/' . $meta_image->getClientOriginalName() : (isset($setting->first()->meta_image) ? $setting->first()->meta_image : null),
+                    'user_id' => $request->get('user_id')
+                ]);
+                $setting->save();
+                return redirect('cms/contact')->with('message', 'Tạo mới thông tin liên hệ thành công');
+            }
+        } catch (\Exception $exception) {
+            return redirect('cms/contact')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
+        }
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function storeContactEnglish(Request $request)
+    {
+        try {
+            $key = 'footer_info_en';
             $setting = Setting::where('key', '=', $key);
             if ($setting->exists()) {
                 $contact = json_decode($setting->first()->value);

@@ -1,7 +1,6 @@
 <style>
     #thumbnail_preview, #top_background_preview, #banner_preview {
         width: 100%;
-        height: 0px;
         background: no-repeat;
     }
     .show-placeholder div:first-child {
@@ -17,7 +16,19 @@
             var reader = new FileReader(); // instance of the FileReader
             reader.readAsDataURL(files[0]); // read the local file
             reader.onloadend = function () { // set image data as background of div
-                $('#thumbnail_preview').css({'background-image': 'url("' + this.result + '")', 'height': '300px'});
+                $('#thumbnail_preview').html('<img src="'+this.result + '" alt="" style="width:100%">');
+            }
+        }
+    });
+    $('input[name="thumbnail_url_2"]').on('change', function () {
+        console.log(this.files);
+        var files = !!this.files ? this.files : [];
+        if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+        if (/^image/.test(files[0].type)) { // only image file
+            var reader = new FileReader(); // instance of the FileReader
+            reader.readAsDataURL(files[0]); // read the local file
+            reader.onloadend = function () { // set image data as background of div
+                $('#thumbnail_preview_2').html('<img src="'+this.result + '" alt="" style="width:100%">');
             }
         }
     });

@@ -25,6 +25,17 @@
                     <form class="form-horizontal form-label-left input_mask" action="{{ url('cms/menu/update/' . $menu->id) }}" method="post">
                         {{ csrf_field() }}
                         <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Ngôn ngữ website <span
+                                        class="required">*</span></label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <select class="form-control" name="language" required>
+                                    <option value="">-- Chọn --</option>
+                                    <option value="vi"{{ $menu->language == 'vi' ? ' selected' : '' }}>Tiếng Việt</option>
+                                    <option value="en"{{ $menu->language == 'en' ? ' selected' : '' }}>Tiếng Anh</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Menu cha</label>
                             <div class="col-md-5 col-sm-5 col-xs-12">
                                 <select class="form-control" name="parent_id">

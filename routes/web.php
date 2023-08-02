@@ -151,6 +151,7 @@ Route::group(['middleware' => 'auth', 'prefix' => 'cms'], function () {
     Route::group(['prefix' => 'contact', 'as' => 'settings', 'middleware' => 'auth'], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'Admin\SettingController@contact']);
         Route::post('store', ['uses' => 'Admin\SettingController@storeContact']);
+        Route::post('en/store', ['uses' => 'Admin\SettingController@storeContactEnglish']);
     });
     // Quản trị menu
     Route::group(['prefix' => 'menu', 'as' => 'menu'], function () {
@@ -163,8 +164,8 @@ Route::group(['middleware' => 'auth', 'prefix' => 'cms'], function () {
     });
     // Trang quản trị widget
     Route::group(['prefix' => 'widgets'], function () {
-        Route::get('{page}/{position}', ['uses' => 'Admin\WidgetController@getPosition']);
-        Route::post('{page}/{position}', ['uses' => 'Admin\WidgetController@postPosition']);
+        Route::get('{page}/{position}/{language?}', ['uses' => 'Admin\WidgetController@getPosition']);
+        Route::post('{page}/{position}/{language?}', ['uses' => 'Admin\WidgetController@postPosition']);
     });
     Route::post('html/update', ['uses' => 'Admin\SettingController@updateHTML']);
     // Trang quản trị role
@@ -233,4 +234,13 @@ Route::group(['middleware' => 'web'], function () {
     Route::post('register/customer', 'FormController@register');
     Route::post('register/newsletter_subcriber ', 'FormController@subcribe');
     Route::get('bai-viet/{slug}', ['uses' => 'BlogController@detail']);
+    Route::get('/change-language/{locale}', function ($locale) {
+        if (!in_array($locale, ['vi', 'en'])) {
+            abort(404);
+        }
+        App::setLocale($locale);
+        // Session
+        session()->put('locale', $locale);
+        return redirect()->back();
+    });
 });

@@ -56,7 +56,7 @@
                                 <li style="margin-bottom:5px"><a href="{{ url('gioi-thieu') }}" title="GIỚI THIỆU" style="color:#1b1b1b !important;"><img src="{{ asset('public/images/icon_link.png') }}" alt="" width="12px" style="margin-right:5px"> GIỚI THIỆU</a></li>
                                 <li style="margin-bottom:5px"><a href="{{ url('lien-he') }}" title="LIÊN HỆ" style="color:#1b1b1b !important;"><img src="{{ asset('public/images/icon_link.png') }}" alt="" width="12px" style="margin-right:5px"> LIÊN HỆ</a></li>
                                 <li style="margin-bottom:5px"><a href="{{ url('doi-tac') }}" title="ĐỐI TÁC" style="color:#1b1b1b !important;"><img src="{{ asset('public/images/icon_link.png') }}" alt="" width="12px" style="margin-right:5px"> ĐỐI TÁC</a></li>
-                                <li style="margin-bottom:5px"><a href="{{ url('truong-hoc') }}" title="QUỐC GIA DU HỌC" style="color:#1b1b1b !important;"><img src="{{ asset('public/images/icon_link.png') }}" alt="" width="12px" style="margin-right:5px"> QUỐC GIA DU HỌC</a></li>
+                                <li style="margin-bottom:5px"><a href="{{ url('du-hoc') }}" title="QUỐC GIA DU HỌC" style="color:#1b1b1b !important;"><img src="{{ asset('public/images/icon_link.png') }}" alt="" width="12px" style="margin-right:5px"> QUỐC GIA DU HỌC</a></li>
                                 <li style="margin-bottom:5px"><a href="{{ url('khoa-hoc-ngon-ngu') }}" title="KHÓA HỌC NGÔN NGỮ" style="color:#1b1b1b !important;"><img src="{{ asset('public/images/icon_link.png') }}" alt="" width="12px" style="margin-right:5px"> KHÓA HỌC NGÔN NGỮ</a></li>
                             </ul>
                         </div>
@@ -130,7 +130,7 @@
         </div>
         <div id="footer_banner">
             <a href="{{ $banner->url }}" title="{{ $banner->title }}"><img style="
-    width: 60%;position: absolute;
+    width: 55%;position: absolute;
     bottom: 12%;
     right: 2%;
 }" decoding="async" src="https://duhocskypacific.top/cms/public/uploads/2023/07/22/CÁC-NƯỚC-WEB-CHUẨN.png" alt="Banner top trang chủ 1" style="width:100%;height:100%" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="https://duhocskypacific.top/cms/public/uploads/2023/07/22/CÁC-NƯỚC-WEB-CHUẨN.png" data-no-retina=""></a>

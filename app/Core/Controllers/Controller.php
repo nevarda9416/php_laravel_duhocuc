@@ -18,17 +18,21 @@ class Controller extends BaseController
      */
     public function __construct()
     {
-        view()->composer('layouts.partials.nav', function ($view) {
-            $setting = DB::table('settings')->where('key', '=', 'footer_info')->first();
+        $language = '';
+        if (session()->has('locale') && session()->get('locale') === 'en') {
+            $language = '_en';
+        }
+        view()->composer('layouts.partials.nav', function ($view) use ($language) {
+            $setting = DB::table('settings')->where('key', '=', 'footer_info' . $language)->first();
             if (!empty((array)$setting))
                 $setting = json_decode($setting->value, true);
             else
                 $setting = array('telephone_contact' => '', 'email_contact' => '', 'copyright_left' => '', 'copyright_right' => '');
             $view->with(array('setting' => $setting));
         });
-        view()->composer('layouts.partials.footer_noscript', function ($view) {
+        view()->composer('layouts.partials.footer_noscript', function ($view) use ($language) {
             $banner = DB::table('banners')->orderBy('id', 'ASC')->first();
-            $setting = DB::table('settings')->where('key', '=', 'footer_info')->first();
+            $setting = DB::table('settings')->where('key', '=', 'footer_info' . $language)->first();
             if (!empty((array)$setting))
                 $setting = json_decode($setting->value, true);
             else
@@ -41,8 +45,9 @@ class Controller extends BaseController
             $view->with(array('parentMenus' => $parentMenus, 'childMenus' => $childMenus));
         });
         view()->composer('widgets.banner', function ($view) {
-            $banners = DB::table('banners')->orderBy('id', 'DESC')->get();
-            $view->with(array('banners' => $banners));
+            $banners_desktop = DB::table('banners')->where('device_type', 'desktop')->orderBy('id', 'DESC')->get();
+            $banners_mobile = DB::table('banners')->where('device_type', 'mobile')->orderBy('id', 'DESC')->get();
+            $view->with(array('banners_desktop' => $banners_desktop, 'banners_mobile' => $banners_mobile));
         });
     }
 

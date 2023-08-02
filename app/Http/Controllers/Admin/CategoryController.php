@@ -54,6 +54,11 @@ class CategoryController extends Controller
             if ($file) {
                 $original_name = $file->getClientOriginalName();
             }
+            $file_2 = $request->thumbnail_url_2;
+            $original_name_2 = '';
+            if ($file_2) {
+                $original_name_2 = $file_2->getClientOriginalName();
+            }
             $yearDir = date('Y');
             $monthDir = date('m');
             $dayDir = date('d');
@@ -67,7 +72,9 @@ class CategoryController extends Controller
                 'category_type' => $request->get('category_type'),
                 'country_id' => $request->get('country_id') ? $request->get('country_id') : 0,
                 'thumbnail_url' => ($file) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $original_name : '',
+                'thumbnail_url_2' => ($file_2) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $original_name_2 : '',
                 'is_actived' => $request->get('is_actived'),
+                'language' => $request->get('language'),
                 'meta_title' => $request->get('meta_title'),
                 'meta_keyword' => $request->get('meta_keyword'),
                 'meta_description' => $request->get('meta_description')
@@ -79,6 +86,9 @@ class CategoryController extends Controller
                 // Ok thì save mới
                 if ($file) {
                     UploadFileBusiness::uploadFileToFolder($file);
+                }
+                if ($file_2) {
+                    UploadFileBusiness::uploadFileToFolder($file_2);
                 }
                 $category->save();
                 if ($request->get('parent_id') > 0) { // Có danh mục cha, mới dừng lại ở menu cấp 2
@@ -150,12 +160,21 @@ class CategoryController extends Controller
             if ($file) {
                 $original_name = $file->getClientOriginalName();
             }
+            $file_2 = $request->thumbnail_url_2;
+            $original_name_2 = '';
+            if ($file_2) {
+                $original_name_2 = $file_2->getClientOriginalName();
+            }
             $yearDir = date('Y');
             $monthDir = date('m');
             $dayDir = date('d');
             if ($file) {
                 UploadFileBusiness::uploadFileToFolder($file);
                 $category->thumbnail_url = ($file) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $original_name : null;
+            }
+            if ($file_2) {
+                UploadFileBusiness::uploadFileToFolder($file_2);
+                $category->thumbnail_url_2 = ($file_2) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $original_name_2 : null;
             }
             $name = $request->get('name');
             $slug = $this->sanitize($name);
@@ -174,6 +193,7 @@ class CategoryController extends Controller
             $category->country_id = $request->get('country_id') ? $request->get('country_id') : 0;
             $category->share_url = $share_url;
             $category->is_actived = $request->get('is_actived');
+            $category->language = $request->get('language');
             $category->meta_title = $request->get('meta_title');
             $category->meta_keyword = $request->get('meta_keyword');
             $category->meta_description = $request->get('meta_description');

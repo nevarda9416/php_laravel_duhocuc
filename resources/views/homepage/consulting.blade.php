@@ -14,6 +14,17 @@ style="background: #d8f4ff;margin-top:0">
                         <div class="elementor-swiper">
                             <div class="elementor-main-swiper swiper-container">
                                 <div class="swiper-wrapper">
+                                    @if (!empty($categories->toArray()))
+                                        @foreach ($categories as $category)
+                                            <div class="swiper-slide">
+                                                <a href="{{ $category->share_url }}">
+                                                    <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="{{ $category->name }}" data-background="">
+                                                        <img src="{{ env('FOLDER_UPLOAD') . $category->thumbnail_url }}" alt="" style="width:100%;height:100%">
+                                                        <div class="swiper-lazy-preloader"></div>
+                                                    </div>
+                                                </a></div>
+                                        @endforeach
+                                    @else
                                     <div class="swiper-slide">
                                         <a href="/du-hoc/du-hoc-duc">
                                             <div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Du học ĐÚc" data-background="">
@@ -42,6 +53,7 @@ style="background: #d8f4ff;margin-top:0">
                                                 <div class="swiper-lazy-preloader"></div>
                                             </div>
                                         </a></div>
+                                    @endif
                                 </div>
                                 <div class="swiper-pagination"></div>
                                 <div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
